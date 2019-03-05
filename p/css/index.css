@@ -1,0 +1,250 @@
+@charset "utf-8";
+/* CSS Document */
+/****************************
+ * version:1.0
+ * Date:2018-07-24
+ *
+ */
+
+/*带焦点icon轮播*/
+.flexslider{
+    position: relative;
+}
+.flexslider .flex-viewport{
+    width: 100%;
+    overflow: hidden;
+}
+.flexslider .slides li{
+    position: relative;
+    overflow: hidden;
+}
+.flex-control-nav{
+    position: absolute;
+    bottom: 30px;
+    left: 0;
+    text-align: center;
+    width: 100%;
+    z-index: 5;
+    font-size: 0;
+}
+.flex-control-nav li{
+    display: inline-block;
+    *display: inline;
+    _display: inline;
+    margin: 0 5px;
+}
+.flex-control-nav a{
+    background: #4d99e6;
+    height: 7px;
+    width: 7px;
+    display: inline-block;
+    color: #4d99e6;
+    font-size: 0;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+}
+.flex-control-nav .flex-active{
+    height: 8px;
+    width: 8px;
+   background: #fff;
+   color: #fff;
+}
+.article{
+    position:relative;
+    max-width:1060px;
+    margin:0 auto;
+    overflow: hidden;
+    padding: 40px 10px;
+}
+.index .article h2{
+    text-align: center;
+    font-size: 24px;
+    line-height: 40px;
+    padding: 0 0 36px;
+}
+.section-bg{
+    background: #F7F8FC;
+}
+
+/*主体*/
+.section .box{
+    position: relative;    
+}
+.section .img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+}
+.index .section01 .banner{
+    width: 1160px;
+    margin: 0 auto;
+}
+.index .section01 .flexslider{
+    margin: 0 -380px;
+}
+.index .section01 img{
+    width: 1920px;
+}
+.section02 ul{
+    margin: 0 0 0 20px;
+}
+.section02 li{
+    float: left;
+    width: 28.3%;
+}
+.section02 .last{
+    width: 15.1%;
+}
+.index .section02 .box{
+    padding: 0 0 0 62px;
+    line-height: 28px;
+    font-size: 14px;
+}
+.index .section02 .img{
+    width: 50px;
+}
+.index .section02 h3{
+    font-size: 24px;
+}
+.index .section03 h2{
+    padding: 0;
+}
+.index .section03 ul{
+    margin: 0 -13% 0 0;
+}
+.index .section03 li{
+    float: left;
+    width: 40%;
+    padding: 20px 0;
+    margin: 0 8% 0 0;
+}
+.index .section03 .box{
+    padding: 0 0 0 240px;
+    min-height: 152px;
+    font-size: 14px;
+    line-height: 20px;
+}
+.index .section03 .img{
+    width: 220px;
+}
+.index .section03 h3{
+    padding: 40px 0 14px;
+    font-size: 20px;
+    line-height: 30px;
+}
+.index .section04 ul{
+    margin: 0 -13% 0 0;
+}
+.index .section04 li{
+    float: left;
+    width: 40%;
+    padding: 0 0 50px;
+    margin: 0 8% 0 0;
+}
+.index .section04 .box{
+    padding: 0 0 0 158px;
+    min-height: 76px;
+    font-size: 12px;
+    line-height: 20px;
+}
+.index .section04 .img{
+    width: 140px;
+}
+.index .section04 img{
+    width: 140px;
+    transition: all 0.5s ease;
+    -webkit-transition: all 0.5s ease;
+}
+.index .section04 li:hover img{
+    -webkit-transform:scale(1.2);
+    -moz-transform:scale(1.2);
+    -o-transform:scale(1.2);
+}
+.index .section04 h3{
+    padding: 0 0 8px;
+    font-size: 16px;
+    line-height: 28px;
+}
+.index .section04 a:hover h3{
+    color: #1d88f3;
+}
+.index .section04 .tag{
+    position: absolute;
+    left: 113px;
+    top: 60px;
+    width: 34px;
+    line-height: 16px;
+    display: inline-block;
+    text-align: center;
+    color: #fff;
+    -moz-border-radius: 8px;
+    -webkit-border-radius: 8px;
+    border-radius: 8px;
+}
+.index .section04 .tag-blue{
+    background: #248df8;
+}
+.index .section04 .tag-orange{
+    background: #eaa105;
+}
+.index .section04 .more{
+    line-height: 22px;
+    width: 92px;
+    display: block;
+    margin: 0 auto;
+    border: 1px solid #999;
+    text-align: center;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+    transition: all 0.5s ease;
+    -webkit-transition: all 0.5s ease;
+}
+.index .section04 .more:hover{
+    background: #1d88f3;
+    border: 1px solid #1d88f3;
+    color: #fff;
+}
+
+.index .section06 .flexslider{
+    padding: 0 0 60px;
+}
+.index .section06 .flex-control-nav{
+    bottom: 40px;
+}
+.index .section06 .flex-control-nav a{
+    width: 8px;
+    height: 8px;
+    background: #bdc6ce;
+    color: #bdc6ce;
+}
+.index .section06 .flex-control-nav .flex-active{
+    background: #4d99e6;
+    color: #4d99e6;
+}
+.index .section06 .logo{
+    width: 151px;
+    float: left;
+}
+.index .section06 .logo span{
+    display: block;
+}
+.index .section06 span img{
+    width: 151px;
+    display: none;
+}
+.index .section06 span .img02,
+.index .section06 span:hover .img01{
+    display: none;
+}
+.index .section06 span .img01,
+.index .section06 span:hover .img02{
+    display: block;
+}
+.index .section06 span:hover{    
+    -webkit-box-shadow: 0 0 8px #ececec; 
+    -moz-box-shadow: 0 0 8px #ececec;
+    box-shadow: 0 0 8px #ececec;
+}

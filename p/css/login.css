@@ -1,0 +1,895 @@
+@charset "utf-8";
+/* CSS Document */
+/****************************
+ * version:1.0
+ * Date:2018-07-19
+ *
+ */
+.header{
+    margin: 0;
+}
+.top{
+    background: #248df8;
+    padding: 54px 0 66px;
+    color: #fff;
+    text-align: center;
+    font-size: 20px;
+    line-height: 60px;
+}
+.top h2{
+    line-height: 54px;
+    font-size: 30px;
+}
+.top a{
+    color: #fff;
+}
+.switch{
+    text-align: center;
+    height: 91px; 
+    border-bottom: 1px solid #E6E9F2;
+}
+.switch a{
+    display: inline-block;
+    min-width: 290px;
+    line-height: 90px;
+    font-size: 20px;
+    margin: 0 30px;
+}
+.switch .active{
+    border-bottom: 2px solid #248df8;
+    color: #248df8;
+}
+.switch a:hover{
+    color: #248df8;
+}
+.switch-box{
+    display: none;
+}
+.form{
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 22px 0;
+    min-height: 500px;
+}
+.form li{
+    position: relative;
+    padding: 30px 0 0;
+}
+.text::-webkit-input-placeholder {
+    color: #bdc6ce;
+}
+.text:-moz-placeholder {
+    color: #bdc6ce;
+}
+.text::-moz-placeholder {
+    color: #bdc6ce;
+}
+.text:-ms-input-placeholder {
+    color: #bdc6ce;
+}
+.form .text{
+    padding:0 4%;
+    width: 92%;
+    border:1px solid #e7e9f1;
+    line-height: 58px;
+    height: 58px;
+    font-size: 18px;
+    color: #495763;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+}
+.form .text.error{
+    border:1px solid #f24b51;
+}
+.form .text-short{
+    width: 55%;
+}
+.form li .button,
+.form li .code{
+    position: absolute;
+    right: 0;
+    top: 32px;
+    width: 34%;
+    max-width: 240px;
+    height: 60px;
+    line-height: 60px;
+    font-size: 20px;
+    letter-spacing: 0px;
+}
+.form .button-code{
+    background: #E9F3FF;
+    color: #248df8;
+}
+.form .button-gray{
+    background: #e7e9f1;
+    color: #525252;
+}
+.form dl p.error,
+.form li p.error{
+    background: url(../images/login/error.png) 4px center no-repeat;
+    padding: 0 0 0 22px;
+    line-height: 28px;
+    margin: 0 0 -28px;
+}
+.form li.special{
+    padding: 32px 0;
+}
+.form .point{    
+    font-size: 14px;
+    padding: 6px 0 0;
+}
+.form label{
+    padding: 0 0 0 32px;
+    position: relative;
+    display: inline-block;
+    line-height: 20px;
+    color: #98a8b8;
+}
+.form label em{
+    width: 18px;
+    height: 18px;
+    position: absolute;
+    top: 0px;
+    left: 0;
+    display: inline-block;
+    border: 1px solid #e7e9f1;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+}
+.form label .active{
+    background: url(../images/login/checked.png) center center no-repeat;
+}
+.form label a{
+    color: #98a8b8;
+}
+.form .btn{
+    padding:50px 0;
+    text-align: center;
+}
+.form .btn .button{
+    width: 100%;
+    max-width: 100%;
+    line-height: 60px;
+    font-size: 20px;
+    box-shadow: 2px 4px 5px #cbddee;
+}
+.form .btn .button-default{
+    box-shadow:2px 4px 5px #dcdcdc
+}
+.form .btn p{
+    padding: 28px 0;
+    line-height: 38px;
+    font-size: 16px;
+}
+.upload{
+    width: 100px;
+    height: 100px;
+    position: relative;
+    cursor: pointer;
+}
+.upload img{
+    width: 100px;
+    height: 100px;
+    -moz-border-radius: 50px;
+    -webkit-border-radius: 50px;
+    border-radius: 50px;
+}
+.upload-input{    
+    opacity: 0;
+    filter: alpha(opacity=0);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    cursor: pointer;
+}
+.upload .error{
+    position: absolute;
+    top: 110px;
+    left:0;
+    line-height: 20px;
+    text-align: left;
+    font-size: 12px;
+    width: 130px;
+    white-space: initial;
+}
+.form dl{
+    position: relative;
+    padding: 30px 0 0 142px;
+}
+.form dt{
+    position: absolute;
+    left: 0;
+    top: 30px;
+    width: 130px;
+    padding: 10px 0;
+    font-size: 16px;
+    line-height: 40px;
+    text-align: right;
+    white-space: nowrap;
+}
+.form dl .check-box{
+    padding: 20px 0;
+    margin: 0 -24px 0 0;
+}
+.form dl .check-box label{
+    margin:0 15px 0 0;
+    font-size: 16px;
+}
+.form dl .sign{
+    position: absolute;
+    right: -50px;
+    top: 52px;
+    font-size: 18px;
+    width: 40px;
+}
+/*登录*/
+.login-page .form{    
+    padding: 26px 0 0;
+}
+.login-page .form li{
+    padding: 36px 0 0;
+}
+.login-page .btn{
+    padding: 0 0 50px;
+}
+/*注册*/
+.register-page .upload{
+    width: 506px;
+    height: 118px;
+    position: relative;
+    cursor: pointer;
+    border: 1px solid #e7e9f1;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+}
+.register-page .upload img{
+    width: 506px;
+    height: 118px;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+}
+.register-page .upload-input{
+    height: 118px;
+}
+.register-page .upload .error{
+    top: 120px;
+    width: 600px;
+}
+.register-page .qr-code{
+    width: 170px;
+    text-align: center;
+    line-height: 14px;
+    margin: -4px 0 0;
+}
+.register-page .qr-code img{
+    width: 112px;
+    margin: 8px 0 0;
+}
+/*协议*/
+.details .content{
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 28px 0 36px;
+    line-height: 36px;
+    font-size: 14px;
+}
+.details .content h1{
+    font-size: 20px;
+    font-weight: bold;
+}
+.details .content h2{
+    font-size: 16px;
+    padding: 18px 0 0;
+    font-weight: bold;
+}
+.details .content p{
+    font-size: 14px;
+    text-indent: 1em;
+}
+.details .content li{
+    text-indent: 2em;
+}
+/*完善资料*/
+.form h2{
+    line-height: 44px;
+    font-size: 18px;
+}
+.form .select-btn{    
+    background:#fff url(../images/login/icon02.png) right center no-repeat;
+    cursor: pointer;
+}
+.form .date-input{
+    position: relative;
+}
+.form .time-icon{
+    position: absolute;
+    right: 0;
+    top: 0;
+    background: url(../images/login/times.png) center center no-repeat;
+    width: 60px;
+    height: 60px;
+    display: inline-block;
+}
+.form .text-select{
+    position: relative;
+    width: 100%;
+}
+.form .text-select.active .text{
+    border: 1px solid #a0cfff;
+}
+.form .text-select .select-box{
+    position: absolute;
+    top: 59px;
+    left: 0;
+    border: 1px solid #91b2de;
+    width: 99.9%;
+    background: #fff;
+    display: none;
+    z-index: 10;
+    max-height: 346px;
+    overflow-x: hidden;
+    overflow-y: scroll;    
+}
+.form .text-select ul{
+    padding: 15px 0 15px 3%;
+}
+.form .text-select li{
+    padding: 0 9px;
+    line-height: 30px;
+    font-size: 14px;
+    color:#b6b6b6;
+    cursor: pointer;
+}
+.form .text-select li:hover{
+    color: #495763;
+}
+/*完善产品信息*/
+.tips-box{
+    background: #fff8d2;
+    text-align: center;
+    font-size: 14px;
+    line-height: 30px;
+    padding: 14px 0;
+    margin: -14px auto 0;
+    max-width: 988px;
+}
+.tips-box .button{
+    max-width: 72px;
+    line-height: 30px;
+    font-size: 14px;
+    margin: 0 0 0 20px;
+}
+.product-idea dl.away{
+    margin: 70px 0 0;
+}
+.product-idea .box{
+    margin: 0 -144px;
+}
+.product-idea .form-left{
+    width:470px;
+    float: left;
+}
+.product-idea .form-left dl{
+    padding: 30px 0 0 122px;
+}
+.product-idea .form-left dt{
+    width: 110px;
+}
+.product-idea .form-right{
+    width:490px;
+    float: right;
+}
+.product-idea .btn{
+    padding: 100px 0 50px;
+}
+.product-idea .btn p{
+    padding: 20px 0;
+}
+.product-idea .date-select{
+    width: 48%;
+}
+.product-idea .date-select .text{
+    padding: 0 8%;
+    width: 83%;
+}
+.product-idea .sign.float_l{
+    position: relative;
+    right: auto;
+    top: 0;
+    width: 4%;
+    text-align: center;
+}
+.product-idea .sign em{
+    background: #D6D6D6;
+    width: 6px;
+    height: 2px;
+    display: inline-block;
+    margin: 29px 0 0;
+}
+/*完善团队信息*/
+.team-idea .prompt{
+    background: #f7f8fc;
+    font-size: 14px;
+    line-height: 50px;
+    padding: 0 24px;
+    margin: 14px 0 -26px;
+}
+.team-idea .add{
+    padding: 15px 0 22px;
+    line-height: 24px;
+    text-align: center;
+    font-size: 16px;
+}
+.team-idea .box{
+    margin: 38px -144px 0;
+}
+.team-idea dt{    
+    top: 40px;
+    text-align: left;
+}
+.team-idea dl{    
+    padding: 50px 0 0 132px;
+}
+.team-idea .idea-top{
+    position: relative;
+    margin: 0 -3% 10px 0;
+}
+.team-idea .idea-cont{
+    width: 31.5%;
+    float: left;
+    margin: 0 1.25% 0 0;
+}
+.team-idea .close{
+    position: absolute;
+    right: -12px;
+    top: 0;
+    background:#e8f3ff url(../images/close.png) no-repeat;
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+}
+.form textarea.text{
+    padding: 10px 1.3%;
+    width: 97.4%;
+    line-height: 36px;
+    height: auto;
+    min-height: 116px;
+}
+/*我的星钛-编辑资料*/
+.edit-page .switch{
+    margin: -36px -36px 12px;
+    text-align: left;
+}
+.edit-page .switch a{
+    min-width: 80px;
+    margin: 0 0 0 132px;
+    padding: 0 10px;
+}
+.edit-page .team-idea{
+    padding: 0 0 22px;
+}
+.edit-page .system{
+    max-width: 990px;
+}
+.edit-page .system dl{
+    padding: 30px 0 0 132px;
+    margin: 0 0 20px;
+}
+.edit-page .system dt{
+    width: 104px;
+    font-size: 20px;
+}
+.edit-page .system .btn{
+    max-width: 700px;
+    padding: 50px 0 0 146px;
+}
+.edit-box .search{
+    background: #f7f8fc;
+}
+.edit-box .search .form{
+    position: relative;
+    min-height: 50px;
+    max-width: 500px;
+    padding: 30px 0 30px 100px;
+}
+.edit-page .edit-box .search span{
+    position: absolute;
+    top: 30px;
+    left: 0;
+    line-height: 50px;
+    font-size: 18px;
+}
+.edit-page .edit-box .search .text{
+    line-height: 48px;
+    height: 48px;
+}
+.edit-page .edit-box .search .select-box{
+    top: 49px;
+}
+.edit-page .customer-box{
+    margin: -12px -36px 0;
+}
+.edit-page .customer-box .title{
+    background: #f7f8fc;
+    border-top: 4px solid #fff;
+    padding: 15px 36px;
+    line-height: 36px;
+}
+.edit-page .customer-box .title h2{
+    padding: 0 0 0 30px;
+    width: 260px;
+}
+.edit-page .customer-box .title .icon01{
+    background: url(../images/icon20.png) 0 center no-repeat;    
+}
+.edit-page .customer-box .title .icon02{
+    background: url(../images/icon24.png) 0 center no-repeat;    
+}
+.edit-page .customer-box .title .icon03{
+    background: url(../images/icon25.png) 0 center no-repeat;    
+}
+.edit-page .customer-box .title .up{
+    background: url(../images/up.png) left center no-repeat;
+    padding: 0 0 0 16px;
+    font-size: 14px; 
+}
+.edit-page .customer-box .title .down{
+    background: url(../images/down.png) left center no-repeat;
+}
+.edit-page .customer-box .download{
+    background: url(../images/download.png) left center no-repeat;
+    padding: 0 22px;
+}
+.edit-page .customer-box .title p{
+    font-size: 14px;
+}
+.edit-page .customer-box .block{
+    display: none;
+}
+.edit-page .net-value{
+    max-width: 986px;
+    padding: 40px 0 50px;
+    margin: 0 auto;
+    font-size: 14px;
+}
+.net-value .table{
+    position: relative;
+}
+.net-value .table .change{
+    position: absolute;
+    right: 68px;
+    top: 0;
+    line-height: 42px;
+}
+.net-value .table th{
+    font-size: 16px;
+}
+.net-value .table tr:nth-child(odd){
+    background: #fff;
+}
+.net-value .table .text{
+    width: 168px;
+    line-height: 30px;
+    height: 30px;
+    border: 1px solid #E6E9F2;
+    margin: 10px 0 0;
+    display: inline-block;
+    vertical-align: middle;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+}
+.net-value .table .save-btn{
+    padding: 0 0 0 12px;
+    display: inline-block;
+    vertical-align: middle;
+}
+.net-value .speak{
+    line-height: 24px;
+}
+.net-value .speak h3{
+    font-size: 16px;
+    padding: 0 0 14px;
+}
+.net-value .speak table{
+    margin: 24px 0 0;
+    line-height: 20px;
+    border-top: 1px solid #DCDCDC;
+    border-left: 1px solid #DCDCDC;
+    max-width: 820px;
+}
+.net-value .speak table td{
+    padding: 9px 18px;
+    border-right: 1px solid #DCDCDC;
+    border-bottom: 1px solid #DCDCDC;
+}
+.edit-page .net-value .upload-box{
+    padding: 20px 0 40px;
+}
+.edit-page .valuation .upload-box{
+    padding: 0px 0 40px;
+}
+.edit-page .valuation .table{
+    max-width: 1040px;
+    margin: 0 auto;
+}
+.edit-page .valuation li{
+    position: relative;
+    max-width: 980px;
+    margin: 0 auto;
+    padding: 8px 30px;
+    border-bottom: 1px solid #E6E9F0;
+    line-height: 30px;
+    font-size: 14px;
+}
+.edit-page .valuation .delete{
+   background:#e8f3ff url(../images/close.png) center center no-repeat;
+   width: 22px;
+   height: 22px;
+   display: inline-block;
+   margin: 4px 0 0;
+}
+.edit-page .valuation .form {
+    max-width: 580px;
+}
+.edit-page .valuation .form h3{
+    line-height: 40px;
+    font-size: 14px;
+    text-align: center;
+    padding: 20px 0 0;
+}
+.edit-page .valuation .form dl{
+    padding: 30px 0 0 70px;
+}
+.edit-page .valuation .form dt{
+    width: 70px;
+    text-align: left;
+    font-size: 14px;
+    line-height: 30px;
+}
+.edit-page .form .text{
+    line-height: 48px;
+    height: 48px;
+    font-size: 16px;
+}
+.edit-page .valuation .form .button{
+    line-height: 40px;
+    max-width: 140px;
+    font-size: 16px;
+    box-shadow: 0 0 0;
+}
+.edit-page .upload-box{
+    padding: 40px;
+    text-align: center;
+}
+.edit-page .upload-box p{
+    line-height: 30px;
+    color: #98a8b8;
+    font-size: 14px;
+}
+.edit-page .upload-box .upload{
+    margin: 20px auto 0;
+    width: 140px;
+    height: 40px;
+}
+.edit-page .upload-box .upload{
+    margin: 0 20px 0 0;
+    display: inline-block;
+    *display: inline;
+    _display: inline;
+}
+.edit-page .upload-box .button{
+    max-width: 140px;
+}
+.edit-page .upload-box .upload .button{
+    max-width: 140px;
+}
+.edit-page .upload-box .upload p{
+    color: #fff;
+    font-size: 16px;
+    line-height: 40px;
+}
+.edit-page .upload-box .upload-input{
+    height: 40px;
+}
+
+
+.product-page .box{
+    padding: 50px 0;
+}
+.product-page .box .cont{
+    max-width: 1060px;
+    margin: 0 auto;
+}
+.product-page .box04 .cont,
+.product-page .box05 .cont,
+.product-page .box06 .cont{
+    max-width: 876px;
+}
+.product-page .box .item{
+    padding: 44px 14px 0;
+    line-height: 24px;
+    font-size: 14px;
+    width: 290px;
+}
+.product-page .box h3{
+    font-size: 18px;
+    line-height: 30px;
+    padding: 0 0 18px;
+}
+.product-page .box04 .item{
+    padding: 84px 14px 0;
+    width: 220px;
+}
+.product-page .box05 .item{
+    padding: 84px 14px 0;
+    width: 270px;
+}
+.product-page .box06 .item{
+    padding: 84px 14px 0;
+    width: 240px;
+}
+.product-page .box-bg{
+    background: #f7f8fc;
+}
+.product-page .table{
+    max-width: 1130px;
+    margin: 0 auto;
+    padding: 40px 0 50px;
+}
+.product-page .table h2{
+    font-size: 18px;
+    line-height: 36px;
+    padding: 0 0 14px;
+    text-align: center;
+}
+.product-page th{
+    background: #f7f8fc;
+    line-height: 26px;
+    padding: 8px 15px;
+    text-align: center;
+    font-size: 14px;
+    font-weight: normal;
+    border-bottom: 1px solid #cfe0f6;
+}
+.product-page tr:nth-child(odd){
+    background: #f7f8fc;
+    border-bottom: 1px solid #cfe0f6;
+}
+.product-page td{
+    line-height: 26px;
+    padding: 10px 15px;
+    font-size: 12px;
+    text-align: center;
+}
+.product-page .t-left{
+    text-align: left;
+    padding: 6px 0 6px 80px;
+}
+.product-page .have{
+    background: url(../images/have.png) no-repeat;
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    vertical-align: middle;
+}
+.product-page .remind-box{
+    text-align: center;
+    line-height: 30px;
+    font-size: 20px;
+}
+.product-page .remind-box span{
+    background: url(../images/icon14.png) no-repeat;
+    width: 38px;
+    height: 30px;
+    display: inline-block;
+    vertical-align: middle;
+    padding: 0 20px 0 0;
+}
+
+/*智能配置*/
+
+.configure-page{
+    background: #f8f8f8;
+}
+.configure-page .article{
+    max-width: 1200px;
+    margin: 0 auto 30px;
+}
+.configure-page .content{
+    background: #fff;
+    padding: 40px 80px 0;
+    -webkit-box-shadow: 0px 1px 18px #e7edf5;
+    -moz-box-shadow: 0px 1px 18px #e7edf5;
+    box-shadow: 0px 1px 18px #e7edf5;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+}
+.configure-page .form{
+    padding: 0;
+}
+.configure-page .special-dd .text-select{
+    width: 49%;
+}
+.configure-page .special-dd .text-select .text{
+    width: 84%;
+    padding: 0 8%;
+}
+.configure-page .form .short-text{
+    width: 40.8%;
+}
+.configure-page .btn{
+    padding: 70px 0 80px;
+}
+.configure-page .form .button-short{
+    width: 100%;
+    max-width: 300px;
+    line-height: 60px;
+    font-size: 20px;
+    box-shadow: 2px 4px 5px #cbddee;
+}
+.configure-page .form .button-away{
+    margin: 0 0 0 7%;
+}
+/*联系我们*/
+.contact-page .header{
+    background: none;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+.contact-page .top{
+    background: url(../images/contact.jpg) center top no-repeat;
+    padding: 152px 0 98px;
+    line-height: 40px;
+}
+.contact-page .tel-box{
+    background: #3e9dfc;
+    color: #fff;
+}
+.contact-page .tel-box ul{
+    max-width: 1020px;
+    margin: 0 auto;
+    padding: 38px 0;
+}
+.contact-page .tel-box li{
+    float: left;
+    padding: 12px 0 12px 94px;
+    position: relative;
+    width: 288px;
+    line-height: 24px;
+    font-size: 14px;
+}
+.contact-page .tel-box .last{
+    width: 162px;
+}
+.contact-page .tel-box .name{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 68px;
+    height: 48px;
+    text-align: center;
+    border:2px solid #fff;
+    padding: 10px 0;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+}
+.contact-page .box{
+    padding: 40px 0;
+    max-width: 1020px;
+    margin: 0 auto;
+    line-height: 30px;
+    font-size: 16px;
+}
+.contact-page .box p{
+    padding: 0 0 16px;
+}

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <title>星钛科技</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/layer.css">
+    <script src="js/jquery-1.11.3.min.js" type="text/javascript"></script>
+    <script src="js/public.js" type="text/javascript"></script>
+</head>
+<body>
+    <div class="container product-show">
+        <section class="section">
+            <h3>产品名称：  中子星星海母基金</h3>
+            <h3>产品代码：  SDA1232</h3>
+            <h3>最新净值：  1.3223</h3>
+            <h3>管  理 人：  山东天宝投资管理有限公司</h3>
+            <p class="img">
+                <img src="images/chart.jpg" alt="">
+            </p>
+            <br>
+            <p>扫码注册/登陆后可查看基金的详细情况及管理人信息</p>
+            <p class="img">
+                <img src="images/qr.jpg" alt="">
+            </p>
+            <p>数据由星钛科技支持</p>
+        </section>
+    </div>
+
+<!-- 报名成功 浮层 -->
+<div class="layer" id="layer-state" style="display: block;">
+    <div class="cover"></div>
+    <div class="layer-box">
+        <div class="content">
+           <h1>合格投资者认定</h1>
+           <div class="item">
+             <p>在继续浏览本公司网站前，请您确认您或您所代表的机构是一名“合格投资者”。“合格投资者”指根据任何国家和地区的证券和投资法规所规定的有资格投资于私募证券投资基金的专业投资者。例如根据我国《私募投资基金监督管理暂行办法》的规定，合格投资者的标准如下：</p>
+             <p>一、具备相应风险识别能力和风险承担能力，投资于单只私募基金的金额不低于100万元且符合下列相关标准的单位和个人：<br>
+             1、净资产不低于1000万元的单位；<br>2、金融资产不低于300万元或者最近三年个人年均收入不低于50万元的个人。(前款所称金融资产包括银行存款、股票、债券、基金份额、资产管理计划、银行理财产品、信托计划、保险产品、期货权益等。)</p>
+             <p>二、下列投资者视为合格投资者：<br>1、社会保障基金、企业年金等养老基金、慈善基金等社会公益基金；<br>2、依法设立并在基金业协会备案的投资计划；<br>3、投资于所管理私募基金的私募基金管理人及其从业人员；<br>4、中国证监会规定的其他投资者。</p>
+             <p>如果您继续访问或使用本网站及其所载资料，即表明您声明及保证您或您所代表的机构为“合格投资者”，并将遵守对您适用的司法区域的有关法律及法规，同意并接受以下条款及相关约束。如果您不符合“合格投资者”标准或不同意下列条款及相关约束，请勿继续访问或使用本网站及其所载信息及资料。</p>
+             <p>投资涉及风险，投资者应详细审阅产品的发售文件以获取进一步资料，了解有关投资所涉及的风险因素，并寻求适当的专业投资和咨询意见。产品净值及其收益存在涨跌可能，过往的产品业绩数据并不预示产品未来的业绩表现。本网站所提供的资料并非投资建议或咨询意见，投资者不应依赖本网站所提供的信息及资料作出投资决策。</p>
+             <p>与本网站所载信息及资料有关的所有版权、专利权、知识产权及其他产权均为本公司所有。本公司概不向浏览该资料人士发出、转让或以任何方式转移任何种类的权利。</p>
+           </div>
+            <div class="btn">
+                <a href="javascript:void(0);" class="button button-gray give-up">放弃</a>
+                <a href="javascript:void(0);" class="button button-red">接受</a>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- layer over -->
+<script type="text/javascript">
+    function _height() {
+         var _Height3=$('.layer h1').height(),
+             _Height2=$(window).height(),
+             _Height1=$('.layer-box').height(),
+             _Height4=$('.layer .btn').height()+80;
+         $('.layer .item').height(_Height1-_Height3-_Height4)
+    }
+    _height()
+    $(window).resize(function(){ 
+         _height()
+    }) 
+</script>
+</body>
+</html>

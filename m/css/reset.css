@@ -1,0 +1,59 @@
+@charset "utf-8";
+/* CSS Document */
+/****************************
+ * version:1.0
+ * By:landry
+ * Date:2018-04-20
+ *
+ */
+html, body, div, span, h1, h2, h3, h4, h5, h6, p, abbr, address, cite, code, del, dfn, em, img, sub, sup, var, i, dl, dd, dt, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, figure, footer, header, hgroup, menu, nav, section, time, mark, audio, video{margin:0;padding:0; zoom:1;}
+article, aside, figure, footer, header, hgroup, nav, menu, section {display: block;}
+h1,h2,h3,h4,h5,h6{font-weight: normal;}
+input, select {	vertical-align: middle;}
+textarea{resize:none;}
+a,button{outline: none;*star: expression(this.onFocus=this.blur());cursor: pointer;text-decoration:none;}
+button,input,select,textarea {vertical-align:middle;outline:none;-webkit-appearance : none ;border-radius: 0;}
+button,input[type="button"],input[type="reset"],input[type="submit"] {cursor:pointer;-webkit-appearance : none ;}
+a:hover{text-decoration:none;}
+img{vertical-align:top; outline: none;}
+ul,li{ list-style:none;}
+
+
+html, body {
+    position: relative;
+    height: 100%;
+    background: #fff;
+}
+body {
+    font-family: 'Arial','Microsoft YaHei';
+    padding: 0;
+    overflow-x: hidden;
+    max-width: 640px;
+    margin: 0 auto;
+    color: #525252;
+    min-height: 100%;
+}
+/*左浮动和右浮动
+ --------------*/
+.float_l {
+  float: left;
+}
+.float_r {
+  float: right;
+}
+.float_r, .float_l {
+  _display: inline;
+}
+/*清除浮动
+ --------------*/
+.clearfix {
+  zoom: 1;
+  _height: 1px
+}
+.clearfix:after {
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden
+}

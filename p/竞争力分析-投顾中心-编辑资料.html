@@ -1,0 +1,1222 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<title>星钛科技</title>
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="keywords" content="">
+<meta name="description" content="">
+<meta content="yes" name="apple-mobile-web-app-capable">
+<meta name="format-detection" content="telephone=no"/>
+<meta content="black-translucent" name="apple-mobile-web-app-status-bar-style">
+<link rel="stylesheet" href="css/reset.css">
+<link rel="stylesheet" href="css/common.css">
+<link rel="stylesheet" href="css/login.css">
+<link rel="stylesheet" href="css/layout.css">
+<link rel="stylesheet" href="css/layer.css">
+<!--[if lt IE 9]>
+<script src="js/html5.js"></script>
+<![endif]-->
+
+</head>
+
+<body>
+    <div class="container subpage edit-page">
+
+        <header class="header">
+          <div class="head clearfix">
+            <a href="javascript:void(0);" class="logo float_l"></a>
+            <div class="item float_r">
+               <div class="search">
+                 <a href="javascript:void(0);" class="search-btn"></a>
+                 <input type="text" name="" class="input-text" placeholder="基金公司 / 基金 / 基金经理">
+               </div>
+               <a href="javascript:void(0);" class="consult">在线咨询</a>
+
+               <!-- 登录后 -->
+               <div class="user">
+                 <a href="javascript:void(0);" class="user-idea a-block">
+                   <img src="images/05.jpg">
+                   <p>18810716951</p>
+                 </a>
+                 <ul>
+                   <li><a href="javascript:void(0);">投顾中心<span  class="icon06"></span></a></li>
+                   <li><a href="javascript:void(0);">修改密码<span  class="icon04"></span></a></li>
+                   <li><a href="javascript:void(0);">安全退出<span  class="icon05"></span></a></li>
+                 </ul>
+               </div>
+               <a href="javascript:void(0);" id="open-button" class="list-btn float_r"></a>
+            </div>
+            <ul class="nav float_l">
+               <!-- <li class="list">
+                  <a href="javascript:void(0);" class="name"><span>运行概况</span></a>
+                  <div class="subnav">
+                    <a href="javascript:void(0);">我们是谁</a>
+                    <a href="javascript:void(0);">安全保障</a>
+                    <a href="javascript:void(0);">我们的客户</a>
+                    <a href="javascript:void(0);">媒体报道</a>
+                  </div>
+               </li> -->
+               <li>
+                  <a href="javascript:void(0);" class="name">我的星钛</a>
+               </li>
+               <li>
+                  <a href="javascript:void(0);" class="name">所有基金</a>
+               </li>
+               <li>
+                  <a href="javascript:void(0);" class="name">投研分析</a>
+               </li>
+            </ul>
+          </div>
+        </header>
+        <!-- header end -->
+
+        <section class="section">
+          <article class="article clearfix">
+            <div class="location">
+              <a href="javascript:void(0);">我的星钛</a>
+              <span class="sign">&gt;</span>
+              <span>投顾中心</span>
+              <span class="sign">&gt;</span>
+              <span>编辑资料</span>
+            </div>
+            <div class="content edit-box">
+              <div class="switch">
+                <a href="javascript:void(0);" class="active">公司基础信息</a>
+                <a href="javascript:void(0);">产品信息</a>
+                <a href="javascript:void(0);">投资团队信息</a>
+                <a href="javascript:void(0);">投资理念及风控</a>
+              </div>
+              <div class="switch-box" style="display: block;">                
+                <div class="form">
+                  <dl>
+                    <dt>注册资本(万)：</dt>
+                    <dd>
+                      <input type="text" class="text">
+                      <p class="red error">公司名已注册，如继续注册，请输入管理员收到的手机验证码</p>
+                    </dd>
+                  </dl>
+                  <dl>
+                    <dt>公司人数：</dt>
+                    <dd>
+                      <input type="text" class="text">
+                    </dd>
+                  </dl>
+                  <dl>
+                    <dt>所在地区：</dt>
+                    <dd>
+                      <div class="text-select">
+                        <input type="text" class="text select-btn" readonly="readonly">
+                        <div class="select-box">
+                          <ul>
+                            <li>是</li>
+                            <li>否</li>
+                          </ul>
+                        </div>
+                      </div>
+                    </dd>
+                  </dl>
+                  <dl>
+                    <dt>成立时间：</dt>
+                    <dd>
+                      <div class="date-input">
+                        <input type="text" class="text">
+                        <a href="javascript:void(0);" class="time-icon"></a>
+                      </div>
+                    </dd>
+                  </dl>
+                  <dl>
+                    <dt>备案编号：</dt>
+                    <dd>
+                      <input type="text" class="text">
+                    </dd>
+                  </dl>
+                  <dl>
+                    <dt>管理规模：</dt>
+                    <dd>
+                      <input type="text" class="text">
+                    </dd>
+                  </dl>
+                  <dl>
+                    <dt>是否协会会员：</dt>
+                    <dd>
+                      <div class="text-select">
+                        <input type="text" class="text select-btn" readonly="readonly">
+                        <div class="select-box">
+                          <ul>
+                            <li>是</li>
+                            <li>否</li>
+                          </ul>
+                        </div>
+                      </div>
+                    </dd>
+                  </dl>
+                  <dl>
+                    <dt>是否有投资资格：</dt>
+                    <dd>
+                      <div class="text-select">
+                        <input type="text" class="text select-btn" readonly="readonly">
+                        <div class="select-box">
+                          <ul>
+                            <li>是</li>
+                            <li>否</li>
+                          </ul>
+                        </div>
+                      </div>
+                    </dd>
+                  </dl>
+                  <dl>
+                    <dt>投资风格：</dt>
+                    <dd>
+                      <div class="text-select">
+                        <input type="text" class="text select-btn" readonly="readonly">
+                        <div class="select-box">
+                          <ul>
+                            <li>投资风格2</li>
+                            <li>投资风格2</li>
+                            <li>投资风格3</li>
+                          </ul>
+                        </div>
+                      </div>
+                    </dd>
+                  </dl>
+                  <div class="btn">
+                    <a href="javascript:void(0);" class="button button-blue">保存</a>
+                  </div>
+                </div>
+              </div>
+              <div class="switch-box customer-box">
+                <div class="search">
+                  <div class="form">
+                    <span>管理产品</span>
+                    <div class="text-select">
+                      <input type="text" class="text select-btn" placeholder="中子星星海基金" readonly="readonly">
+                      <div class="select-box">
+                        <ul>
+                          <li>策略类型1</li>
+                          <li>策略类型2</li>
+                        </ul>
+                      </div>
+                    </div>
+                    <br>
+                    <label class="m-login"><em class="active"></em>我同意<a href="javascript:void(0);">《星钛科技数据授权协议》</a></label>          
+                  </div>
+                </div>
+                <div class="title clearfix">
+                  <h2 class="icon icon01 float_l">产品基本信息</h2>
+                  <p class="float_l"><a href="javascript:void(0);" class="download blue">点击下载</a></p>
+                  <a href="javascript:void(0);" class="up float_r">收起</a>
+                </div>
+                <div class="block">
+                  <div class="form product-idea">
+                    <div class="box clearfix">
+                      <div class="form-left">
+                        <dl>
+                          <dt>产品名称：</dt>
+                          <dd>
+                            <input type="text" class="text">
+                          </dd>
+                        </dl>
+                        <dl>
+                          <dt>策略类型：</dt>
+                          <dd>
+                            <div class="text-select">
+                              <input type="text" class="text select-btn" readonly="readonly">
+                              <div class="select-box">
+                                <ul>
+                                  <li>策略类型1</li>
+                                  <li>策略类型2</li>
+                                </ul>
+                              </div>
+                            </div>
+                          </dd>
+                        </dl>
+                        <dl>
+                          <dt>备案编号：</dt>
+                          <dd>
+                            <input type="text" class="text">
+                          </dd>
+                        </dl>
+                        <dl>
+                          <dt>产品类型：</dt>
+                          <dd>
+                            <div class="text-select">
+                              <input type="text" class="text select-btn" readonly="readonly">
+                              <div class="select-box">
+                                <ul>
+                                  <li>产品类型1</li>
+                                  <li>产品类型2</li>
+                                </ul>
+                              </div>
+                            </div>
+                          </dd>
+                        </dl>
+                        <dl>
+                          <dt>管理规模(万)：</dt>
+                          <dd>
+                            <input type="text" class="text">
+                          </dd>
+                        </dl>
+                        <dl class="away">
+                          <dt>管理人：</dt>
+                          <dd>
+                            <input type="text" class="text">
+                          </dd>
+                        </dl>
+                        <dl>
+                          <dt>托管人：</dt>
+                          <dd>
+                            <div class="text-select">
+                              <input type="text" class="text select-btn" readonly="readonly">
+                              <div class="select-box">
+                                <ul>
+                                  <li>托管人1</li>
+                                  <li>托管人2</li>
+                                  <li>托管人3</li>
+                                </ul>
+                              </div>
+                            </div>
+                          </dd>
+                        </dl>
+                        <dl>
+                          <dt>开放日：</dt>
+                          <dd>
+                            <input type="text" class="text">
+                          </dd>
+                        </dl>
+                        <dl>
+                          <dt>追加单位(万)：</dt>
+                          <dd>
+                            <input type="text" class="text">
+                          </dd>
+                        </dl>
+                        <dl>
+                          <dt>赎回单位(万)：</dt>
+                          <dd>
+                            <input type="text" class="text">
+                          </dd>
+                        </dl>
+                        <dl>
+                          <dt>账户等级：</dt>
+                          <dd>
+                            <input type="text" class="text">
+                          </dd>
+                        </dl>
+                      </div>
+                      <div class="form-right">
+                        <dl>
+                          <dt>运行方式：</dt>
+                          <dd>
+                            <input type="text" class="text">
+                          </dd>
+                        </dl>
+                        <dl>
+                          <dt>成立至结束时间：</dt>
+                          <dd class="clearfix">
+                            <div class="date-select float_l">
+                              <div class="date-input">
+                                <input type="text" class="text">
+                                <a href="javascript:void(0);" class="time-icon"></a>
+                              </div>
+                            </div>
+                            <span class="sign float_l"><em></em></span>
+                            <div class="date-select float_r">
+                              <div class="date-input">
+                                <input type="text" class="text">
+                                <a href="javascript:void(0);" class="time-icon"></a>
+                              </div>
+                            </div>
+                          </dd>
+                        </dl>
+                        <dl>
+                          <dt>存续期限：</dt>
+                          <dd>
+                            <input type="text" class="text">
+                          </dd>
+                        </dl>
+                        <dl>
+                          <dt>投资顾问：</dt>
+                          <dd>
+                            <input type="text" class="text">
+                          </dd>
+                        </dl>
+                        <dl>
+                          <dt>基金经理：</dt>
+                          <dd>
+                            <input type="text" class="text">
+                          </dd>
+                        </dl>
+                        <dl class="away">
+                          <dt>认购费(%)：</dt>
+                          <dd>
+                            <div class="text-select">
+                              <input type="text" class="text select-btn" readonly="readonly">
+                              <div class="select-box">
+                                <ul>
+                                  <li>认购费1</li>
+                                  <li>认购费1</li>
+                                </ul>
+                              </div>
+                            </div>
+                          </dd>
+                        </dl>
+                        <dl>
+                          <dt>赎回费(%)：</dt>
+                          <dd>
+                            <input type="text" class="text">
+                          </dd>
+                        </dl>
+                        <dl>
+                          <dt>管理费(%)：</dt>
+                          <dd>
+                            <input type="text" class="text">
+                          </dd>
+                        </dl>
+                        <dl>
+                          <dt>预警线：</dt>
+                          <dd>
+                            <input type="text" class="text">
+                          </dd>
+                        </dl>
+                        <dl>
+                          <dt>止损线：</dt>
+                          <dd>
+                            <input type="text" class="text">
+                          </dd>
+                        </dl>
+                      </div>
+                    </div>
+                    <div class="btn">
+                      <a href="javascript:void(0);" class="button button-blue">保存</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="title clearfix">
+                  <h2 class="icon icon02 float_l">填写产品净值</h2>
+                  <p class="float_l"><a href="javascript:void(0);" class="download blue">点击下载</a></p>
+                  <a href="javascript:void(0);" class="up down float_r">展开</a>
+                </div>
+                <div class="block net-value">
+                  <!-- 产品信息状态1 start -->
+                  <!-- <div class="upload-box">
+                    <p>还未上传净值表</p>
+                    <div class="upload">
+                      <p class="button button-blue">上传净值表</p>
+                      <input type="file" class="upload-input" name="UpLoadFile">
+                    </div>
+                  </div> -->
+                  <!-- 产品信息状态1 end -->
+
+                  <!-- 产品信息状态2 start -->
+                  <div class="table">
+                    <a href="javascript:void(0);" class="blue change">更新</a>
+                    <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                      <tr>
+                        <th width="33.33%">净值日期</th>
+                        <th width="33.33%">&nbsp;</th>
+                        <th width="33.33%">净值</th>
+                      </tr>
+                      <tr>
+                        <td>2018-08-21</td>
+                        <td></td>
+                        <td>1.2221</td>
+                      </tr>
+                      <tr>
+                        <td>2018-08-21</td>
+                        <td></td>
+                        <td>1.2221</td>
+                      </tr>
+                      <tr>
+                        <td>2018-08-21</td>
+                        <td></td>
+                        <td>1.2221</td>
+                      </tr>
+                      <tr>
+                        <td>2018-08-21</td>
+                        <td></td>
+                        <td>1.2221</td>
+                      </tr>
+                      <tr>
+                        <td>2018-08-21</td>
+                        <td></td>
+                        <td>1.2221</td>
+                      </tr>
+                    </table>
+                  </div>
+                  <div class="pagination">
+                   <a href="javascript:void(0);" class="prev btn-default">&lt;</a>
+                   <a href="javascript:void(0);">首页</a>
+                   <a href="javascript:void(0);" class="active">1</a>
+                   <a href="javascript:void(0);">2</a>
+                   <a href="javascript:void(0);">3</a>
+                   <span>...</span>
+                   <a href="javascript:void(0);">12</a>
+                   <a href="javascript:void(0);">13</a>
+                   <a href="javascript:void(0);">末页</a>
+                   <a href="javascript:void(0);" class="next">&gt;</a>
+                 </div>
+                  <div class="upload-box">
+                    <div class="upload">
+                      <p class="button button-blue">上传净值表</p>
+                      <input type="file" class="upload-input" name="UpLoadFile">
+                    </div>
+                    <a href="javascript:void(0);" class="button button-blue">查看报告</a>
+                  </div>
+                  <!-- 产品信息状态2 end -->
+
+                  <!-- 产品信息状态3 start -->
+                  <!-- <div class="table">
+                    <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                      <tr>
+                        <th width="33.33%">净值日期</th>
+                        <th width="33.33%">&nbsp;</th>
+                        <th width="33.33%">净值</th>
+                      </tr>
+                      <tr>
+                        <td>
+                          <input type="text" class="text" name="">
+                        </td>
+                        <td></td>
+                        <td>
+                          <input type="text" class="text" name=""><a href="javascript:void(0);" class="blue save-btn">保存</a>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>2018-08-21</td>
+                        <td></td>
+                        <td>1.2221</td>
+                      </tr>
+                      <tr>
+                        <td>2018-08-21</td>
+                        <td></td>
+                        <td>1.2221</td>
+                      </tr>
+                      <tr>
+                        <td>2018-08-21</td>
+                        <td></td>
+                        <td>1.2221</td>
+                      </tr>
+                      <tr>
+                        <td>2018-08-21</td>
+                        <td></td>
+                        <td>1.2221</td>
+                      </tr>
+                      <tr>
+                        <td>2018-08-21</td>
+                        <td></td>
+                        <td>1.2221</td>
+                      </tr>
+                    </table>
+                  </div>
+                  <div class="pagination">
+                   <a href="javascript:void(0);" class="prev btn-default">&lt;</a>
+                   <a href="javascript:void(0);" class="active">1</a>
+                   <a href="javascript:void(0);">2</a>
+                   <a href="javascript:void(0);">3</a>
+                   <span>...</span>
+                   <a href="javascript:void(0);">12</a>
+                   <a href="javascript:void(0);">13</a>
+                   <a href="javascript:void(0);" class="next">&gt;</a>
+                 </div> -->
+                  <!-- 产品信息状态3 end -->
+                 <div class="speak">
+                   <h3>操作说明：</h3>
+                   <p>1.首次使用，请上传净值表；</p>
+                   <p>2.将data@xingyoucai.com添加到您接收托管发送净值的邮件组里，即托管发送给您的净值同时发送到data@xingyoucai.com邮箱，星钛系统自动解析，不用您每日更新净值。<span class="blue">（推荐）</span></p>
+                   <p>3.或每天按一下格式（文本/Excel）将产品净值发送至data@xingyoucai.com邮箱</p>
+                   <p>邮件主题：星钛净值报送-XXXX基金-XXXX日期（“星钛净值报送”为必须关键字）<br>邮件正文如下：（必须是表格形式，内容为文本格式，不可以为贴图或者excel粘贴）</p>
+                   <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                    <tr>
+                        <td width="20%">产品名称</td>
+                        <td width="20%">备案编号</td>
+                        <td width="20%">净值日期</td>
+                        <td width="20%">单位净值</td>
+                        <td width="20%">累计净值</td>
+                      </tr>
+                      <tr>
+                        <td>中子星星海母基金</td>
+                        <td>SCD121</td>
+                        <td>2018-08-08</td>
+                        <td>1.1001</td>
+                        <td>1.2001</td>
+                      </tr>
+                      <tr>
+                        <td>中子星星海母基金</td>
+                        <td>SCD121</td>
+                        <td>2018-08-08</td>
+                        <td>1.1001</td>
+                        <td>1.2001</td>
+                      </tr>
+                   </table>
+                   <br>
+                   <p class="small">注：可以一次发送多个产品多个日期的净值，顺序向下即可。</p>
+                 </div>
+                </div>
+                <div class="title clearfix">
+                  <h2 class="icon icon03 float_l">上传估值表</h2>
+                  <p class="float_l"><a href="javascript:void(0);" class="download blue">点击下载</a></p>
+                  <p class="float_l">最多支持一次性批量上传600份估值表</p>
+                  <a href="javascript:void(0);" class="up down float_r">展开</a>
+                </div>
+                <div class="block valuation">
+                  <!-- 状态1 -->
+                  <div class="upload-box">
+                    <br><br>
+                    <p>还未上传估值表</p>
+                    <div class="upload">
+                      <p class="button button-blue">上传估值表</p>
+                      <input type="file" class="upload-input" name="UpLoadFile">
+                    </div>
+                  </div>
+                  <!-- 状态1 -->
+
+                  <!-- 状态2 -->
+                  <!-- <ul>
+                    <li>
+                      <a href="javascript:void(0);" class="delete float_r"></a>
+                      <p>估值表11111111111111</p>
+                    </li>
+                    <li>
+                      <a href="javascript:void(0);" class="delete float_r"></a>
+                      <p>估值表11111111111111</p>
+                    </li>
+                    <li>
+                      <a href="javascript:void(0);" class="delete float_r"></a>
+                      <p>估值表11111111111111</p>
+                    </li>
+                  </ul>
+                  <div class="pagination">
+                   <a href="javascript:void(0);" class="prev btn-default">&lt;</a>
+                   <a href="javascript:void(0);">首页</a>
+                   <a href="javascript:void(0);" class="active">1</a>
+                   <a href="javascript:void(0);">2</a>
+                   <a href="javascript:void(0);">3</a>
+                   <span>...</span>
+                   <a href="javascript:void(0);">12</a>
+                   <a href="javascript:void(0);">13</a>
+                   <a href="javascript:void(0);">末页</a>
+                   <a href="javascript:void(0);" class="next">&gt;</a>
+                  </div>
+                  <div class="upload-box">
+                      <div class="upload">
+                        <p class="button button-blue">上传估值表</p>
+                        <input type="file" class="upload-input" name="UpLoadFile">
+                      </div>
+                  </div>
+                  <div class="table">
+                      <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                        <tr>
+                          <th width="14%">持仓日期</th>
+                          <th width="9%">证券ID</th>
+                          <th width="28%">证券名称</th>
+                          <th width="7.5%">证券类型</th>
+                          <th width="9.5%">成本价值</th>
+                          <th width="11%">成本价格</th>
+                          <th width="10%">数量</th>
+                          <th width="11%">持仓市值</th>
+                        </tr>
+                        <tr>
+                          <td>2018-08-21</td>
+                          <td>000050</td>
+                          <td>深交所_已上市_普通_股票_成本_深天马A</td>
+                          <td>1</td>
+                          <td>103488</td>
+                          <td>11.76</td>
+                          <td>8800</td>
+                          <td>102784</td>
+                        </tr>
+                        <tr>
+                          <td>2018-08-21</td>
+                          <td>000050</td>
+                          <td>深交所_已上市_普通_股票_成本_深天马A</td>
+                          <td>1</td>
+                          <td>103488</td>
+                          <td>11.76</td>
+                          <td>8800</td>
+                          <td>102784</td>
+                        </tr>
+                        <tr>
+                          <td>2018-08-21</td>
+                          <td>000050</td>
+                          <td>深交所_已上市_普通_股票_成本_深天马A</td>
+                          <td>1</td>
+                          <td>103488</td>
+                          <td>11.76</td>
+                          <td>8800</td>
+                          <td>102784</td>
+                        </tr>
+                        <tr>
+                          <td>2018-08-21</td>
+                          <td>000050</td>
+                          <td>深交所_已上市_普通_股票_成本_深天马A</td>
+                          <td>1</td>
+                          <td>103488</td>
+                          <td>11.76</td>
+                          <td>8800</td>
+                          <td>102784</td>
+                        </tr>
+                        <tr>
+                          <td>2018-08-21</td>
+                          <td>000050</td>
+                          <td>深交所_已上市_普通_股票_成本_深天马A</td>
+                          <td>1</td>
+                          <td>103488</td>
+                          <td>11.76</td>
+                          <td>8800</td>
+                          <td>102784</td>
+                        </tr>
+                        <tr>
+                          <td>2018-08-21</td>
+                          <td>000050</td>
+                          <td>深交所_已上市_普通_股票_成本_深天马A</td>
+                          <td>1</td>
+                          <td>103488</td>
+                          <td>11.76</td>
+                          <td>8800</td>
+                          <td>102784</td>
+                        </tr>
+                        <tr>
+                          <td>2018-08-21</td>
+                          <td>000050</td>
+                          <td>深交所_已上市_普通_股票_成本_深天马A</td>
+                          <td>1</td>
+                          <td>103488</td>
+                          <td>11.76</td>
+                          <td>8800</td>
+                          <td>102784</td>
+                        </tr>
+                        <tr>
+                          <td>2018-08-21</td>
+                          <td>000050</td>
+                          <td>深交所_已上市_普通_股票_成本_深天马A</td>
+                          <td>1</td>
+                          <td>103488</td>
+                          <td>11.76</td>
+                          <td>8800</td>
+                          <td>102784</td>
+                        </tr>
+                        <tr>
+                          <td>2018-08-21</td>
+                          <td>000050</td>
+                          <td>深交所_已上市_普通_股票_成本_深天马A</td>
+                          <td>1</td>
+                          <td>103488</td>
+                          <td>11.76</td>
+                          <td>8800</td>
+                          <td>102784</td>
+                        </tr>
+                      </table>
+                  </div>
+                  <div class="pagination">
+                     <a href="javascript:void(0);" class="prev btn-default">&lt;</a>
+                     <a href="javascript:void(0);">首页</a>
+                     <a href="javascript:void(0);" class="active">1</a>
+                     <a href="javascript:void(0);">2</a>
+                     <a href="javascript:void(0);">3</a>
+                     <span>...</span>
+                     <a href="javascript:void(0);">12</a>
+                     <a href="javascript:void(0);">13</a>
+                     <a href="javascript:void(0);">末页</a>
+                     <a href="javascript:void(0);" class="next">&gt;</a>
+                  </div>
+                  <div class="upload-box">
+                      <div class="upload">
+                        <p class="button button-blue">查看报告</p>
+                        <input type="file" class="upload-input" name="UpLoadFile">
+                      </div>
+                  </div> -->
+                 <!-- 状态2 -->
+
+                </div>
+                <div class="block net-value">
+                  <!-- 产品信息状态1 start -->
+                  <div class="upload-box">
+                    <p>还未上传净值表</p>
+                    <div class="upload">
+                      <p class="button button-blue">上传净值表</p>
+                      <input type="file" class="upload-input" name="UpLoadFile">
+                    </div>                    
+                    <a href="javascript:void(0);" class="button button-blue">查看报告</a>
+                  </div>
+                  <!-- 产品信息状态1 end -->
+
+                  <!-- 产品信息状态2 start -->
+                  <!-- <div class="table">
+                    <a href="javascript:void(0);" class="blue change">更新</a>
+                    <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                      <tr>
+                        <th width="33.33%">净值日期</th>
+                        <th width="33.33%">&nbsp;</th>
+                        <th width="33.33%">净值</th>
+                      </tr>
+                      <tr>
+                        <td>2018-08-21</td>
+                        <td></td>
+                        <td>1.2221</td>
+                      </tr>
+                      <tr>
+                        <td>2018-08-21</td>
+                        <td></td>
+                        <td>1.2221</td>
+                      </tr>
+                      <tr>
+                        <td>2018-08-21</td>
+                        <td></td>
+                        <td>1.2221</td>
+                      </tr>
+                      <tr>
+                        <td>2018-08-21</td>
+                        <td></td>
+                        <td>1.2221</td>
+                      </tr>
+                      <tr>
+                        <td>2018-08-21</td>
+                        <td></td>
+                        <td>1.2221</td>
+                      </tr>
+                    </table>
+                  </div>
+                  <div class="pagination">
+                   <a href="javascript:void(0);" class="prev btn-default">&lt;</a>
+                   <a href="javascript:void(0);">首页</a>
+                   <a href="javascript:void(0);" class="active">1</a>
+                   <a href="javascript:void(0);">2</a>
+                   <a href="javascript:void(0);">3</a>
+                   <span>...</span>
+                   <a href="javascript:void(0);">12</a>
+                   <a href="javascript:void(0);">13</a>
+                   <a href="javascript:void(0);">末页</a>
+                   <a href="javascript:void(0);" class="next">&gt;</a>
+                 </div>
+                  <div class="upload-box">
+                    <div class="upload">
+                      <p class="button button-blue">上传净值表</p>
+                      <input type="file" class="upload-input" name="UpLoadFile">
+                    </div>
+                    <a href="javascript:void(0);" class="button button-blue">查看报告</a>
+                  </div> -->
+                  <!-- 产品信息状态2 end -->
+
+                  <!-- 产品信息状态3 start -->
+                  <!-- <div class="table">
+                    <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                      <tr>
+                        <th width="33.33%">净值日期</th>
+                        <th width="33.33%">&nbsp;</th>
+                        <th width="33.33%">净值</th>
+                      </tr>
+                      <tr>
+                        <td>
+                          <input type="text" class="text" name="">
+                        </td>
+                        <td></td>
+                        <td>
+                          <input type="text" class="text" name=""><a href="javascript:void(0);" class="blue save-btn">保存</a>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>2018-08-21</td>
+                        <td></td>
+                        <td>1.2221</td>
+                      </tr>
+                      <tr>
+                        <td>2018-08-21</td>
+                        <td></td>
+                        <td>1.2221</td>
+                      </tr>
+                      <tr>
+                        <td>2018-08-21</td>
+                        <td></td>
+                        <td>1.2221</td>
+                      </tr>
+                      <tr>
+                        <td>2018-08-21</td>
+                        <td></td>
+                        <td>1.2221</td>
+                      </tr>
+                      <tr>
+                        <td>2018-08-21</td>
+                        <td></td>
+                        <td>1.2221</td>
+                      </tr>
+                    </table>
+                  </div>
+                  <div class="pagination">
+                   <a href="javascript:void(0);" class="prev btn-default">&lt;</a>
+                   <a href="javascript:void(0);" class="active">1</a>
+                   <a href="javascript:void(0);">2</a>
+                   <a href="javascript:void(0);">3</a>
+                   <span>...</span>
+                   <a href="javascript:void(0);">12</a>
+                   <a href="javascript:void(0);">13</a>
+                   <a href="javascript:void(0);" class="next">&gt;</a>
+                 </div> -->
+                  <!-- 产品信息状态3 end -->
+                 <div class="speak">
+                   <h3>操作说明：</h3>
+                   <p>1.首次使用，请上传净值表；</p>
+                   <p>2.将data@xingyoucai.com添加到您接收托管发送净值的邮件组里，即托管发送给您的净值同时发送到data@xingyoucai.com邮箱，星钛系统自动解析，不用您每日更新净值。<span class="blue">（推荐）</span></p>
+                   <p>3.或每天按一下格式（文本/Excel）将产品净值发送至data@xingyoucai.com邮箱</p>
+                   <p>邮件主题：星钛净值报送-XXXX基金-XXXX日期（“星钛净值报送”为必须关键字）<br>邮件正文如下：（必须是表格形式，内容为文本格式，不可以为贴图或者excel粘贴）</p>
+                   <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                    <tr>
+                        <td width="20%">产品名称</td>
+                        <td width="20%">备案编号</td>
+                        <td width="20%">净值日期</td>
+                        <td width="20%">单位净值</td>
+                        <td width="20%">累计净值</td>
+                      </tr>
+                      <tr>
+                        <td>中子星星海母基金</td>
+                        <td>SCD121</td>
+                        <td>2018-08-08</td>
+                        <td>1.1001</td>
+                        <td>1.2001</td>
+                      </tr>
+                      <tr>
+                        <td>中子星星海母基金</td>
+                        <td>SCD121</td>
+                        <td>2018-08-08</td>
+                        <td>1.1001</td>
+                        <td>1.2001</td>
+                      </tr>
+                   </table>
+                   <br>
+                   <p class="small">注：可以一次发送多个产品多个日期的净值，顺序向下即可。</p>
+                 </div>
+                </div>
+                <div class="title clearfix">
+                  <h2 class="icon icon03 float_l">上传结算单</h2>
+                  <p class="float_l">期货账户：XXXXXXXXXXX</p>
+                  <a href="javascript:void(0);" class="up down float_r">展开</a>
+                </div>
+                <div class="block valuation">
+                  <!-- 状态1 -->
+                  <!-- <div class="upload-box">
+                    <br><br>
+                    <p>上传的结算单需是该期货账户的结算单，否则无法分析</p>
+                    <div class="upload">
+                      <p class="button button-blue">上传结算单</p>
+                      <input type="file" class="upload-input" name="UpLoadFile">
+                    </div>
+                  </div> -->
+                  <!-- 状态1 -->
+
+                  <!-- <div class="form">
+                    <h3>添加期货账户后才能上传分析结算单</h3>
+                    <dl>
+                      <dt>期货账户</dt>
+                      <dd>
+                        <input type="text" class="text">
+                      </dd>
+                    </dl>
+                    <dl>
+                      <dt>查询密码</dt>
+                      <dd>
+                        <input type="password" class="text input_invisible" >
+                      </dd>
+                    </dl>
+                    <div class="btn">
+                      <a href="javascript:void(0);" class="button button-blue">保存</a>
+                    </div>
+                  </div> -->
+                  
+                  <!-- 状态3 -->
+                  <ul>
+                    <li>
+                      <a href="javascript:void(0);" class="delete float_r"></a>
+                      <p>结算单文件名称结算单文件名称结算单文件名称</p>
+                    </li>
+                    <li>
+                      <a href="javascript:void(0);" class="delete float_r"></a>
+                      <p>结算单文件名称结算单文件名称结算单文件名称</p>
+                    </li>
+                    <li>
+                      <a href="javascript:void(0);" class="delete float_r"></a>
+                      <p>结算单文件名称结算单文件名称结算单文件名称</p>
+                    </li>
+                  </ul>
+                  <div class="pagination">
+                   <a href="javascript:void(0);" class="prev btn-default">&lt;</a>
+                   <a href="javascript:void(0);">首页</a>
+                   <a href="javascript:void(0);" class="active">1</a>
+                   <a href="javascript:void(0);">2</a>
+                   <a href="javascript:void(0);">3</a>
+                   <span>...</span>
+                   <a href="javascript:void(0);">12</a>
+                   <a href="javascript:void(0);">13</a>
+                   <a href="javascript:void(0);">末页</a>
+                   <a href="javascript:void(0);" class="next">&gt;</a>
+                  </div>
+                  <div class="upload-box">
+                    <div class="upload">
+                      <p class="button button-blue">上传结算单</p>
+                      <input type="file" class="upload-input" name="UpLoadFile">
+                    </div>                      
+                    <a href="javascript:void(0);" class="button button-blue">查看报告</a>
+                  </div>
+                  <div class="table">
+                      <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                        <tr>
+                          <th width="14%">持仓日期</th>
+                          <th width="9%">证券ID</th>
+                          <th width="28%">证券名称</th>
+                          <th width="7.5%">证券类型</th>
+                          <th width="9.5%">成本价值</th>
+                          <th width="11%">成本价格</th>
+                          <th width="10%">数量</th>
+                          <th width="11%">持仓市值</th>
+                        </tr>
+                        <tr>
+                          <td>2018-08-21</td>
+                          <td>000050</td>
+                          <td>深交所_已上市_普通_股票_成本_深天马A</td>
+                          <td>1</td>
+                          <td>103488</td>
+                          <td>11.76</td>
+                          <td>8800</td>
+                          <td>102784</td>
+                        </tr>
+                        <tr>
+                          <td>2018-08-21</td>
+                          <td>000050</td>
+                          <td>深交所_已上市_普通_股票_成本_深天马A</td>
+                          <td>1</td>
+                          <td>103488</td>
+                          <td>11.76</td>
+                          <td>8800</td>
+                          <td>102784</td>
+                        </tr>
+                        <tr>
+                          <td>2018-08-21</td>
+                          <td>000050</td>
+                          <td>深交所_已上市_普通_股票_成本_深天马A</td>
+                          <td>1</td>
+                          <td>103488</td>
+                          <td>11.76</td>
+                          <td>8800</td>
+                          <td>102784</td>
+                        </tr>
+                        <tr>
+                          <td>2018-08-21</td>
+                          <td>000050</td>
+                          <td>深交所_已上市_普通_股票_成本_深天马A</td>
+                          <td>1</td>
+                          <td>103488</td>
+                          <td>11.76</td>
+                          <td>8800</td>
+                          <td>102784</td>
+                        </tr>
+                        <tr>
+                          <td>2018-08-21</td>
+                          <td>000050</td>
+                          <td>深交所_已上市_普通_股票_成本_深天马A</td>
+                          <td>1</td>
+                          <td>103488</td>
+                          <td>11.76</td>
+                          <td>8800</td>
+                          <td>102784</td>
+                        </tr>
+                        <tr>
+                          <td>2018-08-21</td>
+                          <td>000050</td>
+                          <td>深交所_已上市_普通_股票_成本_深天马A</td>
+                          <td>1</td>
+                          <td>103488</td>
+                          <td>11.76</td>
+                          <td>8800</td>
+                          <td>102784</td>
+                        </tr>
+                        <tr>
+                          <td>2018-08-21</td>
+                          <td>000050</td>
+                          <td>深交所_已上市_普通_股票_成本_深天马A</td>
+                          <td>1</td>
+                          <td>103488</td>
+                          <td>11.76</td>
+                          <td>8800</td>
+                          <td>102784</td>
+                        </tr>
+                        <tr>
+                          <td>2018-08-21</td>
+                          <td>000050</td>
+                          <td>深交所_已上市_普通_股票_成本_深天马A</td>
+                          <td>1</td>
+                          <td>103488</td>
+                          <td>11.76</td>
+                          <td>8800</td>
+                          <td>102784</td>
+                        </tr>
+                        <tr>
+                          <td>2018-08-21</td>
+                          <td>000050</td>
+                          <td>深交所_已上市_普通_股票_成本_深天马A</td>
+                          <td>1</td>
+                          <td>103488</td>
+                          <td>11.76</td>
+                          <td>8800</td>
+                          <td>102784</td>
+                        </tr>
+                      </table>
+                  </div>
+                  <div class="pagination">
+                     <a href="javascript:void(0);" class="prev btn-default">&lt;</a>
+                     <a href="javascript:void(0);">首页</a>
+                     <a href="javascript:void(0);" class="active">1</a>
+                     <a href="javascript:void(0);">2</a>
+                     <a href="javascript:void(0);">3</a>
+                     <span>...</span>
+                     <a href="javascript:void(0);">12</a>
+                     <a href="javascript:void(0);">13</a>
+                     <a href="javascript:void(0);">末页</a>
+                     <a href="javascript:void(0);" class="next">&gt;</a>
+                  </div>
+                  <div class="upload-box">
+                      <div class="upload">
+                        <p class="button button-blue">查看报告</p>
+                        <input type="file" class="upload-input" name="UpLoadFile">
+                      </div>
+                  </div>
+                 <!-- 状态3 -->
+                </div>
+              </div>
+              <div class="switch-box">
+                <div class="form team-idea">
+                  <div class="box clearfix">
+                    <p class="prompt">完善投研团队的信息，让资方更了解团队。至少提交一位投研人员的信息。</p>
+                    <dl>
+                      <dt>
+                        <div class="upload">
+                          <div class="img"><img src="images/13.jpg"></div>
+                          <input type="file" class="upload-input" name="UpLoadFile">
+                          <!-- <p class="error">头像格式错误，请重新上传</p> -->
+                        </div>
+                      </dt>
+                      <dd>
+                        <div class="idea-top clearfix">
+                          <div class="idea-cont"><input type="text" placeholder="姓名" class="text"></div>
+                          <div class="idea-cont"><input type="text" placeholder="职位" class="text"></div>
+                          <div class="idea-cont"><input type="text" placeholder="手机号" class="text"></div>
+                        </div>
+                        <textarea class="text" placeholder="履历"></textarea>
+                        <p class="add"><a href="javascript:void(0);" class="blue">添加成员</a></p>      
+                      </dd>
+                    </dl>
+                    <p class="prompt">完善投研团队的信息，让资方更了解团队。至少提交一位投研人员的信息。</p>
+                    <dl>
+                      <dt>
+                        <div class="upload">
+                          <div class="img"><img src="images/13.jpg"></div>
+                          <input type="file" class="upload-input" name="UpLoadFile">
+                          <!-- <p class="error">头像格式错误，请重新上传</p> -->
+                        </div>
+                      </dt>
+                      <dd>
+                        <div class="idea-top clearfix">
+                          <div class="idea-cont"><input type="text" placeholder="姓名" class="text"></div>
+                          <div class="idea-cont"><input type="text" placeholder="职位" class="text"></div>
+                          <div class="idea-cont"><input type="text" placeholder="手机号" class="text"></div>
+                          <a href="javascript:void(0);" class="close"></a>
+                        </div>
+                        <textarea class="text" placeholder="履历"></textarea>
+                        <p class="add"><a href="javascript:void(0);" class="blue">添加成员</a></p>                   
+                      </dd>
+                    </dl>
+                  </div>
+                  <div class="btn">
+                   <!--  <p class="add-btn"><a href="javascript:void(0);" class="blue">添加成员</a></p> -->
+                    <a href="javascript:void(0);" class="button button-blue">保存</a>
+                  </div>
+                </div>                
+              </div>
+              <div class="switch-box">
+                <div class="form system">
+                  <div class="box clearfix">
+                    <dl>
+                      <dt>投资理念</dt>
+                      <dd>
+                        <textarea class="text" placeholder="输入内容"></textarea>                  
+                      </dd>
+                    </dl>
+                    <dl>
+                      <dt>风控体系</dt>
+                      <dd>
+                        <textarea class="text" placeholder="输入内容"></textarea>                  
+                      </dd>
+                    </dl>
+                  </div>
+                  <div class="btn">
+                    <a href="javascript:void(0);" class="button button-blue">保存</a>
+                  </div>
+                </div>                
+              </div>
+            </div>
+          </article>
+        </section>
+
+        <footer class="footer">      
+           <a href="javascript:void(0);">关于我们</a>
+           <a href="javascript:void(0);">使用说明</a>
+           <a href="javascript:void(0);" class="last">联系我们</a>
+           <span>Copyright© 2012-2020</span>
+        </footer>
+    </div>
+    <!-- container over -->
+
+
+<!-- loading -->
+<div class="layer layer-loading">
+  <div class="cover"></div>
+  <div class="layer-tip">
+     <img src="images/loading2.gif">
+  </div>
+</div>
+
+<div class="layer">
+  <div class="cover"></div>
+  <div class="layer-tip layer-tip-big">
+     <a href="javascript:void(0);" class="close"></a>
+     <h2>提示</h2>
+     <br>
+     <p>您的结算单分析已完成！</p>
+     <div class="btn">
+       <a href="javascript:void(0);" class="button button-blue">立即查看</a>
+     </div>
+  </div>
+</div>
+
+<div class="layer">
+  <div class="cover"></div>
+  <div class="layer-tip layer-tip-big">
+     <a href="javascript:void(0);" class="close"></a>
+     <h2>提示</h2>
+     <p style="line-height: 36px;padding: 24px 0 0;">结算单数据比较丰满，小星正在努力分析中...<br>您可以先使用星钛的其他功能。去<a href="javascript:void(0);" class="blue">我的星钛</a><a href="javascript:void(0);" class="blue">基金公司</a><a href="javascript:void(0);" class="blue">基金产品</a><br>稍后小星提示您分析完成后，即可查看报告</p>
+     <br>
+  </div>
+</div>
+
+<script language="javascript" type="text/javascript" src="js/jquery.js"></script>
+<script language="javascript" type="text/javascript" src="js/application.js"></script>
+<script type="text/javascript">
+  $('.add-btn').click(function(){
+    var add=('.team-idea .box');
+    var idea = $("<p class='prompt'>完善投研团队的信息，让资方更了解团队。至少提交一位投研人员的信息。</p><dl>"+"<dt>"+"<div class='upload'><div class='img'><img src='images/13.jpg'></div><input type='file' class='upload-input' name='UpLoadFile'></div>"+"</dt>"+"<dd>"+"<div class='idea-top clearfix'>+<div class='idea-cont'><input type='text' placeholder='姓名' class='text'></div><div class='idea-cont'><input type='text' placeholder='职位' class='text'></div><div class='idea-cont'><input type='text' placeholder='手机号' class='text'></div><a href='javascript:void(0);' class='close'></a></div><textarea class='text' placeholder='履历'></textarea>"+"</dd>"+"</dl>");
+    idea.appendTo(add);
+    $('.close').click(function(){
+      var _this=$(this);
+      _this.parent().parent().parent().prev().remove();
+      _this.parent().parent().parent().remove();
+    })
+  })
+  $('.close').click(function(){
+    var _this=$(this);
+      _this.parent().parent().parent().prev().remove();
+      _this.parent().parent().parent().remove();
+  })
+</script>
+
+<!--[if lte IE 10]>
+<script language="javascript" type="text/javascript" src="js/placeholder.js"></script>
+<![endif]-->
+</body>
+</html>

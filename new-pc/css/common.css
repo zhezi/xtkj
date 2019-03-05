@@ -1,0 +1,434 @@
+@charset "utf-8";
+/* CSS Document */
+/****************************
+ * version:1.0
+ * Date:2018-04-18
+ *
+ */
+/*左浮动和右浮动
+ --------------*/
+.float_l {
+    float: left;
+}
+.float_r {
+    float: right;
+}
+.float_r, .float_l {
+    _display: inline;
+}
+.container{
+    position: relative;
+}
+.header{
+    position: relative;
+    z-index: 10;
+    width: 100%;
+    background: #02478f;
+    transition: all 0.5s ease;
+    -webkit-transition: all 0.5s ease;
+    line-height: 0;
+    box-sizing: content-box;
+}
+.header *, .header *:before, .header *:after{
+    box-sizing: content-box;    
+}
+
+.special-header{
+    background: none;
+}
+.header-fixed{
+    position: fixed;
+    top: 0;
+    left: 0;
+    transition: all 0.5s ease;
+    -webkit-transition: all 0.5s ease;
+}
+.header .head{
+    font-size: 0;
+    position: relative;
+    margin: 0 3.2% 0 66px;
+}
+.header .logo{
+    background: url(../images/logo.png) 0 center no-repeat;
+    padding: 30px 0 0 103px;
+    width: 0;
+    display: inline-block;
+    margin: 15px 70px 0 0;
+}
+.header .nav{
+    width: 57%;
+    text-align: left;
+}
+.header .before-nav{
+    width: auto;
+    text-align: center;
+    padding: 0 160px;
+    margin: 0 auto;
+}
+.header .nav li{
+    margin: 0 1px;
+    position: relative;
+    display: inline-block;
+    *display: inline;
+    _display: inline;
+}
+.header .nav a{
+    color: #fff;
+    font-size: 14px;
+}
+.header .nav .name{
+    position: relative;
+    min-width: 74px;
+    height: 60px;
+    line-height: 60px;
+    padding: 0 14px;
+    display: block;
+    text-align: center;
+    z-index: 5;
+    transition: all 0.5s ease;
+    -webkit-transition: all 0.5s ease;
+}
+.header .nav .current,
+.header .nav .active,
+.header .nav .name:hover{
+    background: #026ddb;
+}
+.header .nav .name span{
+    background: url(../images/arrow-bottom.png) right center no-repeat;
+    padding: 0 13px 0 0;    
+    display: inline-block;
+}
+.header .nav .subnav{
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    line-height: 38px;
+    text-align: center;
+    display: none;
+}
+.header .nav .subnav a{
+    display: block;
+    background: #026ddb;
+    font-size: 12px;
+}
+.header .nav .subnav a:hover{    
+    background: #248df8;;
+}
+.header .item{
+    position: absolute;
+    right: 10px;
+    top: 0;
+    width: 420px;
+    text-align: right;
+    padding: 15px 0 0;
+}
+.header .search{
+    position: relative;
+    width: 222px;
+    padding: 0 26px 0 16px;
+    border: 1px solid #94c3f5;
+    line-height: 28px;
+    display: inline-block;
+    *display: inline;
+    _display: inline;
+    -moz-border-radius: 14px;
+    -webkit-border-radius: 14px;
+    border-radius: 14px;
+    margin: 0 5% 0 0;
+}
+.header form{
+    display: inline-block;
+    vertical-align: middle;
+}
+.search .search-btn{
+    background: url(../images/icon07.png) no-repeat;
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    width: 20px;
+    height: 18px;
+    display: inline-block;
+}
+.search .input-text{
+    width: 100%;
+    background: none;
+    line-height: 26px;
+    height: 26px;
+    border: 0;
+    padding: 0;
+    color: #fff;    
+    font-size: 14px;
+    vertical-align: middle;
+}
+.input-text::-webkit-input-placeholder{
+    color:#94c3f5;
+}
+.input-text:-moz-placeholder{
+    color:#94c3f5;
+}
+.header .consult{
+    background: url(../images/icon08.png) 0 center no-repeat;
+    line-height: 30px;
+    color: #f8f8f8;
+    font-size: 14px;
+    vertical-align: middle;
+    display: inline-block;
+    padding: 0 0 0 22px;
+    margin: 0 3.6% 0 0;
+    display: none;
+}
+
+.header .user{
+    position: relative;
+    width: 110px;
+    vertical-align: middle;
+    display: inline-block;
+    *display: inline;
+    _display: inline;
+    font-size: 14px;
+    padding: 10px 0;
+    margin: -10px 0;
+}
+.header .user-idea{
+    width: 102px;
+    display: block;
+}
+.header .user img{
+    position: absolute;
+    top: 0px;
+    left: 0;
+    width: 49px;
+    height: 49px;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    border: 1px solid #cfe0f5;
+    display: none;
+}
+.header .user p{
+    background: url(../images/arrow-bottom.png) right center no-repeat;   
+    line-height: 30px;
+    color: #f8f8f8;
+    padding: 0 12px 0 0;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    -o-text-overflow: ellipsis;
+    overflow: hidden;
+    display: block;
+    position: relative;
+    margin: 0;
+}
+.header .user ul{
+    position: absolute;
+    top: 55px;
+    left: -10px;
+    width: 130px;
+    display: none;
+    background: #026ddb;
+}
+.header .user li{    
+    position: relative;
+}
+.header .user li a{
+    line-height: 30px;
+    color: #fff;
+    display: block;
+    text-align: left;
+    padding: 0 20px;
+}
+.header .user li a:hover{
+    background: #248df8;
+}
+.header .user li span{
+    display: inline-block;
+    position: absolute;
+    top: 7px;
+    right: 20px;
+    width: 14px;
+    height: 16px;
+    opacity: 0.5;
+    filter: alpha(opacity=50);
+}
+.header .user .icon04{
+    background: url(../images/icon04.png) no-repeat;   
+}
+.header .user .icon05{
+    background:url(../images/icon05.png) no-repeat;
+}
+.header .user .icon06{
+    background:url(../images/icon17.png) no-repeat;
+}
+.header .user .icon07{
+    background:url(../images/icon27.png) no-repeat;
+}
+.header .user li a:hover span{
+    opacity: 1;
+    filter: alpha(opacity=100);
+}
+.header .item .login-btn,
+.header .item .register-btn{
+    border:1px solid #fff;
+    color: #ececec;
+    font-size: 16px;
+    line-height: 28px;
+    padding: 0 18px;
+    display: inline-block;
+    margin: 0 0 0 12px;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+}
+.header .item .register-btn{
+    background: #fff;
+    color: #1d88f3;
+}
+
+.footer{
+    background: #248df8;
+    padding: 38px 10px;
+    line-height: 14px;
+    text-align: center;
+    color: #c7e3fe;
+}
+.footer a{
+    border-right: 1px solid #c7e3fe;
+    color: #c7e3fe;
+    padding: 0 2.3% 0 0;
+    margin: 0 2.3% 0 0;
+    font-size: 14px;
+}
+
+
+/*分页*/
+.pagination{
+    padding: 30px 0;
+    text-align: center;
+    font-size: 0;
+}
+.pagination a,
+.pagination span{
+    padding: 0 13px;
+    margin: 0 2px;
+    display: inline-block;
+    line-height: 26px;
+    vertical-align: middle;
+    font-size: 14px;
+    border:1px solid #248df8;
+    color: #248df8;
+    border-radius: 3px;
+}
+.pagination span{
+    border: 0;
+    padding: 0;
+}
+.pagination a:hover,
+.pagination .active{
+    background: #248df8;
+    color: #fff;
+}
+.pagination .prev,
+.pagination .next{
+    background: #248df8;
+    color: #fff;
+}
+.pagination .prev:hover,
+.pagination .next:hover{
+    color: #248df8;
+    background: none;
+}
+.pagination .btn-default,
+.pagination .btn-default:hover{
+    background: #9faebd;
+    cursor: not-allowed;
+    color: #fff;
+    border: 1px solid #9faebd;
+}
+
+.step{
+    text-align: center;
+    max-width: 986px;
+    margin: 28px auto 14px;
+    height: 54px;
+    overflow: hidden;
+    border:1px solid #e7e9f1;
+}
+.step02{
+    max-width: 1040px;
+    margin: 0 auto 30px;
+}
+.step li{
+    float: left;
+    position: relative;
+    width: 33.33%;
+}
+.step p{
+    line-height: 54px;
+    vertical-align: middle;
+    display:block;
+    font-size: 18px;
+    margin: 0 -24px 0 0;
+    width: 107%;
+    background:#fff url(../images/login/step.png) 0 center no-repeat;
+}
+.step02 p{
+    background:#fff url(../images/login/step02.png) 0 center no-repeat;
+}
+.step .active p{
+    background:#fff url(../images/login/step-active.png) 0 center no-repeat;
+    color: #fff;
+}
+.step02 .active p{
+    background:#fff url(../images/login/step-active02.png) 0 center no-repeat;
+}
+.step .first p{
+    background:#fff;
+}
+.step .first.active p{
+    background:#fff url(../images/login/first-active.png) -20px center no-repeat;
+}
+.step02 .first.active p{
+    background:#fff url(../images/login/first-active.png) 0 center no-repeat;
+}
+.step .last.active p{
+    background:#fff url(../images/login/last-active.png) 0 center no-repeat;
+}
+
+
+/*.step .first.active p{
+    background:#fff url(../images/login/first-active.png) 0 center no-repeat;
+}*/
+.step .num{
+    display: inline-block;
+    text-align: center;
+    font-size: 16px;
+    line-height: 20px;
+    vertical-align: middle;
+    margin: 0 10px 0 0;
+    width: 18px;
+    height: 18px;
+    border: 1px solid #525252;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+}
+.step .active .num{
+    border: 1px solid #fff;
+}
+.step .finished p{
+    color: #0081e4;
+}
+.step .finished .num{
+    background: url(../images/login/icon01.png) no-repeat;
+    font-size: 0;
+    border: 0;
+    width: 20px;
+    height: 20px;
+    -moz-border-radius: 0;
+    -webkit-border-radius: 0; 
+    border-radius: 0; 
+}
+.step .active{
+    color: #0081e4;
+    z-index: 3;
+}

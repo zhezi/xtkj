@@ -1,0 +1,380 @@
+@charset "utf-8";
+/* CSS Document */
+/****************************
+ * version:1.0
+ * By:landry
+ * Date:2018-04-20
+ *
+ */
+.container{
+  font-size: 0;
+ }
+ .blue{
+  color: #0080ff;
+ }
+ .gray{
+  color: #999;
+ }
+ .error{
+  color: #f75a5e;
+ }
+
+.footer{
+  padding: 1.4rem 0 0;
+}
+.footer p{  
+  line-height: 0.4rem;
+  padding: 0.22rem 0 0.72rem;
+  font-size: 0.26rem;
+  text-align: center;
+  background: #fff;
+  position: fixed;
+  bottom:0;
+  left: 0;
+  width: 100%;
+}
+.footer span{
+  padding: 0 0 0 0.06rem;
+  font-family: 'sunsim';
+}
+.section{
+  padding: 0.56rem 0.4rem;
+  line-height: 0.4rem;
+  font-size: 0.24rem;
+}
+.login .header{
+  text-align: center;
+  line-height: 0.48rem;
+  font-size: 0.30rem;
+  padding: 0 0 0.36rem;
+}
+.login .header img{
+  width: 1.96rem;
+  margin: 0 0 0.06rem;
+}
+.register .user{
+  text-align: center;
+  line-height: 0.48rem;
+  font-size: 0.36rem;
+  padding: 0 0 0.48rem;
+}
+.register .user img{
+  width: 1.59rem;
+  margin: 0 0 0.24rem;
+}
+.box p{
+  line-height: 0.3rem;
+  font-size: 0.26rem;
+}
+.btn{
+  padding: 0.34rem 0 0.18rem;
+}
+.point{
+  line-height: 0.36rem;
+  font-size: 0.24rem;
+}
+.form li{
+  position: relative;
+  padding: 0.24rem 0 0;
+}
+.form li p{
+  line-height: 0.36rem;
+}
+.text{
+  border: 1px solid #d3e2f6;
+  line-height: 0.68rem;
+  font-size: 0.26rem;
+  padding: 0 0.24rem;
+  width: 100%;
+  box-sizing: border-box;
+}
+.text:focus{
+  border: 1px solid #0080ff;  
+}
+.short-text{
+  width: 50%;
+}
+.form .button{
+  position: absolute;
+  top: 0.24rem;
+  right: 0;
+  width: 45%;
+  line-height: 0.7rem;
+}
+.button{
+    display: inline-block;
+    text-align: center;
+    border:0;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+}
+.button-blue{
+    width: 100%;
+    line-height: 0.66rem;
+    font-size: 0.3rem;
+    background: #0080ff; 
+    color: #fff;
+    box-shadow: 0 5px 15px #9dcff5;
+    border-radius: 2px;
+}
+.button-code{
+    background: #cce3fe; 
+    color: #0080ff;
+}
+.button-gray{
+    background: #b6b6b6;
+    color: #fff;
+}
+.form label{
+    padding: 0 0 0 0.36rem;
+    position: relative;
+    display: inline-block;
+}
+.form label em{
+    width: 0.24rem;
+    height: 0.24rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: inline-block;
+    border: 1px solid #dde7f0;
+    -moz-border-radius: 1px;
+    -webkit-border-radius: 1px;
+    border-radius: 1px;
+}
+.form label .active{
+    background: url(../images/checked.png) center center no-repeat;
+    border: 1px solid #0081e4;
+}
+
+/*产品展示*/
+.product-show h3{
+  line-height: 0.3rem;
+  font-size: 0.24rem;
+  padding: 0.08rem 0;
+}
+.product-show p{
+  text-align: center;
+  line-height: 0.4rem;
+  font-size: 0.22rem;
+}
+.product-show .img{
+  text-align: center;
+  margin: 0.4rem auto 0.2rem;
+}
+.product-show .img img{
+  max-width: 100%;
+}
+
+.form-box .item{
+  position: relative;
+  background: #fff;
+  line-height: 0.7rem;
+  font-size: 0;
+  margin: 0 0 0.3rem;
+  padding: 0 0 0 24%;
+}
+.form-box .item label{
+  position: absolute;
+  left: 0;
+  top: 0;
+  display: inline-block;
+  font-size: 0.24rem;
+  width: 24%;
+}
+.form-box .select label{
+  cursor: pointer;
+}
+.form-box .text{
+  border: none;
+  background: transparent;
+  font-size: 0.22rem;
+  color: #495763;
+  line-height: 0.68rem;
+  height: 0.68rem;
+  padding: 0 0.1rem;
+  border: 1px solid #e5e5e5;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+}
+.form-box .select-box{
+  position: relative;
+  cursor: pointer;
+  padding: 0 0.36rem 0 0.1rem;
+  border: 1px solid #e5e5e5;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+  line-height: 0.68rem;
+}
+.form-box .select-box .text{
+  padding: 0 0.36rem 0 0;
+  background: url(../images/icon_03.png) 97% center no-repeat;
+  background-size: 0.28rem 0.16rem;
+  cursor: pointer;
+  border: 0;
+}
+.form-box .select-box ul{
+  position: absolute;
+  top: 0.68rem;
+  left: -1px;
+  width: calc(100% + 2px);
+  background: #f1f1f1;
+  border-top: 1px solid #e5e5e5;  
+  line-height: 0.78rem;
+  font-size: 0.24rem;
+  text-align: center;
+  display: none;
+}
+.form-box .select-box li{
+  border: 1px solid #e5e5e5;
+  border-top: 0;
+}
+.form-box .select-box li:hover{
+  background: #eef3f6;
+}
+.form-box .btn{
+  padding: 0.2rem 0 0;
+}
+.form-box .error{
+  font-size: 0.2rem;
+  line-height: 0.3rem;
+  padding: 0.1rem 0 0;
+}
+
+.found-page h2{
+  font-size: 0.26rem;
+  line-height: 0.36rem;
+  padding: 0.4rem 0 0.2rem;
+}
+.table{
+  text-align: center;
+  font-size: 12px;
+}
+.table th{
+  font-size: 12px;
+  font-weight: normal;
+  background: #f7f8fc;
+  line-height: 16px;
+  padding: 0.16rem 4px;
+  border-bottom: 1px solid #cfe0f6;
+}
+.table th .arrow{
+    background: url(../images/icon04.png) 0 0 no-repeat;
+    width: 10px;
+    height: 16px;
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0 0 0 4px;
+}
+.table th .arrow-up{
+    background: url(../images/icon05.png) 0 0 no-repeat;
+}
+.table th .arrow-down{
+    background: url(../images/icon06.png) 0 0 no-repeat;
+}
+.table tr:nth-child(odd){
+    background: #f7f8fc;
+}
+.table td{
+    line-height: 20px;
+    padding: 0.2rem 4px;
+}
+
+
+.found-page .section{
+  padding: 0.16rem 0.2rem;
+}
+.found-page .name{
+    padding: 0 0.1rem 0 0;
+    font-size: 14px;
+    line-height: 30px;
+}
+.found-page .time-box{
+  padding: 0 0 0.3rem;
+}
+.found-page .date-input{
+    position: relative;
+    font-size: 14px;
+    line-height: 30px;
+    width: 120px;
+    padding: 0 0.1rem;
+    border: 1px solid #cfe0f6;
+    vertical-align: middle;
+    display: inline-block;
+    *display: inline;
+    _display: inline;
+    -moz-border-radius: 2px;
+    -webkit-border-radius: 2px;
+    border-radius: 2px;
+}
+.found-page .date-input .text{
+    font-size: 14px;
+    height: 28px;
+    line-height: 28px;
+    border: 0;
+    text-align: left;
+    width: 100%;
+    outline: none;
+    padding: 0;
+}
+.found-page .time-icon{
+    position: absolute;
+    right: 10px;
+    top: 0px;
+    background: url(../images/icon09.png) center center no-repeat;
+    width: 24px;
+    height: 28px;
+    display: inline-block;
+}
+.found-page .time-icon:hover{
+    background: url(../images/icon09-hover.png) center center no-repeat;
+}
+
+.dropdown-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: 1000;
+  display: none;
+  float: left;
+  min-width: 200px;
+  padding: 5px 0;
+  margin: 2px 0 0;
+  font-size: 14px;
+  text-align: left;
+  list-style: none;
+  background-color: #fff;
+  -webkit-background-clip: padding-box;
+          background-clip: padding-box;
+  border: 1px solid #ccc;
+  border: 1px solid rgba(0, 0, 0, .15);
+  border-radius: 4px;
+  -webkit-box-shadow: 0 6px 12px rgba(0, 0, 0, .175);
+          box-shadow: 0 6px 12px rgba(0, 0, 0, .175);
+}
+.datetimepicker table{
+  width: 100%;
+  text-align: center;
+  line-height: 24px;
+}
+[class^="icon-"], [class*=" icon-"] {
+    display: inline-block;
+    width: 14px;
+    height: 14px;
+    margin-top: 1px;
+    *margin-right: .3em;
+    line-height: 14px;
+    vertical-align: text-top;
+    background-image: url(../images/glyphicons-halflings.png);
+    background-position: 14px 14px;
+    background-repeat: no-repeat;
+}
+.icon-arrow-right {
+    background-position: -264px -96px;
+}
+.icon-arrow-left {
+    background-position: -240px -96px;
+}

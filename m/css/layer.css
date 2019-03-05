@@ -1,0 +1,156 @@
+@charset "utf-8";
+/* CSS Document */
+/****************************
+ * version:1.0
+ *
+ */
+
+/*浮层*/
+.cover{
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: #000001; 
+    opacity: 0.6;
+    filter: alpha(opacity=60);
+    overflow: hidden;
+}
+/* 公用按钮 */
+.button{    
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+    display: inline-block;
+    transition: all 0.5s ease;
+    -webkit-transition: all 0.5s ease;
+    border: 0;
+    font-family: 'Arial','Microsoft YaHei';
+    border: none;
+    vertical-align: middle;
+    text-align: center;
+}
+.button-red{
+    line-height: 60px;
+    background: #b90d08;
+    font-size: 18px;
+    width: 100%;
+    color: #fff;
+}
+.button-red:hover{
+    background: #ef252a;
+}
+.button-blue{
+    background: #1c74cc;
+    line-height: 34px;
+    padding: 0 37px;
+    font-size: 16px;
+    color: #fff;
+}
+.button-blue:hover{
+    background: #609ddb;
+}
+.button-gray{
+    background: #ccc;
+    color: #fff;
+}
+
+.layer{
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 20;
+    display: none;
+    font-size: 0;
+}
+ .layer .layer-box{
+ 	position: absolute;
+ 	left: 5%;
+ 	top: 5%;
+    width: 90%;
+    height: 90%;
+    background: #fff;
+    margin: 0 auto;
+    border-radius: 6px;
+}
+.layer-box .close{
+	position: absolute;
+	top: 11px;
+	right: 18px;
+	width: 31px;
+	height: 31px;
+	display: inline-block;
+    background: url(../images/close.png) no-repeat;
+    background-size: 100% 100%;
+    z-index: 3;
+}
+.layer-box .content{
+	padding: 20px 5%;
+}
+.layer-box h2{
+	padding: 0 0 34px;
+	line-height: 34px;
+	font-size: 18px;
+	text-align: center;
+}
+.layer-box .btn{
+	text-align: center;
+	padding: 14px 0;
+	font-size: 0;
+}
+.layer-box .button{
+	width: 40.67%;
+	outline: none;
+}
+
+/*合格投资者认定*/
+#layer-state h1{
+	line-height: 40px;
+	font-size: 18px;
+	text-align: center;
+	padding: 0 0 14px;
+}
+#layer-state .content p{
+	color: #999;
+	font-size: 14px;
+	line-height: 24px;
+	padding: 0 0 14px;
+}
+#layer-state .content .item{
+    height: calc(55%);
+    overflow-y: scroll;
+}
+#layer-state .button{
+	line-height:44px;
+	font-size: 16px;
+	margin: 0 4%;
+}
+
+.layer-tip{
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    width: 220px;
+    padding: 20px;
+    border-radius: 5px;
+    background: rgba(0,0,0,0.8);
+    text-align: center;
+    font-size: 0;
+    margin: -64px 0 0 -130px;
+    color: #fff;
+}
+.layer-tip p{
+    font-size: 16px;
+    padding: 10px 0 20px;
+
+}
+.layer-tip .button{
+    padding: 0;
+    box-shadow: 0 0 0 #9dcff5;
+    max-width: 140px;
+    line-height: 40px;
+}
