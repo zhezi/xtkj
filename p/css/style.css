@@ -1655,10 +1655,21 @@ body{
     padding: 0 8px;
 }
 .cash-page .section .item{
-    padding: 30px 57px;
-    border:1px solid #cfe0f4;
+    padding: 20px 27px;
+    width: 44%;
+    border:1px solid #f1f1f1;
     margin: 30px 0;
     line-height: 32px;
+    font-size: 14px;
+}
+.cash-page .section .item .money{
+    display: none;
+}
+.cash-page .section .item.active{
+    border:1px solid #248df8;
+}
+.cash-page .section .item.active .money{
+    display: block;
 }
 .cash-page .section .item span{
     display: inline-block;
@@ -1668,7 +1679,7 @@ body{
     background: url(../images/icon28.png) center center no-repeat;
     font-size: 12px;
     color: #fff;
-    margin: 0 30px 0 10px;
+    margin: 0 10px 0 5px;
     padding: 0 0 0 6px;
     width: 35px;
     line-height: 18px;

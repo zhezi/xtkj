@@ -82,13 +82,23 @@
                 <p>产品服务：星钛科技付费版  季度使用权</p>
                 <p>订单号：1234567890</p>
               </div>
-              <div class="item">
-                <p class="money float_r">支付<strong class="orange">3850.00</strong>元</p>
-                <p>
-                  <span class="wx"><img src="images/wx-pay.png" alt=""></span>
-                  <span class="tag-mark">推荐</span>
-                  <span>亿万用户的选择，更快更安全</span>
-                </p>
+              <div class="block clearfix">
+                <div class="item active float_l">
+                  <p class="money float_r">支付<strong class="orange">3850.00</strong>元</p>
+                  <p>
+                    <span class="wx"><img src="images/wx-pay.png" alt=""></span>
+                    <span class="tag-mark">推荐</span>
+                    <span>亿万用户的选择，更快更安全</span>
+                  </p>
+                </div>
+                <div class="item float_r">
+                  <p class="money float_r">支付<strong class="orange">3850.00</strong>元</p>
+                  <p>
+                    <span class="wx"><img src="images/zfb-pay.png" alt=""></span>
+                    <!-- <span class="tag-mark">推荐</span>
+                    <span>亿万用户的选择，更快更安全</span> -->
+                  </p>
+                </div>
               </div>
               <div class="qr-code">
                 <img src="images/qr-code.jpg" alt="">
@@ -126,7 +136,10 @@
 <script language="javascript" type="text/javascript" src="js/jquery.js"></script>
 <script language="javascript" type="text/javascript" src="js/application.js"></script>
 <script type="text/javascript">  
-        
+  $('.item').click(function(){
+        var _this=$(this),_index=$(this).index();
+        _this.addClass('active').siblings('.item').removeClass('active');
+    })
   function countDown(time,day_elem,hour_elem,minute_elem,second_elem){
     var end_time = new Date(time).getTime(),
         sys_second = (end_time-new Date().getTime())/1000;
