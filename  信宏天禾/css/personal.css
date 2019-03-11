@@ -265,7 +265,8 @@
     border-bottom: 1px solid #0081e4;
     color: #0081e4;
 }
-.personal .switch-box{
+.personal .switch-box,
+.personal .switch-cont{
     display: none;
 }
 .personal .integral .switch{
@@ -1549,6 +1550,7 @@
     margin: 0 auto;
     color: #b6b6b6;
 }
+.personal .main .select-box .active,
 .personal .main .select-box a:hover{
     color: #0081e4;
 }

@@ -1685,6 +1685,10 @@ body{
     line-height: 18px;
     text-align: center;
 }
+.cash-page .qr-code{
+    width: 168px;
+    margin: 0 auto;
+}
 .cash-page .qr-code img{
     width: 146px;
     height: 146px;
