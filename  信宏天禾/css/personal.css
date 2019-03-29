@@ -2193,12 +2193,44 @@
     color: #495763;
 }
 /*收益明细*/
+.personal .income .table th:first-child,
+.personal .income .table td:first-child{
+    text-align: center;
+    padding: 0;
+}
+.personal .income .table th:first-child p{
+    width: auto;
+    text-align: center;
+}
+.personal .income .table td:last-child,
+.personal .income .table th:last-child{
+    text-align: center;
+    padding: 0;
+}
+.personal .table th:last-child span{
+    width: 80px;
+    display: inline-block;
+    text-align: center;
+}
+.personal .income .switch{
+    border-bottom: 0;
+    height: auto;
+    background: none;
+    margin: 0 0 5px;
+}
+.personal .income .switch a{
+    font-size: 14px;
+    line-height: 44px;
+    margin: 0 24px 0 0;
+}
+.personal .income .switch .active{
+    border-bottom: 0;
+}
 .personal .income .select{
     width: 98px;
     line-height: 26px;
     border: 1px solid #a8a8a8;
     text-align: center;
-    margin: 8px 80px 0 0;
         -moz-border-radius: 3px;
     -webkit-border-radius: 3px;
     border-radius: 3px;
