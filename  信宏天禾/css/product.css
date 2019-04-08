@@ -724,10 +724,10 @@
     border-top: 3px solid #dde7f0;
 }
 .step-item ul .one{
-    width: 25%;
+    width: 20%;
 }
 .step-item ul .two{
-    width: 26.5%;
+    width: 20.5%;
 }
 .step-item ul .three{
     width: 15.5%;
@@ -735,13 +735,16 @@
 .step-item ul .four{
     width: 23%;
 }
+.step-item ul .five{
+    width: 5%;
+}
 .step-item ul .pop{
     position: absolute;
     left: 15px;
     top: -32px;
 }
 .step-item .two .pop{
-    left: 52px;
+    left: 33px;
 }
 .step-item .four .pop{
     left: 62px;
@@ -780,6 +783,7 @@
     height: 3px;
     display: none;
 }
+.step-item ul .finished .line-blue,
 .step-item ul .active .line-blue{
     display: block;
 }
