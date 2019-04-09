@@ -40,11 +40,11 @@ a{
 }
 
 body,html {
-	font-size: 12px;
+	font-size: 14px;
 	font-family: PingFangSC-Light, 'helvetica neue', 'hiragino sans gb', arial, 'microsoft yahei ui', 'microsoft yahei', simsun, sans-serif;
     position: relative;
 	width: 100%;
-	color: #495763;
+	color: #2f2f2f;
     word-break: break-all;
     background: #f6f8fb;
 }
@@ -132,7 +132,7 @@ a.blue:hover{
     filter: alpha(opacity=80);
 }
 .red{
-	color: #f75a5e;
+	color: #e60012;
 }
 .yellow{
 	color: #e59b19;

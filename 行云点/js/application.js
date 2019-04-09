@@ -15,6 +15,19 @@ $(function($) {
             $(this).find('em').toggleClass('active');
         });
     };
+    // 左侧滚动条
+    if ($('.side-box').size()>0) {
+      function nano_height() {
+          var $height=$(window).height();
+          $(".nano").height($height);
+      }
+      nano_height();
+      $(window).resize(function() {
+         nano_height();
+         $(".nano").nanoScroller();
+      })
+      $(".nano").nanoScroller();
+    };
 
     //下拉选择
     if ($('.text-select').size()>0) {

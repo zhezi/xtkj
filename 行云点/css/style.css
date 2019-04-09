@@ -7,6 +7,7 @@
  */
 .row .section{
     padding: 0 0 0 240px;
+    min-height: 760px;
 }
 
 /*首页*/
@@ -75,4 +76,163 @@
 .index li:hover .item{
     background: #2f77d6;
     color: #fff;
+}
+/*主页修复*/
+.home-restore{
+    background: #fff;
+    margin: 26px 30px 58px;
+    padding: 30px 40px 16px;
+}
+.home-restore .point{
+    line-height: 30px;
+    padding: 0 0 22px;
+    font-size: 16px;
+}
+.home-restore .point span{
+    padding: 0 0 0 24px;
+}
+.home-restore li{
+    float: left;
+    width: 230px;
+    height: 260px;
+    margin: 0 30px 36px 0;
+}
+.home-restore .rotate-box{
+    position: relative;
+    width: 230px;
+    height: 218px;
+    padding: 6px 0;
+    border:1px solid #eaf1f9;
+    text-align: center;
+}
+.home-restore .rotate-box .number{
+    position: absolute;
+    top:-1px;
+    left: -1px;
+    color: #8a8a8a;
+    padding: 0 4px;
+    min-width: 16px;
+    text-align: center;
+    line-height: 24px;
+    border:1px solid #eaf1f9;
+}
+.home-restore .rotate-box img{
+    max-height: 218px;
+    height: 218px;
+    display: inline-block;
+}
+.rotate90{
+    transform:rotate(90deg);
+    -ms-transform:rotate(90deg);     /* IE 9 */
+    -moz-transform:rotate(90deg);    /* Firefox */
+    -webkit-transform:rotate(90deg); /* Safari 和 Chrome */
+    -o-transform:rotate(90deg); 
+}
+.rotate180{
+    transform:rotate(180deg);
+    -ms-transform:rotate(180deg);     /* IE 9 */
+    -moz-transform:rotate(180deg);    /* Firefox */
+    -webkit-transform:rotate(180deg); /* Safari 和 Chrome */
+    -o-transform:rotate(180deg); 
+}
+.rotate270{
+    transform:rotate(270deg);
+    -ms-transform:rotate(270deg);     /* IE 9 */
+    -moz-transform:rotate(270deg);    /* Firefox */
+    -webkit-transform:rotate(270deg); /* Safari 和 Chrome */
+    -o-transform:rotate(270deg); 
+}
+.rotate360{
+    transform:rotate(360deg);
+    -ms-transform:rotate(360deg);     /* IE 9 */
+    -moz-transform:rotate(360deg);    /* Firefox */
+    -webkit-transform:rotate(360deg); /* Safari 和 Chrome */
+    -o-transform:rotate(360deg); 
+}
+.home-restore ul{
+    margin: 0 -25px 0 0;
+}
+.home-restore li .item{
+    padding: 8px 0 0;
+    line-height: 26px;
+}
+.home-restore li .button{
+    line-height: 24px;
+    width: 60px;
+}
+.home-restore .rotate-btn{
+    background: #8a8a8a url(../images/rotate.png) center center no-repeat;
+    position: absolute;
+    right: -1px;
+    bottom: -1px;
+    width: 34px;
+    height: 34px;
+}
+/*对账单*/
+.statement{
+    margin: 30px;
+}
+.statement .left{
+    width: 41.5%;
+}
+.statement .left dl{
+    position: relative;
+    padding: 0 0 18px 75px;
+    min-height: 36px;
+}
+.statement .left dt{
+    position: absolute;
+    left: 0;
+    top:0;
+    line-height: 36px;
+    font-size: 16px;
+}
+.statement .left .text{
+    line-height: 36px;
+    height: 36px;
+    font-size: 14px;
+    padding: 0 8px;
+    border: 1px solid #cfe0f4;
+    width: 52%;
+}
+.statement .left .upload{
+    width: 120px;
+}
+.statement .left label{
+    padding: 0 0 0 20px;
+    position: relative;
+}
+.statement .right{
+    width: 58%;
+    line-height: 36px;
+}
+.statement .right p{
+    position: relative;
+    padding: 0 0 0 22px;
+}
+.statement .right span{
+    position: absolute;
+    top:0;
+    left: 0;
+}
+.statement .box{
+    background: #fff;
+    margin: 0 0 20px;
+    padding: 36px 40px;
+}
+.statement .table .button{
+    line-height: 26px;
+    padding: 0 10px;
+    min-width: 60px;
+
+}
+.statement .btn .button{
+    line-height: 40px;
+    padding: 0 25px;
+    font-size: 16px;
+    width: 120px;
+    margin: 6px 0 0;
+}
+.statement .report-box .btn{
+    padding: 24px 0 0;
 }
