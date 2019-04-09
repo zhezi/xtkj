@@ -1,0 +1,793 @@
+@charset "utf-8";
+/* CSS Document */
+/****************************
+ * version:1.0
+ * Date:2017-09-05
+ *
+ */
+
+ /*登录*/
+ html,body{
+    height: 100%;
+ }
+ .container{
+    background: #eef3f6;    
+ }
+.login{
+    height: 100%;
+    min-height: 620px;
+}
+.login .container{
+    height: 100%;
+    background: url(../images/bg.jpg) center center no-repeat;
+}
+.login table{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
+.login .form{
+    width: 500px;
+    color: #fff;
+}
+.form{
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 30px 0;
+}
+.login .form h1{
+    text-align: center;
+    line-height: 60px;
+    font-size: 48px;
+    padding: 0 0 50px;
+}
+.form h2{
+    font-size: 24px;
+    line-height: 40px;
+    text-align: center;
+    padding: 0 0 32px;
+    width: 800px;
+    margin: 0 -150px;
+}
+.form dl{
+    padding: 0 0 20px;
+}
+.form dd{
+    position: relative;
+}
+.form .text{
+    background: none;
+    padding:0 4%;
+    width: calc(92% - 2px);
+    border:1px solid #8ab3e7;
+    line-height: 58px;
+    height: 58px;
+    font-size: 16px;
+    color: #d3eafc;
+    outline: none;
+    -moz-border-radius: 1px;
+    -webkit-border-radius: 1px;
+    border-radius: 1px;
+}
+.form .text:focus{ 
+    color: #fff;
+    border:1px solid #fff;
+}
+.form .text-short{
+    padding:0 4%;
+    width: 55%;
+}
+.form .select-btn{    
+    background:url(../images/up.png) 96% center no-repeat;
+    cursor: pointer;
+}
+.form .text-select{
+    position: relative;
+    width: 100%;
+}
+.form .text-select.active .text{
+    border: 1px solid #a0cfff;
+}
+.form .text-select .item{
+    position: absolute;
+    top: 59px;
+    left: 0;
+    width: 100%;
+    background: #fff;
+    display: none;
+    z-index: 10;
+}
+.form .text-select .item-box{
+    max-height: 346px;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    border: 1px solid #e8e9ef;
+    border-bottom: 0;
+}
+.form .text-select li{
+    padding: 0 18px;
+    line-height: 58px;
+    font-size: 14px;
+    color:#2f2f2f;
+    border-bottom: 1px solid #e8e9ef;
+}
+.form .text-select li:hover{
+    color: #495763;
+}
+.form dd .button,
+.form dd .code{
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 160px;
+    height: 60px;
+    line-height: 60px;
+    font-size: 16px;
+}
+.form .button-code{
+    background: #cfe0f4;
+    color: #2f77d6;
+}
+.form .button-gray{
+    background: #cfe0f4;
+    color: #8a8a8a;
+}
+.form dd p{
+    line-height: 30px;
+    font-size: 14px;
+    margin: 0 0 -16px;
+}
+.form .point{    
+    font-size: 14px;
+    margin: -8px 0 20px;
+}
+.form .point a{
+    color: #d3eafc;
+}
+.form label{
+    padding: 0 0 0 22px;
+    position: relative;
+    display: inline-block;
+    line-height: 16px;
+}
+.form label em{
+    width: 14px;
+    height: 14px;
+    position: absolute;
+    top: 0px;
+    left: 0;
+    display: inline-block;
+    border: 1px solid #dde7f0;
+    -moz-border-radius: 1px;
+    -webkit-border-radius: 1px;
+    border-radius: 1px;
+}
+.form label .active{
+    background: url(../images/checked.png) 0 center no-repeat;
+}
+.form .way{
+    text-align: center;
+    line-height: 36px;
+    padding: 20px 0 0;
+    display: block;
+    color: #d3eafc;
+    font-size: 16px;
+}
+.form .button{
+    line-height: 58px;
+    font-size: 24px;
+    width: 100%;
+}
+.bg-bar{
+    height: 50px;
+    background: #0081e4;
+    margin: -20px 0 0;
+}
+.article{
+    background: #fff;
+    margin: -50px auto 50px;
+    padding: 70px 60px 100px;
+    max-width: 1080px;
+    min-height: 400px;
+}
+
+/*验证手机账户*/
+.back{
+    position: absolute;
+    top: 48px;
+    left: 40px;
+    background: url(../images/icon04.png) no-repeat;
+    width: 28px;
+    height: 28px;
+    display: inline-block;
+}
+.back:hover{
+    background: url(../images/icon04-hover.png) no-repeat;
+}
+/*设置新密码成功*/
+.success{
+    text-align: center;
+    padding: 80px 0 0;
+}
+.success h2{
+    padding: 36px 0 56px;
+    line-height: 36px;
+    font-size: 24px;
+}
+.success .button{
+    min-width: 160px;
+    line-height: 46px;
+    font-size: 18px;
+}
+/*经办人注册*/
+.register .step{
+    text-align: center;
+    margin: 10px auto 60px;
+    height: 54px;
+    overflow: hidden;
+    border:1px solid #dde7f0;
+}
+.register .step li{
+    float: left;
+    position: relative;
+    width: 33.33%;
+}
+.register .step p{
+    line-height: 54px;
+    vertical-align: middle;
+    display:block;
+    color:#b6b6b6;
+    font-size: 18px;
+    margin: 0 -24px 0 0;
+    width: 107%;
+    background:#fff url(../images/login/step.png) 0 center no-repeat;
+}
+.register .step .active p{
+    background:#fff url(../images/login/step-active.png) 0 center no-repeat;
+    color: #fff;
+}
+.register .step .first p{
+    background:#fff;
+}
+.register .step .last p{
+    background:#fff url(../images/login/last.png) 0 center no-repeat;
+}
+.register .step .first.active p{
+    background:#fff url(../images/login/first-active.png) 0 center no-repeat;
+}
+.register .step .last.active p{
+    background:#fff url(../images/login/last-active.png) 0 center no-repeat;
+}
+.register .step .num{
+    vertical-align: middle;
+    display: inline-block;
+    text-align: center;
+    font-size: 16px;
+    line-height: 20px;
+    vertical-align: middle;
+    margin: 0 10px 0 0;
+    width: 20px;
+    height: 20px;
+    border: 1px solid #b6b6b6;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+}
+.register .step .active .num{
+    border: 1px solid #fff;
+}
+.register .step .finished p{
+    color: #0081e4;
+}
+.register .step .finished .num{
+    background: url(../images/login/icon01.png) no-repeat;
+    font-size: 0;
+    border: 0;
+    -moz-border-radius: 0;
+    -webkit-border-radius: 0; 
+    border-radius: 0; 
+}
+.register .step .active{
+    color: #0081e4;
+    z-index: 3;
+}
+.register .form{
+    max-width: 640px;
+}
+.register .form dl{
+    position: relative;
+    padding: 0 0 0 124px;
+}
+.register .form dt{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100px;
+    padding: 10px 0;
+    font-size: 16px;
+    line-height: 32px;
+    text-align: right;
+    white-space: nowrap;
+}
+.register .form dd{
+    position: relative;
+    padding: 0 0 28px;
+    font-size: 0;
+}
+.register .form .text{
+    height: 50px;
+    line-height: 50px;
+    font-size: 16px;
+}
+.register .form .text-short{
+    width: 58%;
+}
+.register dd .button{
+    line-height: 52px;
+    height: 52px;
+}
+.register .point{
+    padding: 26px 0 0 124px;
+    text-align: center;
+}
+.register .article .btn{
+    padding: 0 0 0 124px;
+    text-align: center;
+    max-width: 700px;
+}
+.register .btn .button{
+    line-height: 46px;
+    font-size: 18px;
+    width: 100%;
+    max-width: 160px;
+}
+.register .btn p{
+    line-height: 36px;
+}
+.register .form .img{
+    position: absolute;
+    right:20px;
+    top: 15px;
+}
+/*完善资料*/
+.register h2{
+    font-size: 18px;
+    line-height: 30px;
+}
+.register .form02{
+    margin: 16px 0 0;
+    max-width: 728px;
+}
+.register .form02 dl{
+    padding: 0 0 0 182px;
+}
+.register .form02 dt{
+    width: 160px;
+}
+
+.register .article{
+    overflow:visible;
+}
+.register .form02 p.error{
+    position: absolute;
+    left: 103%;
+    bottom: auto;
+    top: 0;
+    line-height: 26px;
+    width: 350px;
+    padding: 0;
+}
+.register .text-select .item a{
+    display: inline-block;
+    *display: inline;
+    _display: inline;
+    margin: 0 2px 14px 0;
+    line-height: 26px;
+    font-size: 14px;
+    min-width: 84px;
+    padding: 0 6px 0 0;
+    text-align: center;
+}
+.register .text-select .item .active,
+.register .text-select .item a:hover{
+    color: #0081e4;
+}
+.register .item .text{
+    font-size: 14px;
+    height: 34px;
+    line-height: 34px;
+    border:0;
+    border-bottom: 1px solid #a0cfff;
+}
+#bank_code-error,
+#province_name-error,
+#city-error{
+    display: none!important;
+}
+.register .text-select .item .city-tab{
+    border-left: 1px solid #0081e4;
+    margin: 0 0 24px;
+    font-size: 0;
+}
+.register .text-select .item .city-tab a{
+    min-width: 75px;
+    line-height: 28px;
+    border: 1px solid #0081e4;
+    border-left: none;
+    margin: 0;
+    font-size: 16px;
+    color:#0081e4;
+    display: inline-block;
+}
+.register .text-select .item .city-tab .active,
+.register .text-select .item .city-tab a:hover{
+    background: #0081e4;
+    color: #fff;
+}
+.register .form .classify p{
+    padding: 0 0 0 58px;
+    position: relative;
+}
+.register .form .classify span{
+    position: absolute;
+    left: 0;
+    top: 5px;
+    width: 58px;
+    display: inline-block;
+    line-height: 26px;
+}
+.register .form .classify a{
+    min-width: 50px;
+    text-align: left;
+    display: inline-block;
+}
+.register .form .city a{
+    min-width:60px;
+    margin: 0 15px 14px 0;
+    text-align: left;
+}
+.register  .text-select .item{
+    top: 51px;
+}
+.register .text-select .item .search-btn,
+.register .text-select .item .search-btn:hover{
+    background: url(../images/login/icon03.png) no-repeat;
+    width: 18px;
+    height: 18px;
+    position: absolute;
+    right: 17px;
+    top: 9px;
+    margin: 0;
+    min-width: 18px;
+    display: inline-block;
+}
+.register .form02 .btn{
+    text-align: center;
+}
+.register .term{
+    font-size: 14px;
+    line-height: 18px;
+    padding: 10px 0 32px;
+}
+.register .block{
+    padding: 0 0 40px;
+}
+.register .type-box{
+    font-size: 0;
+    margin: 0 0 50px;
+}
+.register .type-box .first{
+    -moz-border-top-left-radius: 3px;
+    -webkit-border-top-left-radius: 3px;
+    border-top-left-radius: 3px;
+    -moz-border-bottom-left-radius: 3px;
+    -webkit-border-bottom-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+}
+.register .type-box .last{
+    -moz-border-top-right-radius: 3px;
+    -webkit-border-top-right-radius: 3px;
+    border-top-right-radius: 3px;
+    -moz-border-bottom-right-radius: 3px;
+    -webkit-border-bottom-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+}
+.register .type-box a{
+    line-height: 40px;
+    width: 126px;
+    font-size: 18px;
+    background: #b6b6b6;
+    display: inline-block;
+    text-align: center;
+    color: #fff;
+}
+.register .type-box .active{
+    background: #0081e4;
+}
+.register .data-box{
+    border-top: 1px solid #dde7f0;
+    border-left: 1px solid #dde7f0;
+    width: 1078px;
+    margin: 0 auto;
+}
+.register .data-box li{
+    width: 358px;
+    border-right: 1px solid #dde7f0;
+    border-bottom: 1px solid #dde7f0;
+    float: left;
+    position: relative;
+}
+.register .data-box .box{
+    padding: 22px 30px;
+    min-height: 234px;
+    position: relative;
+    font-size: 14px;
+    line-height: 30px;
+    text-align: center;
+}
+.register .data-box .box:hover{
+    -webkit-box-shadow: 0px 1px 18px #e5e5e5;
+    -moz-box-shadow: 0px 1px 18px #e5e5e5;
+    box-shadow: 0px 1px 18px #e5e5e5;    
+}
+.register .data-box .box-special{
+    padding: 22px;
+}
+.register .data-box h3{
+    font-size: 16px;
+    margin: 0 -20px;
+}
+.register .data-box .speak{
+    line-height: 18px;
+    min-height: 62px;
+    max-width: 280px;
+    margin: 0 auto;
+}
+.register .data-box .idea{
+    max-width: 270px;
+    margin: 0 auto;
+}
+.register .data-box .box-special .idea{
+    max-width: 314px;
+}
+.register .data-box .even{
+    text-align: left;
+}
+.register .data-box .item{
+    width: 70px;
+    padding: 8px 0 0;
+    position: relative;
+}
+.register .data-box .add{
+    background:#b6b6b6 url(../images/login/add.png) center center no-repeat;
+    position: absolute;
+    top: 51px;
+    right: 1px;
+    width: 14px;
+    height: 14px;
+    display: inline-block;
+}
+.register .upload{
+    width: 150px;
+    height: 138px;
+    color: #0081e4;
+    position: relative;
+    cursor: pointer;
+}
+.register .upload .img{
+    border:1px solid #0081e4;
+    margin: 0 0 5px;
+    width: 148px;
+    height: 100px;
+    overflow: hidden;
+}
+.register .upload .img p{
+    display: table-cell;
+    vertical-align:middle;
+    line-height: 90px;
+    *display: block;
+    *font-size: 100px;
+    *font-family:Arial;
+    width: 148px;
+    height: 100px;    
+}
+.register .upload-fail .img{
+    border:1px solid #f15755;
+}
+.register .upload img{
+    height: 100%;
+    vertical-align:middle;
+}
+.register .upload-input{    
+    opacity: 0;
+    filter: alpha(opacity=0);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 138px;
+    cursor: pointer;
+}
+.register .data-box .upload .add{
+    background:#0081e4 url(../images/login/add.png) center center no-repeat;
+    top: 88px;
+}
+.register .block .error{
+    line-height: 30px;
+    font-size: 14px;
+    padding: 4px 0 0 14px;
+}
+.register .block .error span{
+    font-size: 18px;
+    vertical-align: middle;
+    padding: 0 5px 0 0;
+}
+/*风险等级评估结果*/
+.register .success{
+    padding: 50px 0 0;
+}
+.register .success .item{
+    font-size: 16px;
+    padding: 36px 0 24px;
+    line-height: 36px;
+}
+.register .success h2{
+    font-size: 24px;
+    line-height: 32px;
+    padding: 0;
+}
+/*资料提交审核*/
+.register .fail{
+    padding: 12px 0 0;
+}
+.register .fail h2{
+    padding: 36px 0 14px;
+    line-height: 36px;
+    font-size: 24px;
+}
+.register .fail .item{
+    padding: 0 0 40px;
+    line-height: 30px;
+    font-size: 16px;
+}
+.register .fail .btn{
+    padding: 50px 0 0;
+    margin: 0 auto;
+}
+.register .fail.button{
+    max-width: 200px;
+    padding: 0 20px;
+}
+.register .product{
+    padding: 80px 0 0;
+}
+.register .product .box{
+    -moz-border-radius: 2px;
+    -webkit-border-radius: 2px;
+    border-radius: 2px;
+    border: 1px solid #dde7f0;
+    transition: all 0.5s ease;
+    -webkit-transition: all 0.5s ease;
+    position: relative;
+    margin:0 0 20px;
+}
+.register .product .box:hover{
+    -webkit-box-shadow: 0px 1px 18px #e5e5e5;
+    -moz-box-shadow: 0px 1px 18px #e5e5e5;
+    box-shadow: 0px 1px 18px #e5e5e5;    
+}
+.register .product .box h2{
+    font-size: 20px;
+    line-height: 32px;
+    padding: 0 0 15px 40px;
+    vertical-align: middle;
+    text-align: left;
+}
+.register .product .box .a-block{
+    padding: 28px 0 24px;
+}
+.register .product .box h2 a:hover{
+    color: #0081e4;
+}
+.register .product li{
+    width: 48.2%;
+}
+.register .product .box h2 .tag{
+    line-height: 22px;
+    vertical-align: middle;
+    padding: 0 9px;
+    display: inline-block;
+    font-size: 14px;
+    color: #fff;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+    margin: 0 0 0 6px;
+    background:#0081e4;
+}
+.register .product dl{
+    float: left;
+    text-align: center;
+    width: 25%;
+    line-height: 36px;
+}
+.register .product .first{
+    width: 48%;
+}
+.register .product .line{
+    width: 1px;
+    height: 54px;
+    margin: 7px 0 0;
+    background: #DEE6F1;
+}
+.register .product dt{
+    font-size: 18px;
+}
+.register .product .first dt{
+    font-size: 24px;
+}
+.register .product dt .small{
+    font-size: 14px;
+    line-height: 20px;
+}
+.register .product dd{
+    font-size: 14px;
+    color:#b6b6b6;
+}
+/*资料提交审核-未通过*/
+.register .fail .item{
+    max-width: 410px;
+    margin: 0 auto;
+    text-align: left;
+}
+/*风险等级评估*/
+.register .assess-section .step{
+    margin: 10px auto 30px;
+}
+.assess-section .speak{
+    text-align: center;
+    line-height: 48px;
+    font-size: 16px;
+    padding: 0 0 70px;
+}
+.assess-section .speak h1{
+    font-size: 30px;
+    line-height: 34px;
+}
+.assess-section .box{
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 26px 0 30px;
+    border-bottom: 1px solid #efefef;
+}
+.assess-section h2{
+    font-size: 20px;
+    padding: 0 0 22px;
+}
+.assess-section .box .item{
+    position: relative;
+    padding: 0 24px;
+}
+.assess-section .box label{    
+    font-size: 16px;
+    line-height: 42px;
+    display: inline-block;
+    padding: 0 0 0 38px;
+    vertical-align: middle;
+}
+.custom-checkbox input,
+.custom-radio input{
+    display: none;
+}
+.custom-radio label{
+    background:url(../images/radiobutton.png) 0 center no-repeat;
+}
+.custom-radio label.checked{
+    background:url(../images/radiobutton-active.png) 0 center no-repeat;
+}
+.register .assess-section .btn{
+    padding: 56px 0 0;
+    margin: 0 auto;
+}

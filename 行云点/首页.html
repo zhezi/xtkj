@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<title>行云点</title>
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="keywords" content="">
+<meta name="description" content="">
+<meta content="yes" name="apple-mobile-web-app-capable">
+<meta name="format-detection" content="telephone=no"/>
+<meta content="black-translucent" name="apple-mobile-web-app-status-bar-style">
+<link rel="icon" href="favicon.ico" />
+<link rel="stylesheet" href="css/reset.css">
+<link rel="stylesheet" href="css/common.css">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/layer.css">
+<!--[if lt IE 9]>
+<script src="js/html5.js"></script>
+<![endif]-->
+</head>
+
+<body>
+  <div class="container row">
+    <div class="section">
+      <div class="side-box">
+         <div class="nano-box">
+           <div class="nano">
+              <div class="overthrow nano-content description">
+                 <h2>行云系统</h2>
+                 <div class="user-img">
+                   <img src="images/01.jpg" alt="">
+                   <p>welcome</p>
+                   <h3>kushizhe</h3>
+                 </div>
+                 <div class="sidebar">
+                    <dl>
+                      <dt><a href="javascript:void(0);"><span class="icon icon01"></span><span>系统概览</span></a></dt>
+                      <dd>
+                      </dd>
+                    </dl>
+                    <dl class="qa-box" data-open="false">
+                      <dt><a href="javascript:void(0);" class="active"><span class="icon icon02"></span><span>对账单分析</span></a></dt>
+                      <dd>
+                        <a href="javascript:void(0);" class="active"><em></em><span class="name">纸质对账单</span></a>
+                        <a href="javascript:void(0);"><em></em><span class="name">电子对账单</span></a>
+                      </dd>
+                    </dl>
+                    <dl>
+                      <dt><a href="javascript:void(0);"><span class="icon icon03"></span><span>使用说明</span></a></dt>
+                      <dd>
+                      </dd>
+                    </dl>
+                    <dl>
+                      <dt><a href="javascript:void(0);"><span class="icon icon04"></span><span>问题反馈</span></a></dt>
+                      <dd>
+                      </dd>
+                    </dl>
+                 </div>
+
+                 <div class="idea">
+                   <div class="idea-box">
+                     <p class="icon-tel">010-56052671</p>
+                     <p class="icon-qq">160526719</p>
+                     <p class="icon-tel">liuhui@xingyoucai.com</p>
+                   </div>
+                 </div>
+              </div>
+           </div>
+         </div>
+      </div>
+      <div class="header clearfix">
+         <div class="user float_r">
+           <a href="javascript:void(0);" class="user-idea a-block">
+             <img src="images/01.jpg">
+             <p>Kushizhe</p>
+           </a>
+           <div class="set-box">
+             <span class="arrow"></span>
+             <ul>
+               <li><a href="javascript:void(0);">充值<span  class="icon01"></span></a></li>
+               <li><a href="javascript:void(0);">设置<span  class="icon02"></span></a></li>
+               <li><a href="javascript:void(0);">退出<span  class="icon03"></span></a></li>
+             </ul>
+           </div>
+         </div>
+      </div>
+      <div class="content index">
+         <div class="title blue">
+           <h1>行云信贷分析工具</h1>
+           <p>版本号v1.0</p>
+         </div>
+         <ul class="clearfix">
+          <li>
+            <div class="item">
+              <span class="icon icon01"></span>
+              <p>行云·信贷分析工具是为贷款员、客户经理、信贷审批人员、风险控制人员等信贷从业人员打造的一款银行对账单分析工具。</p>
+            </div>
+          </li>
+          <li>
+            <div class="item">
+              <span class="icon icon02"></span>
+              <p>针对纸质对账单有的扫描和解析功能帮助用户摆脱复杂且易出错的手工核验步骤，并以报告形式输出多维度计算结果。</p>
+            </div>
+          </li>
+          <li>
+            <div class="item">
+              <span class="icon icon03"></span>
+              <p>电子对账单分析功能帮助用户更快捷更准确的计算复杂数据，并输出标准报告文档进行多维度计算分析。</p>
+            </div>
+          </li>
+         </ul>
+      </div>
+    </div>
+  </div>
+  <!-- container over -->
+
+<script language="javascript" type="text/javascript" src="js/jquery.js"></script>
+<script language="javascript" type="text/javascript" src="js/jquery.easing.js"></script>
+<script language="javascript" type="text/javascript" src="js/jquery.nanoscroller.min.js"></script>
+<script language="javascript" type="text/javascript" src="js/application.js"></script>
+<script type="text/javascript">
+  function nano_height() {
+        var $height=$(window).height();
+        $(".nano").height($height);
+  }
+  nano_height();
+  $(window).resize(function() {
+     nano_height();
+  })
+  $(".nano").nanoScroller();
+</script>
+<!--[if lte IE 10]>
+<script language="javascript" type="text/javascript" src="js/placeholder.js"></script>
+<![endif]-->
+</body>
+</html>

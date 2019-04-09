@@ -1,0 +1,78 @@
+@charset "utf-8";
+/* CSS Document */
+/****************************
+ * version:1.0
+ * Date:2019-04-07
+ *
+ */
+.row .section{
+    padding: 0 0 0 240px;
+}
+
+/*首页*/
+.index{
+    padding: 95px 30px;
+    text-align: center;
+}
+.index .title{
+    line-height: 24px;
+    padding: 0 0 42px;
+}
+.index .title h1{
+    font-size: 30px;
+    line-height: 52px;
+}
+.index ul{
+    max-width: 1410px;
+    margin: 0 auto;
+}
+.index li{
+    float: left;
+    width: 33.33%;
+}
+.index li .icon{
+    width: 100px;
+    height:88px;
+    display: inline-block;
+    transition: all 0.5s ease;
+    -webkit-transition: all 0.5s ease;
+}
+.index li .icon01{
+    background: url(../images/icon11.png) no-repeat;
+}
+.index li:hover .icon01{
+    background: url(../images/icon11-hover.png) no-repeat;
+}
+.index li .icon02{
+    background: url(../images/icon12.png) no-repeat;
+}
+.index li:hover .icon02{
+    background: url(../images/icon12-hover.png) no-repeat;
+}
+.index li .icon03{
+    background: url(../images/icon13.png) no-repeat;
+}
+.index li:hover .icon03{
+    background: url(../images/icon13-hover.png) no-repeat;
+}
+.index li p{
+    padding: 34px 0 10px;
+    text-align: left;
+}
+.index li .item{
+    background: #fff;
+    color: #2f77d6;
+    width: 68.16%;
+    padding: 60px 10.6%;
+    line-height: 30px;
+    font-size: 16px;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    border-radius: 4px;
+    transition: all 0.5s ease;
+    -webkit-transition: all 0.5s ease;
+}
+.index li:hover .item{
+    background: #2f77d6;
+    color: #fff;
+}
