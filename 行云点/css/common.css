@@ -453,7 +453,8 @@ input:-ms-input-placeholder{  /* Internet Explorer 10-11 */
 }
 .table td{
     line-height: 26px;
-    padding: 18px 4px;
+    padding: 16px 4px;
+    min-width: 60px;
 }
 .table a.away{
     margin: 0 10px 0 0;
@@ -514,6 +515,52 @@ input:-ms-input-placeholder{  /* Internet Explorer 10-11 */
     height: 38px;
     cursor: pointer;
 }
+/*选择下拉*/
+.select{
+    position:relative;
+    width: 140px;
+    height: 24px;
+    line-height: 24px;
+    border: 1px solid #cfe0f4;
+}
+.select p{    
+    background: url(../images/up03.png) 95% center no-repeat;
+    padding: 0 32px 0 10px;
+    font-size: 14px;
+}
+.select .select-box{
+    position: absolute;
+    top: 25px;
+    left: 0;
+    width: 100%;
+    background: #fff;
+    z-index: 4;
+    display: none;
+    border-left: 1px solid #cfe0f4;
+    border-right: 1px solid #cfe0f4;
+    margin: 0 -1px;
+}
+.select .select-box li{
+    position: relative;
+    border-bottom: 1px solid #cfe0f4;
+    padding: 0 32px 0 10px;
+    display: block;
+}
+.select .select-box li a{
+    color: #8a8a8a;
+}
+.select .select-box li a:hover{
+    color: #2f2f2f;
+}
+.select .select-box em{
+    background: url(../images/close.png) center center no-repeat;
+    width: 32px;
+    height:24px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 3;
+}
 /*提示浮层*/
 .sign{
     position: relative;
@@ -568,10 +615,10 @@ input:-ms-input-placeholder{  /* Internet Explorer 10-11 */
 
 /*无内容提示*/
 .none-box{
-    padding: 50px 0;
+    padding: 20px 0;
     text-align: center;
-    line-height: 24px;
-    font-size: 16px;
+    line-height: 20px;
+    font-size: 14px;
 }
 
 /** 滚动条 **/
@@ -637,8 +684,8 @@ input:-ms-input-placeholder{  /* Internet Explorer 10-11 */
     display: block;
     width: 100%;
     font-size: 14px;
-    line-height: 40px;
-    padding: 30px 0 0;
+    line-height: 24px;
+    padding: 20px 0 0;
     text-align: center;
     position:relative;
     overflow: hidden;
