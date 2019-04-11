@@ -291,7 +291,7 @@
     width: 32%;
     margin: 20px 1.3% 0 0;
     line-height: 34px;
-    font-size: 16px;
+    font-size: 14px;
     min-height: 176px;
 }
 .report-page .idea02-box h3{
@@ -372,4 +372,153 @@
 }
 .report-page .total .money{
     padding: 0 0 0 30px;
+}
+
+
+.restore-page{
+    margin: 16px 34px 0;
+}
+.restore-page .top .item{
+    text-align: right;
+    line-height: 40px;
+}
+.restore-page .top .item a{
+    margin: 0 0 0 26px;
+}
+.restore-page .top .item a:hover{
+    color: #2f77d6;
+}
+.restore-page .block{
+    background: #fff;
+    margin: 16px 0 0;
+}
+.restore-page .block .left{
+    position: relative;
+    float: left;
+    width: 57%;
+    padding: 30px 0;
+    overflow: scroll;
+    text-align: center;
+}
+.left::-webkit-scrollbar {
+    width: 16px;     
+    height: 16px;
+}
+.left::-webkit-scrollbar-thumb {
+    background: #bcbcbc;
+}
+.left::-webkit-scrollbar-track {
+    border-radius: 0;
+    background: #eae9e9;
+}
+
+.restore-page .block .left img{
+    margin: 0 30px;
+}
+.restore-page .rotate-btn{
+    background: #8a8a8a url(../images/rotate.png) center center no-repeat;
+    position: absolute;
+    left: -1px;
+    top: -1px;
+    width: 34px;
+    height: 34px;
+}
+.restore-page .block .right{
+    float: left;
+    width: 43%;
+}
+.restore-page .right .cont{
+    padding: 30px;
+}
+.restore-page .point{
+    line-height: 24px;
+}
+.restore-page .point span{
+    padding: 0 0 0 32px;
+}
+.restore-page .right .select{
+    width: 100px;
+    line-height: 32px;
+    height: 32px;
+}
+.restore-page .select .select-box{
+    top:33px;
+}
+.restore-page .right .idea{
+    padding: 18px 0 10px;
+}
+.restore-page .show span{
+    position: relative;
+    line-height: 34px;
+    display: inline-block;
+    padding: 0 0 0 15px;
+    margin: 0 0 0 12px;
+}
+.restore-page .show span em{
+    position: absolute;
+    top:11px;
+    left: 0;
+    width: 10px;
+    height: 10px;
+    -moz-border-radius: 2px;
+    -webkit-border-radius: 2px;
+    border-radius: 2px;
+}
+.restore-page .table tr:nth-child(odd){
+    background: none;
+}
+.restore-page .show-model{
+    margin: -11px -5px;
+    border:1px solid #8a8a8a;
+    padding: 10px 0;
+}
+.restore-page .show .red em,
+.restore-page .red-show{
+    background: #fce5e7;
+    border:1px solid #e60012;
+}
+.restore-page .show .blue em,
+.restore-page .blue-show{
+    background: #eaf1fb;
+    border:1px solid #2f77d6;
+}
+.restore-page .show .gray em,
+.restore-page .gray-show{
+    background: #f3f3f3;
+    border:1px solid #8a8a8a;
+}
+.restore-page .right table{
+    border-top: 1px solid #cfe0f6;
+    border-left: 1px solid #cfe0f6;
+}
+.restore-page .right td,
+.restore-page .right th{
+    position: relative;
+    border-right: 1px solid #cfe0f6;
+    padding: 10px 4px;
+}
+.restore-page .right td{
+    padding: 0 4px;
+    border-bottom: 1px solid #cfe0f6;
+}
+.restore-page .right .btn{
+    text-align: left;
+    padding: 14px 0 0;
+}
+.restore-page .right .button{
+    margin: 0 20px 0 0;
+    width: 70px;
+    line-height: 30px;
+}
+.restore-page .m-check{
+    position: relative;
+    padding: 0;
+    margin: 10px auto;
+}
+.restore-page .m-check em{
+    top:0;
+    border:1px solid #8a8a8a;
+}
+.restore-page .m-check .active{
+    background: url(../images/checked3.png) center center no-repeat;
 }

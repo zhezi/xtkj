@@ -31,7 +31,7 @@ ul,li{ list-style:none;}
 
 a{
 	text-decoration:none;
-	color: #495763;	
+	color: #2f2f2f;
 	outline: none;
 	border: none;
 }
@@ -138,7 +138,7 @@ a.blue:hover{
 	color: #e59b19;
 }
 .gray{
-    color:#b6b6b6;
+    color:#8a8a8a;
 }
 a.gray:hover{
     color: #0081e4;
