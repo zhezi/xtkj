@@ -98,8 +98,8 @@ $(function($) {
         $('.qa-box').each(function(){
             var _this=$(this);
             _this.attr('data-open','false');
-            $('.qa-box:first').attr('data-open','true');
-            $('.qa-box:first').find('dd').slideDown(500);
+            // $('.qa-box:first').attr('data-open','true');
+            // $('.qa-box:first').find('dd').slideDown(500);
         });
 
             $('.qa-box dd').bind('click',function(event){
