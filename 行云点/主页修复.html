@@ -95,7 +95,7 @@
           <li>
             <div class="rotate-box">
               <span class="number">1</span>
-              <img src="images/02.jpg" alt="">
+              <a href="javascript:void(0);" url-img="<img src='images/29.jpg' alt=''>" class="look"><img src="images/02.jpg" alt=""></a>
               <a href="javascript:void(0);" class="rotate-btn"></a>
             </div>
             <div class="item">
@@ -106,7 +106,7 @@
           <li>
             <div class="rotate-box">
               <span class="number">1</span>
-              <img src="images/02.jpg" alt="">
+              <a href="javascript:void(0);" url-img="<img src='images/29.jpg' alt=''>" class="look"><img src="images/02.jpg" alt=""></a>
               <a href="javascript:void(0);" class="rotate-btn"></a>
             </div>
             <div class="item">
@@ -117,7 +117,7 @@
           <li>
             <div class="rotate-box">
               <span class="number">1</span>
-              <img src="images/02.jpg" alt="">
+              <a href="javascript:void(0);" url-img="<img src='images/29.jpg' alt=''>" class="look"><img src="images/02.jpg" alt=""></a>
               <a href="javascript:void(0);" class="rotate-btn"></a>
             </div>
             <div class="item">
@@ -128,7 +128,7 @@
           <li>
             <div class="rotate-box">
               <span class="number">1</span>
-              <img src="images/02.jpg" alt="">
+              <a href="javascript:void(0);" url-img="<img src='images/29.jpg' alt=''>" class="look"><img src="images/02.jpg" alt=""></a>
               <a href="javascript:void(0);" class="rotate-btn"></a>
             </div>
             <div class="item">
@@ -139,7 +139,7 @@
           <li>
             <div class="rotate-box">
               <span class="number">1</span>
-              <img src="images/02.jpg" alt="">
+              <a href="javascript:void(0);" url-img="<img src='images/29.jpg' alt=''>" class="look"><img src="images/02.jpg" alt=""></a>
               <a href="javascript:void(0);" class="rotate-btn"></a>
             </div>
             <div class="item">
@@ -150,7 +150,7 @@
           <li>
             <div class="rotate-box">
               <span class="number">1</span>
-              <img src="images/02.jpg" alt="">
+              <a href="javascript:void(0);" url-img="<img src='images/29.jpg' alt=''>" class="look"><img src="images/02.jpg" alt=""></a>
               <a href="javascript:void(0);" class="rotate-btn"></a>
             </div>
             <div class="item">
@@ -161,7 +161,7 @@
           <li>
             <div class="rotate-box">
               <span class="number">1</span>
-              <img src="images/02.jpg" alt="">
+              <a href="javascript:void(0);" url-img="<img src='images/29.jpg' alt=''>" class="look"><img src="images/02.jpg" alt=""></a>
               <a href="javascript:void(0);" class="rotate-btn"></a>
             </div>
             <div class="item">
@@ -172,7 +172,7 @@
           <li>
             <div class="rotate-box">
               <span class="number">1</span>
-              <img src="images/02.jpg" alt="">
+              <a href="javascript:void(0);" url-img="<img src='images/29.jpg' alt=''>" class="look"><img src="images/02.jpg" alt=""></a>
               <a href="javascript:void(0);" class="rotate-btn"></a>
             </div>
             <div class="item">
@@ -183,7 +183,7 @@
           <li>
             <div class="rotate-box">
               <span class="number">1</span>
-              <img src="images/02.jpg" alt="">
+              <a href="javascript:void(0);" url-img="<img src='images/29.jpg' alt=''>" class="look"><img src="images/02.jpg" alt=""></a>
               <a href="javascript:void(0);" class="rotate-btn"></a>
             </div>
             <div class="item">
@@ -194,7 +194,7 @@
           <li>
             <div class="rotate-box">
               <span class="number">1</span>
-              <img src="images/02.jpg" alt="">
+              <a href="javascript:void(0);" url-img="<img src='images/29.jpg' alt=''>" class="look"><img src="images/02.jpg" alt=""></a>
               <a href="javascript:void(0);" class="rotate-btn"></a>
             </div>
             <div class="item">
@@ -205,7 +205,7 @@
           <li>
             <div class="rotate-box">
               <span class="number">1</span>
-              <img src="images/02.jpg" alt="">
+              <a href="javascript:void(0);" url-img="<img src='images/29.jpg' alt=''>" class="look"><img src="images/02.jpg" alt=""></a>
               <a href="javascript:void(0);" class="rotate-btn"></a>
             </div>
             <div class="item">
@@ -216,7 +216,7 @@
           <li>
             <div class="rotate-box">
               <span class="number">1</span>
-              <img src="images/02.jpg" alt="">
+              <a href="javascript:void(0);" url-img="<img src='images/29.jpg' alt=''>" class="look"><img src="images/02.jpg" alt=""></a>
               <a href="javascript:void(0);" class="rotate-btn"></a>
             </div>
             <div class="item">
@@ -233,9 +233,25 @@
 <script language="javascript" type="text/javascript" src="js/jquery.js"></script>
 <script language="javascript" type="text/javascript" src="js/jquery.easing.js"></script>
 <script language="javascript" type="text/javascript" src="js/jquery.nanoscroller.min.js"></script>
+<script language="javascript" type="text/javascript" src="js/layer.js"></script>
 <script language="javascript" type="text/javascript" src="js/application.js"></script>
 <script type="text/javascript">
-  $(function () {
+  
+    $('.look').bind('click', function(){
+       var Url = $(this).attr("url-img");
+      layer.open({
+      type: 1,
+      title: false,
+      closeBtn: 0,
+      area: ['690px', '600px'],
+      skin: 'layui-layer-nobg', //没有背景色
+      shadeClose: true,
+      content: Url
+    })
+    })
+</script>
+<script type="text/javascript">
+$(function () {
 　　　　var i = 0;
 　　　　var classes = ['rotate90', 'rotate180', 'rotate270', 'rotate360'];
        $(".rotate-box").each(function(){
@@ -244,10 +260,12 @@
     　　　　　　$this.find('img').addClass(classes[i++ % 4]).removeClass(function(idx, cls) {
                 var classes = cls.split(' ');
     　　　　　　　　　　return classes.length > 1 ? classes[0] : '';
-    　　　　　　　　});
-    　  });
-   })
+    　　　　　　});
+    　      });
+        })
 })
+
+
 </script>
 <!--[if lte IE 10]>
 <script language="javascript" type="text/javascript" src="js/placeholder.js"></script>

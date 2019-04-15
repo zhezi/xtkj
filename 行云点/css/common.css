@@ -499,7 +499,7 @@ input:-ms-input-placeholder{  /* Internet Explorer 10-11 */
     -webkit-border-radius: 2px;
     border-radius: 2px;
 }
-.m-check .active{
+.check-box.active .m-check em{
     background: url(../images/checked2.png) center center no-repeat;
 }
 .upload{

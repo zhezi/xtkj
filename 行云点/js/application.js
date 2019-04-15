@@ -12,7 +12,16 @@ $(function($) {
     
     if ($('.m-login').size()>0) {
         $('.m-login').bind('click',function(){
-            $(this).find('em').toggleClass('active');
+            $(this).children('em').toggleClass('active');
+        });
+    };
+
+    if ($('.check-box').size()>0) {
+        $('.check-box01').bind('click',function(){
+            $(this).toggleClass('active');
+        });
+        $('.check-box02').bind('click',function(){
+            $(this).addClass('active').siblings().removeClass('active');
         });
     };
     // 左侧滚动条
