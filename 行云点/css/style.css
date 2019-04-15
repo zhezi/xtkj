@@ -187,13 +187,26 @@
     line-height: 36px;
     font-size: 16px;
 }
+.statement .left .input-box{
+    position: relative;
+    width: 52%;
+    min-width: 200px;
+}
+.statement .input-box .name-box{
+    top:38px;
+    left: 1px;
+}
+.statement .input-box li{
+    padding: 10px;
+    line-height: 20px;
+}
 .statement .left .text{
     line-height: 36px;
     height: 36px;
     font-size: 14px;
-    padding: 0 8px;
+    padding: 0 5%;
     border: 1px solid #cfe0f4;
-    width: 52%;
+    width: 90%;
 }
 .statement .left .upload{
     width: 120px;

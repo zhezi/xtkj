@@ -540,7 +540,8 @@ input:-ms-input-placeholder{  /* Internet Explorer 10-11 */
     overflow: hidden;
     display: block;
 }
-.select .select-box{
+.select .select-box,
+.input-box .name-box{
     position: absolute;
     top: 25px;
     left: 0;
@@ -552,7 +553,8 @@ input:-ms-input-placeholder{  /* Internet Explorer 10-11 */
     border-right: 1px solid #cfe0f4;
     margin: 0 -1px;
 }
-.select .select-box li{
+.select .select-box li,
+.input-box .name-box li{
     position: relative;
     border-bottom: 1px solid #cfe0f4;
     padding: 0 32px 0 10px;
