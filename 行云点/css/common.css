@@ -332,7 +332,10 @@ input:-ms-input-placeholder{  /* Internet Explorer 10-11 */
 .side-box .qa-box dt .active{
     background: url(../images/arrow-white.png) 196px center no-repeat;
 }
-.side-box dl dt .active,
+.side-box dl dt .active
+.side-box .qa-box .on a{
+    background: #2f77d6;
+}
 .side-box .qa-box .on a{
     background: #2f77d6 url(../images/arrow-white.png) 196px center no-repeat;
 }
