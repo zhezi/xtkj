@@ -149,6 +149,9 @@ input:-ms-input-placeholder{  /* Internet Explorer 10-11 */
     -moz-box-shadow: 2px 1px 12px #e2e8f1;
     box-shadow: 2px 1px 12px #e2e8f1;
 }
+.header .back{
+    margin: 5px 0 0;
+}
 .header .user{
     position: relative;
     width: 102px;
@@ -763,3 +766,8 @@ input:-ms-input-placeholder{  /* Internet Explorer 10-11 */
     100% {
         -webkit-transform: scale(0.75);
     }}
+@media screen and (min-height: 960px){
+    .side-box .idea-box{
+        position: fixed;
+    }
+}

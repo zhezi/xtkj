@@ -15,7 +15,7 @@
  }
 .login{
     height: 100%;
-    min-height: 620px;
+    min-height: 720px;
 }
 .login .table tr:nth-child(odd){
     background: none;
@@ -43,9 +43,7 @@
 }
 .login .form h1{
     text-align: center;
-    line-height: 60px;
-    font-size: 48px;
-    padding: 0 0 50px;
+    padding: 0 0 30px;
 }
 .form h2{
     font-size: 24px;
@@ -137,9 +135,17 @@
     background: #cfe0f4;
     color: #8a8a8a;
 }
-.form dd p{
+.form dd .error{
     line-height: 30px;
     margin: 0 0 -16px;
+}
+.login .form dd .error{
+    position: absolute;
+    left: 101%;
+    top:0;
+    width: 100px;
+    margin: 0;
+    padding: 15px 0 0;
 }
 .form .point{    
     margin: -8px 0 20px;
@@ -170,9 +176,10 @@
 }
 .form .way{
     text-align: center;
-    line-height: 36px;
     padding: 20px 0 0;
-    display: block;
+}
+.form .way a{
+    line-height: 36px;
     color: #d3eafc;
     font-size: 16px;
 }
@@ -180,6 +187,23 @@
     line-height: 58px;
     font-size: 24px;
     width: 100%;
+}
+.secret{
+    padding: 46px 0 0;
+}
+.secret .cont{
+    position: absolute;
+    left: 0;
+    bottom: 26px;
+    line-height: 20px;
+    text-align: center;
+    width: 100%;
+}
+.secret .cont a{
+    display: inline-block;
+    color: #d3eafc;
+    font-size: 14px;
+    border-bottom: 1px solid #d3eafc;
 }
 .article{
     background: #fff;

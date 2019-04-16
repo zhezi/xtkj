@@ -389,7 +389,11 @@
 .report-page .total .money{
     padding: 0 0 0 30px;
 }
-
+.report-box th:last-child,
+.report-box td:last-child{
+    padding: 16px 26px 16px 4px;
+    width: 186px;
+}
 
 .restore-page{
     margin: 16px 34px 0;
@@ -412,6 +416,7 @@
     position: relative;
     float: left;
     width: 57%;
+    height: 1030px;
     padding: 30px 0;
     overflow: scroll;
     text-align: center;
@@ -537,4 +542,136 @@
 }
 .restore-page .m-check .active{
     background: url(../images/checked3.png) center center no-repeat;
+}
+
+.introduce .header{
+    background: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 0;
+    -webkit-box-shadow: 0 0 0;
+    -moz-box-shadow: 0 0 0;
+    box-shadow: 0 0 0;
+}
+.introduce .head-box{
+    position: relative;
+    max-width: 1100px;
+    padding: 10px 30px;
+    margin: 0 auto;
+    color: #fff;
+}
+.introduce .head-box .logo{
+    background: url(../images/logo.png) no-repeat;
+    padding: 35px 0 0 123px;
+    display: inline-block;
+    margin: 2px 0;
+    width: 0;
+    height: 0;
+    overflow: hidden;
+}
+.head-box .item{
+    margin: 6px 0 0;
+    font-size: 0;
+}
+.head-box .item a{
+    background: #fff;
+    color: #0081e4;
+    font-size: 14px;
+    line-height: 30px;
+    padding: 0 18px;
+    display: inline-block;
+    margin: 0 0 0 12px;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+}
+.head-box .item .register-btn{
+    background: #246ccc;
+    color: #fff;
+}
+
+.introduce{
+    background: #fff;
+}
+.introduce .banner{
+    background: url(../images/introduce/01.jpg) center top no-repeat;
+    padding: 240px 10px 0;
+    position: relative;
+    text-align: center;
+    min-height: 398px;
+    color: #fff;
+}
+.introduce .banner h1{
+    line-height: 86px;
+    font-size: 60px;
+    letter-spacing: 6px;
+    font-weight: bold;
+}
+.introduce .banner p{
+    line-height: 74px;
+    font-size: 36px;
+    letter-spacing: 4px;
+}
+
+.introduce .section01{
+    border-bottom: 1px solid #cfe0f4;
+}
+.introduce .section01 li{
+    width: 25%;
+    float: left;
+    padding: 30px 0;
+    text-align: center;
+}
+.introduce .section01 h3{
+    line-height: 30px;
+    font-size: 16px;
+    padding: 8px 0 0;
+}
+.introduce .section01 p{
+    font-size: 14px;
+    color: #999;
+    max-width: 210px;
+    margin: 0 auto;
+}
+.introduce .section.bg{
+    background: #f7f8fc;
+}
+.introduce .section02 .box{
+    padding: 50px 0;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+.introduce .section02 .box img{
+    width: 664px;
+}
+.introduce .section02 .item{
+    width: 336px;
+    padding: 138px 0 0;
+    line-height: 40px;
+    font-size: 18px;
+    text-align: center;
+}
+.introduce .section02 .item h3{
+    line-height: 56px;
+    font-size: 30px;
+    padding: 0 0 6px;
+}
+.introduce .section02 .item p{
+    letter-spacing: 4px;    
+}
+.introduce .footer{
+    background: #0171e4;
+    padding: 24px 10px;
+    line-height: 14px;
+    text-align: center;
+    color: #c7e3fe;
+}
+.introduce .footer a{
+    border-right: 1px solid #c7e3fe;
+    color: #c7e3fe;
+    padding: 0 2.3% 0 0;
+    margin: 0 2.3% 0 0;
+    font-size: 14px;
 }

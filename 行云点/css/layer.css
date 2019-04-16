@@ -131,11 +131,13 @@
     font-size: 14px;
     padding: 20px 0 0;
 }
-#layer-remove .layer-box .line{
-    background: #999;
-    width: 310px;
-    height: 1px;
-    margin: 0 0 7px 3px;
+#layer-remove .layer-box .text{
+    border: 1px solid #cfe0f4;
+    width: 290px;
+    line-height: 24px;
+    height: 24px;
+    padding: 0 10px;
+    margin: 0 0 0 3px;
     display: inline-block;
     vertical-align: bottom;
 }
