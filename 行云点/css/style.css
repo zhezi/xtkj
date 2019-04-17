@@ -416,7 +416,7 @@
     position: relative;
     float: left;
     width: 57%;
-    height: 1030px;
+    height: 856px;
     padding: 30px 0;
     overflow: scroll;
     text-align: center;
@@ -447,7 +447,6 @@
 .restore-page .block .right{
     float: left;
     width: 43%;
-    height: 1030px;
 }
 .restore-page .right .cont{
     padding: 30px;
@@ -472,9 +471,10 @@
 .restore-page .right .table{
     position: relative;
     width: 100%;
-    height: 900px;
+    height: 800px;
     overflow: scroll;
     text-align: center;
+    padding: 0 10px 0 0;
 }
 .restore-page .right .table::-webkit-scrollbar {
     width: 16px;     
@@ -491,8 +491,8 @@
     position: relative;
     line-height: 34px;
     display: inline-block;
-    padding: 0 0 0 15px;
-    margin: 0 0 0 12px;
+    padding: 0 0 0 14px;
+    margin: 0 0 0 10px;
 }
 .restore-page .show span em{
     position: absolute;
@@ -541,6 +541,17 @@
     padding: 0 4px;
     border-bottom: 1px solid #cfe0f6;
     white-space: nowrap;
+}
+.restore-page .right .text{
+    border: 0;
+    display: block;
+    outline: 0;
+    line-height: 46px;
+    height: 46px;
+    width: 100%;
+    font-size: 14px;
+    text-align: center;
+    color: #2f2f2f;
 }
 .restore-page .right .btn{
     text-align: left;
