@@ -479,6 +479,9 @@ input:-ms-input-placeholder{  /* Internet Explorer 10-11 */
 .table .m-check em{
     position: relative;
 }
+.table .check-item .m-check em.active{
+    background: url(../images/checked2.png) center center no-repeat;
+}
 
 /*表单*/
 .m-check{
