@@ -389,6 +389,19 @@
 .report-page .total .money{
     padding: 0 0 0 30px;
 }
+.report-box th:first-child,
+.report-box td:first-child{
+    padding: 16px 4px 16px 26px;
+    text-align: left;
+}
+.report-box .table .m-check em{
+    position: relative;
+    top:0;
+}
+.report-box .m-check{
+    position: relative;
+    padding: 0;
+}
 .report-box th:last-child,
 .report-box td:last-child{
     padding: 16px 26px 16px 4px;

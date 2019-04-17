@@ -176,6 +176,7 @@ input:-ms-input-placeholder{  /* Internet Explorer 10-11 */
     -webkit-border-radius: 50%;
     border-radius: 50%;
     border: 2px solid #d8e6f6;
+    display: none;
 }
 .header .user p{
     background: url(../images/arrow-blue.png) right center no-repeat;   
@@ -274,7 +275,7 @@ input:-ms-input-placeholder{  /* Internet Explorer 10-11 */
     -moz-border-radius: 50%;
     -webkit-border-radius: 50%;
     border-radius: 50%;
-    border: 4px solid #d8e6f6;
+    border: 4px solid #194d88;
 }
 .side-box .user-img p{
     line-height: 20px;
@@ -294,8 +295,6 @@ input:-ms-input-placeholder{  /* Internet Explorer 10-11 */
     font-size: 16px;
     padding: 0 36px;
     display: block;
-    transition: all 0.5s ease;
-    -webkit-transition: all 0.5s ease;
 }
 .side-box dt a:hover,
 .side-box dt .active{
@@ -327,10 +326,10 @@ input:-ms-input-placeholder{  /* Internet Explorer 10-11 */
 }
 .side-box dd a{
     position: relative;
-    line-height: 22px;
+    line-height: 29px;
     font-size: 14px;
     margin: 5px 36px 0;
-    padding: 0 0 0 33px;
+    padding: 0 0 0 40px;
 }
 .side-box .qa-box dt .active{
     background: url(../images/arrow-white.png) 196px center no-repeat;
@@ -359,7 +358,7 @@ input:-ms-input-placeholder{  /* Internet Explorer 10-11 */
 .side-box dd em{
     background: #2f77d6;
     position: absolute;
-    left: 23px;
+    left: 30px;
     top:50%;
     margin: -3px 0 0;
     width: 5px;
@@ -438,10 +437,12 @@ input:-ms-input-placeholder{  /* Internet Explorer 10-11 */
     font-size: 16px;
     margin: 0 32px 0 0;
     color: #2f2f2f;
+    border-bottom: 1px solid #fff;
 }
 .switch a:hover,
 .switch .active{
     color: #2f77d6;
+    border-bottom: 1px solid #2f77d6;
 }
 .switch-box{
     display: none;
@@ -464,20 +465,16 @@ input:-ms-input-placeholder{  /* Internet Explorer 10-11 */
 .table td{
     line-height: 26px;
     padding: 16px 4px;
-    min-width: 60px;
+    min-width: 40px;
 }
 .table a.away{
     margin: 0 10px 0 0;
 }
 .table .check-item{
     position: relative;
-    padding: 0 0 0 63px;
 }
 .table span{
     vertical-align: middle;
-}
-.table .m-check em{
-    position: relative;
 }
 .table .check-item .m-check em.active{
     background: url(../images/checked2.png) center center no-repeat;
@@ -584,12 +581,15 @@ input:-ms-input-placeholder{  /* Internet Explorer 10-11 */
 /*提示浮层*/
 .sign{
     position: relative;
-    margin: 0 0 0 5;
+    margin: 0 0 0 5px;
     width: 26px;
     height: 26px;
     vertical-align: middle;
     display: inline-block;
     background: url(../images/sign.png) center center no-repeat;
+}
+.sign.away{
+    margin: 6px 0 0 10px;
 }
 .sign .speak{
     position: absolute;
