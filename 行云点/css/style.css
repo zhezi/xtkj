@@ -447,6 +447,7 @@
 .restore-page .block .right{
     float: left;
     width: 43%;
+    height: 1030px;
 }
 .restore-page .right .cont{
     padding: 30px;
@@ -471,6 +472,7 @@
 .restore-page .right .table{
     position: relative;
     width: 100%;
+    height: 900px;
     overflow: scroll;
     text-align: center;
 }
