@@ -468,6 +468,23 @@
 .restore-page .right .idea{
     padding: 18px 0 10px;
 }
+.restore-page .right .table{
+    position: relative;
+    width: 100%;
+    overflow: scroll;
+    text-align: center;
+}
+.restore-page .right .table::-webkit-scrollbar {
+    width: 16px;     
+    height: 16px;
+}
+.restore-page .right .table::-webkit-scrollbar-thumb {
+    background: #bcbcbc;
+}
+.restore-page .right .table::-webkit-scrollbar-track {
+    border-radius: 0;
+    background: #eae9e9;
+}
 .restore-page .show span{
     position: relative;
     line-height: 34px;
@@ -491,7 +508,7 @@
 .restore-page .show-model{
     margin: -11px -5px;
     border:1px solid #8a8a8a;
-    padding: 10px 0;
+    padding: 10px 3px;
 }
 .restore-page .show .red em,
 .restore-page .red-show{
@@ -521,6 +538,7 @@
 .restore-page .right td{
     padding: 0 4px;
     border-bottom: 1px solid #cfe0f6;
+    white-space: nowrap;
 }
 .restore-page .right .btn{
     text-align: left;
