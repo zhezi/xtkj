@@ -209,7 +209,17 @@
     width: 90%;
 }
 .statement .left .upload{
-    width: 120px;
+    width: 112px;
+    padding: 0;
+}
+.statement .upload-icon{
+    position: absolute;
+    top:0;
+    left: 0;
+    background: url(../images/upload.png) no-repeat;
+    width: 20px;
+    height: 18px;
+    display: inline-block;
 }
 .statement .left label{
     padding: 0 0 0 20px;
@@ -238,9 +248,9 @@
 }
 .statement .table .button{
     line-height: 26px;
-    padding: 0 10px;
-    min-width: 60px;
-
+    padding: 0 5px;
+    min-width: 90px;
+    margin: 0 4px 10px;
 }
 .statement .btn .button{
     line-height: 40px;
@@ -299,31 +309,55 @@
     font-size: 16px;
 }
 .report-page .idea02-box ul{
-    margin: 0 -1% 0 0;
+    margin: 0 -4% 0 0;
 }
 .report-page .idea02-box li{
-    background: #f7f7f7;
     float: left;
-    width: 32%;
-    margin: 20px 1.3% 0 0;
+    width: 30%;
+    margin: 20px 3.3% 0 0;
     line-height: 34px;
     font-size: 14px;
-    min-height: 176px;
+    min-height: 276px;
+    text-align: center;
 }
 .report-page .idea02-box h3{
-    font-size: 16px;
+    font-size: 14px;
+    line-height: 46px;
+    background: #f7f7f7;
+    margin: 0 -20px 18px;
+    text-align: center;
+    font-weight: bold;
+    -moz-border-top-left-radius: 3px;
+    -webkit-border-top-left-radius: 3px;
+    border-top-left-radius: 3px;
+    -moz-border-top-right-radius: 3px;
+    -webkit-border-top-right-radius: 3px;
+    border-top-right-radius: 3px;
 }
 .report-page .idea02-box .item{
     position: relative;
     line-height: 24px;
-    padding: 16px 20px 16px 76px;
+    padding: 0 20px 16px;
+    border: 1px solid #f7f7f7;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+    box-shadow: 0 0 12px #eae9e9;
 }
+.report-page .idea02-box .item .gray{
+    text-align: left;
+    max-width: 350px;
+    margin: 0 auto;
+}
+.report-page .idea02-box .item .away{
+    padding: 0 0 6px;
+    font-weight: bold;
+}
+
 .report-page .idea02-box .icon{
-    position: absolute;
-    left: 20px;
-    top:50px;
     width: 50px;
     height: 52px;
+    display: inline-block;
 }
 .report-page .idea02-box .icon01{
     background: url(../images/icon14.png) no-repeat;
@@ -581,6 +615,7 @@
     margin: 10px auto;
 }
 .restore-page .m-check em{
+    position: relative;
     top:0;
     border:1px solid #8a8a8a;
 }

@@ -140,12 +140,7 @@
     margin: 0 0 -16px;
 }
 .login .form dd .error{
-    position: absolute;
-    left: 101%;
-    top:0;
-    width: 100px;
-    margin: 0;
-    padding: 15px 0 0;
+    margin: 0 0 -16px;
 }
 .form .point{    
     margin: -8px 0 20px;
