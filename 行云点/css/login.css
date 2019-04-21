@@ -103,8 +103,6 @@
 }
 .form .text-select .item-box{
     max-height: 346px;
-    overflow-x: hidden;
-    overflow-y: scroll;
     border: 1px solid #e8e9ef;
     border-bottom: 0;
 }

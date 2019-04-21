@@ -4,7 +4,6 @@
  * version:1.0
  *
  */
- /*提示浮层小*/
 .layer{
     position: fixed;
     left: 0;
@@ -81,6 +80,14 @@
     overflow: hidden;
 }
 
+ /*提示浮层小*/
+ .layer-small{
+    padding: 30px 30px;
+    width: 360px;
+    min-height: 100px;
+    margin: -110px 0 0 -210px;
+}
+
 /*loading加载*/
 .layer-loading .layer-tip{
     padding: 10px 30px;
@@ -114,6 +121,7 @@
 }
 .layer-floating p{
     position: relative;
+    font-size: 16px;
 }
 #layer-remove .layer-tip{
     margin: -215px 0 0 -360px;
