@@ -130,19 +130,6 @@ $(function($) {
                 $('dd',_this).slideDown(500);
                 $('dt',_this).addClass('on');
                 _this.attr('data-open','true');
-                function scroll(){
-                    var scroll_offset = _this.offset();
-                    $("body,html").animate({
-                        scrollTop:scroll_offset.top
-                    },0);
-                    setTimeout(function () {
-                        var scroll_offset = _this.offset();
-                        $("body,html").animate({
-                            scrollTop:scroll_offset.top
-                        },0);
-                    }, 400);
-                }
-                _this.eq(_index).trigger(scroll())
             }else{
                 $('dd',_this).slideUp(500);
                 $('dt',_this).removeClass('on');
