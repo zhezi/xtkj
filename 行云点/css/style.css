@@ -631,10 +631,10 @@
 }
 .introduce .banner{
     background: url(../images/introduce/01.jpg) center top no-repeat;
-    padding: 240px 10px 0;
+    padding: 190px 10px 0;
     position: relative;
     text-align: center;
-    min-height: 398px;
+    min-height: 578px;
     color: #fff;
 }
 .introduce .banner h1{
@@ -647,6 +647,9 @@
     line-height: 74px;
     font-size: 36px;
     letter-spacing: 4px;
+}
+.introduce .video-box{
+    margin: 68px auto 0;
 }
 
 .introduce .section01{
