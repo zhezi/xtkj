@@ -630,11 +630,11 @@
     background: #fff;
 }
 .introduce .banner{
-    background: url(../images/introduce/01.jpg) center top no-repeat;
-    padding: 190px 10px 0;
+    background: url(../images/introduce/01.jpg) center bottom no-repeat;
+    padding: 200px 10px 0;
     position: relative;
     text-align: center;
-    min-height: 578px;
+    min-height: 440px;
     color: #fff;
 }
 .introduce .banner h1{
@@ -649,7 +649,32 @@
     letter-spacing: 4px;
 }
 .introduce .video-box{
-    margin: 68px auto 0;
+    margin: 50px auto 0;
+}
+.introduce .video-box a{
+    width: 97px;
+    line-height: 40px;
+    padding: 0 15px 0 38px;
+    display: inline-block;
+    margin: 0 15px;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+    color: #2e77d6;
+}
+.introduce .video-box .play-video{
+    background: #fff url(../images/icon20.png) 16px center no-repeat;
+}
+.introduce .video-box .play-video:hover{
+    color: #fff;
+    background: #1c56a0 url(../images/icon20-hover.png) 16px center no-repeat;
+}
+.introduce .video-box .play-report{
+    background: #fff url(../images/icon21.png) 16px center no-repeat;
+}
+.introduce .video-box .play-report:hover{
+    color: #fff;
+    background: #1c56a0 url(../images/icon21-hover.png) 16px center no-repeat;
 }
 
 .introduce .section01{

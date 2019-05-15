@@ -100,6 +100,7 @@ $(function($) {
     })
     $('.layer .close,.layer .close-btn').click(function(){
         $(".layer ").fadeOut();
+        $('html').css('overflow-y','scroll');
     })
 
     // 左侧导航切换
