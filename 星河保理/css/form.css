@@ -1,0 +1,384 @@
+@charset "utf-8";
+/* CSS Document */
+/****************************
+ * version:1.0
+ *
+ */
+.form{
+    font-size: 0;
+}
+.form li{
+    position: relative;
+    padding: 30px 0 0;
+}
+.text::-webkit-input-placeholder {
+    color: #999;
+}
+.text:-moz-placeholder {
+    color: #999;
+}
+.text::-moz-placeholder {
+    color: #999;
+}
+.text:-ms-input-placeholder {
+    color: #999;
+}
+.form .text{
+    padding:0 4%;
+    width: 92%;
+    border:1px solid #eee;
+    line-height: 44px;
+    height: 44px;
+    font-size: 14px;
+    color: #495763;
+    -moz-border-radius: 1px;
+    -webkit-border-radius: 1px;
+    border-radius: 1px;
+    outline: none;
+}
+.form .text.error{
+    border:1px solid #ed2e2e;
+}
+.form .text-short{
+    width: 61%;
+}
+.form li .button,
+.form li .code{
+    position: absolute;
+    right: 0;
+    top: 32px;
+    width: 34%;
+    max-width: 240px;
+    height: 60px;
+    line-height: 60px;
+    font-size: 20px;
+    letter-spacing: 0px;
+}
+.form .button-code.big{
+    font-size: 18px;
+    letter-spacing: 2px;
+}
+.form .button-code{
+    position: absolute;
+    right: 0;
+    top: 30px;
+    width: 130px;
+    line-height: 46px;
+    background: #ac9456;
+    color: #fff;
+    -moz-border-radius: 0;
+    -webkit-border-radius: 0;
+    border-radius: 0;
+    font-size: 14px;
+}
+.form .button-gray{
+    background: #eee;
+    color: #999;
+}
+.form .tips2{
+    line-height: 24px;
+    padding: 7px 0 0;
+    color: #ac9456;
+    text-align: left;
+}
+.form dl p.error,
+.form li p.error{
+    line-height: 20px;
+    font-size: 14px;
+    color: red;
+}
+.form li.special{
+    padding: 32px 0;
+}
+.form .point{    
+    font-size: 14px;
+    padding: 8px 0 0 0;
+    line-height: 40px;
+}
+.form .point label{
+    padding: 0 0 0 22px;
+    position: relative;
+    display: inline-block;
+    line-height: 40px;
+    color: #6b6b6b;
+    font-weight: normal;
+}
+.form .point label em{
+    width: 12px;
+    height: 12px;
+    position: absolute;
+    top: 13px;
+    left: 0;
+    display: inline-block;
+    border: 1px solid #ac9456;
+    -moz-border-radius: 1px;
+    -webkit-border-radius: 1px;
+    border-radius: 1px;
+}
+.form .point label .active{
+    background: url(../images/checked2.png) center center no-repeat;
+}
+.form dl{
+    position: relative;
+    padding: 10px 0 0 0;
+    margin: 0;
+}
+.form .special-dl{
+    margin: 0 0 -10px;
+}
+.form .special-dl p.error{
+    margin: 0;
+}
+.form dt{
+    padding: 4px 0;
+    font-size: 14px;
+    line-height: 26px;
+    white-space: nowrap;
+    font-weight: normal;
+}
+.form dl .check-box{
+    padding: 20px 0;
+    margin: 0 -24px 0 0;
+}
+.form dl .check-box label{
+    margin:0 15px 0 0;
+    font-size: 16px;
+}
+.form dl .radio-box{
+    font-size: 14px;
+}
+.form dl .radio-box input{
+    -webkit-appearance:radio;
+    margin: 0 8px 0 0;
+}
+.form dl .radio-box input,
+.form dl .radio-box span{
+    vertical-align: middle;
+    line-height: 20px;
+    display: inline-block;
+}
+.form dl .radio-box p{
+    float: left;
+    margin: 12px 70px 0 0;
+    line-height: 28px;
+    height: 28px;
+}
+.form dl .tips{
+    line-height: 20px;
+}
+.form dl .sign{
+    font-size: 12px;
+    line-height: 30px;
+}
+.form dl .sign02{
+    padding: 10px 0 0 8px;
+}
+.form dl .question-box{
+    position: relative;
+    background: #fff;
+    border:1px solid #fb7055;
+    top: 6px;
+    padding: 6px 9px;
+    -moz-border-radius: 2px;
+    -webkit-border-radius: 2px;
+    border-radius: 2px;
+    line-height: 24px;
+    font-size: 14px;
+    text-align: left;
+    display: none;
+    box-shadow: 2px 4px 5px #edd2cc;
+}
+.form dl .question-box p{
+    color: #2b2b2b;
+}
+.form .question-tit{
+    font-size: 14px;
+    line-height: 30px;
+    cursor: pointer;
+}
+.form .question-box .arrow-top{
+    position: absolute;
+    top: -13px;
+    left: 95px;
+    background: url(../images/arrow2.png) right center no-repeat;
+    left: 15%;
+    margin: 0 0 0 -8px;
+    width: 15px;
+    height: 14px;
+    border:0;
+}
+.form dl dt strong{
+    font-size: 18px;
+    margin: 0 0 0 5px;
+}
+.form dl dt strong{
+    display: inline-block;
+    vertical-align: middle;
+}
+.form .forget{
+    text-align: right;
+    line-height: 40px;
+    font-size: 14px;
+}
+.form .forget a{
+    color: #999;
+}
+.form .level-box {
+    margin: 0 -30px 0 0;
+    padding: 10px 0 0;
+}
+.form .level-box dt{
+    top: 4px;
+}
+.form .level-box .item{
+    float: left;
+    width: 29.5%;
+    margin: 0 2% 0 0;
+    text-align: center;
+    line-height: 26px;
+    cursor: pointer;
+}
+.form .level-box .item span{
+    background: #eee;
+    color: #999;
+    font-size: 14px;
+    line-height: 32px;
+    width: 100%;
+    display: inline-block;
+}
+.form .level-box .gray{
+    font-size: 10px;
+}
+.form .level-box .active span{
+    background: #ac9456;
+    color: #fff;
+}
+.form .btn{
+    padding:20px 0;
+    text-align: center;
+    line-height: 40px;
+    font-size: 14px;
+}
+.form .btn .button{
+    width: 100%;
+    max-width: 100%;
+    line-height: 48px;
+    height: 48px;
+    font-size: 16px;
+    display: inline-block;
+}
+.form .select2-box{
+    width: 100%;
+}
+.form .select2-container{
+    width: 100%!important;
+}
+.form .select2-container--default .select2-selection--single{
+    padding: 0 4%;
+    width: 92%;
+    box-sizing: content-box;
+    margin: 0;
+    line-height: 44px;
+}
+.form .select2-container .select2-selection--single .select2-selection__rendered{
+    padding: 0;
+    line-height: 44px;
+    font-size: 14px;
+}
+.form .select2-container--default .select2-selection--single .select2-selection__arrow b{
+    border-color: #ac9456 transparent transparent;
+    border-style: solid;
+    border-width: 8px 6px 0;
+}
+
+.form .select2-container--default.select2-container--open .select2-selection--single .select2-selection__arrow b {
+    border-color: transparent transparent #ac9456;
+    border-width: 0 6px 8px
+}
+.form .select2-container--default .select2-selection--single .select2-selection__arrow {
+    right: 10px;
+}
+
+/*提示浮层大*/
+#layer-visa{
+    overflow-y: scroll;
+}
+#layer-visa .cover{
+    position: fixed;
+}
+.layer-tip-big{
+    position: relative;
+    padding: 0 30px 30px;
+    width: 780px;
+    margin: 30px auto;
+    top: 0;
+    left: 0;
+    text-align: left;
+}
+.layer-tip-repeat{
+    position: absolute;
+    top: 0;
+    left: auto;
+    right: -120%;
+    margin: 0;
+    height: 100%;
+}
+.tel{
+    display: block;
+}
+.tel span{
+    background: url(../images/tel.png) 0 center no-repeat;
+    font-size: 16px;
+    line-height: 62px;
+    display: inline-block;
+    padding: 0 0 0 24px;
+    color: #2b2b2b;
+}
+
+
+.suggest{
+    background: #cb9c64;
+    padding: 26px 0.2rem;
+    line-height: 32px;
+    font-size: 14px;
+}
+.suggest p{
+    color: #fff;
+    font-size: 16px;
+}
+.suggest .away{
+  padding: 8px 0 4px;
+}
+.suggest .enter{
+    text-align: center;
+    display: block;
+    padding: 10px 0 0;
+}
+.center02{
+    text-align: center;
+}
+.suggest a{
+    color: #fff;
+}
+.suggest a:hover{
+    color: #ac9456;
+}
+.suggest a span{
+    padding: 0 0 0 6px;
+}
+.suggest .button{
+    border: 1px solid #fff;
+    line-height: 30px;
+    padding: 0 16px;
+    font-size: 16px;
+    width: auto;
+    display: inline-block;
+    margin: 0 10px 0 0;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+}
+.suggest .button:hover{
+    color: #cb9c64;
+    background: #fff;
+}
