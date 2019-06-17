@@ -100,7 +100,7 @@ input::-webkit-input-placeholder{
     vertical-align: middle;
     text-align: center;
     outline: none;
-    line-height: 0.88rem;
+    line-height: 0.98rem;
     font-size: 0.3rem;
     color: #fff;
     width: 100%;
@@ -321,6 +321,7 @@ input::-webkit-input-placeholder{
   display: inline-block;
   font-size: 0.26rem;
   width: 16%;
+  padding: 0 0.3rem 0 0;
 }
 .form-box .item .long{
   width: 55.71%;
@@ -475,7 +476,7 @@ input::-webkit-input-placeholder{
 }
 .table td{
   line-height: 0.36rem;
-  padding: 0.22rem 0.15rem;
+  padding: 0.22rem 3px;
 }
 .table td .away{
   padding: 0 0.24rem 0 0;

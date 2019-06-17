@@ -14,6 +14,7 @@ textarea{resize:none;}
 a,button{outline: none;*star: expression(this.onFocus=this.blur());cursor: pointer;text-decoration:none;}
 button,input,select,textarea {vertical-align:middle;outline:none;-webkit-appearance : none ;border-radius: 0;}
 button,input[type="button"],input[type="reset"],input[type="submit"] {cursor:pointer;-webkit-appearance : none ;}
+a{color: #364e69;}
 a:hover{text-decoration:none;}
 img{vertical-align:top; outline: none;}
 ul,li{ list-style:none;}
