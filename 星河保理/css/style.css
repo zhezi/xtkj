@@ -9,6 +9,7 @@ html, body {
     position: relative;
 }
 body {
+    background: #fff;
     font-family: 'Arial','Microsoft YaHei';
     padding: 0;
     overflow-x: hidden;
@@ -581,6 +582,7 @@ input::-webkit-input-placeholder{
 /*操作员添加*/
 .add-box .text{
   line-height: 0.76rem;
+  height: 0.76rem;
   font-size: 0.26rem;
   width: calc(100% - 0.56rem);
   padding: 0 0.28rem;
