@@ -7,9 +7,9 @@
 */
 html, body {
     position: relative;
+    background: #fff;
 }
 body {
-    background: #fff;
     font-family: 'Arial','Microsoft YaHei';
     padding: 0;
     overflow-x: hidden;
@@ -101,12 +101,11 @@ input::-webkit-input-placeholder{
     vertical-align: middle;
     text-align: center;
     outline: none;
-    line-height: 0.88rem;
-    height: 0.88rem;
+    line-height: 0.38rem;
+    padding: 0.25rem 0;
     font-size: 0.3rem;
     color: #fff;
     width: 100%;
-    padding: 0;
 }
 .button-blue{
     background: #0c72ff;
@@ -179,7 +178,7 @@ input::-webkit-input-placeholder{
 }
 
 .container{
-  padding: 0.4rem;
+  padding: 0.4rem 0.3rem;
   line-height: 0.4rem;
   font-size: 0.24rem;
 }
@@ -529,7 +528,6 @@ input::-webkit-input-placeholder{
 .idea li{
   width: 47.5%;
   margin: 0 0 0.2rem;
-  white-space: nowrap;
 }
 .idea li:nth-child(odd){
   width: 52.5%;
@@ -553,9 +551,12 @@ input::-webkit-input-placeholder{
     display: inline-block;
     border: 1px solid #9ca8b5;
 }
-.point .m-register .active{
+.point .m-register.active em{
     background: url(../images/checked.png) center center no-repeat;
     background-size: 0.20rem 0.18rem;
+}
+.point .m-register.active{
+  color: #364e69;
 }
 
 

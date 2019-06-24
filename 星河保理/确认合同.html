@@ -52,7 +52,7 @@
                     </tr>
                 </table>
             </div>
-            <div class="point"><label class="m-register"><em class="active"></em>我已知晓并同意以上协议中的内容</label></div>
+            <div class="point"><label class="m-register active"><em></em>我已知晓并同意以上协议中的内容</label></div>
             <div class="btn">
                 <div class="btn-box">
                     <input class="button button-blue" type="button" value="签约">
@@ -63,7 +63,7 @@
 
 
     <!-- 提示浮层 -->
-    <div class="layer" style="display: block;">
+    <div class="layer" style="display:;">
         <div class="cover"></div>
         <div class="layer-box loading-box">
             签约中...
@@ -72,5 +72,10 @@
 
 
     <script src="js/application.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        $('.m-register').click(function () {
+            $(this).toggleClass('active')
+        })
+    </script>
 </body>
 </html>
