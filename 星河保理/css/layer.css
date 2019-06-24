@@ -31,11 +31,11 @@
     border: none;
     vertical-align: middle;
     text-align: center;
+    line-height: 0.74rem;
+    font-size: 0.26rem;
 }
 .layer .button-red{
-    line-height: 60px;
     background: #b90d08;
-    font-size: 18px;
     width: 100%;
     color: #fff;
 }
@@ -44,9 +44,7 @@
 }
 .layer .button-blue{
     background: #1c74cc;
-    line-height: 0.88rem;
     padding: 0;
-    font-size: 0.36rem;
     color: #fff;
 }
 .layer .button-blue:hover{
@@ -105,8 +103,6 @@
 }
 .layer-box .button{
     width: 100%;
-    line-height: 0.74rem;
-    font-size: 0.3rem;
     padding: 0;
 }
 
