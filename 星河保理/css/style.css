@@ -110,6 +110,9 @@ input::-webkit-input-placeholder{
 .button-blue{
     background: #0c72ff;
 }
+.button-blue02{
+    background: #0063ec;
+}
 .button-gray{
     background: #999;
 }
@@ -387,6 +390,7 @@ input::-webkit-input-placeholder{
   left: 0;
   bottom: 0;
   width: 100%;
+  font-size: 0;
 }
 .btn .button-black{
   background: #2b2b2b;
@@ -395,6 +399,9 @@ input::-webkit-input-placeholder{
   -moz-border-radius: 0;
   -webkit-border-radius: 0; 
   border-radius: 0; 
+}
+.btn02 .button{
+  width: 50%;
 }
 /*登录*/
 .login{
