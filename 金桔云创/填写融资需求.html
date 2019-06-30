@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <title>金桔云创</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <meta name="format-detection" content="telephone=no"/>
+    <meta content="black-translucent" name="apple-mobile-web-app-status-bar-style">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/layer.css">
+    <script src="js/jquery-1.11.3.min.js" type="text/javascript"></script>
+    <script src="js/public.js" type="text/javascript"></script>
+</head>
+<body>
+    <div class="container">
+        <header class="header">上传照片</header>
+        <article class="article">
+            <ul class="step">
+                <li class="finished">
+                    <span class="line"></span>
+                    <span class="number">1</span>
+                    <p>上传照片</p>
+                </li>
+                <li class="active">
+                    <span class="line"></span>
+                    <span class="number">2</span>
+                    <p>填写融资单</p>
+                </li>
+                <li>
+                    <span class="line"></span>
+                    <span class="number">3</span>
+                    <p>填写养殖资料</p>
+                </li>
+                <li>
+                    <span class="line"></span>
+                    <span class="number">4</span>
+                    <p>完成提交</p>
+                </li>
+            </ul>
+            <div class="box">
+                <div class="caption">申请主体（必填）</div>
+                <div class="cont radio-box radio-odd">
+                    <p class="active"><label for=""><em><i></i></em>本人申请</label></p>
+                    <p><label for=""><em><i></i></em>企业申请</label></p>
+                </div>
+            </div>
+            <div class="box">
+                <div class="caption">申请目的地（必填）</div>
+                <div class="cont radio-box radio-select">
+                    <p class="active"><label for=""><em><i></i></em>只申请养殖设备融资额度</label></p>
+                    <p><label for=""><em><i></i></em>只申请饲料采购融资额度</label></p>
+                    <p><label for=""><em><i></i></em>同时申请养殖设备和饲料采购融资额度</label></p>
+                </div>
+            </div>
+            <div class="box box-case" style="display: block;">
+                <div class="caption">申请金额（必填）</div>
+                <div class="cont input-box">
+                    <dl>
+                        <dt><input type="text" class="text" placeholder="养殖设备申请额度"></dt>
+                        <dd>万元</dd>
+                    </dl> 
+                </div>
+            </div>
+            <div class="box box-case">
+                <div class="caption">申请金额（必填）</div>
+                <div class="cont input-box">
+                    <dl>
+                        <dt><input type="text" class="text" placeholder="饲料采购申请额度"></dt>
+                        <dd>万元</dd>
+                    </dl> 
+                </div>
+            </div>
+            <div class="box box-case">
+                <div class="caption">申请金额（必填）</div>
+                <div class="cont input-box">
+                    <dl class="away">
+                        <dt><input type="text" class="text" placeholder="养殖设备申请额度"></dt>
+                        <dd>万元</dd>
+                    </dl> 
+                    <dl>
+                        <dt><input type="text" class="text" placeholder="饲料采购申请额度"></dt>
+                        <dd>万元</dd>
+                    </dl> 
+                </div>
+            </div>
+            <div class="btn btn02">
+                <a href="javascript:void(0);" class="button button-orange02">上一步</a>
+                <a href="javascript:void(0);" class="button button-orange">下一步</a>
+            </div>
+        </article>
+    </div>
+
+    <script src="js/application.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        $('.radio-box').each(function(){
+            var $this=$(this);
+            $this.find('p').bind('click',function(){
+                $(this).addClass('active').siblings().removeClass('active');
+            });
+        })
+        $('.radio-select').each(function(){
+            $(this).click(function(){
+              if($(this).html() == "是"){
+                $('.checked-box').show();
+              }
+              else{
+                $('.checked-box').hide();
+              }
+            })
+          })
+        $('.radio-select p').click(function(){
+            var _this=$(this),_index=$(this).index();
+            _this.addClass('active').siblings('p').removeClass('active');
+            $('.box-case').eq(_index).fadeIn(1000).siblings('.box-case').hide();
+        })
+    </script>
+</body>
+</html>

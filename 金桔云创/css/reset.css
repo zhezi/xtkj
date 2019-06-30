@@ -1,0 +1,22 @@
+@charset "utf-8";
+/* CSS Document */
+/****************************
+ * version:1.0
+ * By:landry
+ * Date:2019-03-12
+ *
+ */
+html, body, div, span, h1, h2, h3, h4, h5, h6, p, abbr, address, cite, code, del, dfn, em, img, sub, sup, var, i, dl, dd, dt, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, figure, footer, header, hgroup, menu, nav, section, time, mark, audio, video{margin:0;padding:0; zoom:1;}
+article, aside, figure, footer, header, hgroup, nav, menu, section {display: block;}
+h1,h2,h3,h4,h5,h6{font-weight: normal;}
+input, select {	vertical-align: middle;}
+textarea{resize:none;}
+a,button{outline: none;*star: expression(this.onFocus=this.blur());cursor: pointer;text-decoration:none;}
+button,input,select,textarea {vertical-align:middle;outline:none;-webkit-appearance : none ;border-radius: 0;}
+button,input[type="button"],input[type="reset"],input[type="submit"] {cursor:pointer;-webkit-appearance : none ;}
+a{color: #364e69;}
+a:hover{text-decoration:none;}
+img{vertical-align:top; outline: none;}
+ul,li{ list-style:none;}
+
+
