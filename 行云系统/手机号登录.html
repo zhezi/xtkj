@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<title>行云点</title>
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="keywords" content="">
+<meta name="description" content="">
+<meta content="yes" name="apple-mobile-web-app-capable">
+<meta name="format-detection" content="telephone=no"/>
+<meta content="black-translucent" name="apple-mobile-web-app-status-bar-style">
+<link rel="icon" href="favicon.ico" />
+<link rel="stylesheet" href="css/reset.css">
+<link rel="stylesheet" href="css/common.css">
+<link rel="stylesheet" href="css/login.css">
+<link rel="stylesheet" href="css/layer.css">
+<!--[if lt IE 9]>
+<script src="js/html5.js"></script>
+<![endif]-->
+</head>
+
+<body class="login">
+    <div class="container clearfix">
+      <div class="table">
+          <table width="100%" border="0" cellspacing="0" cellpadding="0">
+            <tr>
+              <td>
+                <form>
+                   <div class="form">
+                     <h1><img src="images/logo-big.png" alt=""></h1>
+                     <dl>
+                       <dt></dt>
+                       <dd>
+                         <input type="text" class="text" placeholder="手机号">
+                         <!-- <p class="red error">错误提示！</p> -->
+                       </dd>
+                     </dl>
+                     <dl>
+                       <dt></dt>
+                       <dd>
+                         <input type="password"  placeholder="密码" class="text">
+                         <input type="text" passwordMask="true" placeholder="密码" style="display:none;" class="text">
+                         <!-- <p class="red error">错误提示！</p> -->
+                       </dd>
+                     </dl>
+                     <div class="btn">
+                       <a href="javascript:void(0);" class="button button-white">登录</a>
+                     </div>
+                     <div class="way">
+                       <a href="javascript:void(0);">验证码登录</a>
+                     </div>
+                   </div>
+                </form>
+                <div class="secret">
+                      <div class="cont"><a href="javascript:void(0);">查看保密条款</a></div>
+                </div>
+              </td>
+            </tr>
+          </table>
+      </div>
+    </div>
+    <!-- container over -->
+
+<!-- loading -->
+<div class="layer layer-loading">
+  <div class="cover"></div>
+  <div class="layer-tip">
+     <img src="images/loading2.gif">
+  </div>
+</div>
+
+<script language="javascript" type="text/javascript" src="js/jquery.js"></script>
+<script language="javascript" type="text/javascript" src="js/application.js"></script>
+<!--[if lte IE 10]>
+<script language="javascript" type="text/javascript" src="js/placeholder.js"></script>
+<![endif]-->
+</body>
+</html>

@@ -455,6 +455,14 @@ input::-webkit-input-placeholder{
   text-align: center;
   color: #777676;
 }
+.result02{
+  padding: 0.48rem 0 1.6rem;
+  text-align: left;
+  line-height: 0.56rem;
+}
+.result02 .away{
+  padding: 0.18rem 0;
+}
 .result img{
   width: 22.6%;
   margin: 0 0 0.48rem;

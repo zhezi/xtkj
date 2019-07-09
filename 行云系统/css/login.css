@@ -1,0 +1,207 @@
+@charset "utf-8";
+/* CSS Document */
+/****************************
+ * version:1.0
+ * Date:2017-09-05
+ *
+ */
+
+ /*登录*/
+ html,body{
+    height: 100%;
+ }
+ .container{
+    background: #eef3f6;    
+ }
+.login{
+    height: 100%;
+    min-height: 720px;
+}
+.login .table tr:nth-child(odd){
+    background: none;
+}
+.login .container{
+    height: 100%;
+    background: url(../images/bg.jpg) center center no-repeat;
+}
+.login table{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    text-align: left;
+}
+.login .form{
+    width: 500px;
+    color: #fff;
+}
+.form{
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 30px 0;
+}
+.login .form h1{
+    text-align: center;
+    padding: 0 0 30px;
+}
+.form h2{
+    font-size: 24px;
+    line-height: 40px;
+    text-align: center;
+    padding: 0 0 32px;
+    width: 800px;
+    margin: 0 -150px;
+}
+.form dl{
+    padding: 0 0 20px;
+}
+.form dd{
+    position: relative;
+}
+.form .text{
+    background: none;
+    padding:0 4%;
+    width: calc(92% - 2px);
+    border:1px solid #8ab3e7;
+    line-height: 58px;
+    height: 58px;
+    font-size: 16px;
+    color: #d3eafc;
+    outline: none;
+    -moz-border-radius: 1px;
+    -webkit-border-radius: 1px;
+    border-radius: 1px;
+}
+.form .text:focus{ 
+    color: #fff;
+    border:1px solid #fff;
+}
+.form .text-short{
+    padding:0 4%;
+    width: 55%;
+}
+.form .select-btn{    
+    background:url(../images/up.png) 96% center no-repeat;
+    cursor: pointer;
+}
+.form .text-select{
+    position: relative;
+    width: 100%;
+}
+.form .text-select.active .text{
+    border: 1px solid #a0cfff;
+}
+.form .text-select .item{
+    position: absolute;
+    top: 59px;
+    left: 0;
+    width: 100%;
+    background: #fff;
+    display: none;
+    z-index: 10;
+}
+.form .text-select .item-box{
+    max-height: 346px;
+    border: 1px solid #e8e9ef;
+    border-bottom: 0;
+}
+.form .text-select li{
+    padding: 0 18px;
+    line-height: 58px;
+    color:#2f2f2f;
+    border-bottom: 1px solid #e8e9ef;
+}
+.form .text-select li:hover{
+    color: #495763;
+}
+.form dd .button,
+.form dd .code{
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 160px;
+    height: 60px;
+    line-height: 60px;
+    font-size: 16px;
+}
+.form .button-code{
+    background: #cfe0f4;
+    color: #2f77d6;
+}
+.form .button-gray{
+    background: #cfe0f4;
+    color: #8a8a8a;
+}
+.form dd .error{
+    line-height: 30px;
+    margin: 0 0 -16px;
+}
+.login .form dd .error{
+    margin: 0 0 -16px;
+}
+.form .point{    
+    margin: -8px 0 20px;
+}
+.form .point a{
+    color: #d3eafc;
+}
+.form label{
+    padding: 0 0 0 22px;
+    position: relative;
+    display: inline-block;
+    line-height: 16px;
+}
+.form label em{
+    width: 14px;
+    height: 14px;
+    position: absolute;
+    top: 0px;
+    left: 0;
+    display: inline-block;
+    border: 1px solid #dde7f0;
+    -moz-border-radius: 1px;
+    -webkit-border-radius: 1px;
+    border-radius: 1px;
+}
+.form label .active{
+    background: url(../images/checked.png) 0 center no-repeat;
+}
+.form .way{
+    text-align: center;
+    padding: 20px 0 0;
+}
+.form .way a{
+    line-height: 36px;
+    color: #d3eafc;
+    font-size: 16px;
+}
+.form .button{
+    line-height: 58px;
+    font-size: 24px;
+    width: 100%;
+}
+.secret{
+    padding: 46px 0 0;
+}
+.secret .cont{
+    position: absolute;
+    left: 0;
+    bottom: 26px;
+    line-height: 20px;
+    text-align: center;
+    width: 100%;
+}
+.secret .cont a{
+    display: inline-block;
+    color: #d3eafc;
+    font-size: 14px;
+    border-bottom: 1px solid #d3eafc;
+}
+.article{
+    background: #fff;
+    margin: -50px auto 50px;
+    padding: 70px 60px 100px;
+    max-width: 1080px;
+    min-height: 400px;
+}
