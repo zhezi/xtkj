@@ -143,7 +143,7 @@ $('.js-sbm').on('click',function(){
 		}
 	},3000);
 });
-$('.m-register').bind('click',function(){
+$('.m-register em').bind('click',function(){
     $(this).toggleClass('active');
 });
 // tab切换

@@ -2,7 +2,7 @@
 /* CSS Document */
 /****************************
  * version:1.0
- * Date:2017-09-05
+ * Date:2019-07-10
  *
  */
 
@@ -10,12 +10,9 @@
  html,body{
     height: 100%;
  }
- .container{
-    background: #eef3f6;    
- }
 .login{
     height: 100%;
-    min-height: 720px;
+    min-height: 550px;
 }
 .login .table tr:nth-child(odd){
     background: none;
@@ -32,26 +29,57 @@
     height: 100%;
     text-align: left;
 }
-.login .form{
-    width: 500px;
-    color: #fff;
-}
 .form{
-    max-width: 500px;
+    max-width: 746px;
     margin: 0 auto;
     padding: 30px 0;
+}
+.form h2{
+    font-size: 16px;
+    line-height: 40px;
+    text-align: center;
+}
+.login .form{
+    background: #fff;
+    padding: 0;
+    min-height: 482px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    -moz-box-shadow: 0 0 10px #cddff5;
+    -webkit-box-shadow: 0 0 10px #cddff5;
+    box-shadow: 0 0 10px #cddff5;
 }
 .login .form h1{
     text-align: center;
     padding: 0 0 30px;
 }
-.form h2{
-    font-size: 24px;
-    line-height: 40px;
-    text-align: center;
-    padding: 0 0 32px;
-    width: 800px;
-    margin: 0 -150px;
+.login .left{
+    position: relative;
+    width: 348px;
+}
+.login .left img{
+    width: 348px;
+    height: 482px;
+    -moz-border-top-left-radius: 5px;
+    -webkit-border-top-left-radius: 5px;
+    border-top-left-radius: 5px;
+    -moz-border-bottom-left-radius: 5px;
+    -webkit-border-bottom-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+.login .left h2{
+    position: absolute;
+    left: 0;
+    bottom: 76px;
+    width: 100%;
+    color: #fff;
+}
+.login .right{
+    position: relative;
+    width: 298px;
+    min-height: 426px;
+    padding: 56px 50px 0;
 }
 .form dl{
     padding: 0 0 20px;
@@ -63,9 +91,9 @@
     background: none;
     padding:0 4%;
     width: calc(92% - 2px);
-    border:1px solid #8ab3e7;
-    line-height: 58px;
-    height: 58px;
+    border:1px solid #cfe0f4;
+    line-height: 38px;
+    height: 38px;
     font-size: 16px;
     color: #d3eafc;
     outline: none;
@@ -74,12 +102,12 @@
     border-radius: 1px;
 }
 .form .text:focus{ 
-    color: #fff;
-    border:1px solid #fff;
+    color: #0171e4;
+    border:1px solid #0171e4;
 }
 .form .text-short{
     padding:0 4%;
-    width: 55%;
+    width: 50%;
 }
 .form .select-btn{    
     background:url(../images/up.png) 96% center no-repeat;
@@ -94,7 +122,7 @@
 }
 .form .text-select .item{
     position: absolute;
-    top: 59px;
+    top: 39px;
     left: 0;
     width: 100%;
     background: #fff;
@@ -108,7 +136,7 @@
 }
 .form .text-select li{
     padding: 0 18px;
-    line-height: 58px;
+    line-height: 42px;
     color:#2f2f2f;
     border-bottom: 1px solid #e8e9ef;
 }
@@ -120,10 +148,10 @@
     position: absolute;
     right: 0;
     top: 0;
-    width: 160px;
-    height: 60px;
-    line-height: 60px;
-    font-size: 16px;
+    width: 116px;
+    height: 40px;
+    line-height: 40px;
+    font-size: 14px;
 }
 .form .button-code{
     background: #cfe0f4;
@@ -144,7 +172,7 @@
     margin: -8px 0 20px;
 }
 .form .point a{
-    color: #d3eafc;
+    color: #8a8a8a;
 }
 .form label{
     padding: 0 0 0 22px;
@@ -159,7 +187,7 @@
     top: 0px;
     left: 0;
     display: inline-block;
-    border: 1px solid #dde7f0;
+    border: 1px solid #0171e4;
     -moz-border-radius: 1px;
     -webkit-border-radius: 1px;
     border-radius: 1px;
@@ -168,18 +196,24 @@
     background: url(../images/checked.png) 0 center no-repeat;
 }
 .form .way{
+    position: absolute;
+    bottom: 30px;
+    left: 0;
+    width: 100%;
     text-align: center;
-    padding: 20px 0 0;
 }
 .form .way a{
     line-height: 36px;
-    color: #d3eafc;
-    font-size: 16px;
+    color: #0171e4;
+    font-size: 14px;
 }
-.form .button{
-    line-height: 58px;
-    font-size: 24px;
-    width: 100%;
+.form .way .pipe{
+    background: #0171e4;
+    width: 1px;
+    height: 16px;
+    margin: 0 10px;
+    display: inline-block;
+    vertical-align: middle;
 }
 .secret{
     padding: 46px 0 0;
@@ -187,16 +221,16 @@
 .secret .cont{
     position: absolute;
     left: 0;
-    bottom: 26px;
+    bottom: 30px;
     line-height: 20px;
     text-align: center;
     width: 100%;
 }
 .secret .cont a{
     display: inline-block;
-    color: #d3eafc;
+    color: #0171e4;
     font-size: 14px;
-    border-bottom: 1px solid #d3eafc;
+    border-bottom: 1px solid #0171e4;
 }
 .article{
     background: #fff;

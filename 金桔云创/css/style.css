@@ -247,7 +247,7 @@ input::-webkit-input-placeholder{
   border: 1px solid #ffb9a8;
   border-radius: 3px;
 }
-.form-box .m-register.active em{
+.form-box .m-register em.active{
   background: url(../images/checked.png) center center no-repeat;
   background-size: 0.23rem 0.16rem;
 }
