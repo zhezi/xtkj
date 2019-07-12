@@ -55,6 +55,12 @@ $(function($) {
             $(this).children('em').toggleClass('active');
         });
     };
+    
+    if ($('.m-check').size()>0) {
+        $('.m-check em').bind('click',function(){
+            $(this).toggleClass('active');
+        });
+    };
 
     // 注册下拉选择
     if ($('.text-select').size()>0) {
@@ -148,11 +154,28 @@ $(function($) {
             });
         })
     };
-
-    $('.layer .close,.layer .close-btn').click(function(){
-        $(".layer ").fadeOut();
-        $('html').css('overflow-y','scroll');
-    })
+    if($('.layer').size()>0){
+      $('.remove-btn').bind('click',function () {
+         $('#layer-remove').fadeIn();
+         // $('#layer-remove .button').bind('click',function () {
+         //   if($('.m-check em').hasClass("active")){
+         //    var _this=$('.m-check em.active');
+         //    _this.parent().parent().parent().parent().remove();
+         //   }
+         //   $('#layer-remove').fadeOut();
+         // })
+      })
+      $('.merge-btn').bind('click',function () {
+         $('#layer-merge').fadeIn();
+      })
+      $('.match-btn').bind('click',function () {
+         $('#layer-match').fadeIn();
+      })
+      $('.layer .cover,.layer .close,.layer .close-btn').click(function(){
+          $(".layer ").fadeOut();
+          $('html').css('overflow-y','scroll');
+      })
+    }
 
 
     if($('.report-page').size()>0){

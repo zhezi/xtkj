@@ -78,16 +78,16 @@
 }
 .layer-tip{
     background: #fff;
-    font-size: 16px;
+    font-size: 14px;
     line-height: 30px;
     padding:0 0 30px;
     position: absolute;
     top: 50%;
     left: 50%;
     text-align: center;
-    min-height: 324px;
+    min-height: 294px;
     width: 600px;
-    margin: -177px 0 0 -300px;
+    margin: -162px 0 0 -300px;
     -moz-border-radius:5px;
     -webkit-border-radius: 5px;
     border-radius: 5px;
@@ -105,6 +105,14 @@
     -moz-border-top-right-radius: 4px;
     -webkit-border-top-right-radius: 4px;
     border-top-right-radius: 4px;
+}
+.layer p.center{
+    text-align: center;
+    line-height: 24px;
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 0 0 14px;
+    font-size: 14px;
 }
 .layer .layer-box{
     max-width: 446px;
@@ -133,8 +141,29 @@
     border: 1px solid #dde7f0;
     line-height: 40px;
     padding: 0 20px;
-    font-size: 16px;
+    font-size: 14px;
     outline: none;
+}
+.layer .form .arrow-bottom{
+    background: url(../images/arrow-bottom2.png) no-repeat;
+    position: absolute;
+    right: 1px;
+    top:1px;
+    width: 40px;
+    height: 42px;
+    display: inline-block;
+}
+#layer-match .form dt{
+    float: left;
+    width:108px;
+}
+#layer-match .form dd{
+    float: left;
+    width:338px;
+}
+#layer-match .form dd .text{
+    width: 88%;
+    padding: 0 5.5%;
 }
 .layer .item-box ul{
     position: absolute;
@@ -156,4 +185,71 @@
     line-height: 30px;
     border-left: 1px solid #e7e9f1;
     border-right: 1px solid #e7e9f1;
+}
+.layer .layer-box .cont{
+    line-height: 30px;
+    padding: 0 0 10px;
+}
+
+.step{
+    padding: 6px 0 14px;
+}
+.step li{
+    float: left;
+    position: relative;
+    width: 33.33%;
+    text-align: center;
+    line-height: 24px;
+}
+.step .line{
+    position: absolute;
+    left: 0;
+    bottom:11px;
+    background: #cfe0f4;
+    width: 100%;
+    height: 1px;
+    display: inline-block;
+}
+.step .active .line,
+.step .finished .line{
+    background: #0171e4;
+}
+.step li:first-child .line{
+    left: 50%;
+    width: 50%;
+}
+.step li:last-child .line{
+    width: 50%;
+}
+.step .number{
+    position: relative;
+    background: #fff;
+    color: #cfe0f4;
+    width: 18px;
+    line-height: 18px;
+    text-align: center;
+    display: inline-block;
+    border: 1px solid #cfe0f4;
+    margin: 2px 0 0;
+    border-radius: 50%;
+}
+.step .active .number,
+.step .finished .number{
+    background: #0171e4;
+}
+.step .active p,
+.step .finished p{
+    color:#0171e4;
+}
+#layer-bill .layer-tip{
+    min-height: 394px;
+    margin: -212px 0 0 -300px;
+}
+#layer-bill .check-box{
+    line-height: 30px;
+    padding: 0 0 14px;
+}
+#layer-bill .loading{
+    padding: 70px 0 0;
+    text-align: center;
 }

@@ -140,12 +140,12 @@ a.gray:hover{
     vertical-align: middle;
     text-align: center;
     outline: none;
+    line-height: 42px;
+    font-size: 16px;
 }
 .button-blue{
     background: #0171e4;
     color: #fff;
-    line-height: 42px;
-    font-size: 16px;
     width: 100%;
 }
 .button-blue:hover{
@@ -160,7 +160,7 @@ a.gray:hover{
     color: #fff;
 }
 .button-gray{
-    background: #b6b6b6;
+    background: #8a8a8a;
     color: #fff;
 }
 /*灰遮罩*/
@@ -505,29 +505,40 @@ a.gray:hover{
 }
 .pagination a,
 .pagination span{
-    padding: 0 7px;
-    margin: 0 5px;
+    padding: 0 9px;
+    margin: 0 2px;
     display: inline-block;
-    line-height: 22px;
+    line-height: 24px;
     vertical-align: middle;
     font-size: 14px;
-    color:#b6b6b6;
+    border:1px solid #0171e4;
+    color: #0171e4;
+    border-radius: 3px;
+}
+.pagination span{
+    border: 0;
+    padding: 0;
 }
 .pagination a:hover,
 .pagination .active{
-    background: #0081e4;
+    background: #0171e4;
     color: #fff;
 }
 .pagination .prev,
 .pagination .next{
-    font-family: 'SimSun';
-    margin: 0 22px;
-    font-size: 20px;
+    background: #0171e4;
+    color: #fff;
 }
 .pagination .prev:hover,
 .pagination .next:hover{
-    color: #0081e4;
-    background: none;
+    background: #1c66c8;
+}
+.pagination .btn-default,
+.pagination .btn-default:hover{
+    background: #9faebd;
+    cursor: not-allowed;
+    color: #fff;
+    border: 1px solid #9faebd;
 }
 
 /*菜单切换*/
@@ -551,6 +562,50 @@ a.gray:hover{
 .switch-box{
     display: none;
 }
+
+/*表单*/
+.m-check{
+    position: relative;
+    display: inline-block;
+    line-height: 26px;
+}
+.m-check em{
+    position: relative;
+    width: 14px;
+    height: 14px;
+    display: inline-block;
+    vertical-align: middle;
+    border: 1px solid #8a8a8a;
+    -moz-border-radius: 2px;
+    -webkit-border-radius: 2px;
+    border-radius: 2px;
+}
+.m-check span{
+    vertical-align: middle;
+    padding: 0 0 0 6px;
+}
+.m-check em.active{
+    background: url(../images/checked2.png) center center no-repeat;
+}
+.upload{
+    width: 116px;
+    height: 24px;
+    line-height: 24px;
+    text-align: center;
+    position: relative;
+    cursor: pointer;
+    border: 1px solid #cfe0f4;
+}
+.upload-input{    
+    opacity: 0;
+    filter: alpha(opacity=0);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 24px;
+    cursor: pointer;
+}
 /*表格*/
 .table{
     text-align: center;
@@ -559,15 +614,16 @@ a.gray:hover{
     font-weight: normal;
     background: #f6f8fb;
     line-height: 22px;
-    padding: 18px 4px;
-    border-bottom: 1px solid #cfe0f6;
+    padding: 16px 4px;
+    font-size: 16px;
+    border-bottom: 1px solid #0171e4;
 }
 .table tr:nth-child(odd){
     background: #f6f8fb;
 }
 .table td{
     line-height: 26px;
-    padding: 16px 4px;
+    padding: 15px 4px;
     min-width: 40px;
 }
 .table a.away{
@@ -578,55 +634,6 @@ a.gray:hover{
 }
 .table span{
     vertical-align: middle;
-}
-.table .check-item .m-check em.active{
-    background: url(../images/checked2.png) center center no-repeat;
-}
-
-/*表单*/
-.m-check{
-    position: absolute;
-    left: 0;
-    top: 0;
-    padding: 0 0 0 26px;
-    display: inline-block;
-    line-height: 26px;
-}
-.m-check em{
-    position: absolute;
-    left: 0;
-    top:5px;
-    width: 14px;
-    height: 14px;
-    display: inline-block;
-    vertical-align: middle;
-    border: 1px solid #cfe0f4;
-    -moz-border-radius: 2px;
-    -webkit-border-radius: 2px;
-    border-radius: 2px;
-}
-.check-box.active .m-check em{
-    background: url(../images/checked2.png) center center no-repeat;
-}
-.upload{
-    width: 140px;
-    height: 38px;
-    text-align: center;
-    position: relative;
-    cursor: pointer;
-    display: inline-block;
-    *display: inline;
-    _display: inline;
-}
-.upload-input{    
-    opacity: 0;
-    filter: alpha(opacity=0);
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 38px;
-    cursor: pointer;
 }
 /*选择下拉*/
 .select{
@@ -738,10 +745,10 @@ a.gray:hover{
 
 /*无内容提示*/
 .none-box{
-    padding: 20px 0;
+    padding: 30px 0;
     text-align: center;
     line-height: 20px;
-    font-size: 14px;
+    font-size: 16px;
 }
 
 /** 滚动条 **/

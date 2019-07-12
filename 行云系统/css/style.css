@@ -15,114 +15,470 @@
     margin:0 auto 10px;
 }
 .location{
-	line-height: 40px;
-	padding: 6px 0 0;
-	max-width: 1000px;
-	margin: 0 auto;
+  line-height: 40px;
+  padding: 6px 0 0;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+.location a{
+  position: relative;
+  padding: 0 20px 0 0;
+  margin: 0 24px 0 0;
+  display: inline-block;
+}
+.location .active{
+  color: #0171e4;
+}
+.location a .close{
+  position: absolute;
+  top:11px;
+  right: 0;
+  background: url(../images/close.png) center center no-repeat;
+  width: 18px;
+  height: 18px;
+  display: inline-block;
+}
+.location .active .close{
+  background: url(../images/close-active.png) center center no-repeat;
 }
 .content{
-	background: #fff;
+  background: #fff;
     padding: 40px 30px 34px;
     margin: 0 0 20px;
+    box-shadow: 0 0 15px #fbfbfb;
 }
 .content .title h2{
-	line-height: 16px;
-	padding: 0 0 0 8px;
-	margin: 0 0 26px;
-	font-size: 16px;
+  line-height: 16px;
+  padding: 0 0 0 8px;
+  margin: 0 0 26px;
+  font-size: 16px;
 }
 .content .title .blue{
-	border-left:4px solid #0171e4;
-	color: #0171e4;
+  border-left:4px solid #0171e4;
+  color: #0171e4;
 }
 .content .title .yellow{
-	border-left:4px solid #efcf6f;
+  border-left:4px solid #efcf6f;
 }
 .content .title .pink{
-	border-left:4px solid #f87988;
+  border-left:4px solid #f87988;
 }
 .content .title .purple{
-	border-left:4px solid #bc85f9;
+  border-left:4px solid #bc85f9;
 }
 
 /*首页*/
 .index .content01 ul{
-	margin: 0 -100px 0 0;
+  margin: 0 -100px 0 0;
 }
 .index .content01 li{
-	float: left;
-	width: 100px;
-	margin: 0 100px 0 0;
-	line-height: 30px;
-	font-size: 16px;
-	text-align: center;
+  float: left;
+  width: 100px;
+  margin: 0 100px 0 0;
+  line-height: 30px;
+  font-size: 16px;
+  text-align: center;
 }
 .index .content01 li p{
-	margin: 0 -20px;
+  margin: 0 -20px;
 }
 .index .content01 .color{
-	width: 100px;
-	height: 46px;
-	border-radius: 5px;
-	padding: 26px 0;
-	margin: 0 0 10px;
+  width: 100px;
+  height: 46px;
+  border-radius: 5px;
+  padding: 26px 0;
+  margin: 0 0 10px;
 }
 .index .content01 .color01{
-	background: #3990ea;
-	box-shadow: 0 0 15px #d6e8fa;
+  background: #3990ea;
+  box-shadow: 0 0 15px #d6e8fa;
 }
 .index .content01 .color02{
-	background: #68dac3;
-	box-shadow: 0 0 15px #dff5f0;
+  background: #68dac3;
+  box-shadow: 0 0 15px #dff5f0;
 }
 .index .content01 .color03{
-	background: #efcf6f;
-	box-shadow: 0 0 15px #fcf6e3;
+  background: #efcf6f;
+  box-shadow: 0 0 15px #fcf6e3;
 }
 .index .content01 .color04{
-	background: #f87988;
-	box-shadow: 0 0 15px #fce8ea;
+  background: #f87988;
+  box-shadow: 0 0 15px #fce8ea;
 }
 .index .content01 .color05{
-	background: #bc85f9;
-	box-shadow: 0 0 15px #f0e6fc;
+  background: #bc85f9;
+  box-shadow: 0 0 15px #f0e6fc;
 }
 .index .table td{
-	padding: 15px 24px;
-	text-align: left;
+  padding: 15px 24px;
+  text-align: left;
 }
 .index .table img{
-	vertical-align: middle;
-	margin: 0 6px 0 0;
+  vertical-align: middle;
+  margin: 0 6px 0 0;
 }
 .index .table .away{
-	padding: 0 12px 0 24px;
+  padding: 0 12px 0 24px;
 }
 .index .table .big{
-	font-size: 16px;
+  font-size: 16px;
 }
 .index .total{
-	padding: 14px 0 0 30px;
-	line-height: 30px;
+  padding: 14px 0 0 30px;
+  line-height: 30px;
 }
 .index .block .content{
-	width: 43%;
-	line-height: 30px;
-	font-size: 16px;
-	min-height: 216px;
+  width: 43%;
+  line-height: 30px;
+  font-size: 16px;
+  min-height: 216px;
 }
 .index .block .speak p{
-	text-indent: 2em;
+  text-indent: 2em;
 }
 .index .block .speak .come{
-	text-align: right;
-	padding: 24px 0 0;
+  text-align: right;
+  padding: 24px 0 0;
 }
 .index .block .c_right .speak{
-	text-align: center;
+  text-align: center;
 }
 .index .block h3{
-	line-height: 40px;
-	padding: 0 0 12px;
-	font-size: 20px;
+  line-height: 40px;
+  padding: 0 0 12px;
+  font-size: 20px;
+}
+
+/*电子账单合并*/
+.table-box{
+  min-height: 500px;
+}
+.content .operating .button{
+  width: auto;
+  min-width: 140px;
+  margin: 0 10px 20px 0;
+  padding: 0 30px;
+}
+/*说明*/
+.explain-page .content{
+  padding: 40px 60px;
+}
+.status-box{
+  margin: 0 0 0 14px;
+  width: 290px;
+}
+.status-box li{
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 0 40px 20px;
+  border-left: 2px solid #cfe0f4;
+  font-size: 16px;
+  line-height: 20px;
+}
+.status-box li:last-child{
+  border:0;
+}
+.status-box li .cricle{
+  background: #fff;
+  position: absolute;
+  top:0;
+  left: -11px;
+  font-size: 0;
+  width: 12px;
+  height: 12px;
+  text-align: center;
+  border:4px solid #cfe0f4;
+  border-radius: 50%;
+}
+.status-box li.active .cricle{
+  background: #0171e4;
+}
+.status-box li a:hover,
+.status-box li.active a{
+  color: #0171e4;
+}
+.explain-page .content .box{
+  width: 65%;
+}
+.explain-page .content .box p{
+  line-height: 30px;
+  text-indent: 2em;
+  padding: 0 0 30px;
+}
+/*设置*/
+.set-page .content{
+  min-height: 130px;
+}
+.set-page .content .title h2{
+  margin: 0 0 8px;
+}
+.set-page .content .title{
+  margin: 0 0 20px;
+  border-bottom: 2px solid #cfe0f4;
+}
+.set-page .m-check span{
+  padding: 0 0 0 10px;
+}
+.set-page .content p{
+  padding: 0 0 10px;
+  line-height: 30px;
+}
+/*主页修复*/
+.home-restore .point{
+    line-height: 30px;
+    padding: 0 0 14px;
+}
+.home-restore .point span{
+    padding: 0 48px 0 0;
+}
+.home-restore ul{
+  margin: 0 -30px 0 0;
+}
+.home-restore li{
+    float: left;
+    width: 212px;
+    height: 280px;
+    margin: 0 30px 0 0;
+}
+.home-restore .rotate-box{
+    position: relative;
+    width: 210px;
+    height: 210px;
+    padding: 3px 0;
+    border:1px solid #eaf1f9;
+    text-align: center;
+    box-shadow: 0 0 18px #f3f3f3;
+}
+.home-restore .rotate-box .number{
+    position: absolute;
+    top:-1px;
+    left: -1px;
+    color: #8a8a8a;
+    padding: 0 4px;
+    min-width: 16px;
+    text-align: center;
+    line-height: 24px;
+    border:1px solid #eaf1f9;
+}
+.home-restore .rotate-box img{
+    max-height: 206px;
+    height: 206px;
+    max-width: 100%;
+    display: inline-block;
+}
+.rotate90{
+    transform:rotate(90deg);
+    -ms-transform:rotate(90deg);     /* IE 9 */
+    -moz-transform:rotate(90deg);    /* Firefox */
+    -webkit-transform:rotate(90deg); /* Safari 和 Chrome */
+    -o-transform:rotate(90deg); 
+}
+.rotate180{
+    transform:rotate(180deg);
+    -ms-transform:rotate(180deg);     /* IE 9 */
+    -moz-transform:rotate(180deg);    /* Firefox */
+    -webkit-transform:rotate(180deg); /* Safari 和 Chrome */
+    -o-transform:rotate(180deg); 
+}
+.rotate270{
+    transform:rotate(270deg);
+    -ms-transform:rotate(270deg);     /* IE 9 */
+    -moz-transform:rotate(270deg);    /* Firefox */
+    -webkit-transform:rotate(270deg); /* Safari 和 Chrome */
+    -o-transform:rotate(270deg); 
+}
+.rotate360{
+    transform:rotate(360deg);
+    -ms-transform:rotate(360deg);     /* IE 9 */
+    -moz-transform:rotate(360deg);    /* Firefox */
+    -webkit-transform:rotate(360deg); /* Safari 和 Chrome */
+    -o-transform:rotate(360deg); 
+}
+.home-restore li .item{
+    padding: 10px 0 0;
+    line-height: 26px;
+}
+.home-restore li .button{
+    line-height: 26px;
+    width: 60px;
+    font-size: 14px;
+}
+.home-restore .rotate-btn{
+    background: #8a8a8a url(../images/rotate.png) center center no-repeat;
+    position: absolute;
+    right: -1px;
+    bottom: -1px;
+    width: 34px;
+    height: 34px;
+}
+/*修复详情*/
+.restore-page .block .left{
+    float: left;
+    width: 45.2%;
+}
+.restore-page .block .left .pagination{
+  padding: 0 0 16px;
+  text-align: left;
+}
+.restore-page .block .left .pagination a{
+  line-height: 28px;
+}
+.restore-page .block .rotate-box{
+    position: relative;
+    height: 690px;
+    padding: 30px 0;
+    overflow: scroll;
+    text-align: center;
+}
+.restore-page .block .rotate-box::-webkit-scrollbar {
+    width: 14px;     
+    height: 14px;
+}
+.restore-page .block .rotate-box::-webkit-scrollbar-thumb {
+    background: #bcbcbc;
+}
+.restore-page .block .rotate-box::-webkit-scrollbar-track {
+    border-radius: 0;
+    background: #eae9e9;
+}
+
+.restore-page .block .left img{
+    margin: 0 30px;
+}
+.restore-page .rotate-btn{
+    background: #8a8a8a url(../images/rotate.png) center center no-repeat;
+    position: absolute;
+    left: -1px;
+    top: -1px;
+    width: 34px;
+    height: 34px;
+}
+.restore-page .block .right{
+    float: right;
+    width: 53.5%;
+}
+.restore-page .right .cont{
+    padding: 0 5px;
+}
+.restore-page .right .select{
+    width: 100px;
+    line-height: 32px;
+    height: 32px;
+}
+.restore-page .select .select-box{
+    top:33px;
+}
+.restore-page .right .idea{
+    padding:0 0 10px;
+}
+.restore-page .right .table{
+    position: relative;
+    width: 100%;
+    height: 750px;
+    overflow: scroll;
+    text-align: center;
+    padding: 0 10px 0 0;
+}
+.restore-page .right .table::-webkit-scrollbar {
+    width: 14px;     
+    height: 14px;
+}
+.restore-page .right .table::-webkit-scrollbar-thumb {
+    background: #bcbcbc;
+}
+.restore-page .right .table::-webkit-scrollbar-track {
+    border-radius: 0;
+    background: #eae9e9;
+}
+.restore-page .show span{
+    position: relative;
+    line-height: 34px;
+    display: inline-block;
+    padding: 0 0 0 14px;
+    margin: 0 0 0 10px;
+}
+.restore-page .show span em{
+    position: absolute;
+    top:11px;
+    left: 0;
+    width: 10px;
+    height: 10px;
+    -moz-border-radius: 2px;
+    -webkit-border-radius: 2px;
+    border-radius: 2px;
+}
+.restore-page .table tr:nth-child(odd){
+    background: none;
+}
+.restore-page .show-model{
+    margin: -11px -5px;
+    border:1px solid #8a8a8a;
+    padding: 10px 3px;
+}
+.restore-page .show .red em,
+.restore-page .red-show{
+    background: #fce5e7;
+    border:1px solid #e60012;
+}
+.restore-page .show .blue em,
+.restore-page .blue-show{
+    background: #eaf1fb;
+    border:1px solid #2f77d6;
+}
+.restore-page .show .gray em,
+.restore-page .gray-show{
+    background: #f3f3f3;
+    border:1px solid #8a8a8a;
+}
+.restore-page .right table{
+    border-top: 1px solid #cfe0f6;
+    border-left: 1px solid #cfe0f6;
+}
+.restore-page .right th{
+    border-bottom: 1px solid #cfe0f6;
+}
+.restore-page .right td,
+.restore-page .right th{
+    position: relative;
+    border-right: 1px solid #cfe0f6;
+    padding: 10px 4px;
+}
+.restore-page .right td{
+    padding: 0 4px;
+    border-bottom: 1px solid #cfe0f6;
+    white-space: nowrap;
+}
+.restore-page .right .text{
+    border: 0;
+    display: block;
+    outline: 0;
+    line-height: 46px;
+    height: 46px;
+    width: 100%;
+    font-size: 14px;
+    text-align: center;
+    color: #2f2f2f;
+}
+.restore-page .right .btn{
+    text-align: left;
+    padding: 14px 0 0;
+}
+.restore-page .right .button{
+    margin: 0 20px 0 0;
+    width: 70px;
+    line-height: 30px;
+}
+.restore-page .m-check{
+    position: relative;
+    padding: 0;
+    margin: 10px auto;
+}
+.restore-page .m-check em{
+    position: relative;
+    top:0;
+    border:1px solid #8a8a8a;
+}
+.restore-page .m-check .active{
+    background: url(../images/checked3.png) center center no-repeat;
 }
