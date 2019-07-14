@@ -159,13 +159,21 @@
   margin: 0 10px 20px 0;
   padding: 0 30px;
 }
+.table-box .table th{
+    border-bottom: 1px solid #0171e4;
+}
 /*说明*/
 .explain-page .content{
   padding: 40px 60px;
 }
 .status-box{
+  background: #fff;
   margin: 0 0 0 14px;
   width: 290px;
+}
+.status-box.fixed{
+    position: fixed;
+    top:0px;
 }
 .status-box li{
   position: relative;
@@ -482,3 +490,191 @@
 .restore-page .m-check .active{
     background: url(../images/checked3.png) center center no-repeat;
 }
+
+/*普通电子报告*/
+.report-page .point{
+    line-height: 30px;
+    padding: 0 0 12px;
+}
+.report-page .idea-box .switch{
+    background: #f6f8fb;
+    height: 56px;
+    margin: 0;
+}
+.report-page .idea-box .switch a{
+   position: relative;
+   line-height: 54px;
+   padding: 0 24px;
+   border: 0;
+}
+.report-page .idea-box .switch a:hover,
+.report-page .idea-box .switch .active{
+    color: #0171e4;
+    border-bottom: 2px solid #0171e4;
+}
+.report-page .idea-box .switch em{
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    width:0;
+    height:0;
+    border-style: solid;
+    border-color: transparent transparent #0171e4;
+    border-width: 0 7px 9px;
+    margin: 0 0 0 -7px;
+    display: none;
+}
+.report-page .idea-box .switch .active em{
+   display: block;
+}
+.report-page .idea-box .switch-box{
+  border: 1px solid #e7eff9;
+  border-top: 0;
+  padding: 30px 24px;
+  line-height: 36px;
+  font-size: 16px;
+}
+.report-page .box{
+    background: #fff;
+    padding: 24px 30px;
+    margin: 20px 0 0;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+    -moz-box-shadow: 0 0 15px #edf5fe;
+    -webkit-box-shadow: 0 0 15px #edf5fe;
+    box-shadow: 0 0 15px #edf5fe;
+}
+.report-page .caption{
+    line-height: 24px;
+    padding: 0 0 14px;
+}
+.report-page .caption .select{
+    margin: 0 20px 0 0;
+    width: 140px;
+}
+.report-page .caption h2{
+    height: 16px;
+    line-height: 16px;
+    font-size: 16px;
+    border-left:3px solid #0171e4;
+    margin: 5px 0 0;
+    padding: 0 0 0 8px;
+}
+.report-page .hide-box{
+    display: none;
+    padding: 12px 0 0;
+}
+.report-page .up{
+    background: url(../images/down.png) center center no-repeat;
+    width: 100%;
+    height: 30px;
+    line-height: 30px;
+    color: #0171e4;
+    display: block;
+    text-align: center;
+    margin: 8px 0 0;
+}
+.report-page .down{
+    background: none;
+}
+.report-page .col-6{
+    width: 42.5%;
+}
+.report-page .col-6 .right{
+  padding: 0 20px 0 0;
+  text-align: right;
+}
+.report-page .chart img{
+    width: 100%;
+}
+.report-page .total{
+    font-size: 16px;
+}
+.report-page .total .money{
+    text-align: right;
+    padding: 0 30px 0 0;
+}
+.report-box th:first-child,
+.report-box td:first-child{
+    padding: 16px 4px 16px 26px;
+    text-align: left;
+}
+.report-box .table .m-check em{
+    position: relative;
+    top:0;
+}
+.report-box .m-check{
+    position: relative;
+    padding: 0;
+}
+.report-box th:last-child,
+.report-box td:last-child{
+    padding: 16px 26px 16px 4px;
+    width: 186px;
+}
+.table-model li{
+    padding: 0 36px;
+    position: relative;
+    min-height: 56px;
+}
+.table-model li tr:nth-child(odd){
+    background: #f6f8fb;
+}
+
+.table-model .idea{
+  padding: 0 58px;
+}
+.table-model .hide-box .idea{
+  border-top: 1px solid #fbfbfd;
+}
+.table-model .idea p{
+    float: left;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    -o-text-overflow: ellipsis;
+    overflow: hidden;
+    line-height: 56px;
+}
+.table-model .idea .one{
+    width: 31%;
+}
+.table-model .idea .two{
+    width: 22%;
+}
+.table-model .idea .three{
+    width: 18%;
+}
+.table-model .idea .four{
+    width: 16%;
+}
+.table-model .idea .five{
+    width: 13%;
+}
+.table-model .number{
+    position: absolute;
+    left: 36px;
+    top:0;
+    text-align: center;
+    line-height: 56px;
+}
+.table-model .idea-up{
+    position: absolute;
+    right: 36px;
+    top:50%;
+    text-align: center;
+    line-height: 56px;
+    color: #0171e4;
+    margin: -27px 0 0;
+}
+
+
+
+
+
+
+
+
+
+
+

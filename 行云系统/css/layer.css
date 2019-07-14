@@ -140,14 +140,25 @@
     width: 404px;
     border: 1px solid #dde7f0;
     line-height: 40px;
+    height: 40px;
     padding: 0 20px;
     font-size: 14px;
     outline: none;
 }
+.layer .form .add-button{
+    position: absolute;
+    right: 0;
+    top:0;
+    width: 120px;
+    height: 42px;
+    -moz-border-radius: 0;
+    -webkit-border-radius: 0;
+    border-radius: 0;
+}
 .layer .form .arrow-bottom{
     background: url(../images/arrow-bottom2.png) no-repeat;
     position: absolute;
-    right: 1px;
+    right: 0;
     top:1px;
     width: 40px;
     height: 42px;
@@ -252,4 +263,25 @@
 #layer-bill .loading{
     padding: 70px 0 0;
     text-align: center;
+}
+#layer-exclude .layer-tip{
+    margin: -210px 0 0 -300px;
+}
+#layer-exclude .company{
+    line-height: 30px;
+    padding: 0 0 18px;
+}
+#layer-exclude .company p{
+    position: relative;
+    padding: 0 20px 0 0;
+    width: 170px;
+}
+#layer-exclude .company .delete{
+    position: absolute;
+    right: 0;
+    top:0px;
+    background: url(../images/delete.png) 0 center no-repeat;
+    width: 10px;
+    height: 30px;
+    display: inline-block;
 }

@@ -165,6 +165,12 @@ $(function($) {
          //   $('#layer-remove').fadeOut();
          // })
       })
+      $('.report-btn').bind('click',function () {
+         $('#layer-report').fadeIn();
+      })
+      $('.exclude-btn').bind('click',function () {
+         $('#layer-exclude').fadeIn();
+      })
       $('.merge-btn').bind('click',function () {
          $('#layer-merge').fadeIn();
       })
@@ -179,23 +185,44 @@ $(function($) {
 
 
     if($('.report-page').size()>0){
-        $('.report-page .box').each(function(){
+        $('.box .up').each(function(){
             var _this=$(this);
             _this.attr('data-open','true');
-           $('.up').addClass('down');
         });
         $('.box .up').bind('click',function(){
-            var _this=$(this),_dataOpen=_this.parent().parent().attr('data-open'),_index=_this.parent().parent().index();
-            if(_dataOpen=='true'){
-                _this.parent().next('.hide-box').slideUp(500);
+            var _this=$(this),_dataOpen=_this.attr('data-open');
+            if(_dataOpen=='false'){
+                _this.prev('.hide-box').slideUp(500);
                 _this.removeClass('down');
-                _this.parent().parent().attr('data-open','false');
+                _this.html('');
+                _this.attr('data-open','true');
             }else{
-                _this.parent().next('.hide-box').slideDown(500);
+                _this.prev('.hide-box').slideDown(500);
                 _this.addClass('down');
-                _this.parent().parent().attr('data-open','true');
+                _this.html('收起');
+                _this.attr('data-open','false');
             }
         });
+
+        $('.table-model li').each(function(){
+            var _this=$(this);
+            _this.attr('data-open','true');
+        });
+        $('.table-model .idea-up').bind('click',function(){
+            var _this=$(this),_dataOpen=_this.attr('data-open');
+            if(_dataOpen=='false'){
+                _this.prev('.hide-box').slideUp(500);
+                _this.removeClass('.idea-down');
+                _this.html('展开');
+                _this.attr('data-open','true');
+            }else{
+                _this.prev('.hide-box').slideDown(500);
+                _this.addClass('.idea-down');
+                _this.html('收起');
+                _this.attr('data-open','false');
+            }
+        });
+
     }
 
     // back-top

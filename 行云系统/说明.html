@@ -79,7 +79,7 @@
            <article class="article">
               <div class="content clearfix">
                 <ul class="status-box float_l">
-                    <li class="finished">
+                    <li>
                       <a href="javascript:void(0);" class="a-block">
                         <div class="cricle"></div>
                         <p>目录</p>
@@ -123,11 +123,27 @@
                     </li>
                 </ul>
                 <div class="box float_r">
-                  <p>全是内容全全是内容全是内容全是内容全是内容全是内容全是内容全是内容全是内容全是内容全是内容全是内容全是内容全是内容全是内容全是内容全是内容是内容全是内容全是内容全是内容全是内容全是内容全是内容全是内容全是内容全是内容全是内容</p>
-                  <p>全是内容全全是内容全是内容全是内容全是内容全是内容全是内容全是内容全是内容全是内容全是内容全是内容全是内容全是内容全是内容全是内容全是内容是内容全是内容全是内容全是内容全是内容全是内容全是内容全是内容全是内容全是内容全是内容</p>
-                  <p>全是内容全全是内容全是内容全是内容全是内容全是内容全是内容全是内容全是内容全是内容全是内容全是内容全是内容全是内容全是内容全是内容全是内容是内容全是内容全是内容全是内容全是内容全是内容全是内容全是内容全是内容全是内容全是内容</p>
-                  <p>全是内容全全是内容全是内容全是内容全是内容全是内容全是内容全是内容全是内容全是内容全是内容全是内容全是内容全是内容全是内容全是内容全是内容是内容全是内容全是内容全是内容全是内容全是内容全是内容全是内容全是内容全是内容全是内容</p>
-                  <p>全是内容全全是内容全是内容全是内容全是内容全是内容全是内容全是内容全是内容全是内容全是内容全是内容全是内容全是内容全是内容全是内容全是内容是内容全是内容全是内容全是内容全是内容全是内容全是内容全是内容全是内容全是内容全是内容</p>
+                  <div class="speak">
+                    <p>全是内容全全是内容全是内容全是内容全是内容全是内容全是内容全是内容全是内容全是内容全是内容全是内容全是内容全是内容全是内容全是内容全是内容是内容全是内容全是内容全是内容全是内容全是内容全是内容全是内容全是内容全是内容全是内容</p>
+                  </div>
+                  <div class="speak">
+                    <p>全是内容全全是内容全是内容全是内容全是内容全是内容全是内容全是内容全是内容全是内容全是内容全是内容全是内容全是内容全是内容全是内容全是内容是内容全是内容全是内容全是内容全是内容全是内容全是内容全是内容全是内容全是内容全是内容</p>
+                  </div>
+                  <div class="speak">
+                    <p>全是内容全全是内容全是内容全是内容全是内容全是内容全是内容全是内容全是内容全是内容全是内容全是内容全是内容全是内容全是内容全是内容全是内容是内容全是内容全是内容全是内容全是内容全是内容全是内容全是内容全是内容全是内容全是内容</p>
+                  </div>
+                  <div class="speak">
+                    <p>全是内容全全是内容全是内容全是内容全是内容全是内容全是内容全是内容全是内容全是内容全是内容全是内容全是内容全是内容全是内容全是内容全是内容是内容全是内容全是内容全是内容全是内容全是内容全是内容全是内容全是内容全是内容全是内容</p>
+                  </div>
+                  <div class="speak">
+                    <p>全是内容全全是内容全是内容全是内容全是内容全是内容全是内容全是内容全是内容全是内容全是内容全是内容全是内容全是内容全是内容全是内容全是内容是内容全是内容全是内容全是内容全是内容全是内容全是内容全是内容全是内容全是内容全是内容</p>
+                  </div>
+                  <div class="speak">
+                    <p>全是内容全全是内容全是内容全是内容全是内容全是内容全是内容全是内容全是内容全是内容全是内容全是内容全是内容全是内容全是内容全是内容全是内容是内容全是内容全是内容全是内容全是内容全是内容全是内容全是内容全是内容全是内容全是内容</p>
+                  </div>
+                  <div class="speak">
+                    <p>全是内容全全是内容全是内容全是内容全是内容全是内容全是内容全是内容全是内容全是内容全是内容全是内容全是内容全是内容全是内容全是内容全是内容是内容全是内容全是内容全是内容全是内容全是内容全是内容全是内容全是内容全是内容全是内容</p>
+                  </div>
                 </div>
               </div>
            </article>
@@ -145,6 +161,35 @@
 
 <script language="javascript" type="text/javascript" src="js/jquery.js"></script>
 <script language="javascript" type="text/javascript" src="js/application.js"></script>
+<script type="text/javascript">
+    $(document).ready(function() {
+        $('.status-box li').click(function(){
+          var _this=$(this),_index=$(this).index();
+          _this.addClass('active').siblings('li').removeClass('active');
+          $('.switch-box').eq(_index).fadeIn(1000).siblings('.switch-box').hide();
+            $("html, body").animate({
+            scrollTop: $('.box .speak').eq(_index).offset().top }, {duration: 500,easing: "swing"});
+            return false;
+        })  
+        $(window).scroll(function () {
+           var $scrollTop = $(window).scrollTop(),
+               _width=$('.article').width(),
+               _window=$(window).width(),
+               _width2=(_window-_width)/2+60;
+           if($scrollTop >120){
+             $('.status-box').stop().addClass('fixed');
+             if (_window>=1200) {
+               $('.status-box.fixed').css({'left':_width2});
+             }else{
+               $('.status-box.fixed').css({'left':'160px'});
+             }
+           }else {          
+             $('.status-box').stop().removeClass('fixed');
+             $('.status-box.fixed').css({'left':0});
+           }
+        })
+    })
+</script>
 <!--[if lte IE 10]>
 <script language="javascript" type="text/javascript" src="js/placeholder.js"></script>
 <![endif]-->
