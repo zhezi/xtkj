@@ -221,6 +221,7 @@ input::-webkit-input-placeholder{
   color: #FFF;
   line-height: 1.12rem;
   height: 1.12rem;
+  padding: 0;
 }
 .form-box .point{
   font-size: 0.24rem;
