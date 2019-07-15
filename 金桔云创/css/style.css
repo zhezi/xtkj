@@ -222,6 +222,10 @@ input::-webkit-input-placeholder{
   line-height: 1.12rem;
   height: 1.12rem;
   padding: 0;
+  text-indent: 0;
+  text-align: left;
+  outline:none;
+  -webkit-appearance:none; 
 }
 .form-box .point{
   font-size: 0.24rem;
