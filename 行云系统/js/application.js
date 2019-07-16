@@ -179,7 +179,12 @@ $(function($) {
       })
       $('.layer .cover,.layer .close,.layer .close-btn').click(function(){
           $(".layer ").fadeOut();
-          $('html').css('overflow-y','scroll');
+          //$('html').css('overflow-y','scroll');
+      })
+      $('#layer-edit .cover').click(function(){
+          // $("this").unbind("click");
+         $('#layer-edit').stop().fadeIn();
+
       })
     }
 
