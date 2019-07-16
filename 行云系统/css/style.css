@@ -109,6 +109,10 @@
   background: #bc85f9;
   box-shadow: 0 0 15px #f0e6fc;
 }
+.index .content02 .name{
+  min-width: 170px;
+  display: inline-block;
+}
 .index .table td{
   padding: 15px 24px;
   text-align: left;

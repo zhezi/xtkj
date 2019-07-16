@@ -777,9 +777,9 @@ a.gray:hover{
   display: block;
 }
 .nano > .nano-pane {
-  background : #eee;
+  background: #F7F8FC;
   position   : absolute;
-  width      : 2px;
+  width: 14px;
   right      : 0;
   top        : 0;
   bottom     : 0;
@@ -794,13 +794,10 @@ a.gray:hover{
   border-radius         : 5px;
 }
 .nano > .nano-pane > .nano-slider {
-  background: #d6d6d6;
+  background: #bcbcbc;
   position              : relative;
-  margin                : 0 -1px;
-  -moz-border-radius    : 3px;
-  -webkit-border-radius : 3px;
-  border-radius         : 3px;
-  width: 4px;
+  margin: 0;
+  width: 14px;
 }
 .nano:hover > .nano-pane, .nano-pane.active, .nano-pane.flashed {
   visibility : visible\9; /* Target only IE7 and IE8 with this hack */

@@ -26,6 +26,7 @@
     padding: 10px 30px;
     width: 160px;
     margin: -74px 0 0 -110px;
+    min-height: auto
 }
 .layer-loading img{
     width: 100%;
@@ -155,14 +156,9 @@
     -webkit-border-radius: 0;
     border-radius: 0;
 }
-.layer .form .arrow-bottom{
-    background: url(../images/arrow-bottom2.png) no-repeat;
-    position: absolute;
-    right: 0;
-    top:1px;
-    width: 40px;
-    height: 42px;
-    display: inline-block;
+.layer .item-select .text{
+    background: url(../images/arrow-bottom2.png) right center no-repeat;
+    cursor: pointer;
 }
 #layer-match .form dt{
     float: left;
@@ -186,7 +182,6 @@
     z-index: 4;
     max-height: 150px;
     overflow-x: hidden;
-    overflow-y: scroll;
     border-bottom: 1px solid #e7e9f1;
     border-top: none;
 }
@@ -285,3 +280,39 @@
     height: 30px;
     display: inline-block;
 }
+
+#layer-agreement .layer-tip{
+    width: 800px;
+    margin: -274px 0 0 -400px;
+    padding: 0;
+}
+#layer-agreement .layer-box{
+    line-height: 24px;
+    max-width: 100%;
+}
+#layer-agreement .nano{
+    height: 446px;
+}
+#layer-agreement .nano .speak{
+    padding: 0 36px 36px;
+}
+#layer-agreement .nano h3{
+    padding: 0 0 2px;
+    font-weight: bold;
+}
+#layer-agreement .nano p{
+    position: relative;
+    padding: 0 0 8px 12px;
+}
+#layer-agreement .nano .away{
+    padding: 0 0 8px;
+}
+#layer-agreement .nano .away2{
+    padding: 0 0 8px 38px;
+}
+#layer-agreement .nano .number{
+    position: absolute;
+    left: 0;
+    top:0;
+}
+
