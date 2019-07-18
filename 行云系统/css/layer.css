@@ -15,11 +15,28 @@
 }
  /*提示浮层小*/
  .layer-small{
-    padding: 30px 30px;
-    width: 360px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    background: #fff;
+    font-size: 14px;
+    line-height: 30px;
+    padding:0 0 30px;
+    width: 420px;
     min-height: 100px;
-    margin: -110px 0 0 -210px;
+    margin: -127px 0 0 -210px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    overflow: hidden;
+    text-align: center;
 }
+  .layer .layer-small .layer-box{
+    text-align: center;
+ }
+  .layer .layer-small img{
+    width: 180px;
+  }
 
 /*loading加载*/
 .layer-loading .layer-tip{
@@ -265,11 +282,14 @@
 #layer-exclude .company{
     line-height: 30px;
     padding: 0 0 18px;
+    margin: 0 -66px 0 0;
 }
 #layer-exclude .company p{
+    float: left;
     position: relative;
     padding: 0 20px 0 0;
     width: 170px;
+    margin: 0 66px 0 0;
 }
 #layer-exclude .company .delete{
     position: absolute;
