@@ -164,6 +164,7 @@ a.gray:hover{
     color: #fff;
 }
 /*灰遮罩*/
+.unbind,
 .cover{
     position: absolute;
     left: 0;
