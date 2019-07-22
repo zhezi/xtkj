@@ -325,10 +325,10 @@
     height: 34px;
 }
 /*修复详情*/
-.location{
+/*.restore-page .location{
   padding: 6px 40px 0;
   max-width: 100%;
-}
+}*/
 .restore-page .article{
   max-width: 100%;
   padding: 0 10px;
