@@ -616,7 +616,7 @@ a.gray:hover{
     font-weight: normal;
     background: #f6f8fb;
     line-height: 22px;
-    padding: 16px 4px;
+    padding: 11px 4px;
     font-size: 14px;
 }
 .table tr:nth-child(odd){
@@ -624,7 +624,7 @@ a.gray:hover{
 }
 .table td{
     line-height: 26px;
-    padding: 15px 4px;
+    padding: 10px 4px;
     min-width: 40px;
     font-size: 12px;
 }
