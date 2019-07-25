@@ -11,13 +11,13 @@
 }
 .article{
     position:relative;
-    max-width:1000px;
+    max-width: 1150px;
     margin:0 auto 10px;
 }
 .location{
   line-height: 40px;
   padding: 6px 0 0;
-  max-width: 1000px;
+  max-width: 1150px;
   margin: 0 auto;
 }
 .location a{
@@ -544,7 +544,7 @@
   border-top: 0;
   padding: 30px 24px;
   line-height: 36px;
-  font-size: 16px;
+  font-size: 12px;
 }
 .report-page .box{
     background: #fff;

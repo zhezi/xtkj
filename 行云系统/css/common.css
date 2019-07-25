@@ -140,8 +140,8 @@ a.gray:hover{
     vertical-align: middle;
     text-align: center;
     outline: none;
-    line-height: 42px;
-    font-size: 16px;
+    line-height: 35px;
+    font-size: 14px;
 }
 .button-blue{
     background: #0171e4;
@@ -240,7 +240,7 @@ a.gray:hover{
     -webkit-transition: all 0.5s ease;
 }
 .header .head{
-    max-width: 1000px;
+    max-width: 1150px;
     margin: 0 auto;
     font-size: 0;
     position: relative;
@@ -293,13 +293,14 @@ a.gray:hover{
     display: inline-block;
 }
 .header .nav .subnav{
+    background: #0265d5;
     position: absolute;
     top: 52px;
     left: 0;
     width: 100%;
     line-height: 30px;
     text-align: center;
-    padding: 0 0 10px;
+    padding: 0 0 8px;
     display: none;
 }
 .header .nav .subnav a{
@@ -616,7 +617,7 @@ a.gray:hover{
     background: #f6f8fb;
     line-height: 22px;
     padding: 16px 4px;
-    font-size: 16px;
+    font-size: 14px;
 }
 .table tr:nth-child(odd){
     background: #f6f8fb;
@@ -625,6 +626,7 @@ a.gray:hover{
     line-height: 26px;
     padding: 15px 4px;
     min-width: 40px;
+    font-size: 12px;
 }
 .table a.away{
     margin: 0 10px 0 0;
