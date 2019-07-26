@@ -22,12 +22,19 @@
 }
 .location a{
   position: relative;
-  padding: 0 20px 0 0;
-  margin: 0 24px 0 0;
+  padding: 0 10px 0 0;
   display: inline-block;
+}
+.location .pipe{
+  margin: 0 10px 0 0;
 }
 .location .active{
   color: #0171e4;
+}
+.location .home-icon{
+  background: url(../images/home-icon.png) 0 center no-repeat;
+  padding: 0 10px 0 16px;
+  display: inline-block;
 }
 .location a .close{
   position: absolute;
