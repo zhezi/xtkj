@@ -276,8 +276,17 @@
     padding: 70px 0 0;
     text-align: center;
 }
+#layer-exclude {
+    overflow-y: scroll;
+}
+#layer-exclude .cover{
+    position: fixed;
+}
 #layer-exclude .layer-tip{
-    margin: -210px 0 0 -300px;
+    position: relative;
+    margin: 30px auto;
+    top: 0;
+    left: 0;
 }
 #layer-exclude .company{
     line-height: 30px;

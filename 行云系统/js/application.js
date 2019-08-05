@@ -170,6 +170,7 @@ $(function($) {
       })
       $('.exclude-btn').bind('click',function () {
          $('#layer-exclude').fadeIn();
+         $('html').css('overflow','hidden');
       })
       $('.merge-btn').bind('click',function () {
          $('#layer-merge').fadeIn();
@@ -179,7 +180,7 @@ $(function($) {
       })
       $('.layer .cover,.layer .close,.layer .close-btn').click(function(){
           $(".layer ").fadeOut();
-          //$('html').css('overflow-y','scroll');
+          $('html').css('overflow-y','scroll');
       })
       $('#layer-edit .cover').click(function(){
           // $("this").unbind("click");
