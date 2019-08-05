@@ -5,9 +5,9 @@
  * Date:2019-07-10
  *
  */
-.row .section{
-    padding: 0 0 0 220px;
-    min-height: 760px;
+
+.section{
+    min-height: 660px;
 }
 .article{
     position:relative;
@@ -36,7 +36,7 @@
   padding: 0 10px 0 16px;
   display: inline-block;
 }
-.location a .close{
+/*.location a .close{
   position: absolute;
   top:11px;
   right: 0;
@@ -47,7 +47,7 @@
 }
 .location .active .close{
   background: url(../images/close-active.png) center center no-repeat;
-}
+}*/
 .content{
   background: #fff;
     padding: 40px 30px 34px;
