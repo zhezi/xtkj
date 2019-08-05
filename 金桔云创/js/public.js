@@ -5,8 +5,8 @@ window.addEventListener('DOMContentLoaded', function (){
 	//设置字体
 	function setFontSize(){
 		var w = window.innerWidth;
-		if(w<640){
-		  document.documentElement.style.fontSize = 100*w/640 + 'px';
+		if(w<750){
+		  document.documentElement.style.fontSize = 100*w/750 + 'px';
 	    }else{
 		  document.documentElement.style.fontSize = 100 + 'px';
 	    }

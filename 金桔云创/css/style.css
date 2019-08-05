@@ -116,6 +116,9 @@ input::-webkit-input-placeholder{
     border: 1px solid #ff7852;
     color: #fff;
 }
+.button-orange:hover{
+    box-shadow: 0 0 10px #ffb9a8;
+}
 .button-orange02{
     background: #ffb9a8;
     border: 1px solid #ffb9a8;
@@ -124,6 +127,10 @@ input::-webkit-input-placeholder{
 .button-line-orange{
     border: 1px solid #ff7852;
     color: #ff7852;
+}
+.button-line-orange:hover{
+    background: #ff7852;
+    color: #fff;
 }
 .button-gray{
     background: #999;
@@ -135,6 +142,25 @@ input::-webkit-input-placeholder{
 }
 .btn02 .button{
   width: 47%;
+}
+.btn-fixed{
+  position: relative;
+  padding: 0.88rem 0 0;
+  font-size: 0;
+  text-align: center;
+}
+.btn-fixed .btn-box{
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  font-size: 0;
+}
+.btn-box .button{
+  border-radius: 0;
+  width: 50%;
+  line-height: 0.36rem;
+  box-sizing: border-box;
 }
 /*底部*/
 .footer{
@@ -156,7 +182,7 @@ input::-webkit-input-placeholder{
   font-size: 0.3rem;
 }
 .container .article{
-  padding: 0.4rem 0.36rem;
+  padding: 0.4rem;
   line-height: 0.4rem;
   font-size: 0.24rem;
 }
@@ -577,7 +603,152 @@ input::-webkit-input-placeholder{
 .box-case{
   display: none;
 }
+/*系统设置*/
+.set .btn{
+  padding: 0.72rem 0 0;
+}
+.set .btn .button{
+  margin: 0 0 0.4rem;
+}
+/*我的申请资料*/
+.idea-item{
+  padding: 0.36rem 0 0;
+  font-size: 0.3rem;
+  line-height: 0.56rem;
+}
+.idea-item dl{
+  display: flex;
+}
+.idea-item dt{
+  width: 1.54rem;
+  text-align: right;
+}
+/*个人中心*/
+.personal .article{
+  padding: 0;
+}
+.personal .img{
+  width: 100%;
+}
+.personal ul{
+  margin: 0.4rem 0;
+  display: flex;
+}
+.personal ul li{
+  width: 33.33%;
+  text-align: center;
+}
+.personal .icon{
+  width: 1.06rem;
+  height: 1.06rem;
+  border: 0.02rem solid #ff7852;
+  border-radius: 50%;
+  margin: 0 auto;
+  transition: all 0.5s ease;
+}
+.personal li:hover .icon{
+}
+.personal .icon01{
+  background: url(../images/icon01.png) center center no-repeat;
+  background-size: 0.46rem 0.46rem;
+}
+.personal li:hover .icon01{
+  background: #ff7852 url(../images/icon01-hover.png) center center no-repeat;
+  background-size: 0.46rem 0.46rem;
+}
+.personal .icon02{
+  background: url(../images/icon02.png) center center no-repeat;
+  background-size: 0.46rem 0.46rem;
+}
+.personal li:hover .icon02{
+  background: #ff7852 url(../images/icon02-hover.png) center center no-repeat;
+  background-size: 0.46rem 0.46rem;
+}
+.personal .icon03{
+  background: url(../images/icon03.png) center center no-repeat;
+  background-size: 0.46rem 0.46rem;
+}
+.personal li:hover .icon03{
+  background: #ff7852 url(../images/icon03-hover.png) center center no-repeat;
+  background-size: 0.46rem 0.46rem;
+}
+.personal li p{
+  line-height: 0.66rem;
+  font-size: 0.3rem;
+}
 
-
-
-
+/*融资详情*/
+.financing .idea{
+  line-height: 0.56rem;
+  font-size: 0.3rem;
+  margin: 0 0 0.2rem;
+}
+.table{
+  text-align: center;
+  font-size: 0.3rem;
+  border: 1px solid #ff7852;
+  border-radius: 3px;
+}
+.table th{
+  background: #ff7852;
+  line-height: 0.72rem;
+  color: #fff;
+  font-weight: normal;
+}
+.table tr:nth-child(odd){
+  background: #fff4f1;
+}
+.table td{
+  line-height: 0.36rem;
+  padding: 0.22rem 3px;
+}
+/*我的融资*/
+.my-financing .idea{
+  padding: 0.26rem 0.4rem;
+  border-radius: 3px;
+  border: 1px solid #ff7852;
+  line-height: 0.56rem;
+  font-size: 0.3rem;
+  margin: 0 0 0.3rem;
+}
+.my-financing .idea:hover{
+  box-shadow: 0 0 20px #ffb9a8;
+}
+.my-financing .idea .btn{
+  padding: 0.26rem 0.48rem;
+}
+.my-financing .idea .button{
+  padding: 0.15rem 0;
+  font-size: 0.3rem;
+  width: 44%;
+}
+/*查看合同*/
+.contract .idea{
+  line-height: 0.72rem;
+  font-size: 0.3rem;
+  margin: 0 0 0.3rem;
+  border: 1px solid #ff7852;
+  border-radius: 3px;
+}
+.contract .idea p{
+  padding: 0 0.34rem;
+}
+.contract .idea p:first-child{
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+}
+.contract .idea .bg{
+  background: #ff7852!important;
+  color: #fff;
+}
+.contract .idea p:nth-child(odd){
+  background: #fff4f1;
+}
+.contract .idea .c-btn{
+  padding: 0.15rem 0;
+  display: block;
+  text-align: center;
+}
+.contract .idea .c-btn:hover{
+  color: #ff7852;
+}
