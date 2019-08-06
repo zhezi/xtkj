@@ -598,6 +598,13 @@ a.gray:hover{
     cursor: pointer;
     border: 1px solid #cfe0f4;
 }
+.upload-text{
+    position: absolute;
+    left: 126px;
+    top:0;
+    line-height: 26px;
+    width: 50%;
+}
 .upload-input{    
     opacity: 0;
     filter: alpha(opacity=0);

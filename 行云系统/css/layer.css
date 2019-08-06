@@ -135,13 +135,17 @@
 .layer .layer-box{
     max-width: 446px;
     margin: 0 auto;
-    padding: 20px 0 0;
+    padding: 20px 0 30px;
     line-height: 40px;
     text-align: left;
 }
 .layer .btn{
     text-align: center;
-    padding: 10px 0 0;
+    position: absolute;
+    left: 50%;
+    bottom: 30px;
+    width: 446px;
+    margin: 0 0 0 -223px;
 }
 .layer .btn .button-away{
    margin-right: 8%;
