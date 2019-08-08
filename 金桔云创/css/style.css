@@ -752,3 +752,48 @@ input::-webkit-input-placeholder{
 .contract .idea .c-btn:hover{
   color: #ff7852;
 }
+
+.contract-show .table{
+  border-radius: 0;
+  box-shadow: 0 0 6px #ffb9a8;
+}
+.contract-show .point {
+  margin: 0.22rem 0 0.4rem;
+}
+.contract-show .idea{
+  line-height: 0.58rem;
+  font-size: 0.24rem;
+  text-align: left;
+  padding: 0.3rem 0.4rem;
+}
+.contract-show .idea .away{
+  padding: 0.3rem 0 0;
+}
+.point label{
+    padding: 0 0 0 0.36rem;
+    position: relative;
+    display: inline-block;
+    font-size: 0.24rem;
+    color: #999;    
+}
+.point .m-register em{
+    width: 0.22rem;
+    height: 0.22rem;
+    position: absolute;
+    top: 0.08rem;
+    left: 0;
+    display: inline-block;
+    border: 1px solid #9ca8b5;
+}
+.point .m-register.active em{
+    background: url(../images/checked2.png) center center no-repeat;
+    background-size: 0.20rem 0.18rem;
+}
+.point .m-register.active{
+  color: #364e69;
+}
+
+
+
+
+
