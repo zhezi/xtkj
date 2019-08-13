@@ -638,10 +638,15 @@
     position: relative;
     min-height: 56px;
 }
-.table-model li tr:nth-child(odd){
+.table-model li:nth-child(odd){
     background: #f6f8fb;
 }
-
+.table-model li.first,
+.table-model li.first p{
+  font-size: 14px;
+  line-height: 44px;
+  min-height: 44px;
+}
 .table-model .idea{
   padding: 0 58px;
 }
@@ -655,6 +660,7 @@
     -o-text-overflow: ellipsis;
     overflow: hidden;
     line-height: 56px;
+    font-size: 12px;
 }
 .table-model .idea .one{
     width: 31%;
@@ -677,6 +683,8 @@
     top:0;
     text-align: center;
     line-height: 56px;
+    min-width: 40px;
+    text-align: center;
 }
 .table-model .idea-up{
     position: absolute;
