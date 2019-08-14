@@ -171,6 +171,7 @@ $(function($) {
       $('.exclude-btn').bind('click',function () {
          $('#layer-exclude').fadeIn();
          $('html').css('overflow','hidden');
+         $(".nano").nanoScroller();
       })
       $('.merge-btn').bind('click',function () {
          $('#layer-merge').fadeIn();

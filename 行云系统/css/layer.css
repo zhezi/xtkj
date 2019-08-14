@@ -280,22 +280,16 @@
     padding: 70px 0 0;
     text-align: center;
 }
-#layer-exclude {
-    overflow-y: scroll;
-}
-#layer-exclude .cover{
-    position: fixed;
-}
 #layer-exclude .layer-tip{
-    position: relative;
-    margin: 30px auto;
-    top: 0;
-    left: 0;
+    margin: -197px 0 0 -300px;
 }
 #layer-exclude .company{
     line-height: 30px;
     padding: 0 0 18px;
     margin: 0 -66px 0 0;
+}
+#layer-exclude .nano{
+    height: 150px;
 }
 #layer-exclude .company p{
     float: left;

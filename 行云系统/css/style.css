@@ -6,6 +6,7 @@
  *
  */
 
+
 .section{
     min-height: 660px;
 }
@@ -655,15 +656,15 @@
 }
 .table-model .idea p{
     float: left;
-    white-space: nowrap;
-    text-overflow: ellipsis;
-    -o-text-overflow: ellipsis;
-    overflow: hidden;
     line-height: 56px;
     font-size: 12px;
 }
 .table-model .idea .one{
     width: 31%;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    -o-text-overflow: ellipsis;
+    overflow: hidden;
 }
 .table-model .idea .two{
     width: 22%;
