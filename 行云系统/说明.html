@@ -171,13 +171,14 @@
             scrollTop: $('.box .speak').eq(_index).offset().top-80+"px" }, {duration: 500,easing: "swing"});
             return false;
         })  
+        $('.header').stop().addClass('header-fixed');
+        $('.container').css({'padding-top':70});
         $(window).scroll(function () {
            var $scrollTop = $(window).scrollTop(),
                _width=$('.article').width(),
                _window=$(window).width(),
                _width2=(_window-_width)/2+60;
            if($scrollTop >60){
-             $('.header').stop().addClass('header-fixed');
              $('.status-box').stop().addClass('fixed');
              if (_window>=1200) {
                $('.status-box.fixed').css({'left':_width2,'top':70});
@@ -185,7 +186,6 @@
                $('.status-box.fixed').css({'left':'80px','top':70});
              }
            }else {          
-             $('.header').stop().removeClass('header-fixed');
              $('.status-box').stop().removeClass('fixed');
              $('.status-box.fixed').css({'left':0,'top':0});
            }
