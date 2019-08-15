@@ -168,7 +168,7 @@
           _this.addClass('active').siblings('li').removeClass('active');
           $('.switch-box').eq(_index).fadeIn(1000).siblings('.switch-box').hide();
             $("html, body").animate({
-            scrollTop: $('.box .speak').eq(_index).offset().top }, {duration: 500,easing: "swing"});
+            scrollTop: $('.box .speak').eq(_index).offset().top-80+"px" }, {duration: 500,easing: "swing"});
             return false;
         })  
         $(window).scroll(function () {
