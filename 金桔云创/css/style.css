@@ -367,6 +367,9 @@ input::-webkit-input-placeholder{
 .amount .btn .button{
   margin: 0 0 0.52rem;
 }
+.amount .btn-fixed .button{
+  margin: 0;
+}
 
 /*申请状态*/
 .header{

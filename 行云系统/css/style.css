@@ -178,6 +178,9 @@
 .explain-page .content{
   padding: 40px 60px;
 }
+.explain-page .nano{
+  height: 600px;
+}
 .status-box{
   background: #fff;
   margin: 0 0 0 14px;
