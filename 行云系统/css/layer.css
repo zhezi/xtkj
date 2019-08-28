@@ -342,4 +342,15 @@
     left: 0;
     top:0;
 }
-
+#layer-detail .layer-tip{
+    margin: -212px 0 0 -300px
+}
+#layer-detail .layer-box{
+    max-width: 546px;
+    text-align: center;
+}
+#layer-detail .sign .speak{
+    width: 100%;
+    left: -20px;
+    margin: 0;
+}
