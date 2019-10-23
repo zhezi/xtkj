@@ -791,6 +791,7 @@ input::-webkit-input-placeholder{
 .point .m-register.active em{
     background: url(../images/checked2.png) center center no-repeat;
     background-size: 0.20rem 0.18rem;
+    border: 1px solid #ff7852;
 }
 .point .m-register.active{
   color: #364e69;
