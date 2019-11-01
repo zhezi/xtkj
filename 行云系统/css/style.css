@@ -515,6 +515,17 @@
 }
 
 /*普通电子报告*/
+.report-page{
+  position: relative;
+}
+.report-page .set-btn{
+    position: absolute;
+    right: 0;
+    top:0;
+    width: 50px;
+    height: 50px;
+    background: url(../images/set-btn.png) center center no-repeat;
+}
 .report-page .point{
     line-height: 30px;
     padding: 0 0 12px;
