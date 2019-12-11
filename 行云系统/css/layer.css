@@ -170,6 +170,7 @@
     top:0;
     width: 120px;
     height: 42px;
+    line-height: 42px;
     -moz-border-radius: 0;
     -webkit-border-radius: 0;
     border-radius: 0;
@@ -306,6 +307,61 @@
     width: 10px;
     height: 30px;
     display: inline-block;
+}
+
+#layer-examine .layer-tip{
+    margin: -206px 0 0 -300px;
+}
+#layer-examine .nano{
+    height: 120px;
+}
+#layer-examine .nano .table tr:nth-child(odd){
+    background: none;
+}
+#layer-examine .nano .table tr:nth-child(even){
+    background: #f6f8fb;
+}
+#layer-examine .table th,
+#layer-examine .table td {
+    padding: 2px 4px;
+}
+#layer-examine .form{
+    position: relative;
+    margin:30px auto 0;
+    padding:0 0 30px;
+}
+#layer-examine .item-box{
+    margin:0 5px 0 0;
+    display:inline-block;
+    vertical-align: middle;
+}
+#layer-examine .item-box .text{
+    padding:0 40px 0 8px;
+}
+#layer-examine .item-one{
+    width:90px;
+}
+#layer-examine .item-one .text{
+    width:42px;
+}
+#layer-examine .item-long{
+    width:128px;
+}
+#layer-examine .item-long .text{
+    width:112px;
+    padding:0 8px;
+}
+#layer-examine .item-two{
+    width:112px;
+}
+#layer-examine .item-two .text{
+    width:64px;
+}
+#layer-examine .form .add-button{
+    width: 90px;
+}
+#layer-examine .btn .button{
+    line-height:38px;
 }
 
 #layer-agreement .layer-tip{
