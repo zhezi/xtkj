@@ -337,6 +337,11 @@
 }
 #layer-examine .item-box .text{
     padding:0 40px 0 8px;
+    font-size: 12px;
+}
+#layer-examine .item-box li{
+    font-size: 12px;
+    padding: 0 8px;
 }
 #layer-examine .item-one{
     width:90px;

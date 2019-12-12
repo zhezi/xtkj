@@ -763,32 +763,32 @@
               <table width="100%" border="0" cellspacing="0" cellpadding="0">
                 <tr>
                   <td width="41%">四川苍蓝印务有限公司</td>
-                  <td width="41%">四川苍蓝印务有限公司</td>
+                  <td width="41%">四川苍蓝印务有限公司1</td>
                   <td width="18%"><a href="javascript:void(0);" class="delete-tr">删除</a></td>
                 </tr>
                 <tr>
                   <td width="41%">四川苍蓝印务有限公司</td>
-                  <td width="41%">四川苍蓝印务有限公司</td>
+                  <td width="41%">四川苍蓝印务有限公司2</td>
                   <td width="18%"><a href="javascript:void(0);" class="delete-tr">删除</a></td>
                 </tr>
                 <tr>
                   <td width="41%">四川苍蓝印务有限公司</td>
-                  <td width="41%">四川苍蓝印务有限公司</td>
+                  <td width="41%">四川苍蓝印务有限公司3</td>
                   <td width="18%"><a href="javascript:void(0);" class="delete-tr">删除</a></td>
                 </tr>
                 <tr>
                   <td width="41%">四川苍蓝印务有限公司</td>
-                  <td width="41%">四川苍蓝印务有限公司</td>
+                  <td width="41%">四川苍蓝印务有限公司4</td>
                   <td width="18%"><a href="javascript:void(0);" class="delete-tr">删除</a></td>
                 </tr>
                 <tr>
                   <td width="41%">四川苍蓝印务有限公司</td>
-                  <td width="41%">四川苍蓝印务有限公司</td>
+                  <td width="41%">四川苍蓝印务有限公司5</td>
                   <td width="18%"><a href="javascript:void(0);" class="delete-tr">删除</a></td>
                 </tr>
                 <tr>
                   <td width="41%">四川苍蓝印务有限公司</td>
-                  <td width="41%">四川苍蓝印务有限公司</td>
+                  <td width="41%">四川苍蓝印务有限公司6</td>
                   <td width="18%"><a href="javascript:void(0);" class="delete-tr">删除</a></td>
                 </tr>
               </table>
@@ -992,6 +992,14 @@
   <script language="javascript" type="text/javascript" src="js/jquery.easing.js"></script>
   <script language="javascript" type="text/javascript" src="js/jquery.nanoscroller.min.js"></script>
   <script language="javascript" type="text/javascript" src="js/application.js"></script>
+  <script language="javascript" type="text/javascript">
+    $('#layer-examine .delete-tr').each(function(){
+      var _this=$(this);
+      _this.click(function(){
+        _this.parent().parent('tr').remove()
+      })
+    })
+  </script>
 
 
   <!--[if lte IE 10]>
