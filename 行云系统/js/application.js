@@ -173,6 +173,13 @@ $(function($) {
          $('html').css('overflow','hidden');
          $(".nano").nanoScroller();
       })
+
+      $('#add_sus').bind('click',function () {
+        $('#layer-examine').fadeIn();
+        $('html').css('overflow','hidden');
+        $(".nano").nanoScroller();
+      })
+
       $('.merge-btn').bind('click',function () {
          $('#layer-merge').fadeIn();
       })
