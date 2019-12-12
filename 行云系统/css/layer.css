@@ -311,6 +311,7 @@
 
 #layer-examine .layer-tip{
     margin: -206px 0 0 -300px;
+    overflow: visible;
 }
 #layer-examine .nano{
     height: 120px;
