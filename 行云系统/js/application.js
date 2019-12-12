@@ -178,6 +178,10 @@ $(function($) {
         $('#layer-examine').fadeIn();
         $('html').css('overflow','hidden');
         $(".nano").nanoScroller();
+        $('.add-button').bind('click',function(){
+          $('.nano table').append('<tr><td width="41%">四川苍蓝印务有限公司</td><td width="41%">四川苍蓝印务有限公司5</td><td width="18%"><a href="javascript:void(0);" class="delete-tr">删除</a></td></tr>');
+          $(".nano").nanoScroller();
+        })
       })
 
       $('.merge-btn').bind('click',function () {
