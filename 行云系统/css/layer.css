@@ -147,6 +147,16 @@
     width: 446px;
     margin: 0 0 0 -223px;
 }
+.layer .btn p{
+    line-height: 28px;
+    margin: 0 0 -8px;
+}
+.layer .btn p .away{
+    padding: 0 10px;
+}
+.layer .btn p a{
+    padding: 0 0 0 10px;
+}
 .layer .btn .button-away{
    margin-right: 8%;
 }
