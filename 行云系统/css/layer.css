@@ -431,7 +431,7 @@
     margin: -247px 0 0 -300px;
 }
 #layer-upgrade .form{
-    padding: 20px 0;
+    padding: 20px 0 0;
 }
 #layer-upgrade dt{
     width: 100px;
@@ -445,10 +445,13 @@
 #layer-upgrade .form .text{
     width: 304px;
 }
+#layer-upgrade .special{
+    line-height: 21px;
+}
+#layer-upgrade .btn{
+    bottom: 40px;
+}
 #layer-upgrade .button{
     line-height: 46px;
     font-size:16px;
-}
-#layer-upgrade .special{
-    line-height: 21px;
 }
