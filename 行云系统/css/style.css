@@ -711,9 +711,43 @@
     margin: -27px 0 0;
 }
 
-
-
-
+/* 升级特权 */
+.upgrade .article{
+  margin: 0 auto 30px;
+}
+.upgrade h3{
+  line-height: 30px;
+  padding: 0 0 14px;
+}
+.upgrade .block{
+  padding: 0 20px;
+}
+.upgrade .table tr:nth-child(odd){
+  background: none;
+}
+.upgrade .table td{
+  padding: 2px 0;
+  text-align: left;
+}
+.upgrade .table .name{
+  min-width: 130px;
+  display: inline-block;
+}
+.upgrade .up-banner{
+  padding: 40px 0 20px;
+}
+.upgrade .up-banner img{
+  max-width: 100%;
+}
+.upgrade .operating{
+  font-size: 0;
+  padding: 0 0 20px;
+}
+.upgrade .operating .button{
+  line-height: 40px;
+  font-size: 16px;
+  margin: 0 40px 0 0;
+}
 
 
 

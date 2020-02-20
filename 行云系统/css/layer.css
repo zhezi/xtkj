@@ -426,3 +426,29 @@
     left: -20px;
     margin: 0;
 }
+
+#layer-upgrade .layer-tip{
+    margin: -247px 0 0 -300px;
+}
+#layer-upgrade .form{
+    padding: 20px 0;
+}
+#layer-upgrade dt{
+    width: 100px;
+    float: left;
+}
+
+#layer-upgrade dd{
+    width: 346px;
+    float: left;
+}
+#layer-upgrade .form .text{
+    width: 304px;
+}
+#layer-upgrade .button{
+    line-height: 46px;
+    font-size:16px;
+}
+#layer-upgrade .special{
+    line-height: 21px;
+}
