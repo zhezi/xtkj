@@ -753,6 +753,9 @@
 .special-show .content{
   margin: 0 0 0 88px;
 }
+.special-show .location a:first-child{
+  margin: 0 0 0 88px;
+}
 /* 高级报告 */
 .advanced-report .article .content{
   min-height:328px;
