@@ -79,8 +79,13 @@
       <span class="pipe">&gt;</span>
       <a href="javascript:void(0);" class="active">电子报告列表</a>
     </div>
-    <section class="section">
+    <section class="section special-show">
       <article class="article">
+        <ul class="sidebar">
+          <li><a href="javascript:void(0);">银行流水报告</a></li>
+          <li class="active"><a href="javascript:void(0);">高级报告</a></li>
+          <li><a href="javascript:void(0);">关联关系报告</a></li>
+        </ul>
         <div class="content report-page">
           <a href="javascript:void(0);" class="set-btn"></a>
           <div class="operating">
@@ -788,28 +793,28 @@
         </div>
         <form action="">
           <div class="form">
-                <div class="item-box item-select item-one">
-                  <input type="text" value="" class="text" placeholder="个人" readonly="">
-                  <span class="arrow-bottom"></span>
-                  <ul>
-                    <li>个人1</li>
-                    <li>个人2</li>
-                    <li>个人3</li>
-                  </ul>
-                </div>
-                <div class="item-box item-long">
-                  <input type="text" value="" class="text" placeholder="请输入关联方名称">
-                </div>
-                <div class="item-box item-select item-two">
-                  <input type="text" value="" class="text" placeholder="关系来源" readonly="">
-                  <span class="arrow-bottom"></span>
-                  <ul>
-                    <li>关系来源1</li>
-                    <li>关系来源2</li>
-                    <li>关系来源3</li>
-                  </ul>
-                </div>
-                <a href="javascript:void(0);" class="button button-blue add-button">新增</a>
+            <div class="item-box item-select item-one">
+              <input type="text" value="" class="text" placeholder="个人" readonly="">
+              <span class="arrow-bottom"></span>
+              <ul>
+                <li>个人1</li>
+                <li>个人2</li>
+                <li>个人3</li>
+              </ul>
+            </div>
+            <div class="item-box item-long">
+              <input type="text" value="" class="text" placeholder="请输入关联方名称">
+            </div>
+            <div class="item-box item-select item-two">
+              <input type="text" value="" class="text" placeholder="关系来源" readonly="">
+              <span class="arrow-bottom"></span>
+              <ul>
+                <li>关系来源1</li>
+                <li>关系来源2</li>
+                <li>关系来源3</li>
+              </ul>
+            </div>
+            <a href="javascript:void(0);" class="button button-blue add-button">新增</a>
           </div>
         </form>
         <div class="btn">
@@ -984,9 +989,9 @@
   <script language="javascript" type="text/javascript" src="js/jquery.nanoscroller.min.js"></script>
   <script language="javascript" type="text/javascript" src="js/application.js"></script>
   <script language="javascript" type="text/javascript">
-    $('#layer-examine .delete-tr').each(function(){
-      var _this=$(this);
-      _this.click(function(){
+    $('#layer-examine .delete-tr').each(function () {
+      var _this = $(this);
+      _this.click(function () {
         _this.parent().parent('tr').remove()
       })
     })
