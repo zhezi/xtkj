@@ -668,6 +668,11 @@
 .table-model .hide-box .idea{
   border-top: 1px solid #fbfbfd;
 }
+.table-model .sign{
+  width: auto;
+  height: auto;
+  background: none;
+}
 .table-model .idea p{
     float: left;
     line-height: 56px;

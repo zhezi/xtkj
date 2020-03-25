@@ -716,10 +716,10 @@ a.gray:hover{
     vertical-align: middle;
     display: inline-block;
     line-height: 18px;
-    /*width: 26px;
+    width: 26px;
     height: 26px;
     background: url(../images/sign.png) center center no-repeat;
-*/
+
 }
 .sign.away{
     margin: 6px 0 0 10px;
