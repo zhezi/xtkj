@@ -808,6 +808,38 @@
   padding: 0 10px;
 }
 
+.dishonesty-page .box{
+  margin: 0 30px 20px;
+}
+.dishonesty-page .box h2{
+  background: #0171E4;
+  line-height: 28px;
+  padding: 0 18px;
+  font-size: 14px;
+  color: #fff;
+  font-weight: 600;
+}
+.dishonesty-page .box h3{
+  text-align: center;
+  font-weight: 600;
+}
+.dishonesty-page .box p{
+  line-height: 16px;
+  font-size: 14px;
+  padding: 0 0 14px;
+}
+.dishonesty-page .box .idea{
+  background: #f6f8fb;
+  padding: 20px 40px;
+}
+.dishonesty-page .box .idea .item{
+  padding: 14px 0 34px;
+}
+.dishonesty-page .box .idea dl{
+  display: flex;
+  justify-content: space-between;
+}
+
 @media all and (max-width:1326px){
   /* .sidebar{
     position: absolute;

@@ -324,6 +324,9 @@ textarea::-webkit-input-placeholder {
 .footer .copyright{
     float:left;
 }
+.footer .copyright a{
+    color: #fff;
+}
 .footer .copyright span{
     vertical-align: middle;
     font-size: 18px;
