@@ -43,11 +43,15 @@ $(function($) {
   (function(){
     
     // 菜单切换
-  	$('.switch a').click(function(){
-  		var _this=$(this),_index=$(this).index();
-  		_this.addClass('active').siblings('a').removeClass('active');
-  		$('.switch-box').eq(_index).fadeIn(1000).siblings('.switch-box').hide();
-  	})
+    $('.idea-box').each(function(){
+      var $this=$(this);
+      $this.find('.switch a').click(function(){
+          var _this=$(this),_index=$(this).index();
+          _this.addClass('active').siblings('a').removeClass('active');
+          $this.find('.switch-box').eq(_index).fadeIn(1000).siblings('.switch-box').hide();
+        })
+
+    })
 
     
     if ($('.m-login').size()>0) {

@@ -530,36 +530,9 @@
     line-height: 30px;
     padding: 0 0 12px;
 }
-.report-page .idea-box .switch{
-    background: #f6f8fb;
-    height: 56px;
-    margin: 0;
-}
-.report-page .idea-box .switch a{
-   position: relative;
-   line-height: 54px;
-   padding: 0 24px;
-   border: 0;
-}
-.report-page .idea-box .switch a:hover,
-.report-page .idea-box .switch .active{
-    color: #0171e4;
-    border-bottom: 2px solid #0171e4;
-}
-.report-page .idea-box .switch em{
-    position: absolute;
-    left: 50%;
-    bottom: 0;
-    width:0;
-    height:0;
-    border-style: solid;
-    border-color: transparent transparent #0171e4;
-    border-width: 0 7px 9px;
-    margin: 0 0 0 -7px;
-    display: none;
-}
-.report-page .idea-box .switch .active em{
-   display: block;
+
+.report-page .idea-box {
+  margin: 0 0 20px;
 }
 .report-page .idea-box .switch-box{
   border: 1px solid #e7eff9;
@@ -571,7 +544,7 @@
 .report-page .box{
     background: #fff;
     padding: 24px 30px;
-    margin: 20px 0 0;
+    margin: 0 0 20px;
     -moz-border-radius: 3px;
     -webkit-border-radius: 3px;
     border-radius: 3px;
@@ -582,6 +555,7 @@
 .report-page .caption{
     line-height: 24px;
     padding: 0 0 14px;
+    min-height: 24px;
 }
 .report-page .caption .select{
     margin: 0 20px 0 0;
@@ -615,6 +589,10 @@
 }
 .report-page .col-6{
     width: 43.6%;
+}
+.report-page .idea-box .col-6{
+  width: 43.3%;
+  margin: 0;
 }
 .report-page .col-6 .right{
   padding: 0 20px 0 0;

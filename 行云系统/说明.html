@@ -167,38 +167,6 @@
 <script language="javascript" type="text/javascript" src="js/jquery.easing.js"></script>
 <script language="javascript" type="text/javascript" src="js/jquery.nanoscroller.min.js"></script>
 <script language="javascript" type="text/javascript" src="js/application.js"></script>
-<script type="text/javascript">
-    $(document).ready(function() {
-        $('.status-box li').click(function(){
-          var _this=$(this),_index=$(this).index();
-          _this.addClass('active').siblings('li').removeClass('active');
-          $('.switch-box').eq(_index).fadeIn(1000).siblings('.switch-box').hide();
-            $("html, body").animate({
-            scrollTop: $('.box .speak').eq(_index).offset().top-80+"px" }, {duration: 500,easing: "swing"});
-            return false;
-        })  
-        $(".nano").nanoScroller();
-        $('.header').stop().addClass('header-fixed');
-        $('.container').css({'padding-top':70});
-        $(window).scroll(function () {
-           var $scrollTop = $(window).scrollTop(),
-               _width=$('.article').width(),
-               _window=$(window).width(),
-               _width2=(_window-_width)/2+60;
-           if($scrollTop >60){
-             $('.status-box').stop().addClass('fixed');
-             if (_window>=1200) {
-               $('.status-box.fixed').css({'left':_width2,'top':70});
-             }else{
-               $('.status-box.fixed').css({'left':'80px','top':70});
-             }
-           }else {          
-             $('.status-box').stop().removeClass('fixed');
-             $('.status-box.fixed').css({'left':0,'top':0});
-           }
-        })
-    })
-</script>
 <!--[if lte IE 10]>
 <script language="javascript" type="text/javascript" src="js/placeholder.js"></script>
 <![endif]-->
