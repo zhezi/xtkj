@@ -788,9 +788,7 @@
 .details-page .article{
     overflow: visible;
     min-height: 600px;
-    background: #fff;
-    padding: 0 40px;
-    margin: 20px auto;
+    margin: 0 auto;
 }
 .details-page .main{
     padding:30px 50px;
@@ -804,6 +802,7 @@
     -moz-border-radius: 2px;
     -webkit-border-radius: 2px;
     border-radius: 2px;
+    background: #fff;
 }
 .details-page .main h3{
     font-size: 18px;
