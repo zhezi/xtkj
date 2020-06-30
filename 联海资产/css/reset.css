@@ -55,7 +55,7 @@ body,html {
 	_width: expression((document.documentElement.clientWidth||document.body.clientWidth)<1200?"1200px":"");
 	overflow-x: hidden;
 	overflow-y: hidden;
-	background: #F0F0F0;
+    background: #ececec;   
 }
 .article{
     position:relative;

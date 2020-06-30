@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<title>联海资产</title>
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="keywords" content="">
+<meta name="description" content="">
+<meta content="yes" name="apple-mobile-web-app-capable">
+<meta name="format-detection" content="telephone=no"/>
+<meta content="black-translucent" name="apple-mobile-web-app-status-bar-style">
+<link rel="icon" href="favicon.ico" />
+<link rel="stylesheet" href="css/reset.css">
+<link rel="stylesheet" href="css/common.css">
+<link rel="stylesheet" href="css/login.css">
+<link rel="stylesheet" href="css/layer.css">
+<script language="javascript" type="text/javascript" src="js/jquery.js"></script>
+<!--[if lt IE 9]>
+<script src="js/html5.js"></script>
+<![endif]-->
+</head>
+
+<body>
+<div class="container register">
+    <div class="header">
+    <div class="head clearfix">
+        <a href="/" class="logo float_l"></a>
+        <!--<div class="item float_r">-->
+            <!--<a href="/passport/login" class="button login-btn">登录</a>-->
+            <!--<a href="/passport/register" class="button register-btn">注册</a>-->
+        <!--</div>-->
+        <!-- 未登录 -->
+        <div class="item float_r">
+            <a href="/passport/register" class="button register-btn">合格投资者注册</a>
+        </div>
+
+        <!-- 已登录 -->
+        <!-- <div class="item float_r logined">
+            <a href="/uasset/index" class="button user-name"><span>13621175682</span></a>
+            <div class="operate-nav">
+                <a href="/uasset/index">我的资产</a>
+                <a href="/user/changepwd">修改密码</a>
+                <a href="/passport/logout">安全退出</a>
+            </div>
+        </div> -->
+        <ul class="nav float_l">
+            <li>
+                <a href="/" class="name active">首页</a>
+            </li>
+            <li>
+                <a href="/product/index" class="name ">产品</a>
+            </li>
+        </ul>
+    </div>
+</div>
+<!-- header end -->
+
+    <!-- header end -->
+
+    <section class="section">
+            <div class="bg-bar"></div>
+            <article class="article">
+              <a href="javascript:void(0);" class="back"></a>
+              <form>
+                 <div class="form">
+                   <h2>验证账户身份</h2>
+                   <dl>
+                     <dt></dt>
+                     <dd>
+                       <input type="text"  placeholder="手机号" id="mobile" name="mobile" class="text" value="">
+                     </dd>
+                   </dl>
+                   <dl>
+                     <dt></dt>
+                     <dd>
+                       <input name="checkcode" type="text"  placeholder="短信验证码" class="text text-short">
+                       <a href="javascript:void(0);" onclick="sendSms();" id="btn-code" class="button button-code">获取短信验证码</a>
+                       <!--<a href="javascript:void(0);" class="button button-gray">重发（60s）</a>-->
+                     </dd>
+                   </dl>
+                     <input type="hidden" id="TencentCaptcha" data-appid="2074508404" data-cbfn="callback" />
+
+                   <div class="btn">
+                     <p class="red error" id="show_err"></p>
+                     <a href="javascript:void(0);" id="sub-step2" class="button button-red">提交</a>
+                   </div>
+                 </div>
+              </form>
+            </article>
+        </section>
+        <!-- section over -->
+
+
+        <div class="side-box">
+    <div class="idea back-top">
+        <a href="javascript:void(0);" class="a-block">
+            <img src="https://ssl-sfsp.xingyoucai.com/images/back-icon.png">
+        </a>
+    </div>
+</div>
+
+<footer class="footer">
+    <div class="foot clearfix">
+        <p>
+            <a href="http://www.lianhaifund.com/about/introduce">关于联海</a>
+            <a href="http://www.lianhaifund.com/about/jobs">加入我们</a>
+            <a href="http://www.lianhaifund.com/about/links">联系我们</a>
+        </p>
+        <br>
+        客服服务时间：周一至周五 08:30 至 17:30	客服邮箱：<br>
+        lianhaiservice@lianhai.com<br>
+        根据证监会最新要求，基金净值查询仅限产品持有人，如有任何疑问请致电联海客服<br>
+        联海资产版权所有 京ICP备15011399号 投资有风险，理财需谨慎
+
+    </div>
+</footer>
+<div class="layer" id="layer-warn-toast">
+    <div class="cover"></div>
+    <div class="layer-tip">
+        <a href="javascript:void(0);" class="close" id="warn-close"></a>
+        <h2>提示信息</h2>
+        <p id="warn-content" class="">您已上传打款凭证，请稍等管理人确认！</p>
+        <div class="btn">
+            <a href="javascript:void(0);" class="button button-red" id="warn-confirm">确定</a>
+            <p class="red"></p>
+        </div>
+    </div>
+</div>
+<script type="text/javascript">
+    function calert(content, color) {
+        if (!color) {
+            color = "red";
+        }
+        $("#warn-content").html(content);
+        $("#warn-content").attr("class", color);
+        $('#layer-warn-toast').fadeIn();
+    }
+    $(document).ready(function(){
+        $('#warn-close,#warn-confirm').click(function(){
+            $("#layer-warn-toast").fadeOut();
+        })
+    });
+</script>
+
+<script language="javascript" type="text/javascript" src="https://ssl-sfsp.xingyoucai.com/js/application.js?t=20180501"></script>
+
+    </div>
+    <!-- container over -->
+<script src="https://ssl.captcha.qq.com/TCaptcha.js"></script>
+<!--[if lte IE 10]>
+<script language="javascript" type="text/javascript" src="https://ssl-sfsp.xingyoucai.com/js/placeholder.js"></script>
+<![endif]-->
+<script type="text/javascript">
+        var InterValObj; //timer变量，控制时间
+        var count = 60; //间隔函数，1秒执行
+        var curCount;//当前剩余秒数
+
+
+
+        //发送短信验证
+        function sendSms(){
+            $("#show_err").html('');
+            var obj = $(this);
+            var mobile = $("#mobile").val();
+            if(mobile.length==0) {
+                $("#mobile").focus();
+                $("#show_err").html('手机号不能为空');
+                return false;
+            }
+            if(mobile.length!=11)
+            {
+                $("#mobile").focus();
+                $("#show_err").html('手机号位数不合法');
+                return false;
+            }
+
+            var myreg = /^((13|15|17|18)+\d{9})$/;
+            if(!myreg.test(mobile))
+            {
+                $("#mobile").focus();
+                $("#show_err").html('手机号不合法');
+                return false;
+            }
+            $("#show_err").html('');
+            $("#TencentCaptcha").trigger("click");
+            return;
+        }
+        // 发送验证码
+        function callback(res){
+
+            if(res.ret != 0){
+                return;
+            }
+            $("#show_err").html('');
+            var obj = $(this);
+            var mobile = $("#mobile").val();
+            if(mobile.length==0) {
+                $("#mobile").focus();
+                $("#show_err").html('手机号不能为空');
+                return false;
+            }
+            if(mobile.length!=11)
+            {
+                $("#mobile").focus();
+                $("#show_err").html('手机号位数不合法');
+                return false;
+            }
+
+            var myreg = /^((13|15|17|18)+\d{9})$/;
+            if(!myreg.test(mobile))
+            {
+                $("#mobile").focus();
+                $("#show_err").html('手机号不合法');
+                return false;
+            }
+            $("#show_err").html('');
+            $.ajaxSetup({ cache: false });
+            $.post("https://ssl-sfsp.xingyoucai.com/index.php?_a=sendSms&_c=tools&type=mobilephone", {mobilephone: mobile, message: "_findpwd_",verify_code:"8e1e706f687a35c90270b5e15429ea1c",ticket:res.ticket,randstr:res.randstr} ,function(retData){
+                if ('error' == retData.ret) {
+                    $("#show_err").html(retData.msg);
+                    return;
+                }
+                curCount = count;
+                //设置button效果，开始计时
+                $("#btn-code").attr("onclick", "javascript:;");
+                $("#btn-code").html("重发(" + curCount + "s)");
+                InterValObj = window.setInterval(SetRemainTime, 1000); //启动计时器，1秒执行一次
+                obj.hide();
+            }, "json");
+        }
+
+        function SetRemainTime() {
+            if (curCount == 0) {
+                window.clearInterval(InterValObj);//停止计时器
+                $("#btn-code").attr("onclick","sendSms();");//启用按钮
+                $("#btn-code").html("重发");
+            }
+            else {
+                curCount--;
+                $("#btn-code").html("重发(" + curCount + "s)");
+            }
+        }
+
+        $(function() {
+            $("#sub-step2").click(function() {
+                $("#show_err").html('');
+                var mobile = $("#mobile").val();
+                if(mobile.length==0) {
+                    $("#mobile").focus();
+                    $("#show_err").html('手机号不能为空');
+                    return false;
+                }
+                if(mobile.length!=11)
+                {
+                    $("#mobile").focus();
+                    $("#show_err").html('手机号位数不合法');
+                    return false;
+                }
+
+                var myreg = /^((13|15|17|18)+\d{9})$/;
+                if(!myreg.test(mobile))
+                {
+                    $("#mobile").focus();
+                    $("#show_err").html('手机号不合法');
+                    return false;
+                }
+                $("#show_err").html('');
+                var checkcode = $("input[name='checkcode']").val();
+
+                var regex = /^\d{6}$/;
+
+                if(!regex.exec(checkcode)) {
+                    $("#show_err").html('短信验证码输入有误!');
+                    return;
+                }
+                $("#show_err").html('');
+                $.post("/passport/ajaxFindpwd", {mobile:mobile,checkcode:checkcode,step:1}, function(re){
+                    if ('error' == re.ret) {
+                        if (re.msg == 'logined') {
+                            $("#show_err").html('您已经登录！');
+                            return false;
+                        }
+                        if (re.msg == 'param_error') {
+                            $("#show_err").html('参数错误！');
+                            return false;
+                        }
+                        if (re.msg == 'mobile_phone_error')
+                        {
+                            $("#show_err").html('手机号不正确！');
+                            return false;
+                        }
+                        if (re.msg == 'checkcode_error')
+                        {
+                            $("#show_err").html('验证码不正确或已失效，请重新获取！');
+                            return false;
+                        }
+                        if (re.msg == 'verify_fail')
+                        {
+                            $("#show_err").html('验证失败！');
+                            return false;
+                        }
+                        $("#show_err").html('未知错误！');
+                        return;
+                    }else{
+                        window.top.location.href = '/passport/Findpwd?setp=3&k='+re.msg;
+                        return;
+                    }
+                },'json');
+
+            });
+        });
+    </script>
+</body>
+</html>

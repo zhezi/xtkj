@@ -1,0 +1,582 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<title>联海资产</title>
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="keywords" content="">
+<meta name="description" content="">
+<meta content="yes" name="apple-mobile-web-app-capable">
+<meta name="format-detection" content="telephone=no"/>
+<meta content="black-translucent" name="apple-mobile-web-app-status-bar-style">
+<link rel="icon" href="favicon.ico" />
+<link rel="stylesheet" href="css/reset.css">
+<link rel="stylesheet" href="css/common.css">
+<link rel="stylesheet" href="css/login.css">
+<link rel="stylesheet" href="css/layer.css">
+<script language="javascript" type="text/javascript" src="js/jquery.js"></script>
+<!--[if lt IE 9]>
+<script src="js/html5.js"></script>
+<![endif]-->
+</head>
+
+<body>
+<div class="container register">
+    <div class="header">
+    <div class="head clearfix">
+        <a href="/" class="logo float_l"></a>
+        <!--<div class="item float_r">-->
+            <!--<a href="/passport/login" class="button login-btn">登录</a>-->
+            <!--<a href="/passport/register" class="button register-btn">注册</a>-->
+        <!--</div>-->
+        <!-- 未登录 -->
+        <div class="item float_r">
+            <a href="/passport/register" class="button register-btn">合格投资者注册</a>
+        </div>
+
+        <!-- 已登录 -->
+        <!-- <div class="item float_r logined">
+            <a href="/uasset/index" class="button user-name"><span>13621175682</span></a>
+            <div class="operate-nav">
+                <a href="/uasset/index">我的资产</a>
+                <a href="/user/changepwd">修改密码</a>
+                <a href="/passport/logout">安全退出</a>
+            </div>
+        </div> -->
+        <ul class="nav float_l">
+            <li>
+                <a href="/" class="name active">首页</a>
+            </li>
+            <li>
+                <a href="/product/index" class="name ">产品</a>
+            </li>
+        </ul>
+    </div>
+</div>
+<!-- header end -->
+
+    <!-- header end -->
+
+    <section class="section">
+            <div class="bg-bar"></div>
+            <article class="article">
+              <ul class="step clearfix">
+                <li class="first active"><p><span class="num">1</span>经办人注册</p></li>
+                <li><p><span class="num">2</span>完善企业资料</p></li>
+                <li class="last"><p><span class="num">3</span>风险等级评估</p></li>
+              </ul>
+              <form>
+                 <div class="form">
+                   <dl>
+                     <dt>企业名称</dt>
+                     <dd>
+                       <input type="text"  placeholder="请输入与工商营业执照一致的企业名称" class="text" id="nickname">
+                       <p class="red error" id="nickname_error"></p>
+                     </dd>
+                 </dl>
+                 <dl class="clearfix">
+                     <dt>认购主体类型</dt>
+                     <dd class="keywords">
+                     <div class="text-select">
+                         <input type="text" readonly="readonly" class="text select-btn" value="一般企业" id="usertype">
+                         <div class="item">
+                             <div class="item-box"> 
+                                 <ul>
+                                     <li>一般企业</li>
+                                     <li>私募基金</li>
+                                     <li>有限合伙企业</li>
+                                     <!--  <li>有限合伙企业管理的有限合伙型基金</li>-->
+                                 </ul>
+                             </div>
+                         </div>
+                     </div>
+                     <p class="red error" id="usertype_error"></p>
+                 </dl>
+                   <dl>
+                     <dt>手机号码</dt>
+                     <dd>
+                       <input type="text"  placeholder="请输您的手机号" class="text" id="phone">
+                         <p class="red error" id="phone_error"></p>
+                     </dd>
+                   </dl>
+                   <dl>
+                     <dt>短信验证码</dt>
+                     <dd>
+                       <input type="text"  placeholder="请输入手机收到的验证码" class="text text-short" id = "yzcode" name="checkcode">
+                       <a href="javascript:sendSms();" id="btn-code" class="button button-code">获取短信验证码</a>
+                         <input type="hidden" id="TencentCaptcha" data-appid="2074508404" data-cbfn="callback" />
+                       <p class=" red error" id="sendsms_error"></p>
+                        <!--<a href="javascript:void(0);" class="button button-gray">重发（60s）</a> -->
+                     </dd>
+                   </dl>
+                   <dl>
+                     <dt>登录密码</dt>
+                     <dd>
+                        <!--暗文密码输入框-->  
+                        <div class="psw_invisible">  
+                            <img class="img visible" src="https://ssl-sfsp.xingyoucai.com/images/login/invisible.png">
+                            <input type="password" class="text input_invisible psw_selected" placeholder="8-18位字符，数字或英文，区分大小写" name="user_pwd"/>
+                            <input type="text" class=" red error" passwordMask="true" class="text input_invisible" placeholder="8-18位字母、数字、区分大小写" style="display:none;"/>
+                        </div>
+                        <!--明文密码输入框-->  
+                        <div class="psw_visible" style="display: none;">  
+                            <img class="img invisible" src="https://ssl-sfsp.xingyoucai.com/images/login/visible.png">
+                            <input type="text" class="text input_visible" placeholder="8-18位字母、数字、区分大小写" name="user_pwd"/>
+                        </div>
+                        <p class="red error" id="user_pwd-err"></p>
+                     </dd>
+                   </dl>
+                     <p>
+                         <label class="m-login" id="xieyi_l"><em id="xieyi_em" class="active"></em>我已阅读并同意</label>
+                         <a href="/protocol/register" target="_blank" class="blue">《联海资产注册协议》</a>
+                     </p>
+                    <br>
+                   <div class="btn">
+                       <a  class="button button-gray" id="nextstep_gray">下一步</a>
+                       <a class="button button-red" onclick="formsub();" id="nextstep_blue" style="display: none;">下一步</a>
+                   </div>
+                 </div>
+              </form>
+            </article>
+        </section>
+        <!-- section over -->
+
+        <div class="side-box">
+          <div class="idea back-top">
+            <a href="javascript:void(0);" class="a-block">
+              <img src="https://ssl-sfsp.xingyoucai.com/images/back-icon.png">
+
+            </a>
+          </div>
+        </div>
+
+        <div class="side-box">
+    <div class="idea back-top">
+        <a href="javascript:void(0);" class="a-block">
+            <img src="https://ssl-sfsp.xingyoucai.com/images/back-icon.png">
+        </a>
+    </div>
+</div>
+
+<footer class="footer">
+    <div class="foot clearfix">
+        <p>
+            <a href="http://www.lianhaifund.com/about/introduce">关于联海</a>
+            <a href="http://www.lianhaifund.com/about/jobs">加入我们</a>
+            <a href="http://www.lianhaifund.com/about/links">联系我们</a>
+        </p>
+        <br>
+        客服服务时间：周一至周五 08:30 至 17:30	客服邮箱：<br>
+        lianhaiservice@lianhai.com<br>
+        根据证监会最新要求，基金净值查询仅限产品持有人，如有任何疑问请致电联海客服<br>
+        联海资产版权所有 京ICP备15011399号 投资有风险，理财需谨慎
+
+    </div>
+</footer>
+<div class="layer" id="layer-warn-toast">
+    <div class="cover"></div>
+    <div class="layer-tip">
+        <a href="javascript:void(0);" class="close" id="warn-close"></a>
+        <h2>提示信息</h2>
+        <p id="warn-content" class="">您已上传打款凭证，请稍等管理人确认！</p>
+        <div class="btn">
+            <a href="javascript:void(0);" class="button button-red" id="warn-confirm">确定</a>
+            <p class="red"></p>
+        </div>
+    </div>
+</div>
+<script type="text/javascript">
+    function calert(content, color) {
+        if (!color) {
+            color = "red";
+        }
+        $("#warn-content").html(content);
+        $("#warn-content").attr("class", color);
+        $('#layer-warn-toast').fadeIn();
+    }
+    $(document).ready(function(){
+        $('#warn-close,#warn-confirm').click(function(){
+            $("#layer-warn-toast").fadeOut();
+        })
+    });
+</script>
+
+<script language="javascript" type="text/javascript" src="https://ssl-sfsp.xingyoucai.com/js/application.js?t=20180501"></script>
+
+    </div>
+    <!-- container over -->
+<script language="javascript" type="text/javascript" src="https://ssl-sfsp.xingyoucai.com/js/check-pwd.js"></script>
+    <script src="https://ssl.captcha.qq.com/TCaptcha.js"></script>
+<script type="text/javascript">  
+    var visible=$('.psw_visible');
+    var invisible=$('.psw_invisible');
+    var inputVisible = $('.input_visible');  
+    var inputInVisible = $('.input_invisible');  
+    function showPsw(){  
+        var val = inputInVisible.val();
+        inputVisible.val(val);
+        inputVisible.addClass('psw_selected');
+        inputInVisible.removeClass('psw_selected');
+        invisible.hide();
+        visible.show();    
+    }  
+    function hidePsw(){  
+        var val=inputVisible.val();
+        inputInVisible.val(val);
+        inputInVisible.addClass('psw_selected');
+        inputVisible.removeClass('psw_selected');
+        invisible.show();    
+        visible.hide();
+    }
+    $('.visible').click(function(){
+        showPsw();
+    })
+    $('.invisible').click(function(){
+        hidePsw()
+    })
+</script>
+<script type="text/javascript">
+
+        $.ajaxSetup({
+            async : false
+        });
+
+        $("#phone").focusout(function() {
+            check_phone();
+        });
+        $("#phone").on('change keyup',function(){
+            checkall();
+        });
+        $("#nickname").on('change keyup',function(){
+            checkall();
+        });
+        $("#nickname").focusout(function() {
+            check_nickname();
+        });
+        $("#usertype").on('change keyup',function(){
+            checkall();
+        });
+        $("#usertype").focusout(function() {
+            check_usertype();
+        });
+
+        $("#yzcode").on('change keyup',function(){
+            checkall();
+        });
+        $("#yzcode").focusout(function() {
+            check_sendsms();
+        });
+        $(".psw_selected").on('change keyup',function(){
+            checkall();
+        });
+        $(".psw_selected").focusout(function() {
+            check_userpwd();
+        });
+        function checkall(){
+            var phone = $("#phone").val();
+            var nickname = $("#nickname").val();
+            var usertype = $("#usertype").val();
+            var flag_active = $('#xieyi_em').hasClass('active');
+            var code_status = $("#yzcode").val();
+            var pwd_status = $(".psw_selected").val();
+            check_usertype();
+            if(phone&&usertype&&flag_active&&nickname&&code_status&&pwd_status){
+                $("#nextstep_gray").hide();
+                $("#nextstep_blue").show();
+            }else{
+                $("#nextstep_blue").hide();
+                $("#nextstep_gray").show();
+            }
+        }
+
+        function is_argee(){
+            return is_agree_doc=$('#xieyi_em').hasClass('active');
+        }
+
+        $('#xieyi_em').click(function() {
+            if($('#xieyi_em').hasClass('active'))
+            {
+                $("#nextstep_blue").hide();
+                $("#nextstep_gray").show();
+            }else{
+            }
+            checkall();
+        });
+
+
+
+        var phone_status = 0;
+        var nickname_status = 0;
+
+        var xieyi_status = 1;
+
+        function formsub() {
+            if(!check_phone()){
+                return false;
+            }
+            if(!check_nickname()){
+                return false;
+            }
+            if (!check_usertype()) {
+                return false;
+            }
+            if(!check_sendsms()){
+                return false;
+            }
+            if(!check_userpwd()){
+                return false;
+            }
+            if(!is_argee()){
+                return false;
+            }
+
+            var phone = $("#phone").val();
+            var user_name = $("#phone").val();
+            var nick_name = $("#nickname").val();
+            var user_type = $("#usertype").val();
+            var checkcode = $("input[name='checkcode']").val();
+            var user_pwd = $(".psw_selected").val();
+            $.post("/passport/ajaxRegister",
+                {
+                    "phone":phone,
+                    "user_name":user_name,
+                    "nick_name":nick_name,
+                    "user_type":usertypeDesc2Number(user_type),
+                    "checkcode":checkcode,
+                    "user_pwd":user_pwd,
+                },
+                function(re){
+                    if ('error' == re.ret) {
+                        curCount = 0;
+                        if(re.msg.errtype=='code'){
+                            $("#sendsms_error").addClass('error');
+                            $("#sendsms_error").html(re.msg.msg);
+                        }else if(re.msg.errtype=='nickname'){
+                            $("#nickname_error").addClass('error');
+                            $("#nickname_error").html(re.msg.msg);
+                        }else if(re.msg.errtype=='usertype') {
+                            $("#usertype_error").addClass('error');
+                            $("#usertype_error").html(re.msg.msg);
+
+                        }else if(re.msg.errtype=='pwd'){
+                            $("#user_pwd-err").addClass('error');
+                            $("#user_pwd-err").html(re.msg.msg);
+                        }else if(re.msg.errtype=='repwd'){
+                            $("#user_re_pwd-err").addClass('error');
+                            $("#user_re_pwd-err").html(re.msg.msg);
+                        }else if(re.msg.errtype=='user'){
+                            $("#phone_error").addClass('error');
+                            $("#phone_error").html(re.msg.msg);
+                        }
+                        return;
+                    }else{
+                        window.top.location.href = '/user/qyzz?next=next';
+                        return;
+                    }
+                }, 'json'
+            );
+        }
+
+        $("#goback").click(function() {
+            $("#collect2").hide();
+            $("#collect1").show();
+        });
+        function first_blue(){
+
+            $("#collect1").hide();
+            $("#collect2").show();
+
+        }
+        function check_phone(){
+            var phone = $("#phone").val();
+            var regex = /^1[3,4,5,7,8]\d{9}$/;
+            if(!regex.exec(phone)) {
+                $("#phone").addClass('error');
+                $("#phone_error").html("手机号输入不正确");
+                phone_status = 0;
+
+                return false;
+            }else{
+                $("#phone").removeClass('error');
+                $("#phone_error").html("");
+                phone_status = 1;
+                return true;
+            }
+
+        }
+        function check_nickname(){
+            var nickname = $("#nickname").val();
+            if(nickname==''){
+                $("#nickname_error").html("公司名不能为空");
+                nickname_status = 0;
+                return false;
+            }
+            var regex = /^[\u0391-\uFFE5\(\（\)\）]{6,}$/;
+            if(!regex.exec(nickname)) {
+                $("#nickname").addClass('error');
+                $("#nickname_error").html("公司名称输入不正确");
+                nickname_status = 0;
+
+                return false;
+            }else{
+                $("#nickname").removeClass('error');
+                $("#nickname_error").html("");
+                nickname_status = 1;
+
+                return true;
+            }
+
+        }
+
+        function usertypeDesc2Number(usertype) {
+            if (usertype == "一般企业") return 10;
+            if (usertype == "有限合伙企业") return 20;
+            if (usertype == "有限合伙企业管理的契约型基金") return 30; 
+            if (usertype == "有限合伙企业管理的有限合伙型基金") return 40;
+            if (usertype == "私募基金") return 50;
+            return false;
+        }
+        function check_usertype(){
+            var usertype = $("#usertype").val();
+            if(usertype ==''){
+                $("#usertype").addClass('error');
+                $("#usertype_error").html("认证主体类型不能为空");
+                return false;
+            }
+            if (false == usertypeDesc2Number(usertype)) {
+                $("#usertype").addClass('error');
+                $("#usertype_error").html("认证主体类型不正确");
+                return false;
+            }
+            $("#usertype").removeClass('error');
+            $("#usertype_error").html("");
+            return true;
+        }
+
+        function check_sendsms(){
+            var checkcode = $("input[name='checkcode']").val();
+            var regex = /^\d{6}$/;
+            if(!regex.exec(checkcode)) {
+                $("#yzcode").addClass('error');
+                $("#sendsms_error").addClass('error');
+                $("#sendsms_error").html("验证码位数不对");
+                return false;
+            }else{
+                $("#yzcode").removeClass('error');
+                $("#sendsms_error").removeClass('error');
+                $("#sendsms_error").html("");
+            }
+            return true;
+            //验证码输入错误或已过期，换一个试试
+        }
+        function check_userpwd(){
+            var user_pwd = $(".psw_selected").val();
+            var pwdObj = $(".psw_selected");
+            if(user_pwd.length < 8){
+                $("#user_pwd-err").html("密码至少8位以上");
+                return false;
+            }else{
+                $("#user_pwd-err").html("");
+            }
+            if(!validatePwd.isPwd(pwdObj)){
+                $("#user_pwd-err").html("密码不符合安全规范,至少同时包含数字及英文字符");
+                return false;
+            }else{
+               $("#user_pwd-err").html("");
+            }
+            if(!validatePwd.checkRepeatMax(pwdObj,2)){//验证重复字符最大数
+                $("#user_pwd-err").html("重复字符不能超过2位");
+                return false;
+            }else{
+               $("#user_pwd-err").html("");
+            }
+            return true;
+        }
+
+
+        $('.m-login').on('click',function(){
+            $(this).children('em').toggleClass('active');
+            var flag_active = $('#xieyi_em').hasClass('active');
+            if(flag_active){
+                xieyi_status=1;
+            }else{
+                xieyi_status=0;
+            }
+        });
+
+        var InterValObj; //time变量，控制时间
+        var count = 60; //间隔函数，1秒执行
+        var curCount;//当前剩余秒数
+        function sendSms(){
+            var obj = $(this);
+            var mobile_phone = $("#phone").val();
+            var nick_name =$('#nick_name').val();
+            if(mobile_phone == ""){$("#phone_error").html("请先填写手机号码");return;}
+
+            var verify_code = "8e1e706f687a35c90270b5e15429ea1c";
+
+            if (!verify_code) {
+                alert('非常请求');
+                return false;
+            }
+            $("#TencentCaptcha").trigger("click");
+            return;
+        }
+        // 发送验证码
+        function callback(res){
+            if(res.ret != 0){
+                return;
+            }
+            var obj = $(this);
+            var mobile_phone = $("#phone").val();
+            var nick_name =$('#nick_name').val();
+            if(mobile_phone == ""){$("#phone_error").html("请先填写手机号码");return;}
+
+            var verify_code = "8e1e706f687a35c90270b5e15429ea1c";
+
+            if (!verify_code) {
+                alert('非常请求');
+                return false;
+            }
+            $.ajax({
+                url: '/tools/ajaxsendSms',
+                type: 'GET',
+                dataType: 'json',
+                async : false,
+                data: {type:"mobilephone",mobilephone: mobile_phone, message: "_register_",verify_code:verify_code,ticket:res.ticket,randstr:res.randstr},
+                success: function(retData){
+                    $("#sendsms_error").html("");
+                    console.info(retData);
+                    if ('error' == retData.ret) {
+                        $("#sendsms_error").html(retData.msg);
+                        return;
+                    }
+                    curCount = count;
+                    //设置button效果，开始计时
+                    $("#btn-code").attr("href", "javascript:;");
+                    $("#btn-code").html("重发(" + curCount + "s)");
+                    $("#btn-code").addClass('code-change');
+                    InterValObj = window.setInterval(SetRemainTime, 1000); //启动计时器，1秒执行一次
+
+                }
+            });
+        }
+
+        function SetRemainTime() {
+            if (curCount == 0) {
+                window.clearInterval(InterValObj);//停止计时器
+                $("#btn-code").attr("href","javascript:sendSms();");//启用按钮
+                $("#btn-code").removeClass('code-change');
+                $("#btn-code").html("重发");
+            }
+            else {
+                curCount--;
+                $("#btn-code").html("重发(" + curCount + "s)");
+            }
+        }
+    </script>
+<!--[if lte IE 10]>
+<script language="javascript" type="text/javascript" src="https://ssl-sfsp.xingyoucai.com/js/placeholder.js"></script>
+<![endif]-->
+</body>
+</html>

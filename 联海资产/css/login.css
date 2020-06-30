@@ -11,7 +11,7 @@
     height: 100%;
  }
  .container{
-    background: #eef3f6;    
+    background: #ececec;    
  }
 .login{
     height: 100%;
@@ -232,10 +232,11 @@
     height: 50px;
     background: #B90D08;
     margin: -20px 0 0;
+    display: none;
 }
 .article{
     background: #fff;
-    margin: -50px auto 50px;
+    margin: -10px auto 50px;
     padding: 70px 60px 100px;
     max-width: 1080px;
     min-height: 400px;

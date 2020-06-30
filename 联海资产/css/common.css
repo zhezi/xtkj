@@ -245,7 +245,7 @@ textarea::-webkit-input-placeholder {
 }
 .header .item .user-name{
     background: url(../images/user.png) 10px center no-repeat;
-    line-height: 28px;
+    line-height: 38px;
     padding: 0 10px 0 28px;
     margin: 0;
 }
@@ -265,7 +265,7 @@ textarea::-webkit-input-placeholder {
 }
 .header .operate-nav{
     position: absolute;
-    top: 55px;
+    top: 65px;
     right: 0;
     width: 100%;
     line-height: 38px;
@@ -286,13 +286,10 @@ textarea::-webkit-input-placeholder {
 }
 .header .operate-nav a{
     display: block;
-    background: #f0f0f0;
-    font-size: 14px;
-    margin: 0;
-}
-.header .operate-nav a:hover{    
     background: #B90D08;
     color: #fff;
+    font-size: 14px;
+    margin: 0;
 }
 /*底部*/
 .footer{
