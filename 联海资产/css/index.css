@@ -1,0 +1,276 @@
+@charset "utf-8";
+/* CSS Document */
+/****************************
+ * version:1.0
+ * Date:2017-08-16
+ *
+ */
+/*首页*/
+.index {
+    background: #fff;
+}
+.index .header{
+    margin: 0;
+}
+.index .article{
+    padding: 40px 10px;
+    text-align: center;
+}
+.index .title{
+    line-height: 30px;
+    font-size: 12px;
+    color: #b5b5b5;
+    padding: 0 0 26px;
+}
+.index .title h2{
+    font-size: 24px;
+    line-height: 30px;
+    color: #252525;
+}
+.index .section .more{
+    padding:50px 0 0;
+}
+.index .section .more a{
+    line-height: 36px;
+    font-size: 18px;
+    padding: 0 26px;
+}
+.index .section .left{
+    float: left;
+}
+.index .section .right{
+    float: right;
+}
+
+/*主体*/
+.index .section01{
+    background: url(../images/index/01.jpg) center top no-repeat;
+    color: #fff;
+    padding: 106px 0 0;
+    min-height: 344px;
+}
+.index .section01 .article{
+    max-width: 1090px;
+    margin: 0 auto;
+    padding: 0;
+}
+.index .section01 .left{
+    width: 430px;
+    padding:50px 22px 0 60px;
+    line-height: 30px;
+    font-size: 16px;
+    text-align: left;
+}
+.index .section01 .left img{
+    margin: 0 0 20px;
+    width: 138px;
+}
+.index .section01 .right{
+    width: 340px;
+    padding: 0 40px 0 0;
+    text-align: left;
+}
+.form dl{
+    padding: 16px 0 0;
+}
+.form dd{
+    position: relative;
+}
+input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {   
+ /* WebKit browsers */   
+    color: #fff;
+}   
+input:-moz-placeholder, textarea:-moz-placeholder {   
+/* Mozilla Firefox 4 to 18 */   
+    color: #fff;
+}   
+input::-moz-placeholder, textarea::-moz-placeholder {   
+ /* Mozilla Firefox 19+ */   
+    color: #fff;
+}   
+input:-ms-input-placeholder, textarea:-ms-input-placeholder {   
+ /* Internet Explorer 10+ */   
+    color: #fff;
+}
+.index .section01 .item{
+    border:1px solid rgba(255,255,255,0.23);
+    line-height: 30px;
+    font-size: 16px;
+    color: #fff;
+    margin: 0 0 20px;
+    border-radius: 2px;
+}
+.index .section01 .item p{    
+    padding: 14px 22px;
+}
+.form .text{
+    background: none;
+    padding:0 4%;
+    width: 91.5%;
+    border:1px solid rgba(255,255,255,0.23);
+    line-height: 46px;
+    height: 46px;
+    font-size: 16px;
+    color: #fff;
+    -moz-border-radius: 1px;
+    -webkit-border-radius: 1px;
+    border-radius: 1px;
+}
+.form .point{    
+    font-size: 14px;
+    margin: 12px 0 0;
+}
+.form label{
+    padding: 0 0 0 22px;
+    position: relative;
+    display: inline-block;
+    line-height: 16px;
+}
+.form label em{
+    width: 14px;
+    height: 14px;
+    position: absolute;
+    top: 0px;
+    left: 0;
+    display: inline-block;
+    border: 1px solid #fff;
+    -moz-border-radius: 1px;
+    -webkit-border-radius: 1px;
+    border-radius: 1px;
+}
+.form label .active{
+    background: url(../images/login/checked.png) 0 center no-repeat;
+    border: 1px solid #fff;
+}
+.form .btn{
+    padding: 28px 0 0;
+}
+.form .btn p{
+    text-align: center;
+    line-height: 20px;
+    padding: 0 0 12px;
+    margin: -20px 0 0;
+}
+.index .section01 .button{
+    line-height: 50px;
+    font-size: 18px;
+    width: 100%;
+}
+.form .idea{
+    padding: 26px 0 0;
+    font-size: 14px;
+    text-align: center;
+    line-height: 18px;
+}
+.form .idea a{
+    vertical-align: middle;
+    color: #fff;
+}
+.form .idea .pipe{
+    background: #fff;
+    width: 1px;
+    height: 16px;
+    vertical-align: middle;
+    display: inline-block;
+    margin: 0 20px;
+}
+.index .section02 .left{
+    width: 382px;
+    padding: 5px 0;
+}
+.index .section02 .right{
+    text-align: left;
+    width: 740px;
+    line-height: 30px;
+    font-size: 14px;
+}
+.index .section03 ul{
+    margin:50px auto 36px;
+    max-width: 1100px;
+}
+.index .section03 li{
+    float: left;
+    width: 20%;
+    line-height: 30px;
+    color: #252525;
+    font-size: 16px;
+}
+.index .section03 .icon{
+    width: 64px;
+    height: 64px;
+    display: inline-block;
+    margin: 0 0 10px;
+}
+.index .section03 .icon01{
+    background: url(../images/index/icon01.png) center center no-repeat;
+}
+.index .section03 .icon02{
+    background: url(../images/index/icon02.png) center center no-repeat;
+}
+.index .section03 .icon03{
+    background: url(../images/index/icon03.png) center center no-repeat;
+}
+.index .section03 .icon04{
+    background: url(../images/index/icon04.png) center center no-repeat;
+}
+.index .section03 .icon05{
+    background: url(../images/index/icon05.png) center center no-repeat;
+}
+.index .section04{
+    background: #B90D08;
+    color: #d3eafc;
+}
+.index .section04 .article{
+    padding: 72px 10px;
+    overflow: visible;
+    max-width: 1920px;
+}
+.index .section04 .left{
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 49.9%;
+    background: url(../images/index/04-1.jpg) center center no-repeat;
+}
+.index .section04 .right{
+    width: 50.1%;
+}
+.index .section04 .right p{
+    text-align: left;
+    max-width: 600px;
+    text-align: right;
+}
+.index .section05{
+    background: #F0F0F0;
+}
+.index .section05 .box{
+    padding: 38px 0 35px;
+}
+.index .section06 .article{
+    padding: 40px 0 20px;
+}
+.index .section06 .logo{
+    width: 162px;
+    float: left;
+}
+.index .section06 .logo span{
+    display: block;
+}
+.index .section06 span img{
+    width: 162px;
+    display: none;
+}
+/* .index .section06 span .img02,
+.index .section06 span:hover .img01{
+    display: none;
+} */
+.index .section06 span .img01,
+.index .section06 span:hover .img02{
+    display: block;
+}
+/* .index .section06 span:hover{    
+    -webkit-box-shadow: 0 0 8px #ececec; 
+    -moz-box-shadow: 0 0 8px #ececec;
+    box-shadow: 0 0 8px #ececec;
+} */

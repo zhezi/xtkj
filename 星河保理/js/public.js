@@ -1,8 +1,6 @@
 window.addEventListener('DOMContentLoaded', function (){
 	var shuping = 'onorientationchange' in window ? 'orientationchange' : 'resize';
 	var timer = null;
-
-	//设置字体
 	function setFontSize(){
 		var w = window.innerWidth;
 		if(w<640){
