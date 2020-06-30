@@ -265,7 +265,7 @@ textarea::-webkit-input-placeholder {
 }
 .header .operate-nav{
     position: absolute;
-    top: 50px;
+    top: 55px;
     right: 0;
     width: 100%;
     line-height: 38px;
@@ -286,13 +286,13 @@ textarea::-webkit-input-placeholder {
 }
 .header .operate-nav a{
     display: block;
-    background: #015FB9;
+    background: #f0f0f0;
     font-size: 14px;
-    color: #fff;
     margin: 0;
 }
 .header .operate-nav a:hover{    
     background: #B90D08;
+    color: #fff;
 }
 /*底部*/
 .footer{
