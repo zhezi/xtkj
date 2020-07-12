@@ -455,3 +455,78 @@
     line-height: 46px;
     font-size:16px;
 }
+
+#layer-result dt{
+    float: left;
+    width:130px;
+    text-align: right;
+}
+#layer-result .form dd{
+    float: left;
+    width:316px;
+}
+#layer-result .layer-tip{
+    padding: 0;
+    margin: -167px 0 0 -300px;
+}
+
+#layer-verifying ul{
+    max-width: 396px;
+    margin: 0 auto;
+}
+#layer-verifying li{
+     float: left;
+     margin: 62px 0 0;
+     text-align: center;
+}
+#layer-verifying li.arrow{
+    background: url(../images/arrow.png) no-repeat;
+    width: 20px;
+    height: 14px;
+    margin: 85px 43px 0;
+    display: block;
+}
+
+#layer-file .upload .img{
+    color:#0171E4;
+}
+#layer-file dl{
+    padding: 20px 0 0;
+}
+#layer-file .layer-tip{
+    min-height: auto;
+    margin: -132px 0 0 -300px;
+}
+#layer-file .btn{
+    bottom: 40px;
+}
+.form .point{    
+    margin: 0 0 20px;
+}
+.form .point a{
+    color: #0171E4;
+    vertical-align: middle;
+}
+.form label{
+    padding: 0 0 0 22px;
+    position: relative;
+    display: inline-block;
+    line-height: 16px;
+    height: 16px;
+    vertical-align: middle;
+}
+.form label em{
+    width: 14px;
+    height: 14px;
+    position: absolute;
+    top: 0px;
+    left: 0;
+    display: inline-block;
+    border: 1px solid #0171e4;
+    -moz-border-radius: 1px;
+    -webkit-border-radius: 1px;
+    border-radius: 1px;
+}
+.form label .active{
+    background: url(../images/checked.png) 0 center no-repeat;
+}

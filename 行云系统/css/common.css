@@ -250,7 +250,7 @@ a.gray:hover{
     top: 0;
     left: 0px;
     background: url(../images/logo.png) 0 center no-repeat;
-    padding: 34px 0 0 120px;
+    padding: 34px 0 0 119px;
     width: 0;
     display: inline-block;
     margin: 10px 0;
@@ -495,6 +495,55 @@ a.gray:hover{
     background: #fff;
     color: #1d88f3;
 }
+.header02{
+    background: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 0;
+    -webkit-box-shadow: 0 0 0;
+    -moz-box-shadow: 0 0 0;
+    box-shadow: 0 0 0;
+}
+.header02 .head-box{
+    position: relative;
+    max-width: 1100px;
+    padding: 10px 30px;
+    margin: 0 auto;
+    color: #fff;
+}
+.header02 .head-box .logo{
+    position: relative;
+    display: inline-block;
+    margin: 2px 0;
+    width: 0;
+    height: 0;
+    overflow: hidden;
+}
+.header02 .head-box .item{
+    margin: 6px 0 0;
+    font-size: 0;
+    position: relative;
+}
+.header02 .head-box .item a{
+    background: #fff;
+    color: #0081e4;
+    font-size: 14px;
+    line-height: 30px;
+    padding: 0 18px;
+    display: inline-block;
+    margin: 0 0 0 12px;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+}
+.header02 .head-box .item .register-btn{
+    background: #246ccc;
+    color: #fff;
+    border: 0;
+}
+
 
 .footer{
     background: #0171e4;
