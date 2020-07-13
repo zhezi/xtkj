@@ -456,6 +456,67 @@
     font-size:16px;
 }
 
+#layer-video .video,
+#layer-video video{
+    width: 800px;
+    height: 450px;
+    margin: 0 auto;
+}
+#example_video_1{
+    width: 100%!important;
+}
+#layer-video .layer-tip{
+    width: 860px;
+    margin: -274px 0 0 -430px;
+}
+#layer-video h2,
+#layer-report h2{
+    background: none;
+    line-height: 58px;
+    margin: 0 0 10px;
+}
+
+
+#layer-report{
+    overflow: scroll;
+}
+#layer-report .cover{
+    position: fixed;
+}
+#layer-report .layer-tip{
+    position: relative;
+    margin: 30px auto;
+    left: 0;
+    top:0;
+    width: 1180px;
+    overflow: visible;
+}
+#layer-report .pdf img{
+    width: 100%;
+    max-width: 1172px;
+}
+#layer-report .report-page{
+    background: #f6f7fb;
+    padding: 20px;
+    text-align: left;
+    font-size: 12px;
+}
+#layer-report .report-page li,
+#layer-report .report-page h3{
+    font-size: 12px;
+}
+#layer-report .report-page h2{
+    background: none;
+    margin: 0;
+    text-align: left;
+    line-height: 16px;
+}
+#layer-report .table th,
+#layer-report .table td{
+    padding: 8px 4px;
+}
+
+
 #layer-result dt{
     float: left;
     width:130px;
