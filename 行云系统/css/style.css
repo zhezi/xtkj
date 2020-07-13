@@ -819,31 +819,31 @@
 }
 
 
-.introduce{
+.authenticity{
   background: #fff;
 }
-.introduce .banner{
+.authenticity .banner{
   background: url(../images/03.jpg) center bottom no-repeat;
   padding: 200px 10px 0;
   position: relative;
   text-align: center;
-  min-height: 440px;
+  min-height: 438px;
   color: #fff;
 }
-.introduce .banner h1{
+.authenticity .banner h1{
   line-height: 86px;
   font-size: 60px;
-  letter-spacing: 6px;
+  letter-spacing: 6px
 }
-.introduce .banner p{
+.authenticity .banner p{
   line-height: 74px;
   font-size: 36px;
   letter-spacing: 4px;
 }
-.introduce .video-box{
+.authenticity .video-box{
   margin: 50px auto 0;
 }
-.introduce .video-box a{
+.authenticity .video-box a{
   line-height: 42px;
   padding: 0 14px 0 40px;
   display: inline-block;
@@ -853,66 +853,66 @@
   border-radius: 3px;
   color: #2e77d6;
 }
-.introduce .video-box .download-btn{
+.authenticity .video-box .download-btn{
   background: #fff url(../images/icon20.png) 14px center no-repeat;
 }
-.introduce .video-box .download-btn:hover{
+.authenticity .video-box .download-btn:hover{
   color: #fff;
   background: #1C56A0 url(../images/icon20-hover.png) 14px center no-repeat;
 }
-.introduce .video-box .play-report{
+.authenticity .video-box .play-report{
   background: #fff url(../images/icon21.png) 14px center no-repeat;
 }
-.introduce .video-box .play-report:hover{
+.authenticity .video-box .play-report:hover{
   color: #fff;
   background: #1C56A0 url(../images/icon21-hover.png) 14px center no-repeat;
 }
-.introduce .video-box .play-file{
+.authenticity .video-box .play-file{
   background: #fff url(../images/icon22.png) 14px center no-repeat;
 }
-.introduce .video-box .play-file:hover{
+.authenticity .video-box .play-file:hover{
   color: #fff;
   background: #1c56a0 url(../images/icon22-hover.png) 14px center no-repeat;
 }
 
-.introduce .section{
+.authenticity .section{
   min-height: auto;
 }
-.introduce .section01{
+.authenticity .section01{
   border-bottom: 1px solid #cfe0f4;
 }
-.introduce .section01 li{
+.authenticity .section01 li{
   width: 25%;
   float: left;
   padding: 30px 0;
   text-align: center;
 }
-.introduce .section01 h3{
+.authenticity .section01 h3{
   line-height: 30px;
   font-size: 16px;
   padding: 8px 0 0;
   color: #2F2F2F;
 }
-.introduce .section01 p{
+.authenticity .section01 p{
   font-size: 14px;
   color: #999;
   margin: 0 auto;
 }
-.introduce .section02 .box{
+.authenticity .section02 .box{
   padding: 76px 0;
   max-width: 960px;
   margin: 0 auto;
 }
-.introduce .section02 .box img{
+.authenticity .section02 .box img{
   width: 460px;
 }
-.introduce .section02 .item{
+.authenticity .section02 .item{
   width: 300px;
   padding: 68px 0 0 50px;
   line-height: 40px;
   font-size: 18px;
 }
-.introduce .section02 .item h3{
+.authenticity .section02 .item h3{
   line-height: 56px;
   font-size: 30px;
   padding: 0 0 6px;
