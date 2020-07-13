@@ -516,6 +516,13 @@
 }
 
 
+#layer-result .layer-box{
+    line-height: 30px;
+    padding: 40px 0 30px;
+}
+#layer-result dl{
+    min-height: 30px;
+}
 #layer-result dt{
     float: left;
     width:130px;
@@ -527,7 +534,7 @@
 }
 #layer-result .layer-tip{
     padding: 0;
-    margin: -167px 0 0 -300px;
+    margin: -147px 0 0 -300px;
 }
 
 #layer-verifying ul{
@@ -547,6 +554,14 @@
     display: block;
 }
 
+
+#layer-file .layer-box{
+
+    padding: 26px 0 50px;
+}
+#layer-file .form .item-box {
+    margin: 0 0 30px;
+}
 #layer-file .upload .img{
     color:#0171E4;
 }
@@ -555,10 +570,14 @@
 }
 #layer-file .layer-tip{
     min-height: auto;
-    margin: -132px 0 0 -300px;
+    margin: -147px 0 0 -300px;
 }
 #layer-file .btn{
-    bottom: 40px;
+    bottom: 50px;
+}
+#layer-file .button-blue{
+    line-height: 46px;
+    font-size: 18px;
 }
 .form .point{    
     margin: 0 0 20px;
