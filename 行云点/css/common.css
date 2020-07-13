@@ -300,6 +300,26 @@
     background: #246ccc;
     color: #fff;
 }
+.header02 .nav{
+    float: left;
+    width: auto;
+    padding: 0 0 0 100px;
+}
+.header02 .nav .name{
+    font-size: 14px;
+}
+.header02 .nav .name .new{
+    background: url(../images/new.png) no-repeat;
+    width: 30px;
+    line-height: 14px;
+    font-size: 11px;
+    color: #fff;
+    padding: 0 0 0 4px;
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0 0 0 4px;
+}
+
 
 /*底部*/
 .footer{

@@ -818,6 +818,214 @@
   justify-content: space-between;
 }
 
+.introduce{
+  background: #fff;
+}
+.introduce .section{
+  min-height: auto;
+}
+.introduce .banner{
+  background: url(../images/introduce/01.jpg) center bottom no-repeat;
+  padding: 200px 10px 0;
+  position: relative;
+  text-align: center;
+  min-height: 440px;
+  color: #fff;
+}
+.introduce .banner h1{
+  line-height: 86px;
+  font-size: 60px;
+  letter-spacing: 6px;
+  font-weight: bold;
+}
+.introduce .banner p{
+  line-height: 74px;
+  font-size: 36px;
+  letter-spacing: 4px;
+}
+.introduce .video-box{
+  margin: 50px auto 0;
+}
+.introduce .video-box a{
+  width: 97px;
+  line-height: 40px;
+  padding: 0 15px 0 38px;
+  display: inline-block;
+  margin: 0 15px;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+  color: #2e77d6;
+}
+.introduce .video-box .play-video{
+  background: #fff url(../images/icon20.png) 16px center no-repeat;
+}
+.introduce .video-box .play-video:hover{
+  color: #fff;
+  background: #1c56a0 url(../images/icon20-hover.png) 16px center no-repeat;
+}
+.introduce .video-box .play-report{
+  background: #fff url(../images/icon21.png) 16px center no-repeat;
+}
+.introduce .video-box .play-report:hover{
+  color: #fff;
+  background: #1c56a0 url(../images/icon21-hover.png) 16px center no-repeat;
+}
+
+.introduce .section01{
+  border-bottom: 1px solid #cfe0f4;
+}
+.introduce .section01 li{
+  width: 25%;
+  float: left;
+  padding: 30px 0;
+  text-align: center;
+}
+.introduce .section01 h3{
+  line-height: 30px;
+  font-size: 16px;
+  padding: 8px 0 0;
+}
+.introduce .section01 p{
+  font-size: 14px;
+  color: #999;
+  max-width: 210px;
+  margin: 0 auto;
+}
+.introduce .section.bg{
+  background: #f7f8fc;
+}
+.introduce .section02 .box{
+  padding: 50px 0;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+.introduce .section02 .box img{
+  width: 664px;
+}
+.introduce .section02 .item{
+  width: 336px;
+  padding: 138px 0 0;
+  line-height: 40px;
+  font-size: 18px;
+  text-align: center;
+}
+.introduce .section02 .item h3{
+  line-height: 56px;
+  font-size: 30px;
+  padding: 0 0 6px;
+}
+.introduce .section02 .item p{
+  letter-spacing: 4px;    
+}
+.introduce .section03{
+  padding: 100px 0;
+}
+.introduce .section03 .box{
+  position: relative;
+  padding: 0 0 0 200px;
+}
+.introduce .section03 .logo-box{
+  width: 542px;
+}
+.introduce .section03 .logo-box li{
+  float: left;
+  background: #fff;
+  width: 256px;
+  height: 80px;
+  margin: 0 30px 30px 0;
+}
+.introduce .section03 .logo-box li:nth-child(2n){
+  margin: 0 0 30px;
+}
+.introduce .section03 .item{
+  position: absolute;
+  top: 50%;
+  right: 0;
+  width: 386px;
+  text-align: center;
+  transform: translateY(-50%);
+}
+.introduce .section03 .item h3{
+  line-height: 1;
+  font-size: 30px;
+  padding: 0 0 22px;
+}
+.introduce .section03 .item p{
+  line-height: 30px;
+  font-size: 18px;
+}
+
+/*关于我们*/
+.about-us{
+  background: #fff;
+}
+.about-us .banner{
+  background: url(../images/us-bg.jpg) center top no-repeat;
+  padding: 226px 10px 0;
+  position: relative;
+  text-align: center;
+  min-height: 412px;
+  color: #fff;
+}
+.about-us .banner h1{
+  line-height: 40px;
+  font-size: 36px;
+  letter-spacing: 4px;
+  font-weight: bold;
+  padding: 0 0 26px;
+}
+.about-us .banner h1 span{
+  font-weight: normal;
+  line-height: 28px;
+  font-size: 22px;
+  display: block;
+  opacity: 0.25;
+  filter: alpha(opacity=25);
+}
+.about-us .banner p{
+  line-height: 36px;
+  font-size: 20px;
+  max-width: 1030px;
+  margin: 0 auto;
+}
+.about-us .section {
+  min-height: auto;
+}
+.about-us .section .img{
+  width: 50%;
+}
+.about-us .section .img img{
+  width: 100%;
+}
+.about-us .section .idea{
+  width: 50%;
+  color: #8a8a8a;
+}
+.about-us .idea h2{
+  padding: 10% 0 0;
+  margin: 0 0 0 65px;
+  line-height: 36px;
+  font-size: 22px;
+}
+.about-us .idea p{
+  position: relative;
+  padding: 0 0 0 64px;
+  line-height: 50px;
+  text-align: left;
+  margin: 18px 0 0 65px;
+  font-size: 16px;
+}
+.about-us .idea .icon-tel{
+  background: url(../images/tel.png) 0 center no-repeat;
+}
+.about-us .idea .icon-email{
+  background: url(../images/email.png) 0 center no-repeat;
+}
+.about-us .idea .icon-address{
+  background: url(../images/address.png) 0 center no-repeat;
+}
+
 
 .authenticity{
   background: #fff;
