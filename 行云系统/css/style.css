@@ -1031,17 +1031,19 @@
   background: #fff;
 }
 .authenticity .banner{
-  background: url(../images/03.jpg) center bottom no-repeat;
+  background: url(../images/introduce/01.jpg) center bottom no-repeat;
+  /* background: url(../images/03.jpg) center bottom no-repeat; */
   padding: 200px 10px 0;
   position: relative;
   text-align: center;
-  min-height: 438px;
+  min-height: 440px;
   color: #fff;
 }
 .authenticity .banner h1{
   line-height: 86px;
   font-size: 60px;
-  letter-spacing: 6px
+  letter-spacing: 6px;
+  font-weight: bold;
 }
 .authenticity .banner p{
   line-height: 74px;
