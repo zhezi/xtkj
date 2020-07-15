@@ -553,14 +553,16 @@ a.gray:hover{
 }
 .header02 .nav .name .new{
     background: url(../images/new.png) no-repeat;
-    width: 30px;
-    line-height: 14px;
-    font-size: 11px;
+    padding: 24px 0 0 34px;
+    font-size: 0;
     color: #fff;
-    padding: 0 0 0 4px;
+    width: 0;
+    height: 0;
     display: inline-block;
     vertical-align: middle;
+    overflow: hidden;
     margin: 0 0 0 4px;
+    white-space: nowrap;
 }
 
 
