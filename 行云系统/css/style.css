@@ -37,18 +37,19 @@
   padding: 0 10px 0 16px;
   display: inline-block;
 }
-/*.location a .close{
+.location02 a .close{
   position: absolute;
-  top:11px;
-  right: 0;
+  top:50%;
+  right: 7px;
   background: url(../images/close.png) center center no-repeat;
   width: 18px;
   height: 18px;
   display: inline-block;
+  transform: translateY(-50%);
 }
-.location .active .close{
+/* .location02 .active .close{
   background: url(../images/close-active.png) center center no-repeat;
-}*/
+} */
 .content{
   background: #fff;
     padding: 40px 30px 34px;
@@ -1126,6 +1127,65 @@
   line-height: 56px;
   font-size: 30px;
   padding: 0 0 6px;
+}
+
+/* 下载管理器 */
+.download-page .location{
+  max-width: 100%;
+  padding: 0;
+  line-height: 34px;
+  font-size: 0;
+  margin: 0 0 27px;
+}
+.download-page .location a{
+  background: #fff;
+  font-size: 12px;
+  padding: 0 29px 0 20px;
+  min-width: 170px;
+  text-align: center;
+  border-right: 1px solid rgba(228,228,228,1);
+  border-bottom: 1px solid rgba(228,228,228,1);
+}
+
+.download-page .location a.active{
+  background: none;
+  color: #555;
+}
+.download-page .article{
+  max-width: 940px;
+}
+.download-page .content{
+  max-width: 940px;
+    padding: 26px 30px;
+    margin: 0 0 12px;
+    box-shadow:0px 2px 12px 0px rgba(0,0,0,0.08);
+    transition: all 0.5s ease;
+    -webkit-transition: all 0.5s ease;
+}
+.download-page .content:hover{
+  max-width: 858px;
+  padding: 26px 41px;
+  margin: 0 0 12px -11px;
+}
+.download-page .content .title h2{
+  padding: 0;
+}
+
+.download-page .table tr:nth-child(odd){
+  background: none;
+}
+
+.download-page .content03 .table{
+  border-right: 1px solid rgba(228,228,228,1);
+  border-bottom: 1px solid rgba(228,228,228,1);
+}
+
+.download-page .content03 td{
+  border-top: 1px solid rgba(228,228,228,1);
+  border-left: 1px solid rgba(228,228,228,1);
+}
+.download-page .content03 img{
+  vertical-align: middle;
 }
 
 @media all and (max-width:1326px){
