@@ -1158,17 +1158,19 @@
   max-width: 940px;
     padding: 26px 30px;
     margin: 0 0 12px;
+    line-height: 24px;
     box-shadow:0px 2px 12px 0px rgba(0,0,0,0.08);
     transition: all 0.5s ease;
     -webkit-transition: all 0.5s ease;
 }
-.download-page .content:hover{
+/* .download-page .content:hover{
   max-width: 858px;
   padding: 26px 41px;
   margin: 0 0 12px -11px;
-}
+} */
 .download-page .content .title h2{
   padding: 0;
+  border: 0;
 }
 
 .download-page .table tr:nth-child(odd){
