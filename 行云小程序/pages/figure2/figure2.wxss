@@ -1,0 +1,32 @@
+/* pages/figure1/figure1.wxss */
+page{
+  background: #fff;
+}
+
+.table {
+  margin:26rpx 44rpx 0;
+}
+.swiper{
+  height: 1150rpx;
+}
+
+.table .th:first-child,
+.table .td:first-child {
+  width: 12%;
+}
+.table .th:nth-child(2),
+.table .td:nth-child(2){
+  width: 50%;
+  text-align: left;
+}
+.table .th:nth-child(2){
+  text-indent: 3em;
+}
+.table .th:nth-child(3),
+.table .td:nth-child(3){
+  width: 26%;
+}
+.table .th:last-child,
+.table .td:last-child {
+  width: 12%;
+}

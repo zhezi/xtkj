@@ -1,0 +1,436 @@
+<!--pages/report/report.wxml-->
+<image mode="widthFix" class="bg-cover" src="/images/bg2.png"></image>
+<view class="container">
+	<view class="h1">高级分析报告</view>
+	<scroll-view scroll-x="true" class="scroll-view">
+		<view class="scroll-view-item {{currentTab==0 ? 'active' : ''}}" data-current="0" bindtap="swichNav">
+			<view class="name">高级报告</view>
+		</view>
+		<view class="scroll-view-item {{currentTab==1 ? 'active' : ''}}" data-current="1" bindtap="swichNav">
+			<view class="name">普通报告</view>
+		</view>
+		<view class="scroll-view-item {{currentTab==2 ? 'active' : ''}}" data-current="2" bindtap="swichNav">
+			<view class="name">剔除报告</view>
+		</view>
+		<view class="scroll-view-item {{currentTab==3 ? 'active' : ''}}" data-current="3" bindtap="swichNav">
+			<view class="name">关联关系</view>
+		</view>
+		<view class="scroll-view-item {{currentTab==4 ? 'active' : ''}}" data-current="4" bindtap="swichNav">
+			<view class="name">分享</view>
+		</view>
+		<view class="scroll-view-item {{currentTab==5 ? 'active' : ''}}" data-current="5" bindtap="swichNav">
+			<view class="name">生成长图</view>
+		</view>
+	</scroll-view>
+	<!-- 填写 -->
+	<!-- <view class="box">
+		<view class="editbox">
+			<view class="point">您未填写对账单所属企业名称，请填写后点击开始分析，行云将为您生成高级报告</view>
+			<view class="editName">
+				<image mode="widthFix" src="/images/icon10.png"></image>
+				<input class="text" type="text" value="" placeholder="上海百度科技分公司有限责任公司" />
+			</view>
+			<button form-type="submit" class="button button-blue">开始分析</button>
+		</view>
+	</view> -->
+
+
+	<!-- 填写分析中 -->
+	<!-- <view class="box">
+		<view class="wait-box">
+			<image mode="widthFix" class="img" src="/images/wait.png"></image>
+			<view class="text">高级报告正在生成中，请耐心等待</view>
+		</view>
+	</view> -->
+
+
+	<view class="block">
+		<view class="box">
+			<view class="caption">
+				<view class="h2">行云分析出的关联企业/人</view>
+				<text class="bigImg">大图查看全部</text>
+			</view>
+
+			<view class="swiper-box">
+				<swiper class="swiper" indicator-dots="{{indicatorDots}}" interval="{{interval}}" duration="{{duration}}">
+					<swiper-item>
+						<view class="table">
+							<view class="tr">
+								<view class="th">序号</view>
+								<view class="th">已剔除的主体已剔除的主体</view>
+							</view>
+							<view class="tr" wx:for="{{list}}" wx:key="index" wx:for-item="item">
+								<view class="td">{{item.id}}</view>
+								<view class="td">
+									{{item.companyName}}
+									<text class="su" bindtap="suShow">{{item.su}}</text>
+									<text class="shi" bindtap="shiShow">{{item.shi}}</text>
+								</view>
+							</view>
+						</view>
+					</swiper-item>
+					<swiper-item>
+						<view class="table">
+							<view class="tr">
+								<view class="th">序号</view>
+								<view class="th">已剔除的主体已剔除的主体</view>
+							</view>
+							<view class="tr" wx:for="{{list}}" wx:key="index" wx:for-item="item">
+								<view class="td">{{item.id}}</view>
+								<view class="td">
+									{{item.companyName}}
+									<text class="su">{{item.su}}</text>
+									<text class="shi">{{item.shi}}</text>
+								</view>
+							</view>
+						</view>
+					</swiper-item>
+					<swiper-item>
+						<view class="table">
+							<view class="tr">
+								<view class="th">序号</view>
+								<view class="th">已剔除的主体已剔除的主体</view>
+							</view>
+							<view class="tr" wx:for="{{list}}" wx:key="index" wx:for-item="item">
+								<view class="td">{{item.id}}</view>
+								<view class="td">
+									{{item.companyName}}
+									<text class="su">{{item.su}}</text>
+									<text class="shi">{{item.shi}}</text>
+								</view>
+							</view>
+						</view>
+					</swiper-item>
+					<swiper-item>
+						<view class="table">
+							<view class="tr">
+								<view class="th">序号</view>
+								<view class="th">已剔除的主体已剔除的主体</view>
+							</view>
+							<view class="tr" wx:for="{{list}}" wx:key="index" wx:for-item="item">
+								<view class="td">{{item.id}}</view>
+								<view class="td">
+									{{item.companyName}}
+									<text class="su">{{item.su}}</text>
+									<text class="shi">{{item.shi}}</text>
+								</view>
+							</view>
+						</view>
+					</swiper-item>
+				</swiper>
+			</view>
+
+			<van-overlay show="{{ shesuShow }}">
+				<view class="wrapper">
+					<view class="layer-box">
+						<view class="title">涉诉历史
+							<image mode="widthFix" bindtap="suHide" class="layer-close" src="/images/close.png"></image>
+						</view>
+						<view class="text">
+						  <view class="h3">与四川商务务有限公司有关的失信共：12条</view>
+							<view class="cont">
+								<view class="name blue">（2020）云0112执2132号之一</view>
+								<view class="t-text">昆明冠生园食品有限公司、文阳买卖合同纠纷执行实施类执行裁定书</view>
+								<view class="btn blue">点击展开详情</view>
+							</view>
+							<view class="cont">
+								<view class="name blue">（2020）云0112执2132号之一</view>
+								<view class="t-text">昆明冠生园食品有限公司、文阳买卖合同纠纷执行实施类执行裁定书</view>
+								<view class="btn blue">点击展开详情</view>
+							</view>
+							<view class="cont">
+								<view class="name blue">（2020）云0112执2132号之一</view>
+								<view class="t-text">昆明冠生园食品有限公司、文阳买卖合同纠纷执行实施类执行裁定书</view>
+								<view class="btn blue">点击展开详情</view>
+							</view>
+						</view>
+					</view>
+				</view>
+			</van-overlay>
+
+
+			<van-overlay show="{{ shixinShow }}">
+				<view class="wrapper">
+					<view class="layer-box">
+						<view class="title">失信历史
+							<image mode="widthFix" bindtap="shiHide" class="layer-close" src="/images/close.png"></image>
+						</view>
+						<view class="text">
+						  <view class="h3">与四川商务务有限公司有关的失信共：12条</view>
+							<view class="cont">
+								<view class="name blue">（2020）云0112执2132号之一</view>
+								<view class="t-text">昆明冠生园食品有限公司、文阳买卖合同纠纷执行实施类执行裁定书</view>
+								<view class="btn blue">点击展开详情</view>
+							</view>
+							<view class="cont">
+								<view class="name blue">（2020）云0112执2132号之一</view>
+								<view class="t-text">昆明冠生园食品有限公司、文阳买卖合同纠纷执行实施类执行裁定书</view>
+								<view class="btn blue">点击展开详情</view>
+							</view>
+							<view class="cont">
+								<view class="name blue">（2020）云0112执2132号之一</view>
+								<view class="t-text">昆明冠生园食品有限公司、文阳买卖合同纠纷执行实施类执行裁定书</view>
+								<view class="btn blue">点击展开详情</view>
+							</view>
+						</view>
+					</view>
+				</view>
+			</van-overlay>
+
+		</view>
+		<view class="point">以下内容为行云AI智能剔除关联企业后的分析报告</view>
+
+		<view class="box">
+			<view class="caption">
+				<view class="h2">余额</view>
+				<text class="bigImg">大图查看全部</text>
+			</view>
+			<view class="content">
+				<view class="text">余额日期范围: 2019-11-05 - 2019-12-27</view>
+				<view class="text">日均存款余额: 3827262829202.33元</view>
+			</view>
+		</view>
+
+		<view class="box">
+			<view class="caption">
+				<view class="h2">日均交易额</view>
+				<text class="bigImg">大图查看全部</text>
+			</view>
+			<view class="content">
+				<view class="text">日均交易额日期范围: 2019-11-05 - 2019-12-27</view>
+				<view class="text">日均收入余额: 3827262829202.33元</view>
+				<view class="text">日均支出余额: 3827262829202.33元</view>
+			</view>
+		</view>
+
+
+		<view class="box">
+			<view class="caption">
+				<view class="h2">月度收入/支出分析</view>
+			</view>
+
+			<view class="swiper-box">
+				<swiper class="swiper2" indicator-dots="{{indicatorDots}}" interval="{{interval}}" duration="{{duration}}">
+					<swiper-item>
+						<view class="table">
+							<view class="tr">
+								<view class="th">序号</view>
+								<view class="th">月份</view>
+								<view class="th">月收入金额合计(元)</view>
+								<view class="th">月收入笔数</view>
+							</view>
+							<view class="tr" wx:for="{{list2}}" wx:key="index" wx:for-item="item">
+								<view class="td">{{item.id}}</view>
+								<view class="td">{{item.mouth}}</view>
+								<view class="td">{{item.money}}</view>
+								<view class="td">{{item.number}}</view>
+							</view>
+						</view>
+					</swiper-item>
+					<swiper-item>
+						<view class="table">
+							<view class="tr">
+								<view class="th">序号</view>
+								<view class="th">月份</view>
+								<view class="th">月收入金额合计(元)</view>
+								<view class="th">月收入笔数</view>
+							</view>
+							<view class="tr" wx:for="{{list2}}" wx:key="index" wx:for-item="item">
+								<view class="td">{{item.id}}</view>
+								<view class="td">{{item.mouth}}</view>
+								<view class="td">{{item.money}}</view>
+								<view class="td">{{item.number}}</view>
+							</view>
+						</view>
+					</swiper-item>
+					<swiper-item>
+						<view class="table">
+							<view class="tr">
+								<view class="th">序号</view>
+								<view class="th">月份</view>
+								<view class="th">月收入金额合计(元)</view>
+								<view class="th">月收入笔数</view>
+							</view>
+							<view class="tr" wx:for="{{list2}}" wx:key="index" wx:for-item="item">
+								<view class="td">{{item.id}}</view>
+								<view class="td">{{item.mouth}}</view>
+								<view class="td">{{item.money}}</view>
+								<view class="td">{{item.number}}</view>
+							</view>
+						</view>
+					</swiper-item>
+					<swiper-item>
+						<view class="table">
+							<view class="tr">
+								<view class="th">序号</view>
+								<view class="th">月份</view>
+								<view class="th">月收入金额合计(元)</view>
+								<view class="th">月收入笔数</view>
+							</view>
+							<view class="tr" wx:for="{{list2}}" wx:key="index" wx:for-item="item">
+								<view class="td">{{item.id}}</view>
+								<view class="td">{{item.mouth}}</view>
+								<view class="td">{{item.money}}</view>
+								<view class="td">{{item.number}}</view>
+							</view>
+						</view>
+					</swiper-item>
+				</swiper>
+			</view>
+		</view>
+
+
+		<view class="box">
+			<view class="caption">
+				<view class="h2">月度收/支分析（去除大额整数）</view>
+			</view>
+
+			<view class="swiper-box">
+				<swiper class="swiper2" indicator-dots="{{indicatorDots}}" interval="{{interval}}" duration="{{duration}}">
+					<swiper-item>
+						<view class="table">
+							<view class="tr">
+								<view class="th">序号</view>
+								<view class="th">月份</view>
+								<view class="th">月收入金额合计(元)</view>
+								<view class="th">月收入笔数</view>
+							</view>
+							<view class="tr" wx:for="{{list2}}" wx:key="index" wx:for-item="item">
+								<view class="td">{{item.id}}</view>
+								<view class="td">{{item.mouth}}</view>
+								<view class="td">{{item.money}}</view>
+								<view class="td">{{item.number}}</view>
+							</view>
+						</view>
+					</swiper-item>
+					<swiper-item>
+						<view class="table">
+							<view class="tr">
+								<view class="th">序号</view>
+								<view class="th">月份</view>
+								<view class="th">月收入金额合计(元)</view>
+								<view class="th">月收入笔数</view>
+							</view>
+							<view class="tr" wx:for="{{list2}}" wx:key="index" wx:for-item="item">
+								<view class="td">{{item.id}}</view>
+								<view class="td">{{item.mouth}}</view>
+								<view class="td">{{item.money}}</view>
+								<view class="td">{{item.number}}</view>
+							</view>
+						</view>
+					</swiper-item>
+					<swiper-item>
+						<view class="table">
+							<view class="tr">
+								<view class="th">序号</view>
+								<view class="th">月份</view>
+								<view class="th">月收入金额合计(元)</view>
+								<view class="th">月收入笔数</view>
+							</view>
+							<view class="tr" wx:for="{{list2}}" wx:key="index" wx:for-item="item">
+								<view class="td">{{item.id}}</view>
+								<view class="td">{{item.mouth}}</view>
+								<view class="td">{{item.money}}</view>
+								<view class="td">{{item.number}}</view>
+							</view>
+						</view>
+					</swiper-item>
+					<swiper-item>
+						<view class="table">
+							<view class="tr">
+								<view class="th">序号</view>
+								<view class="th">月份</view>
+								<view class="th">月收入金额合计(元)</view>
+								<view class="th">月收入笔数</view>
+							</view>
+							<view class="tr" wx:for="{{list2}}" wx:key="index" wx:for-item="item">
+								<view class="td">{{item.id}}</view>
+								<view class="td">{{item.mouth}}</view>
+								<view class="td">{{item.money}}</view>
+								<view class="td">{{item.number}}</view>
+							</view>
+						</view>
+					</swiper-item>
+				</swiper>
+			</view>
+		</view>
+
+		<view class="box">
+			<view class="caption">
+				<view class="h2">可疑交易筛查</view>
+				<navigator url="/pages/figure3/figure3" class="bigImg">大图查看全部</navigator>
+			</view>
+
+			<view class="swiper-box">
+				<swiper class="swiper3" indicator-dots="{{indicatorDots}}" interval="{{interval}}" duration="{{duration}}">
+					<swiper-item>
+						<view class="table">
+							<view class="tr">
+								<view class="th">序号</view>
+								<view class="th">交易对手</view>
+								<view class="th">发生金额(元)</view>
+								<view class="th">可疑条数</view>
+							</view>
+							<view class="tr" wx:for="{{list}}" wx:key="index" wx:for-item="item">
+								<view class="td">{{item.id}}</view>
+								<view class="td">{{item.companyName}}</view>
+								<view class="td">{{item.money}}</view>
+								<view class="td">{{item.number}}</view>
+							</view>
+						</view>
+					</swiper-item>
+					<swiper-item>
+						<view class="table">
+							<view class="tr">
+								<view class="th">序号</view>
+								<view class="th">交易对手</view>
+								<view class="th">发生金额(元)</view>
+								<view class="th">可疑条数</view>
+							</view>
+							<view class="tr" wx:for="{{list}}" wx:key="index" wx:for-item="item">
+								<view class="td">{{item.id}}</view>
+								<view class="td">{{item.companyName}}</view>
+								<view class="td">{{item.money}}</view>
+								<view class="td">{{item.number}}</view>
+							</view>
+						</view>
+					</swiper-item>
+					<swiper-item>
+						<view class="table">
+							<view class="tr">
+								<view class="th">序号</view>
+								<view class="th">交易对手</view>
+								<view class="th">发生金额(元)</view>
+								<view class="th">可疑条数</view>
+							</view>
+							<view class="tr" wx:for="{{list}}" wx:key="index" wx:for-item="item">
+								<view class="td">{{item.id}}</view>
+								<view class="td">{{item.companyName}}</view>
+								<view class="td">{{item.money}}</view>
+								<view class="td">{{item.number}}</view>
+							</view>
+						</view>
+					</swiper-item>
+					<swiper-item>
+						<view class="table">
+							<view class="tr">
+								<view class="th">序号</view>
+								<view class="th">交易对手</view>
+								<view class="th">发生金额(元)</view>
+								<view class="th">可疑条数</view>
+							</view>
+							<view class="tr" wx:for="{{list}}" wx:key="index" wx:for-item="item">
+								<view class="td">{{item.id}}</view>
+								<view class="td">{{item.companyName}}</view>
+								<view class="td">{{item.money}}</view>
+								<view class="td">{{item.number}}</view>
+							</view>
+						</view>
+					</swiper-item>
+				</swiper>
+			</view>
+		</view>
+
+	</view>
+
+</view>

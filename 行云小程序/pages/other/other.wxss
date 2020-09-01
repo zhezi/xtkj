@@ -1,0 +1,13 @@
+/* pages/other/other.wxss */
+.box {
+  background: #fff;
+  padding: 34rpx 32rpx 34rpx 50rpx;
+  font-size: 32rpx;
+  font-weight: 500;
+  line-height: 44rpx;
+  display: flex;
+  white-space: nowrap;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  justify-content: space-between;
+  align-items: center;
+}

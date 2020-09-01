@@ -1,0 +1,44 @@
+/* pages/member/member.wxss */
+page {
+  background: #fff;
+}
+
+.container {
+  padding: 64rpx 50rpx;
+}
+
+.point {
+  line-height: 44rpx;
+  font-size: 32rpx;
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.point image {
+  width: 30rpx;
+  margin: 0 6rpx 0 0;
+}
+
+.table-box {
+  margin: 60rpx 0 0;
+  border: 2rpx solid #E2C58F;
+  border-bottom: 0;
+  text-align: center;
+}
+
+.table-box .th,
+.table-box .td {
+  width: 30%;
+  display: inline-block;
+  border-bottom: 2rpx solid #E2C58F;
+  line-height: 60rpx;
+  font-size: 28rpx;
+}
+
+.table-box .th:first-child,
+.table-box .td:first-child {
+  width: 40%;
+}
+.table-box .th {
+  background: rgba(226, 197, 143, 0.5);
+  font-weight: 500;
+}

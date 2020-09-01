@@ -1,0 +1,33 @@
+<!--pages/knowledge/knowledge.wxml-->
+<view class="container">
+	<navigator url="/pages/article/article" class="box">
+		<view class="title">风控课程：01银行流水分析精解</view>
+		<view class="idea">
+			<image mode="widthFix" src="/images/01.jpg"></image>
+			<view class="info">
+				<view class="text">客户银行流水暴露问题精解，如何分析银行流水漏洞，如何统计银行流水。</view>
+        <text class="author">老王</text>
+			</view>
+		</view>
+	</navigator>
+	<navigator url="/pages/article/article" class="box">
+		<view class="title">风控课程02：怎么查询关联企业</view>
+		<view class="idea">
+			<image mode="widthFix" src="/images/01.jpg"></image>
+			<view class="info">
+				<view class="text">怎么判断该企业的关联企业以及其关联企业重要程度。</view>
+        <text class="author">老王</text>
+			</view>
+		</view>
+	</navigator>
+	<navigator url="/pages/article/article" class="box">
+		<view class="title">正经信贷课程：只要2990元抱回家</view>
+		<view class="idea">
+			<image mode="widthFix" src="/images/01.jpg"></image>
+			<view class="info">
+				<view class="text">2990元，平均每天5元，让你体验正经信贷课程。</view>
+        <text class="author">老王</text>
+			</view>
+		</view>
+	</navigator>
+</view>

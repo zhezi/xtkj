@@ -1,0 +1,41 @@
+<!--pages/bankBill/bankBill.wxml-->
+<image mode="widthFix" class="bg-cover" src="/images/bg2.png"></image>
+<view class="container">
+	<view class="point">
+		上传XLS文件或zip压缩包，行云将对该文件进行智能分析。
+	</view>
+	<view class="box">
+		<view class="h2">文件上传</view>
+		<view class="item upload-box">
+			<view class="upload">
+				<image mode="widthFix" class="upload-img" src="/images/upload.png" bindtap="afterRead"></image>
+				<van-uploader class="upload-btn" file-list="{{ fileList }}" bind:after-read="afterRead" />
+			</view>
+			<!-- 文件上传成功战展示 -->
+			<!-- <text class="text">预留三行对就是三行没错的张三银行对账单2019.12.4日至2020.3.7日.xls</text> -->
+		</view>
+		<view class="h2">分析配置</view>
+		<view class="item radio-box">
+			<radio-group name="delopy">
+				<view class="label">
+					<label class="radio">
+						<radio value="r1" checked="true" />启用去重
+					</label>
+					<text class="blue">什么是去重？</text>
+				</view>
+				<view class="label">
+					<label class="radio">
+						<radio value="r2" />启用验真
+					</label>
+					<text class="blue">什么是验真？</text>
+				</view>
+			</radio-group>
+		</view>
+		<view class="h2">客户名称</view>
+		<view class="editName">
+			<image mode="widthFix" src="/images/icon10.png"></image>
+			<input class="text" type="text" value="" placeholder="上海百度科技分公司有限责任公司" />
+		</view>
+	</view>
+	<button form-type="submit" class="button button-blue">提交</button>
+</view>

@@ -1,0 +1,66 @@
+/* pages/my/my.wxss */
+
+.user-idea {
+  background: #fff;
+  padding: 42rpx 46rpx 36rpx;
+  display: flex;
+  align-items: center;
+}
+
+.user-idea image {
+  width: 160rpx;
+  margin: 0 56rpx 0 0;
+}
+
+.user-idea .info {
+  flex: 1;
+}
+
+.user-idea .name {
+  font-size: 36rpx;
+  font-weight: 500;
+  line-height: 50rpx;
+}
+
+.member-icon {
+  line-height: 42rpx;
+  font-size: 24rpx;
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.member-icon image {
+  width: 30rpx;
+  margin: 0 10rpx 0 0;
+  vertical-align: middle;
+}
+
+.img {
+  width: 100%;
+  margin: 0 0 20rpx;
+}
+
+.links {
+  background: #fff;
+  padding: 34rpx 50rpx;
+  font-size: 32rpx;
+  font-weight: 500;
+  line-height: 44rpx;
+  display: flex;
+  white-space: nowrap;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  justify-content: space-between;
+  align-items: center;
+}
+.links .gray{
+  flex: 1;
+  color: rgba(0, 0, 0, 0.3);
+  text-align: right;
+  padding: 0 22rpx 0 0;
+}
+.links image{
+  width: 15rpx;
+}
+
+.button-box{
+  padding: 100rpx 46rpx 0;
+}

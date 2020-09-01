@@ -1,0 +1,41 @@
+/* pages/knowledge/knowledge.wxss */
+.box {
+  background: #fff;
+  padding: 34rpx 50rpx;
+  margin: 0 0 18rpx;
+}
+
+.title {
+  line-height: 44rpx;
+  font-size: 32rpx;
+  padding: 0 0 22rpx;
+}
+
+.idea {
+  display: flex;
+}
+
+.idea image {
+  width: 248rpx;
+  margin: 0 32rpx 0 0;
+}
+
+.idea .info {
+  width: 390rpx;
+}
+
+.text {
+  color: rgba(0, 0, 0, 0.4);
+  font-size: 28rpx;
+  line-height: 40rpx;
+}
+
+.author {
+  padding: 0 12rpx;
+  background: #2F77D6;
+  border-radius: 18rpx;
+  line-height: 32rpx;
+  font-weight: 500;
+  font-size: 22rpx;
+  color: rgba(255, 255, 255, 0.9);
+}

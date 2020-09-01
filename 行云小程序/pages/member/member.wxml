@@ -1,0 +1,59 @@
+<!--pages/member/member.wxml-->
+<view class="container">
+	<view class="point">
+		当前等级：<image mode="widthFix" src="/images/icon11.png"></image>行云会员
+	</view>
+
+	<view class="table-box">
+		<view class="tr">
+			<text class="th">开发功能</text>
+			<text class="th">普通账号</text>
+			<text class="th">行云会员</text>
+		</view>
+		<view class="tr">
+			<text class="td">电子对账单报告</text>
+			<text class="td">3次/月</text>
+			<text class="td">不限次数</text>
+		</view>
+		<view class="tr">
+			<text class="td">开票报告</text>
+			<text class="td">3次/月</text>
+			<text class="td">不限次数</text>
+		</view>
+		<view class="tr">
+			<text class="td">组合分析</text>
+			<text class="td">3次/月</text>
+			<text class="td">不限次数</text>
+		</view>
+		<view class="tr">
+			<text class="td">诉讼查询</text>
+			<text class="td">3次/月</text>
+			<text class="td">不限次数</text>
+		</view>
+		<view class="tr">
+			<text class="td">失信查询</text>
+			<text class="td">3次/月</text>
+			<text class="td">不限次数</text>
+		</view>
+		<view class="tr">
+			<text class="td">高级报告</text>
+			<text class="td">3次/月</text>
+			<text class="td">不限次数</text>
+		</view>
+		<view class="tr">
+			<text class="td">行云验真</text>
+			<text class="td">3次/月</text>
+			<text class="td">不限次数</text>
+		</view>
+		<view class="tr">
+			<text class="td">分享报告</text>
+			<text class="td">3次/月</text>
+			<text class="td">不限次数</text>
+		</view>
+		<view class="tr">
+			<text class="td">生成大图</text>
+			<text class="td">3次/月</text>
+			<text class="td">不限次数</text>
+		</view>
+	</view>
+</view>

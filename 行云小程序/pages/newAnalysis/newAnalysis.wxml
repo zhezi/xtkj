@@ -1,0 +1,44 @@
+<!--pages/newAnalysis/newAnalysis.wxml-->
+<view class="container">
+	<view class="swiper-box">
+		<swiper class="swiper" indicator-dots="{{indicatorDots}}" interval="{{interval}}" duration="{{duration}}">
+			<swiper-item>
+				<image mode="widthFix" src="/images/04.png"></image>
+			</swiper-item>
+			<swiper-item>
+				<image mode="widthFix" src="/images/04.png"></image>
+			</swiper-item>
+			<swiper-item>
+				<image mode="widthFix" src="/images/04.png"></image>
+			</swiper-item>
+			<swiper-item>
+				<image mode="widthFix" src="/images/04.png"></image>
+			</swiper-item>
+		</swiper>
+	</view>
+	<view class="main">
+		<view class="h2">行云分析</view>
+		<view class="box">
+			<navigator url="" class="item">
+				<image mode="widthFix" src="/images/icon05.png"></image>
+        <view class="text">账单分析</view>
+			</navigator>
+			<navigator url="" class="item">
+				<image mode="widthFix" src="/images/icon06.png"></image>
+        <view class="text">发票分析</view>
+			</navigator>
+			<navigator url="" class="item">
+				<image mode="widthFix" src="/images/icon07.png"></image>
+        <view class="text">匹配分析</view>
+			</navigator>
+			<navigator url="" class="item">
+				<image mode="widthFix" src="/images/icon08.png"></image>
+        <view class="text">征信分析</view>
+			</navigator>
+			<navigator url="" class="item">
+				<image mode="widthFix" src="/images/icon09.png"></image>
+        <view class="text">财务报表分析</view>
+			</navigator>
+		</view>
+	</view>
+</view>

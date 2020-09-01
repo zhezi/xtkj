@@ -1,0 +1,31 @@
+/* pages/caseDetails/caseDetails.wxss */
+page{
+  background: #fff;
+}
+
+.details{
+  padding: 28rpx 50rpx;
+  line-height: 36rpx;
+  font-size: 26rpx;
+}
+.details .away{
+  padding: 18rpx 0 36rpx;
+}
+.content{
+  color: rgba(0, 0, 0, 0.4);
+}
+.fixed-bottom{
+  background: #fff;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  padding: 60rpx 74rpx;
+  display: flex;
+  justify-content: space-between;
+  box-sizing: border-box;
+  text-align: center;
+}
+.fixed-bottom .button{
+  min-width: 182rpx;
+}

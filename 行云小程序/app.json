@@ -1,0 +1,71 @@
+{
+  "pages":[
+    "pages/newAnalysis/newAnalysis",
+    "pages/login/login",
+    "pages/submitSuccess/submitSuccess",
+    "pages/history/history",
+    "pages/knowledge/knowledge",
+    "pages/article/article",
+    "pages/my/my",
+    "pages/member/member",
+    "pages/other/other",
+    "pages/bankBill/bankBill",
+    "pages/report/report",
+    "pages/report2/report2",
+    "pages/caseDetails/caseDetails",
+    "pages/figure1/figure1",
+    "pages/figure2/figure2",
+    "pages/figure3/figure3"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#EDEDED",
+    "navigationBarTitleText": "行云系统",
+    "navigationBarTextStyle":"black"
+  },
+  "entryPagePath": "pages/report/report",
+  "tabBar": {
+    "custom": true, 
+    "color": "#B1B1B1",
+    "selectedColor": "#000",
+    "borderStyle": "black",
+    "backgroundColor": "#fff",
+    "list": [
+      {
+        "pagePath": "pages/newAnalysis/newAnalysis",
+        "text": "新分析",
+        "iconPath": "/images/icon01.png",
+        "selectedIconPath": "/images/icon01-active.png"
+      },
+      {
+        "pagePath": "pages/history/history",
+        "text": "分析历史",
+        "iconPath": "/images/icon02.png",
+        "selectedIconPath": "/images/icon02-active.png"
+      },
+      {
+        "pagePath": "pages/knowledge/knowledge",
+        "text": "知识库",
+        "iconPath": "/images/icon03.png",
+        "selectedIconPath": "/images/icon03-active.png"
+      },
+      {
+        "pagePath": "pages/my/my",
+        "text": "我的",
+        "iconPath": "/images/icon04.png",
+        "selectedIconPath": "/images/icon04-active.png"
+      }
+    ]
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json",
+  "usingComponents": {
+    "van-button": "@vant/weapp/button",
+    "van-overlay": "@vant/weapp/overlay",
+    "van-tab": "@vant/weapp/tab/index",
+    "van-tabs": "@vant/weapp/tabs/index",
+    "van-cell": "@vant/weapp/cell/index",
+    "van-swipe-cell": "@vant/weapp/swipe-cell/index",
+    "van-uploader": "@vant/weapp/uploader/index"
+  }
+}

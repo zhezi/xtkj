@@ -1,0 +1,48 @@
+<view class="container" style="background-image: url(/images/bg.jpg)">
+
+	<image mode="widthFix" class="logo" src="/images/logo.png"></image>
+	<view class="h1">行云·金融数据分析平台</view>
+	<view class="h2">权威的金融从业者分析工具</view>
+	<view class="userinfo">
+		<button open-type="getUserInfo" class="button" bindgetuserinfo="getUserInfo">微信授权登录</button>
+	</view>
+	<view class="point">
+		<text class="agreement"  bindtap="agreementShow">《注册协议》</text>
+		<text class="privacy-btn" bindtap="onClickShow">《隐私保密条款》</text>
+	</view>
+
+	<van-overlay show="{{ agreementShow }}">
+		<view class="wrapper">
+			<view class="layer-box">
+				<view class="title">注册协议
+					<image mode="widthFix" bindtap="agreementHide" class="layer-close" src="/images/close.png"></image>
+				</view>
+				<view class="text">
+					<view class="h3">定义</view>
+					<view>1. 行云信贷分析系统：指由北京微星优财网络科技有限公司（以下简称“我司”或“我们”）享有知识产权、用于分析银行流水并出具相关分析报告的工具或产品。</view>
+					<view>2. 《行云信贷分析系统协议条款及声明》：指用户注册或使用我司工具或产品时需先行阅读、知悉并同意的协议及相关声明，以下简称“协议”、“协议及声明”。</view>
+					<view>3. 用户：指注册或使用我司行云信贷分析系统的自然人、法人及其他组织。</view>
+					<view>4. 用户个人信息：指以电子或者其他方式记录的能够单独或者与其他信息结合识别特定自然人、法人及其他组织身份或者反映特定自然人、法人及其他组织活动情况的各种信息。</view>
+				</view>
+			</view>
+		</view>
+	</van-overlay>
+
+
+	<van-overlay show="{{ show }}">
+		<view class="wrapper">
+			<view class="layer-box">
+				<view class="title">隐私保密条款
+					<image mode="widthFix" bindtap="onClickHide" class="layer-close" src="/images/close.png"></image>
+				</view>
+				<view class="text">
+					<view class="h3">定义</view>
+					<view>1. 行云信贷分析系统：指由北京微星优财网络科技有限公司（以下简称“我司”或“我们”）享有知识产权、用于分析银行流水并出具相关分析报告的工具或产品。</view>
+					<view>2. 《行云信贷分析系统协议条款及声明》：指用户注册或使用我司工具或产品时需先行阅读、知悉并同意的协议及相关声明，以下简称“协议”、“协议及声明”。</view>
+					<view>3. 用户：指注册或使用我司行云信贷分析系统的自然人、法人及其他组织。</view>
+					<view>4. 用户个人信息：指以电子或者其他方式记录的能够单独或者与其他信息结合识别特定自然人、法人及其他组织身份或者反映特定自然人、法人及其他组织活动情况的各种信息。</view>
+				</view>
+			</view>
+		</view>
+	</van-overlay>
+</view>

@@ -1,0 +1,33 @@
+<!--pages/my/my.wxml-->
+<view class="container">
+	<view class="user-idea">
+		<image mode="widthFix" src="/images/03.jpg"></image>
+		<view class="info">
+			<view class="name">用户的微信昵称</view>
+			<view class="member-icon">
+				<image mode="widthFix" src="/images/icon11.png"></image>行云会员
+			</view>
+		</view>
+	</view>
+	<image mode="widthFix" class="img" src="/images/05.jpg"></image>
+	<navigator url="" class="links">
+		<text class="name">绑定手机号</text>
+		<text class="gray">13265427866</text>
+		<image mode="widthFix" src="/images/arrow.png"></image>
+	</navigator>
+	<navigator url="/pages/member/member" class="links">
+		<text class="name">会员资格</text>
+		<text class="gray">行云会员</text>
+		<image mode="widthFix" src="/images/arrow.png"></image>
+	</navigator>
+	<navigator url="/pages/other/other" class="links">
+		<text class="name">其他设置</text>
+		<text class="gray"></text>
+		<image mode="widthFix" src="/images/arrow.png"></image>
+	</navigator>
+
+	<view class="button-box">
+		<button url="" class="button button-blue">切换账号</button>
+	</view>
+
+</view>

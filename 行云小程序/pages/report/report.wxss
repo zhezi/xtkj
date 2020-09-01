@@ -1,0 +1,186 @@
+/* pages/report/report.wxss */
+page{
+  padding: 0 0 30rpx;
+}
+.container {
+  padding: 50rpx 26rpx;
+}
+
+.h1 {
+  font-size: 40rpx;
+  font-weight: 500;
+  color: #FFFFFF;
+  line-height: 56rpx;
+  text-align: center;
+}
+
+.scroll-view {
+  white-space: nowrap;
+  margin: 18rpx 0 36rpx;
+  display: flex;
+}
+
+.scroll-view-item {
+  display: inline-block;
+  margin: 0 8rpx 0 0;
+  vertical-align: middle;
+  border: 2rpx solid rgba(255, 255, 255, 0.3);
+  box-shadow: 0px 2px 4px 0px rgba(47, 119, 214, 0.44);
+  border-radius: 8rpx;
+}
+
+.scroll-view-item.active {
+  border: 2rpx solid #FFD27E;
+  background: linear-gradient(143deg, #FFD27E 0%, #E2C58F 100%);
+  box-shadow: 0px 2px 4px 0px #105DC4;
+}
+
+.scroll-view-item .name {
+  display: flex;
+  align-items: center;
+  width: 72rpx;
+  font-size: 28rpx;
+  line-height: 32rpx;
+  height: 80rpx;
+  text-align: center;
+  white-space: pre-wrap;
+  color: #fff;
+  padding: 7rpx 24rpx;
+}
+
+.box {
+  background: #fff;
+  margin: 40rpx 0 100rpx;
+  padding: 40rpx 40rpx 58rpx;
+  border-radius: 8rpx;
+  min-height: 800rpx;
+}
+
+.box .h2 {
+  font-size: 32rpx;
+  line-height: 44rpx;
+  font-weight: 500;
+  padding: 0 0 26rpx;
+}
+
+.editbox .point {
+  padding: 44rpx 0 94rpx;
+  line-height: 40rpx;
+  font-size: 28rpx;
+  color: rgba(0, 0, 0, 0.59);
+}
+
+.editbox .button {
+  margin: 82rpx 0 0;
+}
+
+/* 生成中 */
+.wait-box {
+  text-align: center;
+  padding: 200rpx 0;
+  font-size: 28rpx;
+  line-height: 40rpx;
+  color: rgba(0, 0, 0, 0.59);
+}
+
+.wait-box image {
+  width: 292rpx;
+  margin: 0 0 50rpx;
+}
+
+.block .box{
+  padding: 0 0 28rpx;
+  margin: 0 0 24rpx;
+  min-height: auto;
+}
+.caption {
+  display: flex;
+  justify-content: space-between;
+  padding: 18rpx 30rpx;
+  border-bottom: 1px solid #EAEBF1;
+}
+
+.caption .h2 {
+  padding: 0;
+}
+.caption .bigImg{
+  color: #2F77D6;
+  font-size: 24rpx;
+  font-weight: 500;
+}
+.swiper-box{
+  padding: 0 30rpx;
+}
+.swiper{
+  height:630rpx;
+}
+.swiper .th:first-child,
+.swiper .td:first-child {
+  width: 10%;
+  margin: 0 4% 0 0;
+}
+.swiper .th:last-child,
+.swiper .td:last-child {
+  width: 86%;
+  text-align: left;
+}
+.swiper .th:nth-child(2){
+  text-indent: 3em;
+}
+
+.block .point{
+  font-size: 28rpx;
+  line-height: 40rpx;
+  padding: 12rpx 0 26rpx;
+  text-align: center;
+}
+.block .content{
+padding: 34rpx 30rpx 28rpx;
+line-height: 48rpx;
+font-size: 24rpx;
+}
+
+.swiper2{
+  height: 324rpx;
+}
+
+.swiper2 .th:first-child,
+.swiper2 .td:first-child {
+  width: 12%;
+}
+.swiper2 .th:nth-child(2),
+.swiper2 .td:nth-child(2){
+  width: 24%;
+}
+.swiper2 .th:nth-child(3),
+.swiper2 .td:nth-child(3){
+  width: 40%;
+}
+.swiper2 .th:last-child,
+.swiper2 .td:last-child {
+  width: 24%;
+}
+
+.swiper3{
+  height: 630rpx;
+}
+
+.swiper3 .th:first-child,
+.swiper3 .td:first-child {
+  width: 12%;
+}
+.swiper3 .th:nth-child(2),
+.swiper3 .td:nth-child(2){
+  width: 46%;
+}
+.swiper3 .th:nth-child(2){
+  text-indent: 3em;
+}
+.swiper3 .th:nth-child(3),
+.swiper3 .td:nth-child(3){
+  width: 26%;
+}
+.swiper3 .th:last-child,
+.swiper3 .td:last-child {
+  width: 16%;
+}

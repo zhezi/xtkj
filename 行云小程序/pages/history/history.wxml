@@ -1,0 +1,118 @@
+<!--pages/history/history.wxml-->
+<view class="tab">
+	<text class="active">全部</text>
+	<text>解析中</text>
+	<text>只看电子</text>
+	<text>只看开票</text>
+	<text>只看失败</text>
+</view>
+
+<view class="container">
+	<van-swipe-cell class="van-swipe-cell" id="swipe-cell" right-width="{{ 126 }}" async-close bind:close="onClose">
+		<view slot="left"></view>
+		<van-cell-group>
+			<view slot="cell" class="box">
+				<view class="caption">
+					<view class="times"><image mode="widthFix" src="/images/time.png"></image>2020.1.3 10：23</view>
+					<view class="type">电子对账单分析</view>
+				</view>
+				<view class="name">百度一下科技有限公司</view>
+			</view>
+		</van-cell-group>
+		<view slot="right" class="item">
+			<view class="btn btn-blue">
+				<image mode="widthFix" src="/images/icon12.png"></image>
+				合并分析
+			</view>
+			<view class="btn btn-red">
+				<image mode="widthFix" src="/images/icon13.png"></image>删除报告
+			</view>
+		</view>
+	</van-swipe-cell>
+	<van-swipe-cell class="van-swipe-cell" id="swipe-cell" right-width="{{ 126 }}" async-close bind:close="onClose">
+		<view slot="left"></view>
+		<van-cell-group>
+			<view slot="cell" class="box">
+				<view class="caption">
+					<view class="times"><image mode="widthFix" src="/images/time.png"></image>2020.1.3 10：23</view>
+					<view class="type">电子对账单分析</view>
+				</view>
+				<view class="name">百度一下科技有限公司</view>
+				<view class="wait">正在分析中，预计还需2分钟…</view>
+			</view>
+		</van-cell-group>
+		<view slot="right" class="item">
+			<view class="btn btn-blue">
+				<image mode="widthFix" src="/images/icon12.png"></image>
+				合并分析
+			</view>
+			<view class="btn btn-red">
+				<image mode="widthFix" src="/images/icon13.png"></image>删除报告
+			</view>
+		</view>
+	</van-swipe-cell>
+	<van-swipe-cell class="van-swipe-cell swipe-cell-red" id="swipe-cell" right-width="{{ 126 }}" async-close bind:close="onClose">
+		<view slot="left"></view>
+		<van-cell-group>
+			<view slot="cell" class="box">
+				<view class="caption">
+					<view class="times"><image mode="widthFix" src="/images/time.png"></image>2020.1.3 10：23</view>
+					<view class="type">电子对账单分析</view>
+				</view>
+				<view class="name">百度一下科技有限公司</view>
+			</view>
+		</van-cell-group>
+		<view slot="right" class="item">
+			<view class="btn btn-blue">
+				<image mode="widthFix" src="/images/icon12.png"></image>
+				合并分析
+			</view>
+			<view class="btn btn-red">
+				<image mode="widthFix" src="/images/icon13.png"></image>删除报告
+			</view>
+		</view>
+	</van-swipe-cell>
+	<van-swipe-cell class="van-swipe-cell" id="swipe-cell" right-width="{{ 126 }}" async-close bind:close="onClose">
+		<view slot="left"></view>
+		<van-cell-group>
+			<view slot="cell" class="box">
+				<view class="caption">
+					<view class="times"><image mode="widthFix" src="/images/time.png"></image>2020.1.3 10：23</view>
+					<view class="type">电子对账单分析</view>
+				</view>
+				<view class="name">百度一下科技有限公司</view>
+			</view>
+		</van-cell-group>
+		<view slot="right" class="item">
+			<view class="btn btn-blue">
+				<image mode="widthFix" src="/images/icon12.png"></image>
+				合并分析
+			</view>
+			<view class="btn btn-red">
+				<image mode="widthFix" src="/images/icon13.png"></image>删除报告
+			</view>
+		</view>
+	</van-swipe-cell>
+	<van-swipe-cell class="van-swipe-cell" id="swipe-cell" right-width="{{ 126 }}" async-close bind:close="onClose">
+		<view slot="left"></view>
+		<van-cell-group>
+			<view slot="cell" class="box">
+				<view class="caption">
+					<view class="times"><image mode="widthFix" src="/images/time.png"></image>2020.1.3 10：23</view>
+					<view class="type">电子对账单分析</view>
+				</view>
+				<view class="name">百度一下科技有限公司</view>
+			</view>
+		</van-cell-group>
+		<view slot="right" class="item">
+			<view class="btn btn-blue">
+				<image mode="widthFix" src="/images/icon12.png"></image>
+				合并分析
+			</view>
+			<view class="btn btn-red">
+				<image mode="widthFix" src="/images/icon13.png"></image>删除报告
+			</view>
+		</view>
+	</van-swipe-cell>
+
+</view>

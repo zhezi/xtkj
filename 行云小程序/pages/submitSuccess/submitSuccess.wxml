@@ -1,0 +1,8 @@
+<!--pages/submitSuccess/submitSuccess.wxml-->
+<view class="container">
+	<image mode="widthFix" class="icon" src="/images/success.png"></image>
+	<view class="h1">提交成功</view>
+	<view class="text">行云需要30-120秒进行解析</view>
+	<navigator url="" class="button button-blue">前往查看结果</navigator>
+	<navigator url="" class="button button-yellow">再次解析</navigator>
+</view>

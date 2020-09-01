@@ -1,0 +1,87 @@
+<!--pages/figure1/figure1.wxml-->
+<view class="top-box">全部收入统计</view>
+
+<view class="swiper-box">
+	<swiper class="swiper" indicator-dots="{{indicatorDots}}" interval="{{interval}}" duration="{{duration}}">
+		<swiper-item>
+			<view class="table">
+				<view class="tr">
+					<view class="th">序号</view>
+					<view class="th">公司名称</view>
+					<view class="th">收入金额(元)</view>
+					<view class="th">笔数</view>
+				</view>
+				<view class="tr" wx:for="{{list}}" wx:key="index" wx:for-item="item">
+					<view class="td">{{item.id}}</view>
+					<view class="td">
+						{{item.companyName}}
+						<text class="su">{{item.su}}</text>
+						<text class="shi">{{item.shi}}</text>
+					</view>
+					<view class="td">{{item.money}}</view>
+					<view class="td">{{item.number}}</view>
+				</view>
+			</view>
+		</swiper-item>
+		<swiper-item>
+			<view class="table">
+				<view class="tr">
+					<view class="th">序号</view>
+					<view class="th">公司名称</view>
+					<view class="th">收入金额(元)</view>
+					<view class="th">笔数</view>
+				</view>
+				<view class="tr" wx:for="{{list}}" wx:key="index" wx:for-item="item">
+					<view class="td">{{item.id}}</view>
+					<view class="td">
+						{{item.companyName}}
+						<text class="su">{{item.su}}</text>
+						<text class="shi">{{item.shi}}</text>
+					</view>
+					<view class="td">{{item.money}}</view>
+					<view class="td">{{item.number}}</view>
+				</view>
+			</view>
+		</swiper-item>
+		<swiper-item>
+			<view class="table">
+				<view class="tr">
+					<view class="th">序号</view>
+					<view class="th">公司名称</view>
+					<view class="th">收入金额(元)</view>
+					<view class="th">笔数</view>
+				</view>
+				<view class="tr" wx:for="{{list}}" wx:key="index" wx:for-item="item">
+					<view class="td">{{item.id}}</view>
+					<view class="td">
+						{{item.companyName}}
+						<text class="su">{{item.su}}</text>
+						<text class="shi">{{item.shi}}</text>
+					</view>
+					<view class="td">{{item.money}}</view>
+					<view class="td">{{item.number}}</view>
+				</view>
+			</view>
+		</swiper-item>
+		<swiper-item>
+			<view class="table">
+				<view class="tr">
+					<view class="th">序号</view>
+					<view class="th">公司名称</view>
+					<view class="th">收入金额(元)</view>
+					<view class="th">笔数</view>
+				</view>
+				<view class="tr" wx:for="{{list}}" wx:key="index" wx:for-item="item">
+					<view class="td">{{item.id}}</view>
+					<view class="td">
+						{{item.companyName}}
+						<text class="su">{{item.su}}</text>
+						<text class="shi">{{item.shi}}</text>
+					</view>
+					<view class="td">{{item.money}}</view>
+					<view class="td">{{item.number}}</view>
+				</view>
+			</view>
+		</swiper-item>
+	</swiper>
+</view>

@@ -1,0 +1,71 @@
+<!--pages/figure1/figure1.wxml-->
+<view class="top-box">全部收入统计</view>
+
+<view class="swiper-box">
+	<swiper class="swiper" indicator-dots="{{indicatorDots}}" interval="{{interval}}" duration="{{duration}}">
+		<swiper-item>
+			<view class="table">
+				<view class="tr">
+					<text class="th">序号</text>
+					<text class="th">日期</text>
+					<text class="th">收入金额(元)</text>
+					<text class="th">公司名称</text>
+				</view>
+				<view class="tr" wx:for="{{list}}" wx:key="index" wx:for-item="item">
+					<text class="td">{{item.id}}</text>
+					<text class="td">{{item.times}}</text>
+					<text class="td">{{item.money}}</text>
+					<text class="td">{{item.companyName}}</text>
+				</view>
+			</view>
+		</swiper-item>
+		<swiper-item>
+			<view class="table">
+				<view class="tr">
+					<text class="th">序号</text>
+					<text class="th">日期</text>
+					<text class="th">收入金额(元)</text>
+					<text class="th">公司名称</text>
+				</view>
+				<view class="tr" wx:for="{{list}}" wx:key="index" wx:for-item="item">
+					<text class="td">{{item.id}}</text>
+					<text class="td">{{item.times}}</text>
+					<text class="td">{{item.money}}</text>
+					<text class="td">{{item.companyName}}</text>
+				</view>
+			</view>
+		</swiper-item>
+		<swiper-item>
+			<view class="table">
+				<view class="tr">
+					<text class="th">序号</text>
+					<text class="th">日期</text>
+					<text class="th">收入金额(元)</text>
+					<text class="th">公司名称</text>
+				</view>
+				<view class="tr" wx:for="{{list}}" wx:key="index" wx:for-item="item">
+					<text class="td">{{item.id}}</text>
+					<text class="td">{{item.times}}</text>
+					<text class="td">{{item.money}}</text>
+					<text class="td">{{item.companyName}}</text>
+				</view>
+			</view>
+		</swiper-item>
+		<swiper-item>
+			<view class="table">
+				<view class="tr">
+					<text class="th">序号</text>
+					<text class="th">日期</text>
+					<text class="th">收入金额(元)</text>
+					<text class="th">公司名称</text>
+				</view>
+				<view class="tr" wx:for="{{list}}" wx:key="index" wx:for-item="item">
+					<text class="td">{{item.id}}</text>
+					<text class="td">{{item.times}}</text>
+					<text class="td">{{item.money}}</text>
+					<text class="td">{{item.companyName}}</text>
+				</view>
+			</view>
+		</swiper-item>
+	</swiper>
+</view>

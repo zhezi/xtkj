@@ -1,0 +1,55 @@
+<!--pages/figure1/figure1.wxml-->
+<view class="top-box">可疑交易大图</view>
+
+
+<view class="table">
+	<view class="tr">
+		<view class="th">序号</view>
+		<view class="th">交易对手</view>
+		<view class="th">收入金额(元)</view>
+		<view class="th">可疑条数</view>
+		<view class="th"></view>
+	</view>
+	<view class="tr-box" wx:for="{{list}}" wx:key="index" wx:for-item="item">
+		<view class="tr {{item.isShow ? 'active' : ''}}">
+			<view class="td">{{item.id}}</view>
+			<view class="td">
+				{{item.companyName}}
+			</view>
+			<view class="td">{{item.money}}</view>
+			<view class="td">{{item.number}}</view>
+			<view class="td">
+				<view class="blue {{item.isShow ? 'up' : 'down'}}" bindtap="toShowItem" data-id='{{item.id}}' data-listname="list">
+				{{item.isShow ? '收起' :'展开'}}
+				<image mode="widthFix" src="{{item.isShow ? '/images/up.png' :'/images/down.png'}}"></image>
+				</view>
+			</view>
+		</view>
+		<view class="show {{item.isShow ? 'block' : 'none'}}">
+			<view class="tr">
+				<view class="td">
+				</view>
+				<view class="td">四川财务商务有限公司</view>
+				<view class="td">29873974.89</view>
+				<view class="td"></view>
+				<view class="td"></view>
+			</view>
+			<view class="tr">
+				<view class="td">
+				</view>
+				<view class="td">四川财务商务有限公司</view>
+				<view class="td">29873974.89</view>
+				<view class="td"></view>
+				<view class="td"></view>
+			</view>
+			<view class="tr">
+				<view class="td">
+				</view>
+				<view class="td">四川财务商务有限公司</view>
+				<view class="td">29873974.89</view>
+				<view class="td"></view>
+				<view class="td"></view>
+			</view>
+		</view>
+	</view>
+</view>

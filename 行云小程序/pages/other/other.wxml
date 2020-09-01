@@ -1,0 +1,17 @@
+<!--pages/other/other.wxml-->
+<view class="box">
+	<text class="text">发送短信</text>
+	<switch checked="{{switch1Checked}}" bindchange="switch1Change" />
+</view>
+<view class="box">
+	<text class="text">允许诉讼查询</text>
+	<switch checked="{{switch2Checked}}" bindchange="switch2Change" />
+</view>
+<view class="box">
+	<text class="text">允许失信查询</text>
+	<switch checked="{{switch3Checked}}" bindchange="switch3Change" />
+</view>
+<view class="box">
+	<text class="text">允许关联查询</text>
+	<switch checked="{{switch4Checked}}" bindchange="switch4Change" />
+</view>

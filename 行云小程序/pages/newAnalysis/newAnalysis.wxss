@@ -1,0 +1,55 @@
+/* pages/newAnalysis/newAnalysis.wxss */
+.swiper-box {
+  background: #fff;
+  padding: 40rpx 0 10rpx;
+  margin: 0 0 18rpx;
+}
+
+.swiper {
+  width: 720rpx;
+  height: 400rpx;
+  margin: 0 auto;
+}
+
+.swiper-box image {
+  width: 720rpx;
+}
+
+
+.main{
+  background: #fff;
+}
+.h2 {
+  padding: 30rpx 76rpx 20rpx;
+  line-height: 44rpx;
+  font-size: 32rpx;
+  font-weight: 500;
+  border-bottom: 1px solid #EAEBF1;
+}
+.box{
+  padding: 26rpx 46rpx 36rpx;
+  display: flex;
+  flex-wrap: wrap;
+}
+.box .item{
+  width: 33.33%;
+  text-align: center;
+  line-height: 40rpx;
+  font-size: 28rpx;
+  padding: 0 0 48rpx;
+  box-sizing: border-box;
+  border-right: 1px solid #EAEBF1;
+  border-bottom: 1px solid #EAEBF1;
+}
+.box .item:nth-child(3n){
+  border-right: 0;
+}
+.box .item:nth-last-child(2),
+.box .item:last-child{
+  border-bottom: 0;
+}
+.box image{
+  width: 52rpx;
+  margin: 30rpx 0 20rpx;
+  display: inline-block;
+}

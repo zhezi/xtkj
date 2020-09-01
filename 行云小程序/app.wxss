@@ -1,0 +1,232 @@
+/**app.wxss**/
+page {
+  background: #EFEFF3;
+  padding: 0 0 100rpx;
+}
+
+/* .container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 200rpx 0;
+  box-sizing: border-box;
+}  */
+
+/* 按钮 */
+.button {
+  border-radius: 8rpx;
+  line-height: 84rpx;
+  font-size: 32rpx;
+  color: #fff;
+  padding: 0;
+  min-width: 100%;
+  font-weight: normal;
+}
+
+.button-blue {
+  background: #2F77D6;
+}
+
+.button-yellow {
+  background: #E2C58F;
+}
+
+/* 颜色 */
+.blue {
+  color: #2F77D6;
+}
+
+/* 默认指示点的样式 */
+.swiper-box .wx-swiper-dot {
+  width: 12rpx;
+  height: 12rpx;
+  background: none;
+  border-radius: 50%;
+  vertical-align: middle;
+  display: inline-block;
+  border: 2rpx solid #A9C7EE;
+  box-sizing: border-box;
+}
+
+/* 选中指示点的样式 */
+.swiper-box .wx-swiper-dot.wx-swiper-dot-active {
+  border: 2rpx solid #347EE0;
+  background: #347EE0;
+}
+
+.bg-cover {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 750rpx;
+  height: 346rpx;
+  z-index: -1;
+}
+
+.editName {
+  position: relative;
+  background: #DCE5F2;
+  padding: 0 10rpx 0 52rpx;
+  margin: 12rpx 0 0;
+  font-size: 32rpx;
+  color: rgba(0, 0, 0, 0.59);
+  display: flex;
+  align-items: center;
+}
+
+.editName image {
+  position: absolute;
+  left: 10rpx;
+  top: 50%;
+  width: 32rpx;
+  transform: translateY(-50%);
+}
+
+.editName .text {
+  line-height: 52rpx;
+  height: 52rpx;
+  width: 100%
+}
+
+.top-box {
+  background: rgba(47, 119, 214, 0.1);
+  font-size: 28rpx;
+  font-weight: 500;
+  color: #2F77D6;
+  line-height: 40rpx;
+  padding: 22rpx 50rpx;
+}
+
+/* 表格样式 */
+.table {
+  margin: 26rpx 0 0;
+  border-bottom: 0;
+  text-align: center;
+}
+
+.table .tr{
+  display: flex;
+}
+.table .th,
+.table .td {
+  width: 30%;
+  display: block;
+  line-height: 52rpx;
+  font-size: 24rpx;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.su {
+  width: 32rpx;
+  line-height: 32rpx;
+  font-size: 24rpx;
+  font-weight: 500;
+  color: #FFFFFF;
+  background: #FFA442;
+  border-radius: 50%;
+  display: inline-block;
+  text-align: center;
+  margin: 0 10rpx 0 0 ;
+}
+
+.shi {
+  width: 32rpx;
+  line-height: 32rpx;
+  font-size: 24rpx;
+  font-weight: 500;
+  color: #FFFFFF;
+  background: #FA0100;
+  border-radius: 50%;
+  display: inline-block;
+  text-align: center;
+}
+
+.table .th:first-child,
+.table .td:first-child {
+  width: 10%;
+}
+
+.table .th:nth-child(2),
+.table .td:nth-child(2) {
+  width: 20%;
+}
+
+.table .th:last-child,
+.table .td:last-child {
+  width: 40%;
+}
+
+.table .th {
+  color: #2F77D6;
+}
+.tr.active{
+  background: rgba(47, 119, 214, 0.1);
+}
+.show {
+  background: rgba(47, 119, 214, 0.1);
+  transition : all .5s;
+  line-height: 52rpx;
+  font-size: 24rpx;
+}
+
+.show.block {
+  display: block;
+}
+
+.show.none {
+  transition: all .1s;
+  display: none;
+}
+
+
+/* 弹层 */
+.layer-box {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 640rpx;
+  height: 806rpx;
+  background: #FFFFFF;
+  border-radius: 16rpx;
+  color: #000;
+  transform: translate(-50%,-50%);
+}
+.layer-box .title{
+  line-height: 126rpx;
+  font-size: 34rpx;
+  text-align: center;
+  font-weight: 500;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+.layer-box .text{
+  padding: 24rpx 40rpx;
+  line-height: 40rpx;
+  font-size: 24rpx;
+  text-align: left;
+}
+.layer-box .h3{
+  font-weight: bold;
+}
+.layer-close{
+  position: absolute;
+  right: 40rpx;
+  top: 40rpx;
+  width: 32rpx;
+}
+.cont{
+  background: rgba(47, 119, 214, 0.1);
+  padding: 12rpx 26rpx;
+  margin: 0 0 10rpx;
+}
+.cont .btn{
+  text-align: right;
+}
+.layer-box .text .h3{
+  font-size: 28rpx;
+  line-height: 42rpx;
+  padding: 0 0 20rpx;
+  font-weight: normal;
+}

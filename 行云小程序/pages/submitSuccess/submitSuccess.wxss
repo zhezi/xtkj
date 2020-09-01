@@ -1,0 +1,30 @@
+/* pages/submitSuccess/submitSuccess.wxss */
+page {
+  background: #fff;
+}
+
+.container {
+  text-align: center;
+  padding: 0 46rpx;
+}
+
+.icon {
+  width: 292rpx;
+  margin: 230rpx 0 0;
+}
+
+.h1 {
+  font-size: 36rpx;
+  font-weight: 500;
+  line-height: 50rpx;
+}
+
+.text {
+  padding: 16rpx 0 56rpx;
+  font-size: 28rpx;
+  color: rgba(0, 0, 0, 0.6);
+  line-height: 40rpx;
+}
+.button{
+  margin: 40rpx 0 0;
+}
