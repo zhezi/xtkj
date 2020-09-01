@@ -1,7 +1,7 @@
 {
   "pages":[
-    "pages/newAnalysis/newAnalysis",
     "pages/login/login",
+    "pages/newAnalysis/newAnalysis",
     "pages/submitSuccess/submitSuccess",
     "pages/history/history",
     "pages/knowledge/knowledge",
@@ -23,7 +23,7 @@
     "navigationBarTitleText": "行云系统",
     "navigationBarTextStyle":"black"
   },
-  "entryPagePath": "pages/report/report",
+  "entryPagePath": "pages/login/login",
   "tabBar": {
     "custom": true, 
     "color": "#B1B1B1",
