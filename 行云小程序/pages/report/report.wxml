@@ -126,7 +126,7 @@
 						<view class="title">涉诉历史
 							<image mode="widthFix" bindtap="suHide" class="layer-close" src="/images/close.png"></image>
 						</view>
-						<view class="text">
+						<scroll-view scroll-y class="text">
 						  <view class="h3">与四川商务务有限公司有关的失信共：12条</view>
 							<view class="cont">
 								<view class="name blue">（2020）云0112执2132号之一</view>
@@ -143,7 +143,7 @@
 								<view class="t-text">昆明冠生园食品有限公司、文阳买卖合同纠纷执行实施类执行裁定书</view>
 								<view class="btn blue">点击展开详情</view>
 							</view>
-						</view>
+						</scroll-view>
 					</view>
 				</view>
 			</van-overlay>
@@ -155,7 +155,7 @@
 						<view class="title">失信历史
 							<image mode="widthFix" bindtap="shiHide" class="layer-close" src="/images/close.png"></image>
 						</view>
-						<view class="text">
+						<scroll-view scroll-y class="text">
 						  <view class="h3">与四川商务务有限公司有关的失信共：12条</view>
 							<view class="cont">
 								<view class="name blue">（2020）云0112执2132号之一</view>
@@ -172,7 +172,7 @@
 								<view class="t-text">昆明冠生园食品有限公司、文阳买卖合同纠纷执行实施类执行裁定书</view>
 								<view class="btn blue">点击展开详情</view>
 							</view>
-						</view>
+						</scroll-view>
 					</view>
 				</view>
 			</van-overlay>
