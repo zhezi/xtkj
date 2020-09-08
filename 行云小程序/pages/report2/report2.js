@@ -12,9 +12,11 @@ Page({
     interval: 2000,
     duration: 500,
     currentTab: 0,
+    current: 0,
     active: 1,
     shesuShow: false,
     shixinShow: false,
+    menu:['报告日期','结息/余额','同名划转'],
     list:[
       {
         id:1,
@@ -123,6 +125,26 @@ Page({
 
   shiHide() {
     this.setData({ shixinShow: false });
+  },
+
+   //  tab切换逻辑
+   swichMenu: function (e) {
+    var that = this;
+    if (this.data.current === e.target.dataset.current) {
+      return false;
+    } else {
+      that.setData({
+        current: e.target.dataset.current
+      })
+    }
+  },
+
+  bindChange: function (e) {
+    var that = this;
+    that.setData({
+      current: e.detail.current
+    });
+
   },
 
   /**

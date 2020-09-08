@@ -138,7 +138,6 @@ page {
 
 .van-tabs--line .van-tabs__wrap {
   padding: 0 36rpx;
-
 }
 
 .van-ellipsis {
@@ -152,6 +151,34 @@ page {
   height: 2rpx !important;
   bottom: 10rpx !important;
   margin: 0 0 0 -16rpx;
+}
+
+.swiper-slider{
+  padding: 14rpx 30rpx 26rpx;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  white-space: nowrap;
+  box-sizing: border-box;
+}
+.swiper-name{
+  position: relative;
+  line-height: 48rpx;
+  font-size: 26rpx;
+  color: #2F77D6;
+  margin: 0 40rpx;
+  display: inline-block;
+}
+.swiper-name.active::after {
+  position: absolute;
+  content: '';
+  background-color: #2F77D6 !important;
+  width: 104rpx;
+  height: 2rpx;
+  bottom: 0rpx;
+  left: 50%;
+  transform: translateX(-50%);
+  display: inline-block;
 }
 
 .block .point {
@@ -173,6 +200,9 @@ page {
 
 .swiper2 {
   height: 324rpx;
+}
+.no-swiper{
+  height: auto;
 }
 
 .swiper2 .th:first-child,

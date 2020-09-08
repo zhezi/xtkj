@@ -49,168 +49,37 @@
 			<view class="caption">
 				<view class="h2">报告总览</view>
 			</view>
-			<van-tabs active="{{ active }}" bind:change="onChange">
-				<van-tab title="报告日期">
-					<view class="swiper-box">
-						<swiper class="swiper" indicator-dots="{{indicatorDots}}" interval="{{interval}}" duration="{{duration}}">
-							<swiper-item>
-								<view class="content">
-									<view class="text">日均交易额日期范围: 2019-11-05 - 2019-12-27</view>
-									<view class="text">日均收入余额: 3827262829202.33元</view>
-									<view class="text">日均支出余额: 3827262829202.33元</view>
-								</view>
-							</swiper-item>
-							<swiper-item>
-								<view class="content">
-									<view class="text">日均交易额日期范围: 2019-11-05 - 2019-12-27</view>
-									<view class="text">日均收入余额: 3827262829202.33元</view>
-									<view class="text">日均支出余额: 3827262829202.33元</view>
-								</view>
-							</swiper-item>
-							<swiper-item>
-								<view class="content">
-									<view class="text">日均交易额日期范围: 2019-11-05 - 2019-12-27</view>
-									<view class="text">日均收入余额: 3827262829202.33元</view>
-									<view class="text">日均支出余额: 3827262829202.33元</view>
-								</view>
-							</swiper-item>
-							<swiper-item>
-								<view class="content">
-									<view class="text">日均交易额日期范围: 2019-11-05 - 2019-12-27</view>
-									<view class="text">日均收入余额: 3827262829202.33元</view>
-									<view class="text">日均支出余额: 3827262829202.33元</view>
-								</view>
-							</swiper-item>
-						</swiper>
-					</view>
-				</van-tab>
-				<van-tab title="结息/余额">
-					<view class="swiper-box">
-						<swiper class="swiper" indicator-dots="{{indicatorDots}}" interval="{{interval}}" duration="{{duration}}">
-							<swiper-item>
-								<view class="content">
-									<view class="text">日均交易额日期范围: 2019-11-05 - 2019-12-27</view>
-									<view class="text">日均收入余额: 3827262829202.33元</view>
-									<view class="text">日均支出余额: 3827262829202.33元</view>
-								</view>
-							</swiper-item>
-							<swiper-item>
-								<view class="content">
-									<view class="text">日均交易额日期范围: 2019-11-05 - 2019-12-27</view>
-									<view class="text">日均收入余额: 3827262829202.33元</view>
-									<view class="text">日均支出余额: 3827262829202.33元</view>
-								</view>
-							</swiper-item>
-							<swiper-item>
-								<view class="content">
-									<view class="text">日均交易额日期范围: 2019-11-05 - 2019-12-27</view>
-									<view class="text">日均收入余额: 3827262829202.33元</view>
-									<view class="text">日均支出余额: 3827262829202.33元</view>
-								</view>
-							</swiper-item>
-							<swiper-item>
-								<view class="content">
-									<view class="text">日均交易额日期范围: 2019-11-05 - 2019-12-27</view>
-									<view class="text">日均收入余额: 3827262829202.33元</view>
-									<view class="text">日均支出余额: 3827262829202.33元</view>
-								</view>
-							</swiper-item>
-						</swiper>
-					</view>
-				</van-tab>
-				<van-tab title="同名划转">
-					<view class="swiper-box">
-						<swiper class="swiper" indicator-dots="{{indicatorDots}}" interval="{{interval}}" duration="{{duration}}">
-							<swiper-item>
-								<view class="content">
-									<view class="text">日均交易额日期范围: 2019-11-05 - 2019-12-27</view>
-									<view class="text">日均收入余额: 3827262829202.33元</view>
-									<view class="text">日均支出余额: 3827262829202.33元</view>
-								</view>
-							</swiper-item>
-							<swiper-item>
-								<view class="content">
-									<view class="text">日均交易额日期范围: 2019-11-05 - 2019-12-27</view>
-									<view class="text">日均收入余额: 3827262829202.33元</view>
-									<view class="text">日均支出余额: 3827262829202.33元</view>
-								</view>
-							</swiper-item>
-							<swiper-item>
-								<view class="content">
-									<view class="text">日均交易额日期范围: 2019-11-05 - 2019-12-27</view>
-									<view class="text">日均收入余额: 3827262829202.33元</view>
-									<view class="text">日均支出余额: 3827262829202.33元</view>
-								</view>
-							</swiper-item>
-							<swiper-item>
-								<view class="content">
-									<view class="text">日均交易额日期范围: 2019-11-05 - 2019-12-27</view>
-									<view class="text">日均收入余额: 3827262829202.33元</view>
-									<view class="text">日均支出余额: 3827262829202.33元</view>
-								</view>
-							</swiper-item>
-						</swiper>
-					</view>
-				</van-tab>
-			</van-tabs>
-			<!-- 
-			<van-overlay show="{{ shesuShow }}">
-				<view class="wrapper">
-					<view class="layer-box">
-						<view class="title">涉诉历史
-							<image mode="widthFix" bindtap="suHide" class="layer-close" src="/images/close.png"></image>
+
+
+			<scroll-view scroll-x="true" class="swiper-slider">
+				<view class="swiper-name {{current == index ? 'active' : ''}}"  wx:for="{{menu}}" wx:key="index" wx:for-item="item" data-current="{{index}}" bindtap="swichMenu">{{item}}</view>
+			</scroll-view>
+
+			<view class="swiper-box">
+				<swiper class="swiper" current="{{current}}" indicator-dots="{{indicatorDots}}" interval="{{interval}}" duration="{{duration}}" bindchange="bindChange">
+					<swiper-item>
+						<view class="content">
+							<view class="text">日均交易额日期范围: 2019-11-05 - 2019-12-27</view>
+							<view class="text">日均收入余额: 3827262829202.33元</view>
+							<view class="text">日均支出余额: 3827262829202.33元</view>
 						</view>
-						<scroll-view scroll-y class="text">
-						  <view class="h3">与四川商务务有限公司有关的失信共：12条</view>
-							<view class="cont">
-								<view class="name blue">（2020）云0112执2132号之一</view>
-								<view class="t-text">昆明冠生园食品有限公司、文阳买卖合同纠纷执行实施类执行裁定书</view>
-								<view class="btn blue">点击展开详情</view>
-							</view>
-							<view class="cont">
-								<view class="name blue">（2020）云0112执2132号之一</view>
-								<view class="t-text">昆明冠生园食品有限公司、文阳买卖合同纠纷执行实施类执行裁定书</view>
-								<view class="btn blue">点击展开详情</view>
-							</view>
-							<view class="cont">
-								<view class="name blue">（2020）云0112执2132号之一</view>
-								<view class="t-text">昆明冠生园食品有限公司、文阳买卖合同纠纷执行实施类执行裁定书</view>
-								<view class="btn blue">点击展开详情</view>
-							</view>
-						</scroll-view>
-					</view>
-				</view>
-			</van-overlay>
-
-
-			<van-overlay show="{{ shixinShow }}">
-				<view class="wrapper">
-					<view class="layer-box">
-						<view class="title">失信历史
-							<image mode="widthFix" bindtap="shiHide" class="layer-close" src="/images/close.png"></image>
+					</swiper-item>
+					<swiper-item>
+						<view class="content">
+							<view class="text">日均交易额日期范围: 2019-11-05 - 2019-12-27</view>
+							<view class="text">日均收入余额: 3827262829202.33元</view>
+							<view class="text">日均支出余额: 3827262829202.33元</view>
 						</view>
-						<scroll-view scroll-y class="text">
-						  <view class="h3">与四川商务务有限公司有关的失信共：12条</view>
-							<view class="cont">
-								<view class="name blue">（2020）云0112执2132号之一</view>
-								<view class="t-text">昆明冠生园食品有限公司、文阳买卖合同纠纷执行实施类执行裁定书</view>
-								<view class="btn blue">点击展开详情</view>
-							</view>
-							<view class="cont">
-								<view class="name blue">（2020）云0112执2132号之一</view>
-								<view class="t-text">昆明冠生园食品有限公司、文阳买卖合同纠纷执行实施类执行裁定书</view>
-								<view class="btn blue">点击展开详情</view>
-							</view>
-							<view class="cont">
-								<view class="name blue">（2020）云0112执2132号之一</view>
-								<view class="t-text">昆明冠生园食品有限公司、文阳买卖合同纠纷执行实施类执行裁定书</view>
-								<view class="btn blue">点击展开详情</view>
-							</view>
-						</scroll-view>
-					</view>
-				</view>
-			</van-overlay> -->
-
+					</swiper-item>
+					<swiper-item>
+						<view class="content">
+							<view class="text">日均交易额日期范围: 2019-11-05 - 2019-12-27</view>
+							<view class="text">日均收入余额: 3827262829202.33元</view>
+							<view class="text">日均支出余额: 3827262829202.33元</view>
+						</view>
+					</swiper-item>
+				</swiper>
+			</view>
 		</view>
 		<view class="point">以下内容为行云AI智能剔除关联企业后的分析报告</view>
 
@@ -243,73 +112,21 @@
 				<view class="h2">月度收入/支出分析</view>
 			</view>
 
-			<view class="swiper-box">
-				<swiper class="swiper2" indicator-dots="{{indicatorDots}}" interval="{{interval}}" duration="{{duration}}">
-					<swiper-item>
-						<view class="table">
-							<view class="tr">
-								<view class="th">序号</view>
-								<view class="th">月份</view>
-								<view class="th">月收入金额合计(元)</view>
-								<view class="th">月收入笔数</view>
-							</view>
-							<view class="tr" wx:for="{{list2}}" wx:key="index" wx:for-item="item">
-								<view class="td">{{item.id}}</view>
-								<view class="td">{{item.mouth}}</view>
-								<view class="td">{{item.money}}</view>
-								<view class="td">{{item.number}}</view>
-							</view>
-						</view>
-					</swiper-item>
-					<swiper-item>
-						<view class="table">
-							<view class="tr">
-								<view class="th">序号</view>
-								<view class="th">月份</view>
-								<view class="th">月收入金额合计(元)</view>
-								<view class="th">月收入笔数</view>
-							</view>
-							<view class="tr" wx:for="{{list2}}" wx:key="index" wx:for-item="item">
-								<view class="td">{{item.id}}</view>
-								<view class="td">{{item.mouth}}</view>
-								<view class="td">{{item.money}}</view>
-								<view class="td">{{item.number}}</view>
-							</view>
-						</view>
-					</swiper-item>
-					<swiper-item>
-						<view class="table">
-							<view class="tr">
-								<view class="th">序号</view>
-								<view class="th">月份</view>
-								<view class="th">月收入金额合计(元)</view>
-								<view class="th">月收入笔数</view>
-							</view>
-							<view class="tr" wx:for="{{list2}}" wx:key="index" wx:for-item="item">
-								<view class="td">{{item.id}}</view>
-								<view class="td">{{item.mouth}}</view>
-								<view class="td">{{item.money}}</view>
-								<view class="td">{{item.number}}</view>
-							</view>
-						</view>
-					</swiper-item>
-					<swiper-item>
-						<view class="table">
-							<view class="tr">
-								<view class="th">序号</view>
-								<view class="th">月份</view>
-								<view class="th">月收入金额合计(元)</view>
-								<view class="th">月收入笔数</view>
-							</view>
-							<view class="tr" wx:for="{{list2}}" wx:key="index" wx:for-item="item">
-								<view class="td">{{item.id}}</view>
-								<view class="td">{{item.mouth}}</view>
-								<view class="td">{{item.money}}</view>
-								<view class="td">{{item.number}}</view>
-							</view>
-						</view>
-					</swiper-item>
-				</swiper>
+			<view class="swiper-box swiper2 no-swiper">
+				<view class="table">
+					<view class="tr">
+						<view class="th">序号</view>
+						<view class="th">月份</view>
+						<view class="th">月收入金额合计(元)</view>
+						<view class="th">月收入笔数</view>
+					</view>
+					<view class="tr" wx:for="{{list2}}" wx:key="index" wx:for-item="item">
+						<view class="td">{{item.id}}</view>
+						<view class="td">{{item.mouth}}</view>
+						<view class="td">{{item.money}}</view>
+						<view class="td">{{item.number}}</view>
+					</view>
+				</view>
 			</view>
 		</view>
 
