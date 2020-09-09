@@ -108,6 +108,7 @@ page {
 
 .table .tr{
   display: flex;
+  align-items: center;
 }
 .table .th,
 .table .td {
@@ -115,7 +116,6 @@ page {
   display: block;
   line-height: 52rpx;
   font-size: 24rpx;
-  white-space: nowrap;
   overflow: hidden;
 }
 

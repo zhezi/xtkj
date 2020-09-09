@@ -52,7 +52,7 @@
 
 
 			<scroll-view scroll-x="true" class="swiper-slider">
-				<view class="swiper-name {{current == index ? 'active' : ''}}"  wx:for="{{menu}}" wx:key="index" wx:for-item="item" data-current="{{index}}" bindtap="swichMenu">{{item}}</view>
+				<view class="swiper-name {{current == index ? 'active' : ''}}" wx:for="{{menu}}" wx:key="index" wx:for-item="item" data-current="{{index}}" bindtap="swichMenu">{{item}}</view>
 			</scroll-view>
 
 			<view class="swiper-box">
@@ -212,6 +212,24 @@
 				<navigator url="/page3/figure3/figure3" class="bigImg">大图查看全部</navigator>
 			</view>
 
+
+			<view class="swiper-box swiper3 no-swiper">
+				<view class="table">
+					<view class="tr">
+						<view class="th">序号</view>
+						<view class="th">交易对手</view>
+						<view class="th">发生金额(元)</view>
+						<view class="th">可疑条数</view>
+					</view>
+					<view class="tr" wx:for="{{list}}" wx:key="index" wx:for-item="item">
+						<view class="td">{{item.id}}</view>
+						<view class="td">{{item.companyName}}</view>
+						<view class="td">{{item.money}}</view>
+						<view class="td">{{item.number}}</view>
+					</view>
+				</view>
+			</view>
+
 			<view class="swiper-box">
 				<swiper class="swiper3" indicator-dots="{{indicatorDots}}" interval="{{interval}}" duration="{{duration}}">
 					<swiper-item>
@@ -280,6 +298,9 @@
 					</swiper-item>
 				</swiper>
 			</view>
+
+
+
 		</view>
 
 	</view>
