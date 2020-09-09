@@ -15,7 +15,8 @@
     "pages/caseDetails/caseDetails",
     "pages/figure1/figure1",
     "pages/figure2/figure2",
-    "pages/figure3/figure3"
+    "pages/figure3/figure3",
+    "pages/figure4/figure4"
   ],
   "window":{
     "backgroundTextStyle":"light",
@@ -23,7 +24,7 @@
     "navigationBarTitleText": "行云系统",
     "navigationBarTextStyle":"black"
   },
-  "entryPagePath": "pages/report2/report2",
+  "entryPagePath": "pages/figure4/figure4",
   "tabBar": {
     "custom": true, 
     "color": "#B1B1B1",

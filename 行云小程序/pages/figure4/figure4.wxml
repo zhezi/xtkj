@@ -1,0 +1,43 @@
+<view class="top-box">可疑交易大图</view>
+
+
+<view class="table">
+	<view class="tr">
+		<view class="th">序号</view>
+		<view class="th">交易对手</view>
+		<view class="th">可疑条数</view>
+		<view class="th"></view>
+	</view>
+	<view class="tr-box" wx:for="{{list}}" wx:key="index" wx:for-item="item">
+		<view class="tr {{item.isShow ? 'active' : ''}}">
+			<view class="td">{{item.id}}</view>
+			<view class="td">
+				{{item.companyName}}
+			</view>
+			<view class="td">{{item.number}}</view>
+			<view class="td">
+				<view class="blue {{item.isShow ? 'up' : 'down'}}" bindtap="toShowItem" data-id='{{item.id}}' data-listname="list">
+				{{item.isShow ? '收起' :'展开'}}
+				<image mode="widthFix" src="{{item.isShow ? '/images/up.png' :'/images/down.png'}}"></image>
+				</view>
+			</view>
+		</view>
+		<view class="show {{item.isShow ? 'block' : 'none'}}">
+			<view class="tr show-tr">
+				<view class="td">2019.3.4</view>
+				<view class="td">3000000.00元</view>
+				<view class="td">备注：招商银行贷款还款3000000.00元</view>
+			</view>
+			<view class="tr show-tr">
+				<view class="td">2019.3.4</view>
+				<view class="td">3000000.00元</view>
+				<view class="td">备注：招商银行贷款还款3000000.00元</view>
+			</view>
+			<view class="tr show-tr">
+				<view class="td">2019.3.4</view>
+				<view class="td">3000000.00元</view>
+				<view class="td">备注：招商银行贷款还款3000000.00元</view>
+			</view>
+		</view>
+	</view>
+</view>
