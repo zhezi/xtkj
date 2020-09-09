@@ -201,9 +201,6 @@ page {
 .swiper2 {
   height: 324rpx;
 }
-.no-swiper{
-  height: auto;
-}
 
 .swiper2 .th:first-child,
 .swiper2 .td:first-child {

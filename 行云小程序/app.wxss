@@ -234,3 +234,8 @@ page {
   padding: 0 0 20rpx;
   font-weight: normal;
 }
+
+/* 高度不固定 */
+.no-swiper{
+  height: auto!important;
+}
