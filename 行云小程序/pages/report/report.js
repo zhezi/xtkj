@@ -60,7 +60,7 @@ Page({
         id:7,
         number:"34",
         money:"29873974.89",
-        companyName:"四川财务商务有限公司四川财务商务有限公司"
+        companyName:"四川财务商务有限公司四川财务商司"
       },
       {
         id:8,

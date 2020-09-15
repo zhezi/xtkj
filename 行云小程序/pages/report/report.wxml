@@ -127,7 +127,7 @@
 							<image mode="widthFix" bindtap="suHide" class="layer-close" src="/images/close.png"></image>
 						</view>
 						<scroll-view scroll-y class="text">
-						  <view class="h3">与四川商务务有限公司有关的失信共：12条</view>
+							<view class="h3">与四川商务务有限公司有关的失信共：12条</view>
 							<view class="cont">
 								<view class="name blue">（2020）云0112执2132号之一</view>
 								<view class="t-text">昆明冠生园食品有限公司、文阳买卖合同纠纷执行实施类执行裁定书</view>
@@ -156,7 +156,7 @@
 							<image mode="widthFix" bindtap="shiHide" class="layer-close" src="/images/close.png"></image>
 						</view>
 						<scroll-view scroll-y class="text">
-						  <view class="h3">与四川商务务有限公司有关的失信共：12条</view>
+							<view class="h3">与四川商务务有限公司有关的失信共：12条</view>
 							<view class="cont">
 								<view class="name blue">（2020）云0112执2132号之一</view>
 								<view class="t-text">昆明冠生园食品有限公司、文阳买卖合同纠纷执行实施类执行裁定书</view>
@@ -421,6 +421,54 @@
 							</view>
 							<view class="tr" wx:for="{{list}}" wx:key="index" wx:for-item="item">
 								<view class="td">{{item.id}}</view>
+								<view class="td">{{item.companyName}}</view>
+								<view class="td">{{item.money}}</view>
+								<view class="td">{{item.number}}</view>
+							</view>
+						</view>
+					</swiper-item>
+				</swiper>
+			</view>
+
+
+			<view class="swiper-box">
+				<swiper class="swiper4" indicator-dots="{{indicatorDots}}" interval="{{interval}}" duration="{{duration}}">
+					<swiper-item>
+						<view class="table">
+							<view class="tr">
+								<view class="th">商品名称</view>
+								<view class="th">2020</view>
+								<view class="th">2020占比(%)</view>
+							</view>
+							<view class="tr" wx:for="{{list}}" wx:key="index" wx:for-item="item">
+								<view class="td">{{item.companyName}}</view>
+								<view class="td">{{item.money}}</view>
+								<view class="td">{{item.number}}</view>
+							</view>
+						</view>
+					</swiper-item>
+					<swiper-item>
+						<view class="table">
+							<view class="tr">
+								<view class="th">商品名称</view>
+								<view class="th">2020</view>
+								<view class="th">2020占比(%)</view>
+							</view>
+							<view class="tr" wx:for="{{list}}" wx:key="index" wx:for-item="item">
+								<view class="td">{{item.companyName}}</view>
+								<view class="td">{{item.money}}</view>
+								<view class="td">{{item.number}}</view>
+							</view>
+						</view>
+					</swiper-item>
+					<swiper-item>
+						<view class="table">
+							<view class="tr">
+								<view class="th">商品名称</view>
+								<view class="th">2020</view>
+								<view class="th">2020占比(%)</view>
+							</view>
+							<view class="tr" wx:for="{{list}}" wx:key="index" wx:for-item="item">
 								<view class="td">{{item.companyName}}</view>
 								<view class="td">{{item.money}}</view>
 								<view class="td">{{item.number}}</view>

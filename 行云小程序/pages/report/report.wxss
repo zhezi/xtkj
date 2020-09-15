@@ -171,16 +171,37 @@ font-size: 24rpx;
 }
 .swiper3 .th:nth-child(2),
 .swiper3 .td:nth-child(2){
-  width: 46%;
+  width: 42%;
+  padding: 0 1%;
 }
 .swiper3 .th:nth-child(2){
-  text-indent: 3em;
+  /* text-indent: 3em; */
 }
 .swiper3 .th:nth-child(3),
 .swiper3 .td:nth-child(3){
-  width: 26%;
+  width: 30%;
 }
 .swiper3 .th:last-child,
 .swiper3 .td:last-child {
   width: 16%;
+}
+
+
+.swiper4{
+  height: 630rpx;
+}
+
+.swiper4 .th:first-child,
+.swiper4 .td:first-child {
+  width: 40%;
+  padding: 0 1%;
+}
+.swiper4 .th:nth-child(2),
+.swiper4 .td:nth-child(2){
+  width: 29%;
+  padding: 0 1%;
+}
+.swiper4 .th:last-child,
+.swiper4 .td:last-child {
+  width: 27%;
 }

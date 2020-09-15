@@ -1,4 +1,4 @@
-<view class="container" style="background-image: url(/images/bg.jpg)">
+<view class="container" style="background-image:url(/images/bg.jpg)">
 
 	<image mode="widthFix" class="logo" src="/images/logo.png"></image>
 	<view class="h1">行云·金融数据分析平台</view>
