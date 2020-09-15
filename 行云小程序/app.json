@@ -24,7 +24,7 @@
     "navigationBarTitleText": "行云系统",
     "navigationBarTextStyle":"black"
   },
-  "entryPagePath": "pages/report/report",
+  "entryPagePath": "pages/bankBill/bankBill",
   "tabBar": {
     "custom": true, 
     "color": "#B1B1B1",
