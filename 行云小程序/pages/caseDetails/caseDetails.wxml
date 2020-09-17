@@ -33,5 +33,12 @@
 
 <view class="fixed-bottom">
 	<view class="button button-blue">上一篇</view>
+	<view class="pages">
+		<navigator url="" class="navigator active">1</navigator>
+		<navigator url="" class="navigator">2</navigator>
+		<navigator url="" class="navigator">3</navigator>
+		<text>...</text>
+		<navigator url="" class="navigator">10</navigator>
+	</view>
 	<view class="button button-blue">下一篇</view>
 </view>

@@ -20,7 +20,7 @@ page{
   left: 0;
   bottom: 0;
   width: 100%;
-  padding: 60rpx 74rpx;
+  padding: 60rpx 50rpx;
   display: flex;
   justify-content: space-between;
   box-sizing: border-box;
@@ -28,4 +28,15 @@ page{
 }
 .fixed-bottom .button{
   min-width: 182rpx;
+}
+
+.pages{
+  display: flex;
+  align-items: center;
+}
+.pages .navigator{
+  padding: 0 10rpx;
+}
+.pages .active{
+  color: #2F77D6;
 }

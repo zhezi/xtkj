@@ -144,29 +144,36 @@ page {
   color: #2F77D6;
   font-weight: normal;
 }
-
+.van-tab{
+  width: 164rpx!important;
+  padding: 0 10rpx;
+  flex-basis:auto!important;
+}
 .van-tabs__line {
   background-color: #2F77D6 !important;
   width: 104rpx !important;
   height: 2rpx !important;
   bottom: 10rpx !important;
   margin: 0 0 0 -16rpx;
-}
-
-.swiper-slider{
-  padding: 14rpx 30rpx 26rpx;
-  display: flex;
   text-align: center;
-  justify-content: center;
-  white-space: nowrap;
-  box-sizing: border-box;
+}
+.van-ellipsis{
+  overflow: visible!important;
+text-overflow: initial!important;
+}
+.slider-box{
+  padding: 0 30rpx;
+}
+.swiper-slider{
+  padding: 14rpx 0 26rpx;
+  height: 88rpx;
+  width: 100%;
 }
 .swiper-name{
   position: relative;
   line-height: 48rpx;
   font-size: 26rpx;
   color: #2F77D6;
-  margin: 0 40rpx;
   display: inline-block;
 }
 .swiper-name.active::after {

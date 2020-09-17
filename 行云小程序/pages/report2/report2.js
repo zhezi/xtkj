@@ -16,7 +16,7 @@ Page({
     active: 1,
     shesuShow: false,
     shixinShow: false,
-    menu:['报告日期','结息/余额','同名划转'],
+    menu:['报告日期','结息/余额','同名划转','报告日期2','结息/余额2','同名划转2','报告日期3','结息/余额3'],
     list:[
       {
         id:1,
@@ -129,6 +129,7 @@ Page({
 
    //  tab切换逻辑
    swichMenu: function (e) {
+     console.log(e)
     var that = this;
     if (this.data.current === e.target.dataset.current) {
       return false;
@@ -137,6 +138,18 @@ Page({
         current: e.target.dataset.current
       })
     }
+  },
+
+  onClick(event) {
+    var that = this;
+    wx.showToast({
+      title: `点击标签 ${event.detail.name}`,
+      icon: 'none',
+    });
+    console.log(event)
+    that.setData({
+      current: event.detail.index
+    })
   },
 
   bindChange: function (e) {
