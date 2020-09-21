@@ -38,4 +38,5 @@
 		</view>
 	</view>
 	<button form-type="submit" class="button button-blue">提交</button>
+	<view class="prompt">当月剩余次数：5次</view>
 </view>

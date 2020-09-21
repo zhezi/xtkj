@@ -24,7 +24,7 @@
     "navigationBarTitleText": "行云系统",
     "navigationBarTextStyle":"black"
   },
-  "entryPagePath": "pages/report2/report2",
+  "entryPagePath": "pages/history/history",
   "tabBar": {
     "custom": true, 
     "color": "#B1B1B1",

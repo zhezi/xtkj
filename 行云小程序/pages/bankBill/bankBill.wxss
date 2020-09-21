@@ -78,3 +78,11 @@ radio .wx-radio-input.wx-radio-input-checked {
   border-color: #2F77D6!important;
   background-color: #2F77D6!important;
 }
+
+
+.prompt{
+  text-align: center;
+  font-size: 28rpx;
+  line-height: 44rpx;
+  padding: 10rpx 0  0;
+}
