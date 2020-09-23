@@ -16,7 +16,7 @@ Page({
     active: 1,
     shesuShow: false,
     shixinShow: false,
-    menu:['报告日期','结息/余额','同名划转','报告日期2','结息/余额2','结息','报告日期3','结息/余额3'],
+    menu:['报告日期','结息余额','同名划转','报告日期','结息','结息','报告日期','结息余额额'],
     list:[
       {
         id:1,
@@ -142,10 +142,10 @@ Page({
 
   onClick(event) {
     var that = this;
-    wx.showToast({
-      title: `点击标签 ${event.detail.name}`,
-      icon: 'none',
-    });
+    // wx.showToast({
+    //   title: `点击标签 ${event.detail.name}`,
+    //   icon: 'none',
+    // });
     console.log(event)
     that.setData({
       current: event.detail.index

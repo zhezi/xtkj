@@ -56,8 +56,8 @@
 			</scroll-view> -->
 
 
-<van-tabs active="{{ current }}" bind:click="onClick">
-  <van-tab title="{{item}}"  wx:for="{{menu}}" wx:key="index" wx:for-item="item" data-current="{{index}}"></van-tab>
+<van-tabs active="{{ current }}" line-width="60" bind:click="onClick">
+  <van-tab title="{{item}}" wx:for="{{menu}}" wx:key="index" wx:for-item="item" data-current="{{index}}"></van-tab>
   <!-- <van-tab title="标签 2"></van-tab>
   <van-tab title="标签 3"></van-tab>
   <van-tab title="标签 4"></van-tab>

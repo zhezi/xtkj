@@ -146,20 +146,18 @@ page {
 }
 .van-tab{
   width: 164rpx!important;
-  padding: 0 10rpx;
   flex-basis:auto!important;
 }
 .van-tabs__line {
   background-color: #2F77D6 !important;
-  width: 104rpx !important;
-  height: 2rpx !important;
   bottom: 10rpx !important;
-  margin: 0 0 0 -10rpx;
+  height: 2rpx !important;
   text-align: center;
 }
 .van-ellipsis{
   overflow: visible!important;
 text-overflow: initial!important;
+text-align: center;
 }
 .slider-box{
   padding: 0 30rpx;

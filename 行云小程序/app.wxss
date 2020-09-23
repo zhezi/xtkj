@@ -217,9 +217,10 @@ page {
 }
 .layer-close{
   position: absolute;
-  right: 40rpx;
-  top: 40rpx;
+  right: 20rpx;
+  top: 20rpx;
   width: 32rpx;
+  padding: 20rpx;
 }
 .cont{
   background: rgba(47, 119, 214, 0.1);
