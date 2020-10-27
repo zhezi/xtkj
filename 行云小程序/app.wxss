@@ -48,6 +48,7 @@ page {
   display: inline-block;
   border: 2rpx solid #A9C7EE;
   box-sizing: border-box;
+  background: #fff;
 }
 
 /* 选中指示点的样式 */

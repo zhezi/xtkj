@@ -542,6 +542,33 @@
   line-height: 36px;
   font-size: 12px;
 }
+.report-page .idea-box02{
+  position: relative;
+  background:#fff;
+  border: 1px solid #f6f8fb;
+}
+.report-page .idea-box02 .switch{
+  height: auto;
+  float:left;
+  width:120px;
+}
+.report-page .idea-box02 .switch a{
+  margin:0;
+  border: 0;
+  display: block;
+}
+.report-page .idea-box02 .switch em{
+  display:none;
+}
+.report-page .idea-box02 .switch a.active{
+  background: #fff;
+  border-right:0;
+}
+.report-page .idea-box02 .switch-box{
+  float: right;
+  width: calc(100% - 168px);
+  border:0;
+}
 .report-page .box{
     background: #fff;
     padding: 24px 30px;
