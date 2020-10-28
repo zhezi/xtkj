@@ -16,8 +16,7 @@
     "pages/figure1/figure1",
     "pages/figure2/figure2",
     "pages/figure3/figure3",
-    "pages/figure4/figure4",
-    "pages/guide/guide"
+    "pages/figure4/figure4"
   ],
   "window":{
     "backgroundTextStyle":"light",
@@ -25,7 +24,7 @@
     "navigationBarTitleText": "行云系统",
     "navigationBarTextStyle":"black"
   },
-  "entryPagePath": "pages/guide/guide",
+  "entryPagePath": "pages/newAnalysis/newAnalysis",
   "tabBar": {
     "custom": true, 
     "color": "#B1B1B1",

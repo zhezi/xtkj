@@ -1,44 +1,77 @@
 <!--pages/newAnalysis/newAnalysis.wxml-->
-<view class="container">
-	<view class="swiper-box">
-		<swiper class="swiper" indicator-dots="{{indicatorDots}}" interval="{{interval}}" duration="{{duration}}">
-			<swiper-item>
-				<image mode="widthFix" src="/images/04.png"></image>
-			</swiper-item>
-			<swiper-item>
-				<image mode="widthFix" src="/images/04.png"></image>
-			</swiper-item>
-			<swiper-item>
-				<image mode="widthFix" src="/images/04.png"></image>
-			</swiper-item>
-			<swiper-item>
-				<image mode="widthFix" src="/images/04.png"></image>
-			</swiper-item>
-		</swiper>
-	</view>
-	<view class="main">
-		<view class="h2">行云分析</view>
-		<view class="box">
-			<navigator url="" class="item">
-				<image mode="widthFix" src="/images/icon05.png"></image>
+<view class="guide" wx:if="{{ guideShow }}">
+  <view class="swiper-box">
+    <swiper class="swiper" current="{{current}}" indicator-dots="{{indicatorDots}}" interval="{{interval}}" duration="{{duration}}" bindchange="bindChange">
+      <swiper-item>
+        <view class="content">
+          <view class="h2">1.行云能为贷款经理做什么？</view>
+          <image mode="widthFix" src="/images/yd01.png"></image>
+        </view>
+      </swiper-item>
+      <swiper-item>
+        <view class="content">
+          <view class="h2">2.行云能为老板做什么？</view>
+          <image mode="widthFix" src="/images/yd02.png"></image>
+        </view>
+      </swiper-item>
+      <swiper-item>
+        <view class="content">
+          <view class="h2">3.行云安全</view>
+          <image mode="widthFix" src="/images/yd03.png"></image>
+        </view>
+      </swiper-item>
+      <swiper-item>
+        <view class="content">
+          <image mode="widthFix" src="/images/yd04.png"></image>
+          <view bindtap="guideHide" class="button button-blue">开始使用行云分析</view>
+        </view>
+      </swiper-item>
+    </swiper>
+
+    <view bindtap="guideHide" class="link">我已了解，跳过</view>
+  </view>
+</view>
+
+<view class="container" wx:if="{{ contShow }}">
+  <view class="swiper-box">
+    <swiper class="swiper" indicator-dots="{{indicatorDots}}" interval="{{interval}}" duration="{{duration}}">
+      <swiper-item>
+        <image mode="widthFix" src="/images/04.png"></image>
+      </swiper-item>
+      <swiper-item>
+        <image mode="widthFix" src="/images/04.png"></image>
+      </swiper-item>
+      <swiper-item>
+        <image mode="widthFix" src="/images/04.png"></image>
+      </swiper-item>
+      <swiper-item>
+        <image mode="widthFix" src="/images/04.png"></image>
+      </swiper-item>
+    </swiper>
+  </view>
+  <view class="main">
+    <view class="h2">行云分析</view>
+    <view class="box">
+      <navigator url="" class="item">
+        <image mode="widthFix" src="/images/icon05.png"></image>
         <view class="text">账单分析</view>
-			</navigator>
-			<navigator url="" class="item">
-				<image mode="widthFix" src="/images/icon06.png"></image>
+      </navigator>
+      <navigator url="" class="item">
+        <image mode="widthFix" src="/images/icon06.png"></image>
         <view class="text">发票分析</view>
-			</navigator>
-			<navigator url="" class="item">
-				<image mode="widthFix" src="/images/icon07.png"></image>
+      </navigator>
+      <navigator url="" class="item">
+        <image mode="widthFix" src="/images/icon07.png"></image>
         <view class="text">匹配分析</view>
-			</navigator>
-			<navigator url="" class="item">
-				<image mode="widthFix" src="/images/icon08.png"></image>
+      </navigator>
+      <navigator url="" class="item">
+        <image mode="widthFix" src="/images/icon08.png"></image>
         <view class="text">征信分析</view>
-			</navigator>
-			<navigator url="" class="item">
-				<image mode="widthFix" src="/images/icon09.png"></image>
+      </navigator>
+      <navigator url="" class="item">
+        <image mode="widthFix" src="/images/icon09.png"></image>
         <view class="text">财务报表分析</view>
-			</navigator>
-		</view>
-	</view>
+      </navigator>
+    </view>
+  </view>
 </view>

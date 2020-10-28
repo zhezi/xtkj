@@ -185,9 +185,19 @@
     -webkit-border-radius: 0;
     border-radius: 0;
 }
-.layer .item-select .text{
+.layer .item-select .text,
+.layer .item-select02 .text{
     background: url(../images/arrow-bottom2.png) right center no-repeat;
     cursor: pointer;
+}
+.layer .item-select02  .lookLink{
+    position: absolute;
+    right: 50px;
+    top:1px;
+}
+.layer .item-select02 ul li{
+    display: flex;
+    justify-content: space-between;
 }
 #layer-match .form dt{
     float: left;
@@ -281,7 +291,8 @@
 }
 #layer-bill .layer-tip{
     min-height: 394px;
-    margin: -212px 0 0 -300px;
+    margin: 0;
+    transform: translate(-50%,-50%);
 }
 #layer-bill .check-box{
     line-height: 30px;

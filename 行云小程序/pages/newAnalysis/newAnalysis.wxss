@@ -1,17 +1,20 @@
 /* pages/newAnalysis/newAnalysis.wxss */
-.swiper-box {
+page{
+  padding: 0;
+}
+.container .swiper-box {
   background: #fff;
   padding: 40rpx 0 10rpx;
   margin: 0 0 18rpx;
 }
 
-.swiper {
+.container .swiper {
   width: 720rpx;
   height: 400rpx;
   margin: 0 auto;
 }
 
-.swiper-box image {
+.container .swiper-box image {
   width: 720rpx;
 }
 
@@ -19,19 +22,19 @@
 .main{
   background: #fff;
 }
-.h2 {
+.container .h2 {
   padding: 30rpx 76rpx 20rpx;
   line-height: 44rpx;
   font-size: 32rpx;
   font-weight: 500;
   border-bottom: 1px solid #EAEBF1;
 }
-.box{
+.container .box{
   padding: 26rpx 46rpx 36rpx;
   display: flex;
   flex-wrap: wrap;
 }
-.box .item{
+.container .box .item{
   width: 33.33%;
   text-align: center;
   line-height: 40rpx;
@@ -41,15 +44,48 @@
   border-right: 1px solid #EAEBF1;
   border-bottom: 1px solid #EAEBF1;
 }
-.box .item:nth-child(3n){
+.container .box .item:nth-child(3n){
   border-right: 0;
 }
-.box .item:nth-last-child(2),
-.box .item:last-child{
+.container .box .item:nth-last-child(2),
+.container .box .item:last-child{
   border-bottom: 0;
 }
-.box image{
+.container .box image{
   width: 52rpx;
   margin: 30rpx 0 20rpx;
   display: inline-block;
+}
+
+.guide{
+  padding: 0 0 120rpx;
+  background: #d1e3fd;
+}
+.guide .swiper {
+  padding: 0 20rpx;
+  height: 1400rpx;
+}
+.guide .swiper .h2{
+  font-size: 30rpx;
+  line-height: 90rpx;
+  color: #2f77d6;
+}
+.guide .swiper image{
+  width: 100%;
+}
+.guide .button{
+  position: absolute;
+  bottom: 26%;
+  left: 20%;
+  width: 60%;
+  text-align: center;
+  border-radius: 42rpx;
+  min-width: auto;
+}
+.guide .link{
+  position: absolute;
+  right: 20rpx;
+  top: 1365rpx;
+  color: #2f77d6;
+  font-size: 18rpx;
 }

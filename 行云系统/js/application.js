@@ -158,6 +158,45 @@ $(function($) {
             });
         })
     };
+
+    //下拉选择银行模板
+    if ($('.item-select02').size()>0) {
+      $(".item-select02").each(function(){
+          var _this=$(this);
+          var _text=$(this).children("input");
+          var _item=$(this).children("ul");
+          var _lookLink=$(this).children(".lookLink");
+          var _show=function(){
+            _item.slideDown(200);
+            _this.css("z-index",3);
+            _this.find('.arrow-bottom').addClass('arrow-top');
+          };
+          var _hide=function(){
+            _item.slideUp(200);
+            _this.css("z-index",1);
+            _this.find('.arrow-bottom').removeClass('arrow-top');
+          };
+          _text.click(function(){
+            _item.is(":hidden")?_show():_hide();
+          });
+          _item.find("li").click(function(){
+            var _url= $(this).find('a').attr('href');
+            _text.val($(this).find('.name').html());_hide();
+            _lookLink.html($(this).find('a').html()).attr("href",_url);_hide();
+          });
+          $("body").click(function(event){
+              if (event.stopPropagation) { 
+                // 针对 Mozilla 和 Opera     
+                event.stopPropagation();    
+              }     
+              else if (window.event) {    
+                // 针对 IE    
+                window.event.cancelBubble = true; 
+              }
+              !$(event.target).parents(".item-select02").first().is(_this) ? _hide():"";
+          });
+      })
+  };
     if($('.layer').size()>0){
       $('.remove-btn').bind('click',function () {
          $('#layer-remove').fadeIn();
