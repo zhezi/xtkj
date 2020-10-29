@@ -113,7 +113,7 @@ page{
 }
 .guide .link{
   position: absolute;
-  right: 20rpx;
+  right: 0rpx;
   bottom: 1.5%;
   color: #2f77d6;
   font-size: 20rpx;
