@@ -69,7 +69,7 @@ page{
   position: relative;
   width: 75%;
   margin:10rpx auto;
-  height: calc(100vh - 120rpx);
+  height: calc(100vh - 200rpx);
 }
 .guide .swiper-box .content{
   width: 100%;
@@ -112,7 +112,7 @@ page{
 .guide .link{
   position: absolute;
   right: 20rpx;
-  bottom: 1.8%;
+  bottom: 1.5%;
   color: #2f77d6;
   font-size: 18rpx;
 }
