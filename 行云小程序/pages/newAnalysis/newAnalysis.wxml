@@ -27,12 +27,11 @@
         </view>
       </swiper-item>
     </swiper>
-
     <view bindtap="guideHide" class="link">我已了解，跳过</view>
   </view>
 </view>
 
-<view class="container" wx:if="{{ contShow }}">
+<view class="container">
   <view class="swiper-box">
     <swiper class="swiper" indicator-dots="{{indicatorDots}}" interval="{{interval}}" duration="{{duration}}">
       <swiper-item>
