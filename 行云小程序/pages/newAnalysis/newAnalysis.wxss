@@ -62,14 +62,16 @@ page{
   position: fixed;
   width: 100%;
   top: 0%;
+  height: 100%;
   z-index: 22;
-  padding: 0 0 120rpx;
 }
 .guide .swiper-box {
-  position: relative;
+  position: absolute;
   width: 75%;
-  margin:10rpx auto;
-  height: calc(100vh - 200rpx);
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-56%);
+  height: 1100rpx;
 }
 .guide .swiper-box .content{
   width: 100%;
@@ -114,5 +116,5 @@ page{
   right: 20rpx;
   bottom: 1.5%;
   color: #2f77d6;
-  font-size: 18rpx;
+  font-size: 20rpx;
 }
