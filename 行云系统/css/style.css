@@ -593,12 +593,16 @@
 .report-page .idea-box02 dd{
   line-height: 22px;
   margin: 8px 28px 26px;
-  max-height: 180px;
 }
 .report-page .idea-box02 dd.height{
-  height: 110px;
   overflow: hidden;
   overflow-y: scroll;
+}
+.report-page .idea-box02 dd.height1{
+  height: 110px;
+}
+.report-page .idea-box02 dd.height2{
+  height: 260px;
 }
 .report-page .idea-box02 dd.height::-webkit-scrollbar {
   width: 4px;     

@@ -40,14 +40,22 @@ $(function($) {
       })
   };
   function Height(){
-    $('.idea-box02 dl').each(function () {
+    $('.idea-box02 .switch-box').each(function () {
       var _this = $(this);
-      var _height = _this.find("dd").height();
-      console.log(_height)
-      if(_height > 110){
-        _this.find("dd").addClass('height')
-      }
+      var len=_this.find("dl").size();
+      console.log(len)
+      _this.find('dl').each(function () {
+        var _this2 = $(this);
+        var _height = _this2.find("dd").height();
+        console.log(_height)
+        if(_height > 110 && len>2){
+          _this2.find("dd").addClass('height height1')
+        }else if(_height > 110 && len<=2){
+          _this2.find("dd").addClass('height height2')
+        }
+      })
     })
+    
   }
   if($(".idea-box02").size()>0){
     Height()
