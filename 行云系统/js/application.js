@@ -50,7 +50,7 @@ $(function($) {
         // console.log(_height)
         if(_height > 110 && len>2){
           _this2.find("dd").addClass('height height1')
-        }else if(_height > 110 && len<=2){
+        }else if(_height > 260 && len<=2){
           _this2.find("dd").addClass('height height2')
         }
       })
