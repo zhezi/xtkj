@@ -544,13 +544,15 @@
 }
 .report-page .idea-box02{
   position: relative;
-  background: #f6f8fb;
   border: 1px solid #f6f8fb;
+  padding: 0 20px 0 0;
 }
 .report-page .idea-box02 .switch{
   height: auto;
   float:left;
   width:160px;
+  background: #f6f8fb;
+  min-height: 326px;
 }
 .report-page .idea-box02 .switch a{
   margin:0;
@@ -570,10 +572,13 @@
 .report-page .idea-box02 .switch-box{
   float: right;
   background: #fff;
-  width: calc(100% - 240px);
+  width: calc(100% - 220px);
   border:0;
-  padding: 20px 40px 0;
-  min-height: 306px;
+  padding: 0 20px 0 40px;
+  margin: 20px 0;
+}
+.report-page .idea-box02 .nano{
+  height: 284px;
 }
 .report-page .idea-box02 dl{
   float: left;
@@ -593,6 +598,11 @@
 .report-page .idea-box02 dd{
   line-height: 22px;
   padding: 8px 28px 24px;
+}
+
+.report-page .idea-box02 dl:last-child dd,
+.report-page .idea-box02 dL:nth-last-child(2) dd{
+  padding: 8px 28px;
 }
 .report-page .box{
     background: #fff;

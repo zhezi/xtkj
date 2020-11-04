@@ -49,6 +49,9 @@ $(function($) {
           var _this=$(this),_index=$(this).index();
           _this.addClass('active').siblings('a').removeClass('active');
           $this.find('.switch-box').eq(_index).fadeIn(1000).siblings('.switch-box').hide();
+          if($(".nano").size()>0){
+            $this.find('.switch-box').eq(_index).find(".nano").nanoScroller();
+          }
         })
 
     })
