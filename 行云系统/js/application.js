@@ -43,11 +43,11 @@ $(function($) {
     $('.idea-box02 .switch-box').each(function () {
       var _this = $(this);
       var len=_this.find("dl").size();
-      console.log(len)
+      // console.log(len)
       _this.find('dl').each(function () {
         var _this2 = $(this);
         var _height = _this2.find("dd").height();
-        console.log(_height)
+        // console.log(_height)
         if(_height > 110 && len>2){
           _this2.find("dd").addClass('height height1')
         }else if(_height > 110 && len<=2){
