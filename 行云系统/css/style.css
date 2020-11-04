@@ -612,10 +612,6 @@
   background: #eae9e9;
 }
 
-.report-page .idea-box02 dl:last-child dd,
-.report-page .idea-box02 dL:nth-last-child(2) dd{
-  margin: 8px 28px;
-}
 .report-page .box{
     background: #fff;
     padding: 24px 30px;
