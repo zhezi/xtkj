@@ -544,15 +544,13 @@
 }
 .report-page .idea-box02{
   position: relative;
+  background: #f6f8fb;
   border: 1px solid #f6f8fb;
-  padding: 0 20px 0 0;
 }
 .report-page .idea-box02 .switch{
   height: auto;
   float:left;
   width:160px;
-  background: #f6f8fb;
-  min-height: 326px;
 }
 .report-page .idea-box02 .switch a{
   margin:0;
@@ -572,13 +570,10 @@
 .report-page .idea-box02 .switch-box{
   float: right;
   background: #fff;
-  width: calc(100% - 220px);
+  width: calc(100% - 240px);
   border:0;
-  padding: 0 20px 0 40px;
-  margin: 20px 0;
-}
-.report-page .idea-box02 .nano{
-  height: 284px;
+  padding: 20px 40px 0;
+  min-height: 306px;
 }
 .report-page .idea-box02 dl{
   float: left;
@@ -597,12 +592,29 @@
 }
 .report-page .idea-box02 dd{
   line-height: 22px;
-  padding: 8px 28px 24px;
+  margin: 8px 28px 26px;
+  max-height: 180px;
+}
+.report-page .idea-box02 dd.height{
+  height: 110px;
+  overflow: hidden;
+  overflow-y: scroll;
+}
+.report-page .idea-box02 dd.height::-webkit-scrollbar {
+  width: 4px;     
+  height: 14px;
+}
+.report-page .idea-box02 dd.height::-webkit-scrollbar-thumb {
+  background: #bcbcbc;
+}
+.report-page .idea-box02 dd.height::-webkit-scrollbar-track {
+  border-radius: 0;
+  background: #eae9e9;
 }
 
 .report-page .idea-box02 dl:last-child dd,
 .report-page .idea-box02 dL:nth-last-child(2) dd{
-  padding: 8px 28px;
+  margin: 8px 28px;
 }
 .report-page .box{
     background: #fff;

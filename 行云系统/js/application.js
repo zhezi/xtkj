@@ -39,6 +39,19 @@ $(function($) {
           });
       })
   };
+  function Height(){
+    $('.idea-box02 dl').each(function () {
+      var _this = $(this);
+      var _height = _this.find("dd").height();
+      console.log(_height)
+      if(_height > 110){
+        _this.find("dd").addClass('height')
+      }
+    })
+  }
+  if($(".idea-box02").size()>0){
+    Height()
+  }
 
   (function(){
     
@@ -51,6 +64,9 @@ $(function($) {
           $this.find('.switch-box').eq(_index).fadeIn(1000).siblings('.switch-box').hide();
           if($(".nano").size()>0){
             $this.find('.switch-box').eq(_index).find(".nano").nanoScroller();
+          }
+          if($(".idea-box02").size()>0){
+            Height()
           }
         })
 
