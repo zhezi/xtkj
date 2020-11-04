@@ -544,18 +544,21 @@
 }
 .report-page .idea-box02{
   position: relative;
-  background:#fff;
+  background: #f6f8fb;
   border: 1px solid #f6f8fb;
 }
 .report-page .idea-box02 .switch{
   height: auto;
   float:left;
-  width:120px;
+  width:160px;
 }
 .report-page .idea-box02 .switch a{
   margin:0;
   border: 0;
   display: block;
+  font-size: 14px;
+  color: #2F2F2F;
+  text-align: center;
 }
 .report-page .idea-box02 .switch em{
   display:none;
@@ -566,8 +569,30 @@
 }
 .report-page .idea-box02 .switch-box{
   float: right;
-  width: calc(100% - 168px);
+  background: #fff;
+  width: calc(100% - 240px);
   border:0;
+  padding: 20px 40px 0;
+  min-height: 306px;
+}
+.report-page .idea-box02 dl{
+  float: left;
+  width: 48%;
+  margin: 0 4% 0 0;
+}
+.report-page .idea-box02 dl:nth-child(even){
+  margin: 0;
+}
+.report-page .idea-box02 dt{
+  line-height: 28px;
+  background: #F6F8FB;
+  font-weight: bold;
+  color: #2F2F2F;
+  padding: 0 28px;
+}
+.report-page .idea-box02 dd{
+  line-height: 22px;
+  padding: 8px 28px 24px;
 }
 .report-page .box{
     background: #fff;
