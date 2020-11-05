@@ -1274,7 +1274,7 @@
 }
 
 .layer-wechat{
-  background:#fff url(../images/wechat-bg.png) center center no-repeat;
+  background:#fff url(../images/wechat-bg2.png) center top no-repeat;
   background-size: cover;
   position: fixed;
   top: 50%;
