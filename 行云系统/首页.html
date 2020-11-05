@@ -247,7 +247,7 @@
     <!-- container over -->
 
 <!-- 填写资料 -->
-<div class="layer" id="layer-edit" style="display: block;">
+<div class="layer" id="layer-edit" style="display: ;">
     <div class="cover"></div>
     <div class="layer-tip">
         <a href="javascript:void(0);" class="close"></a>
@@ -276,14 +276,52 @@
         </div>
     </div>
 </div>
+
+
+<!-- 小程序上线公告 -->
+<div class="layer-wechat">
+  <a href="javascript:void(0);" class="layer-close">关闭</a>
+  <div class="layer-box clearfix">
+    <img src="images/wechat1.png" alt="" class="left">
+    <div class="right">
+      <img src="images/wechat4.png" alt="" class="title">
+      <h2>尊敬的行云用户:</h2>
+      <p>
+        经过紧锣密鼓的开发，行云小程序终于准时上线，行云小程序以简洁精炼为宗旨，为信贷员朋友和企业主量身打造，一台手机即可随时快速分析，行云小程序版本压缩了网站端的一些专业化操作和展示内容，为移动端用户提供更好的操作体验。</p>
+        <div class="item">
+          <div class="img">
+            <img src="images/wechat2.png" alt="">
+            <p>公众号</p>
+          </div>
+          <div class="img">
+            <img src="images/wechat3.png" alt="">
+            <p>小程序</p>
+          </div>
+          <dl>
+            <dt>小程序开放功能：</dt>
+            <dd>电子对账单解析 </dd>
+            <dd>开票解析</dd>
+            <dd>综合解析</dd>
+          </dl>
+        </div>
+    </div>
+  </div>
+</div>
 <script language="javascript" type="text/javascript" src="js/jquery.js"></script>
 <script language="javascript" type="text/javascript" src="js/application.js"></script>
 <script type="text/javascript">
   
       $('#layer-edit .cover').click(function(){
           $("#layer-edit").unbind();
-
       })
+      
+      if($('.layer-wechat').size()>0){
+        $('html').css('overflow','hidden');
+        $('.layer-wechat .layer-close').click(function(){
+            $(".layer-wechat").fadeOut();
+            $('html').css('overflow-y','scroll');
+        })
+      }
 </script>
 <!--[if lte IE 10]>
 <script language="javascript" type="text/javascript" src="js/placeholder.js"></script>

@@ -1273,3 +1273,127 @@
   } */
 }
 
+.layer-wechat{
+  background:#fff url(../images/wechat-bg.png) center center no-repeat;
+  background-size: cover;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  /* max-width: 1200px;
+  max-height: 650px; */
+  height: 100%;
+  transform: translate(-50%,-50%);
+  z-index: 99;
+}
+.layer-close{
+  background: url(../images/close-white.png) 0 center no-repeat;
+  background-size: 10px 10px;
+  position: absolute;
+  top:30px;
+  right: 3.33%;
+  display: inline-block;
+  white-space: nowrap;
+  font-size: 14px;
+  padding: 0 0 0 18px;
+  color: #fff;
+  line-height: 14px;
+}
+.layer-wechat .layer-box{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 820px;
+  height: 540px;
+  transform: translate(-50%,-50%);
+  margin: 0 auto;
+}
+.layer-wechat .left{
+  width: 33.125%;
+  float: left;
+}
+.layer-wechat .right{
+  width: 62.2%;
+  float: right;
+  color: #fff;
+}
+.layer-wechat .right .title{
+  padding: 17% 0 0;
+}
+.layer-wechat .right h2{
+  font-size: 16px;
+  padding: 20px 0 10px;
+}
+.layer-wechat .right p{
+  line-height: 30px;
+}
+.layer-wechat .right .item{
+  position: absolute;
+  right: 0;
+  bottom: 4%;
+  display: flex;
+  width: 62.2%;
+}
+.layer-wechat .item .img{
+  position: relative;
+  padding: 0 40px 0 0;
+  line-height: 30px;
+  color: #676767;
+  text-align: center;
+}
+.layer-wechat .item .img:first-child{
+  margin: 0 40px 0 0;
+}
+.layer-wechat .item .img:first-child::after{
+  position: absolute;
+  right: 0;
+  top: 13px;
+  background: #a5a5a5;
+  content: '';
+  width: 1px;
+  height: 70px;
+  display: inline-block;
+}
+.layer-wechat dl {
+  color: #000;
+}
+.layer-wechat dl dt{
+  line-height: 30px;
+  font-size: 16px;
+}
+.layer-wechat dl dd{
+  background: url(../images/wechat5.png) 2px center no-repeat;
+  line-height: 20px;
+  font-size: 12px;
+  padding: 0 0 0 18px;
+}
+
+
+@media all and (max-width:1200px){
+  .layer-wechat{
+    overflow: scroll;
+  }
+  .layer-wechat .layer-box{
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 820px;
+    height: 540px;
+    transform: translate(0,0);
+    margin: 20px auto;
+  }
+}
+@media all and (max-height:650px){
+  .layer-wechat{
+    overflow: scroll;
+  }
+  .layer-wechat .layer-box{
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 820px;
+    height: 540px;
+    transform: translate(0,0);
+    margin: 20px auto;
+  }
+}
