@@ -1397,3 +1397,110 @@
     margin: 20px auto;
   }
 }
+/* 客户档案 */
+.file-page .el-rate{
+  padding:5px 0 0 80px;
+}
+.file-page .fraction{
+  color: #ff8400;
+  padding:2px 0px 0;
+}
+.file-page .box-bg{
+  background: #F5F9FE;
+  -moz-box-shadow: 0 0 0;
+  -webkit-box-shadow: 0 0 0;
+  box-shadow: 0 0 0;
+}
+.file-page .box-moving{
+  -moz-box-shadow: 0 0 0;
+  -webkit-box-shadow: 0 0 0;
+  box-shadow: 0 0 0;
+}
+.file-page .box-moving ul{
+  padding: 10px 0 0;
+}
+.file-page .box-moving li{
+  background: url(../images/file.png) center top no-repeat;
+  background-size: 100%;
+  float: left;
+  width: 203px;
+  height: 204px;
+  padding: 30px 6px 0 0;
+  margin: 0 48px 28px 0;
+  text-align: center;
+  line-height: 22px;
+  font-size: 12px
+}
+.file-page .box-moving .item{
+  height: 110px;
+  overflow: hidden;
+}
+.file-page .box-moving h3{
+  line-height: 30px;
+  font-size: 14px
+}
+.file-page .box-moving li:nth-child(4n){
+  margin: 0 0 28px;
+}
+
+/* 财务报表 */
+.finance-page .switch{
+  height: 40px;
+}
+.finance-page .switch a{
+  line-height: 40px;
+  font-size: 14px;
+  margin: 0 5px 0 0;
+}
+.finance-page .switch a:hover,
+.finance-page .switch .active{
+    background: #0171e4;
+    color: #fff;
+    border-bottom: 0;
+}
+.finance-page .table{
+  padding: 0 18px;
+}
+.finance-page .table tr:nth-child(even){
+    background: #f6f8fb;
+}
+.finance-page .table tr:nth-child(odd){
+    background: #fff;
+}
+.el-table td, .el-table th{
+  text-align: center;
+}
+.finance-page .el-table td, 
+.finance-page .el-table th.is-leaf{
+  border-bottom: none;
+}
+.el-table thead {
+  background: #F6F8FB;
+  color: #2f2f2f;
+  
+}
+.finance-page .el-table .el-table__fixed-header-wrapper .is-leaf,
+.finance-page .table .el-table__header-wrapper th{
+  background: #f6f8fb;
+}
+
+.el-table--scrollable-y .el-table__body-wrapper::-webkit-scrollbar {
+  width: 5px;     
+  height: 5px;
+}
+.el-table--scrollable-y .el-table__body-wrapper::-webkit-scrollbar-thumb {
+  background: #bcbcbc;
+}
+.el-table--scrollable-y .el-table__body-wrapper::-webkit-scrollbar-track {
+  border-radius: 0;
+  background: #eae9e9;
+}
+.el-table__fixed-right::before, .el-table__fixed::before{
+  background: none;
+}
+.switch-icon{
+  padding: 24px 28px;
+}
+.el-switch{
+  margin: 0 30px 0 0;
+}
