@@ -1483,7 +1483,10 @@
 .finance-page .table .el-table__header-wrapper th{
   background: #f6f8fb;
 }
-
+.el-table__fixed, .el-table__fixed-right {
+  -webkit-box-shadow: 0 0 0; 
+  box-shadow: 0 0 0;
+}
 .el-table--scrollable-y .el-table__body-wrapper::-webkit-scrollbar {
   width: 5px;     
   height: 5px;
