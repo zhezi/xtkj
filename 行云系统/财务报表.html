@@ -98,6 +98,7 @@
                 <div class="switch-icon">
                   <el-switch
                     v-model="value1"
+                    @change='changeStatus'
                     active-text="缩略模式">
                   </el-switch>
                   <el-switch
@@ -107,7 +108,8 @@
                 </div>
                 <div class="table">
                   <el-table
-                    :data="tableData"
+                    ref="filterTable"
+                    :data="tableDataNew"
                     style="width: 100%"
                     height="580">
                     <el-table-column
@@ -543,7 +545,7 @@
     new Vue({
       el: '#app',
       data: function() {
-        return { 
+        return {
             value1: true,
             value2: false,
             tableData: [{
@@ -728,7 +730,7 @@
               col10: '21.31',
             }
           ],
-          tableData2: [{
+            tableData2: [{
               col1: '货币基金2',
               col2: '30,855,255,64',
               col3: '21.31',
@@ -913,6 +915,18 @@
         }
       },
       created() {
+        this.changeStatus()
+      },
+      methods: {
+        changeStatus: function(callback){
+          let allData = this.tableData
+          if(this.value1 === true){
+            this.tableDataNew = this.tableData.filter(val => val.col1 == '应收账款')
+          }
+          if(this.value1 === false){
+            this.tableDataNew = this.tableData
+          }
+        }
       }
     })
   </script>
