@@ -15,7 +15,6 @@
   <link rel="stylesheet" href="css/common.css">
   <link rel="stylesheet" href="css/fixed-table.css">
   <link rel="stylesheet" href="css/layer.css">
-  <link rel="stylesheet" href="css/element-ui.css">
   <link rel="stylesheet" href="css/style.css">
   <!--[if lt IE 9]>
 <script src="js/html5.js"></script>
@@ -95,426 +94,1050 @@
                 <a href="javascript:void(0);">交易对方</a>
               </div>
               <div class="switch-box" style="display: block;">
-                <div class="switch-icon">
-                  <el-switch
-                    v-model="value1"
-                    @change='changeStatus'
-                    active-text="缩略模式">
-                  </el-switch>
-                  <el-switch
-                    v-model="value2"
-                    @change='filterData'
-                    active-text="过滤数据为零的行">
-                  </el-switch>
+                <div class="switch-btn">
+                  <div class="switch-item open-switch">
+                    <div class="switch-bar"><span class="cricle"></span></div>
+                    <span class="name">缩略模式</span>
+                  </div>
+                  <div class="switch-item">
+                    <div class="switch-bar"><span class="cricle"></span></div>
+                    <span class="name">过滤数据为零的行</span>
+                  </div>
                 </div>
-                <div class="table">
-                  <el-table
-                    ref="filterTable"
-                    :data="tableDataNew"
-                    style="width: 100%"
-                    height="580">
-                    <el-table-column
-                      fixed
-                      prop="col1"
-                      label="科目"
-                      width="150">
-                    </el-table-column>
-                    <el-table-column
-                      prop="col2"
-                      label="2017"
-                      width="120">
-                    </el-table-column>
-                    <el-table-column
-                      prop="col3"
-                      label="百分比"
-                      width="120">
-                    </el-table-column>
-                    <el-table-column
-                      prop="col4"
-                      label="2018"
-                      width="120">
-                    </el-table-column>
-                    <el-table-column
-                      prop="col5"
-                      label="百分比"
-                      width="120">
-                    </el-table-column>
-                    <el-table-column
-                      prop="col6"
-                      label="2019"
-                      width="120">
-                    </el-table-column>
-                    <el-table-column
-                      prop="col7"
-                      label="百分比"
-                      width="120">
-                    </el-table-column>
-                    <el-table-column
-                      prop="col8"
-                      label="2020-10"
-                      width="120">
-                    </el-table-column>
-                    <el-table-column
-                      prop="col9"
-                      label="百分比"
-                      width="120">
-                    </el-table-column>
-                    <el-table-column
-                      prop="col10"
-                      label="2019"
-                      width="120">
-                    </el-table-column>
-                  </el-table>
-                </div>
-              </div>
-              <div class="switch-box">
-                <div class="switch-icon">
-                  <el-switch
-                    v-model="value1"
-                    active-text="缩略模式">
-                  </el-switch>
-                  <el-switch
-                    v-model="value2"
-                    active-text="过滤数据为零的行">
-                  </el-switch>
-                </div>
-                <div class="table">
-                  <el-table
-                    :data="tableData2"
-                    style="width: 100%"
-                    height="580">
-                    <el-table-column
-                      fixed
-                      prop="col1"
-                      label="科目"
-                      width="150">
-                    </el-table-column>
-                    <el-table-column
-                      prop="col2"
-                      label="2017"
-                      width="120">
-                    </el-table-column>
-                    <el-table-column
-                      prop="col3"
-                      label="百分比"
-                      width="120">
-                    </el-table-column>
-                    <el-table-column
-                      prop="col4"
-                      label="2018"
-                      width="120">
-                    </el-table-column>
-                    <el-table-column
-                      prop="col5"
-                      label="百分比"
-                      width="120">
-                    </el-table-column>
-                    <el-table-column
-                      prop="col6"
-                      label="2019"
-                      width="120">
-                    </el-table-column>
-                    <el-table-column
-                      prop="col7"
-                      label="百分比"
-                      width="120">
-                    </el-table-column>
-                    <el-table-column
-                      prop="col8"
-                      label="2020-10"
-                      width="120">
-                    </el-table-column>
-                    <el-table-column
-                      prop="col9"
-                      label="百分比"
-                      width="120">
-                    </el-table-column>
-                    <el-table-column
-                      prop="col10"
-                      label="2019"
-                      width="120">
-                    </el-table-column>
-                  </el-table>
-                </div>
-              </div>
-              <div class="switch-box">
-                <div class="switch-icon">
-                  <el-switch
-                    v-model="value1"
-                    active-text="缩略模式">
-                  </el-switch>
-                  <el-switch
-                    v-model="value2"
-                    active-text="过滤数据为零的行">
-                  </el-switch>
-                </div>
-                <div class="table">
-                  <el-table
-                    :data="tableData"
-                    style="width: 100%"
-                    height="580">
-                    <el-table-column
-                      fixed
-                      prop="col1"
-                      label="科目"
-                      width="150">
-                    </el-table-column>
-                    <el-table-column
-                      prop="col2"
-                      label="2017"
-                      width="120">
-                    </el-table-column>
-                    <el-table-column
-                      prop="col3"
-                      label="百分比"
-                      width="120">
-                    </el-table-column>
-                    <el-table-column
-                      prop="col4"
-                      label="2018"
-                      width="120">
-                    </el-table-column>
-                    <el-table-column
-                      prop="col5"
-                      label="百分比"
-                      width="120">
-                    </el-table-column>
-                    <el-table-column
-                      prop="col6"
-                      label="2019"
-                      width="120">
-                    </el-table-column>
-                    <el-table-column
-                      prop="col7"
-                      label="百分比"
-                      width="120">
-                    </el-table-column>
-                    <el-table-column
-                      prop="col8"
-                      label="2020-10"
-                      width="120">
-                    </el-table-column>
-                    <el-table-column
-                      prop="col9"
-                      label="百分比"
-                      width="120">
-                    </el-table-column>
-                    <el-table-column
-                      prop="col10"
-                      label="2019"
-                      width="120">
-                    </el-table-column>
-                  </el-table>
-                </div>
-              </div>
-              <div class="switch-box">
-                <div class="switch-icon">
-                  <el-switch
-                    v-model="value1"
-                    active-text="缩略模式">
-                  </el-switch>
-                  <el-switch
-                    v-model="value2"
-                    active-text="过滤数据为零的行">
-                  </el-switch>
-                </div>
-                <div class="table">
-                  <el-table
-                    :data="tableData"
-                    style="width: 100%"
-                    height="580">
-                    <el-table-column
-                      fixed
-                      prop="col1"
-                      label="科目"
-                      width="150">
-                    </el-table-column>
-                    <el-table-column
-                      prop="col2"
-                      label="2017"
-                      width="120">
-                    </el-table-column>
-                    <el-table-column
-                      prop="col3"
-                      label="百分比"
-                      width="120">
-                    </el-table-column>
-                    <el-table-column
-                      prop="col4"
-                      label="2018"
-                      width="120">
-                    </el-table-column>
-                    <el-table-column
-                      prop="col5"
-                      label="百分比"
-                      width="120">
-                    </el-table-column>
-                    <el-table-column
-                      prop="col6"
-                      label="2019"
-                      width="120">
-                    </el-table-column>
-                    <el-table-column
-                      prop="col7"
-                      label="百分比"
-                      width="120">
-                    </el-table-column>
-                    <el-table-column
-                      prop="col8"
-                      label="2020-10"
-                      width="120">
-                    </el-table-column>
-                    <el-table-column
-                      prop="col9"
-                      label="百分比"
-                      width="120">
-                    </el-table-column>
-                    <el-table-column
-                      prop="col10"
-                      label="2019"
-                      width="120">
-                    </el-table-column>
-                  </el-table>
+                <div class="fixed-table-box row-col-fixed">
+                    <!-- 表头 start -->
+                    <!-- <div class="fixed-table_header-wraper">
+                      <table class="fixed-table_header" cellspacing="0" cellpadding="0" border="0">
+                          <tr>
+                            <th class="w-92" data-fixed="true">日期</div></th>
+                            <th class="w-92">姓名</div></th>
+                            <th class="w-92">省份</div></th>
+                            <th class="w-92">市区</div></th>
+                            <th class="w-92">地址</div></th>
+                            <th class="w-92">邮编</div></th>
+                          </tr>
+                      </table>
+                    </div> -->
+                    <!-- 表头 end -->
+                    <!-- 表格内容 start -->
+                    <div class="table fixed-table_body-wraper">
+                      <table class="fixed-table_body" cellspacing="0" cellpadding="0" border="0">
+                        <tbody>
+                          <tr>
+                            <td class="w-168">科目</td>
+                            <td class="w-92">2017</td>
+                            <td class="w-92">百分比</td>
+                            <td class="w-92">2018</td>
+                            <td class="w-92">百分比</td>
+                            <td class="w-92">2019</td>
+                            <td class="w-92">百分比</td>
+                            <td class="w-92">2020-10</td>
+                            <td class="w-92">百分比</td>
+                          </tr>
+                          <tr>
+                            <td class="w-168">30,855,255,64</td>
+                            <td class="w-92">21.31</td>
+                            <td class="w-92">30,855,255,64</td>
+                            <td class="w-92">21.31</td>
+                            <td class="w-92">30,855,255,64</td>
+                            <td class="w-92">21.31</td>
+                            <td class="w-92">30,855,255,64</td>
+                            <td class="w-92">21.31</td>
+                            <td class="w-92">30,855,255,64</td>
+                          </tr>
+                          <tr>
+                            <td class="w-168">0</td>
+                            <td class="w-92">0.0</td>
+                            <td class="w-92">0</td>
+                            <td class="w-92">0.0</td>
+                            <td class="w-92">0</td>
+                            <td class="w-92">0.0</td>
+                            <td class="w-92">0</td>
+                            <td class="w-92">0.0</td>
+                            <td class="w-92">0.0</td>
+                          </tr>
+                          <tr>
+                            <td class="w-168">30,855,255,64</td>
+                            <td class="w-92">21.31</td>
+                            <td class="w-92">30,855,255,64</td>
+                            <td class="w-92">21.31</td>
+                            <td class="w-92">30,855,255,64</td>
+                            <td class="w-92">21.31</td>
+                            <td class="w-92">30,855,255,64</td>
+                            <td class="w-92">21.31</td>
+                            <td class="w-92">30,855,255,64</td>
+                          </tr>
+                          <tr>
+                            <td class="w-168">0</td>
+                            <td class="w-92">0.0</td>
+                            <td class="w-92">0</td>
+                            <td class="w-92">0.0</td>
+                            <td class="w-92">0</td>
+                            <td class="w-92">0.0</td>
+                            <td class="w-92">0</td>
+                            <td class="w-92">0.0</td>
+                            <td class="w-92">0.0</td>
+                          </tr>
+                          <tr>
+                            <td class="w-168">30,855,255,64</td>
+                            <td class="w-92">21.31</td>
+                            <td class="w-92">30,855,255,64</td>
+                            <td class="w-92">21.31</td>
+                            <td class="w-92">30,855,255,64</td>
+                            <td class="w-92">21.31</td>
+                            <td class="w-92">30,855,255,64</td>
+                            <td class="w-92">21.31</td>
+                            <td class="w-92">30,855,255,64</td>
+                          </tr>
+                          <tr>
+                            <td class="w-168">0</td>
+                            <td class="w-92">0.0</td>
+                            <td class="w-92">0</td>
+                            <td class="w-92">0.0</td>
+                            <td class="w-92">0</td>
+                            <td class="w-92">0.0</td>
+                            <td class="w-92">0</td>
+                            <td class="w-92">0.0</td>
+                            <td class="w-92">0.0</td>
+                          </tr>
+                          <tr>
+                            <td class="w-168">30,855,255,64</td>
+                            <td class="w-92">21.31</td>
+                            <td class="w-92">30,855,255,64</td>
+                            <td class="w-92">21.31</td>
+                            <td class="w-92">30,855,255,64</td>
+                            <td class="w-92">21.31</td>
+                            <td class="w-92">30,855,255,64</td>
+                            <td class="w-92">21.31</td>
+                            <td class="w-92">30,855,255,64</td>
+                          </tr>
+                          <tr>
+                            <td class="w-168">0</td>
+                            <td class="w-92">0.0</td>
+                            <td class="w-92">0</td>
+                            <td class="w-92">0.0</td>
+                            <td class="w-92">0</td>
+                            <td class="w-92">0.0</td>
+                            <td class="w-92">0</td>
+                            <td class="w-92">0.0</td>
+                            <td class="w-92">0.0</td>
+                          </tr>
+                          <tr>
+                            <td class="w-168">30,855,255,64</td>
+                            <td class="w-92">21.31</td>
+                            <td class="w-92">30,855,255,64</td>
+                            <td class="w-92">21.31</td>
+                            <td class="w-92">30,855,255,64</td>
+                            <td class="w-92">21.31</td>
+                            <td class="w-92">30,855,255,64</td>
+                            <td class="w-92">21.31</td>
+                            <td class="w-92">30,855,255,64</td>
+                          </tr>
+                          <tr>
+                            <td class="w-168">0</td>
+                            <td class="w-92">0.0</td>
+                            <td class="w-92">0</td>
+                            <td class="w-92">0.0</td>
+                            <td class="w-92">0</td>
+                            <td class="w-92">0.0</td>
+                            <td class="w-92">0</td>
+                            <td class="w-92">0.0</td>
+                            <td class="w-92">0.0</td>
+                          </tr>
+                          <tr>
+                            <td class="w-168">30,855,255,64</td>
+                            <td class="w-92">21.31</td>
+                            <td class="w-92">30,855,255,64</td>
+                            <td class="w-92">21.31</td>
+                            <td class="w-92">30,855,255,64</td>
+                            <td class="w-92">21.31</td>
+                            <td class="w-92">30,855,255,64</td>
+                            <td class="w-92">21.31</td>
+                            <td class="w-92">30,855,255,64</td>
+                          </tr>
+                          <tr>
+                            <td class="w-168">0</td>
+                            <td class="w-92">0.0</td>
+                            <td class="w-92">0</td>
+                            <td class="w-92">0.0</td>
+                            <td class="w-92">0</td>
+                            <td class="w-92">0.0</td>
+                            <td class="w-92">0</td>
+                            <td class="w-92">0.0</td>
+                            <td class="w-92">0.0</td>
+                          </tr>
+                          <tr>
+                            <td class="w-168">30,855,255,64</td>
+                            <td class="w-92">21.31</td>
+                            <td class="w-92">30,855,255,64</td>
+                            <td class="w-92">21.31</td>
+                            <td class="w-92">30,855,255,64</td>
+                            <td class="w-92">21.31</td>
+                            <td class="w-92">30,855,255,64</td>
+                            <td class="w-92">21.31</td>
+                            <td class="w-92">30,855,255,64</td>
+                          </tr>
+                          <tr>
+                            <td class="w-168">0</td>
+                            <td class="w-92">0.0</td>
+                            <td class="w-92">0</td>
+                            <td class="w-92">0.0</td>
+                            <td class="w-92">0</td>
+                            <td class="w-92">0.0</td>
+                            <td class="w-92">0</td>
+                            <td class="w-92">0.0</td>
+                            <td class="w-92">0.0</td>
+                          </tr>
+                      </table>
+                    </div>
+                    <!-- 表格内容 end -->
+  
+                    <!-- 固定列 start -->
+                    <div class="fixed-table_fixed fixed-table_fixed-left">
+                      <!-- <div class="fixed-table_header-wraper">
+                        <table class="fixed-table_header" cellspacing="0" cellpadding="0" border="0">
+                            <tr>
+                              <th class="w-92">日期</div></th>
+                            </tr>
+                        </table>
+                      </div> -->
+                      
+                      <div class="table fixed-table_body-wraper">
+                        <table class="fixed-table_body" cellspacing="0" cellpadding="0" border="0">
+                          <tr>
+                            <td class="w-168">科目</td>
+                          </tr>
+                          <tr>
+                            <td class="w-92">货币基金</td>
+                          </tr>
+                          <tr>
+                            <td class="w-92">交易性金融资产</td>
+                          </tr>
+                          <tr>
+                            <td class="w-92">应收账款<a href="javascript:void(0);" class="sign">
+                              <span class="speak">
+                                客户名称：填写完整的客户名称可以在报告中提示同名划转；
+                              </span>
+                              <i class="arrow"></i>
+                            </a></td>
+                          </tr>
+                          <tr>
+                            <td class="w-92">坏账准备</td>
+                          </tr>
+                          <tr>
+                            <td class="w-92">应收票据</td>
+                          </tr>
+                          <tr>
+                            <td class="w-92">预付账款</td>
+                          </tr>
+                          <tr>
+                            <td class="w-92">合同资产</td>
+                          </tr>
+                          <tr>
+                            <td class="w-92">预付账款</td>
+                          </tr>
+                          <tr>
+                            <td class="w-92">坏账准备</td>
+                          </tr>
+                          <tr>
+                            <td class="w-92">应收票据</td>
+                          </tr>
+                          <tr>
+                            <td class="w-92">预付账款</td>
+                          </tr>
+                          <tr>
+                            <td class="w-92">合同资产</td>
+                          </tr>
+                          <tr>
+                            <td class="w-92">预付账款</td>
+                          </tr>
+                          <tr>
+                            <td class="w-92">坏账准备</td>
+                          </tr>
+                        </table>
+                      </div>
+                    </div>
+                    <!-- 固定列 end -->
                 </div>
               </div>
               <div class="switch-box">
-                <div class="switch-icon">
-                  <el-switch
-                    v-model="value1"
-                    active-text="缩略模式">
-                  </el-switch>
-                  <el-switch
-                    v-model="value2"
-                    active-text="过滤数据为零的行">
-                  </el-switch>
+                <div class="switch-btn">
+                  <div class="switch-item open-switch">
+                    <div class="switch-bar"><span class="cricle"></span></div>
+                    <span class="name">缩略模式</span>
+                  </div>
+                  <div class="switch-item">
+                    <div class="switch-bar"><span class="cricle"></span></div>
+                    <span class="name">过滤数据为零的行</span>
+                  </div>
                 </div>
-                <div class="table">
-                  <el-table
-                    :data="tableData"
-                    style="width: 100%"
-                    height="580">
-                    <el-table-column
-                      fixed
-                      prop="col1"
-                      label="科目"
-                      width="150">
-                    </el-table-column>
-                    <el-table-column
-                      prop="col2"
-                      label="2017"
-                      width="120">
-                    </el-table-column>
-                    <el-table-column
-                      prop="col3"
-                      label="百分比"
-                      width="120">
-                    </el-table-column>
-                    <el-table-column
-                      prop="col4"
-                      label="2018"
-                      width="120">
-                    </el-table-column>
-                    <el-table-column
-                      prop="col5"
-                      label="百分比"
-                      width="120">
-                    </el-table-column>
-                    <el-table-column
-                      prop="col6"
-                      label="2019"
-                      width="120">
-                    </el-table-column>
-                    <el-table-column
-                      prop="col7"
-                      label="百分比"
-                      width="120">
-                    </el-table-column>
-                    <el-table-column
-                      prop="col8"
-                      label="2020-10"
-                      width="120">
-                    </el-table-column>
-                    <el-table-column
-                      prop="col9"
-                      label="百分比"
-                      width="120">
-                    </el-table-column>
-                    <el-table-column
-                      prop="col10"
-                      label="2019"
-                      width="120">
-                    </el-table-column>
-                  </el-table>
+                <div class="fixed-table-box row-col-fixed">
+                  <!-- 表头 start -->
+                  <!-- <div class="fixed-table_header-wraper">
+                    <table class="fixed-table_header" cellspacing="0" cellpadding="0" border="0">
+                        <tr>
+                          <th class="w-155" data-fixed="true">日期</div></th>
+                          <th class="w-155">姓名</div></th>
+                          <th class="w-155">省份</div></th>
+                          <th class="w-155">市区</div></th>
+                          <th class="w-155">地址</div></th>
+                          <th class="w-155">邮编</div></th>
+                        </tr>
+                    </table>
+                  </div> -->
+                  <!-- 表头 end -->
+                  <!-- 表格内容 start -->
+                  <div class="table fixed-table_body-wraper">
+                    <table class="fixed-table_body" cellspacing="0" cellpadding="0" border="0"  style="width: 1200px;">
+                      <tbody>
+                        <tr>
+                          <td class="w-200">期初(元)</td>
+                          <td class="w-155">期末(元)</td>
+                          <td class="w-155">科目</td>
+                          <td class="w-155">期初(元)</td>
+                          <td class="w-155">期末(元)</td>
+                          <td class="w-155">科目</td>
+                        </tr>
+                        <tr>
+                          <td class="w-200">0</td>
+                          <td class="w-155">0</td>
+                          <td class="w-155">短期借款</td>
+                          <td class="w-155">0</td>
+                          <td class="w-155">0</td>
+                          <td class="w-155">0</td>
+                        </tr>
+                        <tr>
+                          <td class="w-200">0</td>
+                          <td class="w-155">0</td>
+                          <td class="w-155">短期借款</td>
+                          <td class="w-155">0</td>
+                          <td class="w-155">0</td>
+                          <td class="w-155">0</td>
+                        </tr>
+                        <tr>
+                          <td class="w-200">0</td>
+                          <td class="w-155">0</td>
+                          <td class="w-155">短期借款</td>
+                          <td class="w-155">0</td>
+                          <td class="w-155">0</td>
+                          <td class="w-155">0</td>
+                        </tr>
+                        <tr>
+                          <td class="w-200">0</td>
+                          <td class="w-155">0</td>
+                          <td class="w-155">短期借款</td>
+                          <td class="w-155">0</td>
+                          <td class="w-155">0</td>
+                          <td class="w-155">0</td>
+                        </tr>
+                        <tr>
+                          <td class="w-200">0</td>
+                          <td class="w-155">0</td>
+                          <td class="w-155">短期借款</td>
+                          <td class="w-155">0</td>
+                          <td class="w-155">0</td>
+                          <td class="w-155">0</td>
+                        </tr>
+                        <tr>
+                          <td class="w-200">0</td>
+                          <td class="w-155">0</td>
+                          <td class="w-155">短期借款</td>
+                          <td class="w-155">0</td>
+                          <td class="w-155">0</td>
+                          <td class="w-155">0</td>
+                        </tr>
+                        <tr>
+                          <td class="w-200">0</td>
+                          <td class="w-155">0</td>
+                          <td class="w-155">短期借款</td>
+                          <td class="w-155">0</td>
+                          <td class="w-155">0</td>
+                          <td class="w-155">0</td>
+                        </tr>
+                        <tr>
+                          <td class="w-200">0</td>
+                          <td class="w-155">0</td>
+                          <td class="w-155">短期借款</td>
+                          <td class="w-155">0</td>
+                          <td class="w-155">0</td>
+                          <td class="w-155">0</td>
+                        </tr>
+                    </table>
+                  </div>
+                  <!-- 表格内容 end -->
+
+                  <!-- 固定列 start -->
+                  <div class="fixed-table_fixed fixed-table_fixed-left">
+                    <!-- <div class="fixed-table_header-wraper">
+                      <table class="fixed-table_header" cellspacing="0" cellpadding="0" border="0">
+                          <tr>
+                            <th class="w-155">日期</div></th>
+                          </tr>
+                      </table>
+                    </div> -->
+                    
+                    <div class="table fixed-table_body-wraper">
+                      <table class="fixed-table_body" cellspacing="0" cellpadding="0" border="0">
+                        <tr>
+                          <td class="w-200">科目</td>
+                        </tr>
+                        <tr>
+                          <td class="w-155">货币基金</td>
+                        </tr>
+                        <tr>
+                          <td class="w-155">交易性金融资产</td>
+                        </tr>
+                        <tr>
+                          <td class="w-155">应收账款<a href="javascript:void(0);" class="sign">
+                            <span class="speak">
+                              客户名称：填写完整的客户名称可以在报告中提示同名划转；
+                            </span>
+                            <i class="arrow"></i>
+                          </a></td>
+                        </tr>
+                        <tr>
+                          <td class="w-155">坏账准备</td>
+                        </tr>
+                        <tr>
+                          <td class="w-155">应收票据</td>
+                        </tr>
+                        <tr>
+                          <td class="w-155">预付账款</td>
+                        </tr>
+                        <tr>
+                          <td class="w-155">合同资产</td>
+                        </tr>
+                        <tr>
+                          <td class="w-155">预付账款</td>
+                        </tr>
+                      </table>
+                    </div>
+                  </div>
+                  <!-- 固定列 end -->
                 </div>
               </div>
               <div class="switch-box">
-                <div class="switch-icon">
-                  <el-switch
-                    v-model="value1"
-                    active-text="缩略模式">
-                  </el-switch>
-                  <el-switch
-                    v-model="value2"
-                    active-text="过滤数据为零的行">
-                  </el-switch>
+                <div class="switch-btn">
+                  <div class="switch-item open-switch">
+                    <div class="switch-bar"><span class="cricle"></span></div>
+                    <span class="name">缩略模式</span>
+                  </div>
+                  <div class="switch-item">
+                    <div class="switch-bar"><span class="cricle"></span></div>
+                    <span class="name">过滤数据为零的行</span>
+                  </div>
                 </div>
-                <div class="table">
-                  <el-table
-                    :data="tableData"
-                    style="width: 100%"
-                    height="580">
-                    <el-table-column
-                      fixed
-                      prop="col1"
-                      label="科目"
-                      width="150">
-                    </el-table-column>
-                    <el-table-column
-                      prop="col2"
-                      label="2017"
-                      width="120">
-                    </el-table-column>
-                    <el-table-column
-                      prop="col3"
-                      label="百分比"
-                      width="120">
-                    </el-table-column>
-                    <el-table-column
-                      prop="col4"
-                      label="2018"
-                      width="120">
-                    </el-table-column>
-                    <el-table-column
-                      prop="col5"
-                      label="百分比"
-                      width="120">
-                    </el-table-column>
-                    <el-table-column
-                      prop="col6"
-                      label="2019"
-                      width="120">
-                    </el-table-column>
-                    <el-table-column
-                      prop="col7"
-                      label="百分比"
-                      width="120">
-                    </el-table-column>
-                    <el-table-column
-                      prop="col8"
-                      label="2020-10"
-                      width="120">
-                    </el-table-column>
-                    <el-table-column
-                      prop="col9"
-                      label="百分比"
-                      width="120">
-                    </el-table-column>
-                    <el-table-column
-                      prop="col10"
-                      label="2019"
-                      width="120">
-                    </el-table-column>
-                  </el-table>
+                <div class="fixed-table-box row-col-fixed">
+                  <!-- 表头 start -->
+                  <!-- <div class="fixed-table_header-wraper">
+                    <table class="fixed-table_header" cellspacing="0" cellpadding="0" border="0">
+                        <tr>
+                          <th class="w-155" data-fixed="true">日期</div></th>
+                          <th class="w-155">姓名</div></th>
+                          <th class="w-155">省份</div></th>
+                          <th class="w-155">市区</div></th>
+                          <th class="w-155">地址</div></th>
+                          <th class="w-155">邮编</div></th>
+                        </tr>
+                    </table>
+                  </div> -->
+                  <!-- 表头 end -->
+                  <!-- 表格内容 start -->
+                  <div class="table fixed-table_body-wraper">
+                    <table class="fixed-table_body" cellspacing="0" cellpadding="0" border="0">
+                      <tbody>
+                        <tr>
+                          <td class="w-200">期初(元)</td>
+                          <td class="w-155">期末(元)</td>
+                          <td class="w-155">科目</td>
+                          <td class="w-155">期初(元)</td>
+                          <td class="w-155">期末(元)</td>
+                          <td class="w-155">科目</td>
+                        </tr>
+                        <tr>
+                          <td class="w-200">0</td>
+                          <td class="w-155">0</td>
+                          <td class="w-155">短期借款</td>
+                          <td class="w-155">0</td>
+                          <td class="w-155">0</td>
+                          <td class="w-155">0</td>
+                        </tr>
+                        <tr>
+                          <td class="w-200">0</td>
+                          <td class="w-155">0</td>
+                          <td class="w-155">短期借款</td>
+                          <td class="w-155">0</td>
+                          <td class="w-155">0</td>
+                          <td class="w-155">0</td>
+                        </tr>
+                        <tr>
+                          <td class="w-200">0</td>
+                          <td class="w-155">0</td>
+                          <td class="w-155">短期借款</td>
+                          <td class="w-155">0</td>
+                          <td class="w-155">0</td>
+                          <td class="w-155">0</td>
+                        </tr>
+                        <tr>
+                          <td class="w-200">0</td>
+                          <td class="w-155">0</td>
+                          <td class="w-155">短期借款</td>
+                          <td class="w-155">0</td>
+                          <td class="w-155">0</td>
+                          <td class="w-155">0</td>
+                        </tr>
+                        <tr>
+                          <td class="w-200">0</td>
+                          <td class="w-155">0</td>
+                          <td class="w-155">短期借款</td>
+                          <td class="w-155">0</td>
+                          <td class="w-155">0</td>
+                          <td class="w-155">0</td>
+                        </tr>
+                        <tr>
+                          <td class="w-200">0</td>
+                          <td class="w-155">0</td>
+                          <td class="w-155">短期借款</td>
+                          <td class="w-155">0</td>
+                          <td class="w-155">0</td>
+                          <td class="w-155">0</td>
+                        </tr>
+                        <tr>
+                          <td class="w-200">0</td>
+                          <td class="w-155">0</td>
+                          <td class="w-155">短期借款</td>
+                          <td class="w-155">0</td>
+                          <td class="w-155">0</td>
+                          <td class="w-155">0</td>
+                        </tr>
+                        <tr>
+                          <td class="w-200">0</td>
+                          <td class="w-155">0</td>
+                          <td class="w-155">短期借款</td>
+                          <td class="w-155">0</td>
+                          <td class="w-155">0</td>
+                          <td class="w-155">0</td>
+                        </tr>
+                    </table>
+                  </div>
+                  <!-- 表格内容 end -->
+
+                  <!-- 固定列 start -->
+                  <div class="fixed-table_fixed fixed-table_fixed-left">
+                    <!-- <div class="fixed-table_header-wraper">
+                      <table class="fixed-table_header" cellspacing="0" cellpadding="0" border="0">
+                          <tr>
+                            <th class="w-155">日期</div></th>
+                          </tr>
+                      </table>
+                    </div> -->
+                    
+                    <div class="table fixed-table_body-wraper">
+                      <table class="fixed-table_body" cellspacing="0" cellpadding="0" border="0">
+                        <tr>
+                          <td class="w-200">科目</td>
+                        </tr>
+                        <tr>
+                          <td class="w-155">货币基金</td>
+                        </tr>
+                        <tr>
+                          <td class="w-155">交易性金融资产</td>
+                        </tr>
+                        <tr>
+                          <td class="w-155">应收账款<a href="javascript:void(0);" class="sign">
+                            <span class="speak">
+                              客户名称：填写完整的客户名称可以在报告中提示同名划转；
+                            </span>
+                            <i class="arrow"></i>
+                          </a></td>
+                        </tr>
+                        <tr>
+                          <td class="w-155">坏账准备</td>
+                        </tr>
+                        <tr>
+                          <td class="w-155">应收票据</td>
+                        </tr>
+                        <tr>
+                          <td class="w-155">预付账款</td>
+                        </tr>
+                        <tr>
+                          <td class="w-155">合同资产</td>
+                        </tr>
+                        <tr>
+                          <td class="w-155">预付账款</td>
+                        </tr>
+                      </table>
+                    </div>
+                  </div>
+                  <!-- 固定列 end -->
+                </div>
+              </div>
+              <div class="switch-box">
+                <div class="switch-btn">
+                  <div class="switch-item open-switch">
+                    <div class="switch-bar"><span class="cricle"></span></div>
+                    <span class="name">缩略模式</span>
+                  </div>
+                  <div class="switch-item">
+                    <div class="switch-bar"><span class="cricle"></span></div>
+                    <span class="name">过滤数据为零的行</span>
+                  </div>
+                </div>
+                <div class="fixed-table-box row-col-fixed">
+                  <!-- 表头 start -->
+                  <!-- <div class="fixed-table_header-wraper">
+                    <table class="fixed-table_header" cellspacing="0" cellpadding="0" border="0">
+                        <tr>
+                          <th class="w-155" data-fixed="true">日期</div></th>
+                          <th class="w-155">姓名</div></th>
+                          <th class="w-155">省份</div></th>
+                          <th class="w-155">市区</div></th>
+                          <th class="w-155">地址</div></th>
+                          <th class="w-155">邮编</div></th>
+                        </tr>
+                    </table>
+                  </div> -->
+                  <!-- 表头 end -->
+                  <!-- 表格内容 start -->
+                  <div class="table fixed-table_body-wraper">
+                    <table class="fixed-table_body" cellspacing="0" cellpadding="0" border="0">
+                      <tbody>
+                        <tr>
+                          <td class="w-200">期初(元)</td>
+                          <td class="w-155">期末(元)</td>
+                          <td class="w-155">科目</td>
+                          <td class="w-155">期初(元)</td>
+                          <td class="w-155">期末(元)</td>
+                          <td class="w-155">科目</td>
+                        </tr>
+                        <tr>
+                          <td class="w-200">0</td>
+                          <td class="w-155">0</td>
+                          <td class="w-155">短期借款</td>
+                          <td class="w-155">0</td>
+                          <td class="w-155">0</td>
+                          <td class="w-155">0</td>
+                        </tr>
+                        <tr>
+                          <td class="w-200">0</td>
+                          <td class="w-155">0</td>
+                          <td class="w-155">短期借款</td>
+                          <td class="w-155">0</td>
+                          <td class="w-155">0</td>
+                          <td class="w-155">0</td>
+                        </tr>
+                        <tr>
+                          <td class="w-200">0</td>
+                          <td class="w-155">0</td>
+                          <td class="w-155">短期借款</td>
+                          <td class="w-155">0</td>
+                          <td class="w-155">0</td>
+                          <td class="w-155">0</td>
+                        </tr>
+                        <tr>
+                          <td class="w-200">0</td>
+                          <td class="w-155">0</td>
+                          <td class="w-155">短期借款</td>
+                          <td class="w-155">0</td>
+                          <td class="w-155">0</td>
+                          <td class="w-155">0</td>
+                        </tr>
+                        <tr>
+                          <td class="w-200">0</td>
+                          <td class="w-155">0</td>
+                          <td class="w-155">短期借款</td>
+                          <td class="w-155">0</td>
+                          <td class="w-155">0</td>
+                          <td class="w-155">0</td>
+                        </tr>
+                        <tr>
+                          <td class="w-200">0</td>
+                          <td class="w-155">0</td>
+                          <td class="w-155">短期借款</td>
+                          <td class="w-155">0</td>
+                          <td class="w-155">0</td>
+                          <td class="w-155">0</td>
+                        </tr>
+                        <tr>
+                          <td class="w-200">0</td>
+                          <td class="w-155">0</td>
+                          <td class="w-155">短期借款</td>
+                          <td class="w-155">0</td>
+                          <td class="w-155">0</td>
+                          <td class="w-155">0</td>
+                        </tr>
+                        <tr>
+                          <td class="w-200">0</td>
+                          <td class="w-155">0</td>
+                          <td class="w-155">短期借款</td>
+                          <td class="w-155">0</td>
+                          <td class="w-155">0</td>
+                          <td class="w-155">0</td>
+                        </tr>
+                    </table>
+                  </div>
+                  <!-- 表格内容 end -->
+
+                  <!-- 固定列 start -->
+                  <div class="fixed-table_fixed fixed-table_fixed-left">
+                    <!-- <div class="fixed-table_header-wraper">
+                      <table class="fixed-table_header" cellspacing="0" cellpadding="0" border="0">
+                          <tr>
+                            <th class="w-155">日期</div></th>
+                          </tr>
+                      </table>
+                    </div> -->
+                    
+                    <div class="table fixed-table_body-wraper">
+                      <table class="fixed-table_body" cellspacing="0" cellpadding="0" border="0">
+                        <tr>
+                          <td class="w-200">科目</td>
+                        </tr>
+                        <tr>
+                          <td class="w-155">货币基金</td>
+                        </tr>
+                        <tr>
+                          <td class="w-155">交易性金融资产</td>
+                        </tr>
+                        <tr>
+                          <td class="w-155">应收账款<a href="javascript:void(0);" class="sign">
+                            <span class="speak">
+                              客户名称：填写完整的客户名称可以在报告中提示同名划转；
+                            </span>
+                            <i class="arrow"></i>
+                          </a></td>
+                        </tr>
+                        <tr>
+                          <td class="w-155">坏账准备</td>
+                        </tr>
+                        <tr>
+                          <td class="w-155">应收票据</td>
+                        </tr>
+                        <tr>
+                          <td class="w-155">预付账款</td>
+                        </tr>
+                        <tr>
+                          <td class="w-155">合同资产</td>
+                        </tr>
+                        <tr>
+                          <td class="w-155">预付账款</td>
+                        </tr>
+                      </table>
+                    </div>
+                  </div>
+                  <!-- 固定列 end -->
+                </div>
+              </div>
+              <div class="switch-box">
+                <div class="switch-btn">
+                  <div class="switch-item open-switch">
+                    <div class="switch-bar"><span class="cricle"></span></div>
+                    <span class="name">缩略模式</span>
+                  </div>
+                  <div class="switch-item">
+                    <div class="switch-bar"><span class="cricle"></span></div>
+                    <span class="name">过滤数据为零的行</span>
+                  </div>
+                </div>
+                <div class="fixed-table-box row-col-fixed">
+                  <!-- 表头 start -->
+                  <!-- <div class="fixed-table_header-wraper">
+                    <table class="fixed-table_header" cellspacing="0" cellpadding="0" border="0">
+                        <tr>
+                          <th class="w-155" data-fixed="true">日期</div></th>
+                          <th class="w-155">姓名</div></th>
+                          <th class="w-155">省份</div></th>
+                          <th class="w-155">市区</div></th>
+                          <th class="w-155">地址</div></th>
+                          <th class="w-155">邮编</div></th>
+                        </tr>
+                    </table>
+                  </div> -->
+                  <!-- 表头 end -->
+                  <!-- 表格内容 start -->
+                  <div class="table fixed-table_body-wraper">
+                    <table class="fixed-table_body" cellspacing="0" cellpadding="0" border="0">
+                      <tbody>
+                        <tr>
+                          <td class="w-200">期初(元)</td>
+                          <td class="w-155">期末(元)</td>
+                          <td class="w-155">科目</td>
+                          <td class="w-155">期初(元)</td>
+                          <td class="w-155">期末(元)</td>
+                          <td class="w-155">科目</td>
+                        </tr>
+                        <tr>
+                          <td class="w-200">0</td>
+                          <td class="w-155">0</td>
+                          <td class="w-155">短期借款</td>
+                          <td class="w-155">0</td>
+                          <td class="w-155">0</td>
+                          <td class="w-155">0</td>
+                        </tr>
+                        <tr>
+                          <td class="w-200">0</td>
+                          <td class="w-155">0</td>
+                          <td class="w-155">短期借款</td>
+                          <td class="w-155">0</td>
+                          <td class="w-155">0</td>
+                          <td class="w-155">0</td>
+                        </tr>
+                        <tr>
+                          <td class="w-200">0</td>
+                          <td class="w-155">0</td>
+                          <td class="w-155">短期借款</td>
+                          <td class="w-155">0</td>
+                          <td class="w-155">0</td>
+                          <td class="w-155">0</td>
+                        </tr>
+                        <tr>
+                          <td class="w-200">0</td>
+                          <td class="w-155">0</td>
+                          <td class="w-155">短期借款</td>
+                          <td class="w-155">0</td>
+                          <td class="w-155">0</td>
+                          <td class="w-155">0</td>
+                        </tr>
+                        <tr>
+                          <td class="w-200">0</td>
+                          <td class="w-155">0</td>
+                          <td class="w-155">短期借款</td>
+                          <td class="w-155">0</td>
+                          <td class="w-155">0</td>
+                          <td class="w-155">0</td>
+                        </tr>
+                        <tr>
+                          <td class="w-200">0</td>
+                          <td class="w-155">0</td>
+                          <td class="w-155">短期借款</td>
+                          <td class="w-155">0</td>
+                          <td class="w-155">0</td>
+                          <td class="w-155">0</td>
+                        </tr>
+                        <tr>
+                          <td class="w-200">0</td>
+                          <td class="w-155">0</td>
+                          <td class="w-155">短期借款</td>
+                          <td class="w-155">0</td>
+                          <td class="w-155">0</td>
+                          <td class="w-155">0</td>
+                        </tr>
+                        <tr>
+                          <td class="w-200">0</td>
+                          <td class="w-155">0</td>
+                          <td class="w-155">短期借款</td>
+                          <td class="w-155">0</td>
+                          <td class="w-155">0</td>
+                          <td class="w-155">0</td>
+                        </tr>
+                    </table>
+                  </div>
+                  <!-- 表格内容 end -->
+
+                  <!-- 固定列 start -->
+                  <div class="fixed-table_fixed fixed-table_fixed-left">
+                    <!-- <div class="fixed-table_header-wraper">
+                      <table class="fixed-table_header" cellspacing="0" cellpadding="0" border="0">
+                          <tr>
+                            <th class="w-155">日期</div></th>
+                          </tr>
+                      </table>
+                    </div> -->
+                    
+                    <div class="table fixed-table_body-wraper">
+                      <table class="fixed-table_body" cellspacing="0" cellpadding="0" border="0">
+                        <tr>
+                          <td class="w-200">科目</td>
+                        </tr>
+                        <tr>
+                          <td class="w-155">货币基金</td>
+                        </tr>
+                        <tr>
+                          <td class="w-155">交易性金融资产</td>
+                        </tr>
+                        <tr>
+                          <td class="w-155">应收账款<a href="javascript:void(0);" class="sign">
+                            <span class="speak">
+                              客户名称：填写完整的客户名称可以在报告中提示同名划转；
+                            </span>
+                            <i class="arrow"></i>
+                          </a></td>
+                        </tr>
+                        <tr>
+                          <td class="w-155">坏账准备</td>
+                        </tr>
+                        <tr>
+                          <td class="w-155">应收票据</td>
+                        </tr>
+                        <tr>
+                          <td class="w-155">预付账款</td>
+                        </tr>
+                        <tr>
+                          <td class="w-155">合同资产</td>
+                        </tr>
+                        <tr>
+                          <td class="w-155">预付账款</td>
+                        </tr>
+                      </table>
+                    </div>
+                  </div>
+                  <!-- 固定列 end -->
+                </div>
+              </div>
+              <div class="switch-box">
+                <div class="switch-btn">
+                  <div class="switch-item open-switch">
+                    <div class="switch-bar"><span class="cricle"></span></div>
+                    <span class="name">缩略模式</span>
+                  </div>
+                  <div class="switch-item">
+                    <div class="switch-bar"><span class="cricle"></span></div>
+                    <span class="name">过滤数据为零的行</span>
+                  </div>
+                </div>
+                <div class="fixed-table-box row-col-fixed">
+                  <!-- 表头 start -->
+                  <!-- <div class="fixed-table_header-wraper">
+                    <table class="fixed-table_header" cellspacing="0" cellpadding="0" border="0">
+                        <tr>
+                          <th class="w-155" data-fixed="true">日期</div></th>
+                          <th class="w-155">姓名</div></th>
+                          <th class="w-155">省份</div></th>
+                          <th class="w-155">市区</div></th>
+                          <th class="w-155">地址</div></th>
+                          <th class="w-155">邮编</div></th>
+                        </tr>
+                    </table>
+                  </div> -->
+                  <!-- 表头 end -->
+                  <!-- 表格内容 start -->
+                  <div class="table fixed-table_body-wraper">
+                    <table class="fixed-table_body" cellspacing="0" cellpadding="0" border="0">
+                      <tbody>
+                        <tr>
+                          <td class="w-200">期初(元)</td>
+                          <td class="w-155">期末(元)</td>
+                          <td class="w-155">科目</td>
+                          <td class="w-155">期初(元)</td>
+                          <td class="w-155">期末(元)</td>
+                          <td class="w-155">科目</td>
+                        </tr>
+                        <tr>
+                          <td class="w-200">0</td>
+                          <td class="w-155">0</td>
+                          <td class="w-155">短期借款</td>
+                          <td class="w-155">0</td>
+                          <td class="w-155">0</td>
+                          <td class="w-155">0</td>
+                        </tr>
+                        <tr>
+                          <td class="w-200">0</td>
+                          <td class="w-155">0</td>
+                          <td class="w-155">短期借款</td>
+                          <td class="w-155">0</td>
+                          <td class="w-155">0</td>
+                          <td class="w-155">0</td>
+                        </tr>
+                        <tr>
+                          <td class="w-200">0</td>
+                          <td class="w-155">0</td>
+                          <td class="w-155">短期借款</td>
+                          <td class="w-155">0</td>
+                          <td class="w-155">0</td>
+                          <td class="w-155">0</td>
+                        </tr>
+                        <tr>
+                          <td class="w-200">0</td>
+                          <td class="w-155">0</td>
+                          <td class="w-155">短期借款</td>
+                          <td class="w-155">0</td>
+                          <td class="w-155">0</td>
+                          <td class="w-155">0</td>
+                        </tr>
+                        <tr>
+                          <td class="w-200">0</td>
+                          <td class="w-155">0</td>
+                          <td class="w-155">短期借款</td>
+                          <td class="w-155">0</td>
+                          <td class="w-155">0</td>
+                          <td class="w-155">0</td>
+                        </tr>
+                        <tr>
+                          <td class="w-200">0</td>
+                          <td class="w-155">0</td>
+                          <td class="w-155">短期借款</td>
+                          <td class="w-155">0</td>
+                          <td class="w-155">0</td>
+                          <td class="w-155">0</td>
+                        </tr>
+                        <tr>
+                          <td class="w-200">0</td>
+                          <td class="w-155">0</td>
+                          <td class="w-155">短期借款</td>
+                          <td class="w-155">0</td>
+                          <td class="w-155">0</td>
+                          <td class="w-155">0</td>
+                        </tr>
+                        <tr>
+                          <td class="w-200">0</td>
+                          <td class="w-155">0</td>
+                          <td class="w-155">短期借款</td>
+                          <td class="w-155">0</td>
+                          <td class="w-155">0</td>
+                          <td class="w-155">0</td>
+                        </tr>
+                    </table>
+                  </div>
+                  <!-- 表格内容 end -->
+
+                  <!-- 固定列 start -->
+                  <div class="fixed-table_fixed fixed-table_fixed-left">
+                    <!-- <div class="fixed-table_header-wraper">
+                      <table class="fixed-table_header" cellspacing="0" cellpadding="0" border="0">
+                          <tr>
+                            <th class="w-155">日期</div></th>
+                          </tr>
+                      </table>
+                    </div> -->
+                    
+                    <div class="table fixed-table_body-wraper">
+                      <table class="fixed-table_body" cellspacing="0" cellpadding="0" border="0">
+                        <tr>
+                          <td class="w-200">科目</td>
+                        </tr>
+                        <tr>
+                          <td class="w-155">货币基金</td>
+                        </tr>
+                        <tr>
+                          <td class="w-155">交易性金融资产</td>
+                        </tr>
+                        <tr>
+                          <td class="w-155">应收账款<a href="javascript:void(0);" class="sign">
+                            <span class="speak">
+                              客户名称：填写完整的客户名称可以在报告中提示同名划转；
+                            </span>
+                            <i class="arrow"></i>
+                          </a></td>
+                        </tr>
+                        <tr>
+                          <td class="w-155">坏账准备</td>
+                        </tr>
+                        <tr>
+                          <td class="w-155">应收票据</td>
+                        </tr>
+                        <tr>
+                          <td class="w-155">预付账款</td>
+                        </tr>
+                        <tr>
+                          <td class="w-155">合同资产</td>
+                        </tr>
+                        <tr>
+                          <td class="w-155">预付账款</td>
+                        </tr>
+                      </table>
+                    </div>
+                  </div>
+                  <!-- 固定列 end -->
                 </div>
               </div>
             </div>
@@ -538,438 +1161,28 @@
   <script language="javascript" type="text/javascript" src="js/jquery.nanoscroller.min.js"></script>
   <script language="javascript" type="text/javascript" src="js/fixed-table.js"></script>
   <script language="javascript" type="text/javascript" src="js/application.js"></script>
-  <!-- import Vue before Element -->
-  <script language="javascript" type="text/javascript" src="js/vue.js"></script>
-  <!-- import JavaScript -->
-  <script language="javascript" type="text/javascript" src="js/element-ui.js"></script>
-  <script>
-    new Vue({
-      el: '#app',
-      data: function() {
-        return {
-            value1: true,
-            value2: false,
-            tableData: [{
-              col1: '货币基金',
-              col2: '30,855,255,64',
-              col3: '21.31',
-              col4: '30,855,255,64',
-              col5: '21.31',
-              col6: '30,855,255,64',
-              col5: '21.31',
-              col7: '30,855,255,64',
-              col8: '21.31',
-              col9: '30,855,255,64',
-              col10: '21.31',
-              show: false,
-              value: 1,
-            }, {
-              col1: '交易性金融资产',
-              col2: '0',
-              col3: '0.0',
-              col4: '0',
-              col5: '0.0',
-              col6: '0',
-              col5: '0.0',
-              col7: '0',
-              col8: '0.0',
-              col9: '0',
-              col10: '0.0',
-              show: false,
-              value: 0,
-            },{
-              col1: '应收账款',
-              col2: '30,855,255,64',
-              col3: '21.31',
-              col4: '30,855,255,64',
-              col5: '21.31',
-              col6: '30,855,255,64',
-              col5: '21.31',
-              col7: '30,855,255,64',
-              col8: '21.31',
-              col9: '30,855,255,64',
-              col10: '21.31',
-              show: true,
-              value: 1,
-            },{
-              col1: '应收账款',
-              col2: '30,855,255,64',
-              col3: '21.31',
-              col4: '30,855,255,64',
-              col5: '21.31',
-              col6: '30,855,255,64',
-              col5: '21.31',
-              col7: '30,855,255,64',
-              col8: '21.31',
-              col9: '30,855,255,64',
-              col10: '21.31',
-              show: true,
-              value: 1,
-            },{
-              col1: '应收账款',
-              col2: '30,855,255,64',
-              col3: '21.31',
-              col4: '30,855,255,64',
-              col5: '21.31',
-              col6: '30,855,255,64',
-              col5: '21.31',
-              col7: '30,855,255,64',
-              col8: '21.31',
-              col9: '30,855,255,64',
-              col10: '21.31',
-              show: true,
-              value: 1,
-            },{
-              col1: '应收账款',
-              col2: '30,855,255,64',
-              col3: '21.31',
-              col4: '30,855,255,64',
-              col5: '21.31',
-              col6: '30,855,255,64',
-              col5: '21.31',
-              col7: '30,855,255,64',
-              col8: '21.31',
-              col9: '30,855,255,64',
-              col10: '21.31',
-              show: true,
-            },{
-              col1: '应收账款',
-              col2: '30,855,255,64',
-              col3: '21.31',
-              col4: '30,855,255,64',
-              col5: '21.31',
-              col6: '30,855,255,64',
-              col5: '21.31',
-              col7: '30,855,255,64',
-              col8: '21.31',
-              col9: '30,855,255,64',
-              col10: '21.31',
-              show: true,
-              value: 1,
-            },{
-              col1: '应收账款',
-              col2: '30,855,255,64',
-              col3: '21.31',
-              col4: '30,855,255,64',
-              col5: '21.31',
-              col6: '30,855,255,64',
-              col5: '21.31',
-              col7: '30,855,255,64',
-              col8: '21.31',
-              col9: '30,855,255,64',
-              col10: '21.31',
-              show: true,
-              value: 1,
-            },{
-              col1: '应收账款',
-              col2: '30,855,255,64',
-              col3: '21.31',
-              col4: '30,855,255,64',
-              col5: '21.31',
-              col6: '30,855,255,64',
-              col5: '21.31',
-              col7: '30,855,255,64',
-              col8: '21.31',
-              col9: '30,855,255,64',
-              col10: '21.31',
-              show: true,
-              value: 1,
-            },{
-              col1: '应收账款',
-              col2: '30,855,255,64',
-              col3: '21.31',
-              col4: '30,855,255,64',
-              col5: '21.31',
-              col6: '30,855,255,64',
-              col5: '21.31',
-              col7: '30,855,255,64',
-              col8: '21.31',
-              col9: '30,855,255,64',
-              col10: '21.31',
-              show: true,
-              value: 1,
-            },{
-              col1: '应收账款',
-              col2: '30,855,255,64',
-              col3: '21.31',
-              col4: '30,855,255,64',
-              col5: '21.31',
-              col6: '30,855,255,64',
-              col5: '21.31',
-              col7: '30,855,255,64',
-              col8: '21.31',
-              col9: '30,855,255,64',
-              col10: '21.31',
-              show: true,
-              value: 1,
-            },{
-              col1: '应收账款',
-              col2: '30,855,255,64',
-              col3: '21.31',
-              col4: '30,855,255,64',
-              col5: '21.31',
-              col6: '30,855,255,64',
-              col5: '21.31',
-              col7: '30,855,255,64',
-              col8: '21.31',
-              col9: '30,855,255,64',
-              col10: '21.31',
-              show: true,
-              value: 1,
-            },{
-              col1: '应收账款',
-              col2: '30,855,255,64',
-              col3: '21.31',
-              col4: '30,855,255,64',
-              col5: '21.31',
-              col6: '30,855,255,64',
-              col5: '21.31',
-              col7: '30,855,255,64',
-              col8: '21.31',
-              col9: '30,855,255,64',
-              col10: '21.31',
-              show: true,
-              value: 1,
-            },{
-              col1: '应收账款',
-              col2: '30,855,255,64',
-              col3: '21.31',
-              col4: '30,855,255,64',
-              col5: '21.31',
-              col6: '30,855,255,64',
-              col5: '21.31',
-              col7: '30,855,255,64',
-              col8: '21.31',
-              col9: '30,855,255,64',
-              col10: '21.31',
-              show: true,
-              value: 1,
-            },{
-              col1: '应收账款',
-              col2: '0',
-              col3: '0',
-              col4: '0',
-              col5: '0',
-              col6: '0',
-              col5: '0',
-              col7: '0',
-              col8: '0',
-              col9: '0',
-              col10: '0',
-              show: true,
-              value: 0,
-            }
-          ],
-            tableData2: [{
-              col1: '货币基金2',
-              col2: '30,855,255,64',
-              col3: '21.31',
-              col4: '30,855,255,64',
-              col5: '21.31',
-              col6: '30,855,255,64',
-              col5: '21.31',
-              col7: '30,855,255,64',
-              col8: '21.31',
-              col9: '30,855,255,64',
-              col10: '21.31',
-            }, {
-              col1: '交易性金融资产',
-              col2: '0',
-              col3: '0.0',
-              col4: '0',
-              col5: '0.0',
-              col6: '0',
-              col5: '0.0',
-              col7: '0',
-              col8: '0.0',
-              col9: '0',
-              col10: '0.0',
-            },{
-              col1: '应收账款',
-              col2: '30,855,255,64',
-              col3: '21.31',
-              col4: '30,855,255,64',
-              col5: '21.31',
-              col6: '30,855,255,64',
-              col5: '21.31',
-              col7: '30,855,255,64',
-              col8: '21.31',
-              col9: '30,855,255,64',
-              col10: '21.31',
-            },{
-              col1: '应收账款',
-              col2: '30,855,255,64',
-              col3: '21.31',
-              col4: '30,855,255,64',
-              col5: '21.31',
-              col6: '30,855,255,64',
-              col5: '21.31',
-              col7: '30,855,255,64',
-              col8: '21.31',
-              col9: '30,855,255,64',
-              col10: '21.31',
-            },{
-              col1: '应收账款',
-              col2: '30,855,255,64',
-              col3: '21.31',
-              col4: '30,855,255,64',
-              col5: '21.31',
-              col6: '30,855,255,64',
-              col5: '21.31',
-              col7: '30,855,255,64',
-              col8: '21.31',
-              col9: '30,855,255,64',
-              col10: '21.31',
-            },{
-              col1: '应收账款',
-              col2: '30,855,255,64',
-              col3: '21.31',
-              col4: '30,855,255,64',
-              col5: '21.31',
-              col6: '30,855,255,64',
-              col5: '21.31',
-              col7: '30,855,255,64',
-              col8: '21.31',
-              col9: '30,855,255,64',
-              col10: '21.31',
-            },{
-              col1: '应收账款',
-              col2: '30,855,255,64',
-              col3: '21.31',
-              col4: '30,855,255,64',
-              col5: '21.31',
-              col6: '30,855,255,64',
-              col5: '21.31',
-              col7: '30,855,255,64',
-              col8: '21.31',
-              col9: '30,855,255,64',
-              col10: '21.31',
-            },{
-              col1: '应收账款',
-              col2: '30,855,255,64',
-              col3: '21.31',
-              col4: '30,855,255,64',
-              col5: '21.31',
-              col6: '30,855,255,64',
-              col5: '21.31',
-              col7: '30,855,255,64',
-              col8: '21.31',
-              col9: '30,855,255,64',
-              col10: '21.31',
-            },{
-              col1: '应收账款',
-              col2: '30,855,255,64',
-              col3: '21.31',
-              col4: '30,855,255,64',
-              col5: '21.31',
-              col6: '30,855,255,64',
-              col5: '21.31',
-              col7: '30,855,255,64',
-              col8: '21.31',
-              col9: '30,855,255,64',
-              col10: '21.31',
-            },{
-              col1: '应收账款',
-              col2: '30,855,255,64',
-              col3: '21.31',
-              col4: '30,855,255,64',
-              col5: '21.31',
-              col6: '30,855,255,64',
-              col5: '21.31',
-              col7: '30,855,255,64',
-              col8: '21.31',
-              col9: '30,855,255,64',
-              col10: '21.31',
-            },{
-              col1: '应收账款',
-              col2: '30,855,255,64',
-              col3: '21.31',
-              col4: '30,855,255,64',
-              col5: '21.31',
-              col6: '30,855,255,64',
-              col5: '21.31',
-              col7: '30,855,255,64',
-              col8: '21.31',
-              col9: '30,855,255,64',
-              col10: '21.31',
-            },{
-              col1: '应收账款',
-              col2: '30,855,255,64',
-              col3: '21.31',
-              col4: '30,855,255,64',
-              col5: '21.31',
-              col6: '30,855,255,64',
-              col5: '21.31',
-              col7: '30,855,255,64',
-              col8: '21.31',
-              col9: '30,855,255,64',
-              col10: '21.31',
-            },{
-              col1: '应收账款',
-              col2: '30,855,255,64',
-              col3: '21.31',
-              col4: '30,855,255,64',
-              col5: '21.31',
-              col6: '30,855,255,64',
-              col5: '21.31',
-              col7: '30,855,255,64',
-              col8: '21.31',
-              col9: '30,855,255,64',
-              col10: '21.31',
-            },{
-              col1: '应收账款',
-              col2: '30,855,255,64',
-              col3: '21.31',
-              col4: '30,855,255,64',
-              col5: '21.31',
-              col6: '30,855,255,64',
-              col5: '21.31',
-              col7: '30,855,255,64',
-              col8: '21.31',
-              col9: '30,855,255,64',
-              col10: '21.31',
-            },{
-              col1: '应收账款',
-              col2: '30,855,255,64',
-              col3: '21.31',
-              col4: '30,855,255,64',
-              col5: '21.31',
-              col6: '30,855,255,64',
-              col5: '21.31',
-              col7: '30,855,255,64',
-              col8: '21.31',
-              col9: '30,855,255,64',
-              col10: '21.31',
-            }
-          ]
-        }
-      },
-      created() {
-        this.changeStatus()
-      },
-      methods: {
-        changeStatus: function(callback){
-          this.value2 = false
-          if(this.value1 === true){
-            this.tableDataNew = this.tableData.filter(val => val.show != false)
-          }
-          if(this.value1 === false){
-            this.tableDataNew = this.tableData
-          }
-        },
-        filterData: function(callback){
-            this.value1 = false
-          if(this.value2 === true){
-            this.tableDataNew = this.tableData.filter(val => val.value != 0)
-          }
-          if(this.value2 === false){
-            this.tableDataNew = this.tableData
-          }
-        },
-      }
+  <script language="javascript" type="text/javascript">
+    //初始化FixedTable
+    $(".fixed-table-box").fixedTable();
+
+    $('.switch-box').each(function () {
+      var _this = $(this);
+      _this.find(".fixed-table-box").fixedTable();
+    })
+    
+    $('.switch-item').each(function () {
+      var _this = $(this);
+      _this.click(function () {
+        _this.toggleClass('open-switch').siblings().removeClass('open-switch')
+      })
+    })
+    $('#layer-examine .delete-tr').each(function () {
+      var _this = $(this);
+      _this.click(function () {
+        _this.parent().parent('tr').remove()
+      })
     })
   </script>
-
 
   <!--[if lte IE 10]>
 <script language="javascript" type="text/javascript" src="js/placeholder.js"></script>
