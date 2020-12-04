@@ -114,6 +114,7 @@
 }
 .fixed-table_fixed-left{
     left: 0;
+    min-height: 100%;
     /* box-shadow: 1px -1px 8px 1px #d3d4d6; */
 }
 .fixed-table_fixed-right{
@@ -157,11 +158,11 @@
 
 
 .fixed-table-box>.fixed-table_body-wraper{/*内容了表格主体内容有纵向滚动条*/
-    max-height: 380px;
+    max-height: 600px;
 }
 
 .fixed-table_fixed>.fixed-table_body-wraper{/*为了让两侧固定列能够同步表格主体内容滚动*/
-    max-height: 365px;
+    max-height: 600px;
 }
 .w-200{
     width: 200px;

@@ -1,9 +1,4 @@
-/*
-* @Author: 李燕南
-* @Date:   2017-08-30 11:48:13
-* @Last Modified by:   李燕南
-* @Last Modified time: 2017-09-07 08:59:27
-*/
+
 ;(function (){
 
         
