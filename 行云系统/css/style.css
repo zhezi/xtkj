@@ -1781,3 +1781,18 @@
 .finance-page .fixed-table_fixed>.fixed-table_body-wraper{
   max-height: 600px;
 }
+
+.finance-page .switch-box .nano{
+  height: 556px;
+}
+.finance-page .switch-box .nano tr:nth-child(odd){
+  background: none;
+}
+.finance-page .switch-box .nano tr:nth-child(even){
+  background: #f6f8fb;
+}
+.finance-page .switch-box .text{
+  border: 1px solid #eee;
+  padding: 0 5px;
+  line-height: 28px;
+}
