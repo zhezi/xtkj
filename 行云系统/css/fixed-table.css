@@ -139,6 +139,7 @@
 .fixed-table-box.row-col-fixed>.fixed-table_body-wraper::-webkit-scrollbar {
     width: 4px;     
     height: 4px;
+    z-index: 2;
   }
   .fixed-table-box.row-col-fixed>.fixed-table_body-wraper::-webkit-scrollbar-thumb {
     background: #bcbcbc;
