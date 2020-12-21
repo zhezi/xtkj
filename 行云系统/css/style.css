@@ -1783,7 +1783,7 @@
 }
 
 .finance-page .switch-box .nano{
-  height: 556px;
+  height: 600px;
 }
 .finance-page .switch-box .nano tr:nth-child(odd){
   background: none;
@@ -1810,11 +1810,19 @@
 
 .finance-page .table-scroll{
   position  : relative;
-  max-height    : 600px;
-  overflow  : scroll;
-  padding: 0 10px;
 }
-
+.finance-page .nano > .nano-pane{
+  width: 4px;
+}
+.finance-page .report-page .box{
+  padding: 15px;
+}
+.finance-page .nano > .nano-pane > .nano-slider{
+  width: 4px;
+  -moz-border-radius    : 0;
+  -webkit-border-radius : 0;
+  border-radius: 0;
+}
 .finance-page .table-scroll::-webkit-scrollbar {
   width : 4px;
   height: 4px;
