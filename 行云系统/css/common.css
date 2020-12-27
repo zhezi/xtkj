@@ -385,10 +385,11 @@ a.gray:hover{
     padding: 12px 0;
     line-height: 30px;
     color: #f8f8f8;
+    margin: 0 10px 0 0;
 }
 .header .user{
     position: relative;
-    width: 150px;
+    width: 140px;
     vertical-align: middle;
     display: inline-block;
     *display: inline;
@@ -417,7 +418,7 @@ a.gray:hover{
     display: none;
 }
 .header .user p{
-    background: url(../images/arrow-bottom.png) right center no-repeat;   
+    background: url(../images/arrow-bottom.png) 96% center no-repeat;   
     line-height: 30px;
     color: #f8f8f8;
     padding: 0 12px 0 0;
@@ -428,9 +429,10 @@ a.gray:hover{
     display: block;
     position: relative;
     margin: 0;
+    text-align:center;
 }
 .header .user.active p{
-    background: url(../images/arrow-top.png) right center no-repeat;
+    background: url(../images/arrow-top.png) 96% center no-repeat;
 }
 .header .user ul{
     position: absolute;
@@ -568,7 +570,7 @@ a.gray:hover{
 .header .qrCode{
     position: absolute;
     right: 24px;
-    top: 18px;
+    top: 16px;
     width: 50px;
     text-align: right;
 }
