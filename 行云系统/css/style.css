@@ -2123,3 +2123,107 @@
   border-radius: 0;
   background: #eae9e9;
 }
+
+.brank-report .box-point .item{
+  display: flex;
+  margin: 0 0 40px;
+}
+.brank-report .box-point .item h2{
+  font-size: 16px;
+  margin: 0 46px 0 0;
+}
+.brank-report .box-point .star{
+  background: url(../images/star.png) center top no-repeat;
+  width: 19px;
+  height: 18px;
+  display: inline-block;
+  margin: 0 10px 0 0;
+}
+.brank-report .box-point .stard{
+  background: url(../images/stared.png) center top no-repeat;
+}
+
+.brank-report .box-point .idea{
+  line-height: 22px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.brank-report .box-point .idea h2{
+  font-size: 16px;
+  font-weight: bold;
+}
+.brank-report .box-point .idea .sign{
+  width: 14px;
+  height: 14px;
+  background: url(../images/sign3.png) center center no-repeat;
+  margin: 0 18px 0 6px;
+}
+.brank-report .box-point .idea .sign .speak{
+  top: 30px;
+}
+.brank-report .box-point .idea p{
+  font-size: 12px;
+  margin: 0 40px 0 0;
+}
+.brank-report .idea-box{
+  display: flex;
+  flex-wrap: wrap;
+  line-height: 20px;
+}
+.brank-report .idea-box dl{
+  width: 20%;
+  padding: 4px 0 26px;
+}
+.brank-report .idea-box .first{
+  width: 100%;
+  padding: 26px 0;
+}
+.brank-report .idea-box .first dd{
+  font-size:24px;
+  font-weight: 600;
+}
+.brank-report .idea-box .small{
+  font-size:12px;
+}
+.brank-report .idea-box dt{
+  padding: 0 0 8px;
+}
+.brank-report .table-box .title{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 26px 0 15px;
+}
+.brank-report .table-box .title a{
+  width: 150px;
+  line-height: 30px;
+  background: #0171E4;
+  border-radius: 4px;
+  display: inline-block;
+  text-align: center;
+  color: #fff;
+}
+.brank-report .table-box .title h2{
+  line-height: 30px;
+  margin: 0;
+  font-weight: bold;
+  padding: 0;
+}
+.brank-report .table tr th,
+.brank-report .table tr:hover{
+  background: #F6F8FB;
+}
+.brank-report .table-box .table th{
+  border: 0;
+  padding: 6px 4px;
+}
+.brank-report .table tr:nth-child(odd){
+  background: none;
+}
+.brank-report .table td{
+  padding: 4px;
+}
+.brank-report .table .link{
+  padding:0 8px;
+}
