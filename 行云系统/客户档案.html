@@ -232,12 +232,16 @@
                   <dd>6个</dd>
                 </dl>
               </div>
+              <div class="loading">
+                <span>更新中</span>
+                <img src="images/white-loading.gif" alt="">
+              </div>
             </div>
             <div class="box box-moving">
               <ul class="clearfix">
                 <li>
                   <div class="item">
-                    <h3>银行对账单报告</h3>
+                    <h3>银行对账单报告 <p class="tip">有3份文件分析中<img src="images/loading.gif" alt=""></p> </h3>
                     <p>分析报告数量<strong class="blue">6</strong>份
                     </p>
                     <p>日期范围  2018.6.6-2020.5.4 </p>
@@ -270,17 +274,9 @@
                     <h3><a href="javascript:void(0);" class="blue">点击查看报告</a></h3>
                     <p>最近更新时间：2020.8.20</p>
                   </div>
-                </li>
-                <li>
-                  <div class="item">
-                    <h3>银行对账单报告</h3>
-                    <p>分析报告数量<strong class="blue">6</strong>份
-                    </p>
-                    <p>日期范围  2018.6.6-2020.5.4 </p>
-                  </div>
-                  <div class="idea">
-                    <h3><a href="javascript:void(0);" class="blue">点击查看报告</a></h3>
-                    <p>最近更新时间：2020.8.20</p>
+                  <div class="locked">
+                    <img src="images/icon26.png" alt="">
+                    <p>未绑定企业无法生成关联关系报告</p>
                   </div>
                 </li>
                 <li>
@@ -297,13 +293,27 @@
                 </li>
                 <li>
                   <div class="item">
-                    <h3>银行对账单报告</h3>
+                    <h3>银行对账单报告 <p class="tip">生成失败</p></h3>
                     <p>分析报告数量<strong class="blue">6</strong>份
                     </p>
                     <p>日期范围  2018.6.6-2020.5.4 </p>
                   </div>
                   <div class="idea">
-                    <h3><a href="javascript:void(0);" class="blue">点击查看报告</a></h3>
+                    <h3><a href="javascript:void(0);" class="blue">重新生成</a></h3>
+                    <p>最近更新时间：2020.8.20</p>
+                  </div>
+                </li>
+                <li>
+                  <div class="item">
+                    <h3>银行对账单报告 <p class="tip">生成中<img src="images/loading.gif" alt=""></p></h3>
+                    <p>分析报告数量<strong class="blue">6</strong>份
+                    </p>
+                    <p>日期范围  2018.6.6-2020.5.4 </p>
+                  </div>
+                  <div class="idea">
+                    <h3>
+                      <!-- <a href="javascript:void(0);" class="blue">点击查看报告</a> -->
+                    </h3>
                     <p>最近更新时间：2020.8.20</p>
                   </div>
                 </li>
@@ -323,7 +333,7 @@
 
   </div>
   <!-- container over -->
-  
+
 <!-- 新建客户档案 -->
 <div class="layer" id="layer-case" style="display:;">
   <div class="cover"></div>
@@ -401,7 +411,7 @@
 </div>
 
 <!-- 开票分析 -->
-<div class="layer" id="layer-pill" style="display:block;">
+<div class="layer" id="layer-pill" style="display:;">
   <div class="cover"></div>
   <div class="layer-tip">
       <a href="javascript:void(0);" class="close"></a>
@@ -427,7 +437,7 @@
                 <dt>选择该分析归入的客户档案</dt>
                 <dd class="row-2">
                   <div class="item-box item-select special">
-                    <input type="text"  value="" class="text" placeholder="新建档案请填写客户名称">
+                    <input type="text"  value="" class="text" placeholder="新建档案请填写客户名称" style="cursor: text;">
                       <span class="arrow-bottom"></span>
                       <ul>
                         <li>企业</li>
