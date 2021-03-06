@@ -1879,8 +1879,9 @@
 }
 .file-page .idea-box .loading{
   position: absolute;
-  bottom: 12px;
+  bottom: 10px;
   right: 50px;
+  font-size:12px;
 }
 .file-page .idea-box .loading img{
   vertical-align: middle;
@@ -1966,7 +1967,7 @@
   position: relative;
   float: left;
   width: 45%;
-  height: 50px;
+  height: 80px;
   padding: 14px;
   margin: 0 35px 14px 0;
   line-height: 22px;
@@ -1994,8 +1995,7 @@
   text-align: right;
 }
 .file-page .box-moving li p{
-  line-height: 1;
-  padding: 2px 0 0;
+  line-height: 20px;
 }
 .file-page .box-moving li:hover{
   box-shadow: 0px 2px 10px 0px rgba(120, 166, 236, 0.3);
@@ -2007,6 +2007,7 @@
 }
 .file-page .box-moving .item h3{
   display: flex;
+  margin: 0 0 10px;
 }
 .file-page .box-moving .tip{
   padding: 0 5px;
@@ -2024,6 +2025,11 @@
 
 .file-page .box-moving li:nth-child(even) {
   margin: 0 0 14px;
+}
+.file-page .box-moving .loading-gif{
+  position: absolute;
+  right:6px;
+  top:6px;
 }
 
 /* 财务报表 */
