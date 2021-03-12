@@ -51,6 +51,7 @@
 .fixed-table-box .fixed-table_header,
 .fixed-table-box .fixed-table_body{
     width: 100%;
+    cursor: text;
 }
 /* 表头 start */
 .fixed-table-box>.fixed-table_header-wraper{
@@ -135,6 +136,8 @@
 /* 固定列和固定表头 start */
 .fixed-table-box.row-col-fixed>.fixed-table_body-wraper{
     overflow: auto;
+    cursor: pointer;
+}
 }
 .fixed-table-box.row-col-fixed>.fixed-table_body-wraper::-webkit-scrollbar {
     width: 4px;     
@@ -144,9 +147,11 @@
   }
   .fixed-table-box.row-col-fixed>.fixed-table_body-wraper::-webkit-scrollbar-thumb {
     background: #bcbcbc;
+    cursor: pointer;
   }
   .fixed-table-box.row-col-fixed>.fixed-table_body-wraper::-webkit-scrollbar-track {
     background: #eae9e9;
+    cursor: pointer;
   }
   
 .fixed-table-box_fixed-right-patch{
