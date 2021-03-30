@@ -26,14 +26,14 @@ $(function($) {
           _this.click(function(){
             _item.is(":hidden")?_show():_hide();
             $("body").click(function(event){
-                  if (event.stopPropagation) { 
-                    // 针对 Mozilla 和 Opera     
-                    event.stopPropagation();    
-                  }     
-                  else if (window.event) {    
-                    // 针对 IE    
-                    window.event.cancelBubble = true; 
-                  }
+                  // if (event.stopPropagation) { 
+                  //   // 针对 Mozilla 和 Opera     
+                  //   event.stopPropagation();    
+                  // }     
+                  // else if (window.event) {    
+                  //   // 针对 IE    
+                  //   window.event.cancelBubble = true; 
+                  // }
                   !$(event.target).parents(".user").first().is(_this) ? _hide():"";
             });
           });
@@ -109,22 +109,22 @@ $(function($) {
             };
             _text.click(function(){
               _item.is(":hidden")?_show():_hide();
-              $("body").click(function(i){
-                 if('undefined'!=typeof(event)){
-                   if (event.stopPropagation) {   
-                    // 针对 Mozilla 和 Opera   
-                    event.stopPropagation();   
-                    }   
-                    else if (window.event) {   
-                    // 针对 IE   
-                      window.event.cancelBubble = true;   
-                    } 
-                 }
-                  !$(i.target).parents(".text-select").first().is(_this) ? _hide():"";
-              });
             });
             _item.find("li").click(function(){
               _text.val($(this).html());_hide();
+            });
+            $("body").click(function(i){
+              //  if('undefined'!=typeof(event)){
+      				//    if (event.stopPropagation) {   
+      				// 	  // 针对 Mozilla 和 Opera   
+      				// 		event.stopPropagation();   
+        			// 		}   
+        			// 		else if (window.event) {   
+        			// 		// 针对 IE   
+        			// 			window.event.cancelBubble = true;   
+        			// 		} 
+              //  }
+                !$(i.target).parents(".text-select").first().is(_this) ? _hide():"";
             });
         })
     };
@@ -168,20 +168,20 @@ $(function($) {
             };
             _text.click(function(){
               _item.is(":hidden")?_show():_hide();
-              $("body").click(function(event){
-                  if (event.stopPropagation) { 
-                    // 针对 Mozilla 和 Opera     
-                    event.stopPropagation();    
-                  }     
-                  else if (window.event) {    
-                    // 针对 IE    
-                    window.event.cancelBubble = true; 
-                  }
-                  !$(event.target).parents(".item-select").first().is(_this) ? _hide():"";
-              });
             });
             _item.find("li").click(function(){
               _text.val($(this).html());_hide();
+            });
+            $("body").click(function(event){
+                // if (event.stopPropagation) { 
+                //   // 针对 Mozilla 和 Opera     
+                //   event.stopPropagation();    
+                // }     
+                // else if (window.event) {    
+                //   // 针对 IE    
+                //   window.event.cancelBubble = true; 
+                // }
+                !$(event.target).parents(".item-select").first().is(_this) ? _hide():"";
             });
         })
     };
@@ -205,22 +205,22 @@ $(function($) {
           };
           _text.click(function(){
             _item.is(":hidden")?_show():_hide();
-            $("body").click(function(event){
-                if (event.stopPropagation) { 
-                  // 针对 Mozilla 和 Opera     
-                  event.stopPropagation();    
-                }     
-                else if (window.event) {    
-                  // 针对 IE    
-                  window.event.cancelBubble = true; 
-                }
-                !$(event.target).parents(".item-select02").first().is(_this) ? _hide():"";
-            });
           });
           _item.find("li").click(function(){
             var _url= $(this).find('a').attr('href');
             _text.val($(this).find('.name').html());_hide();
             _lookLink.html($(this).find('a').html()).attr("href",_url);_hide();
+          });
+          $("body").click(function(event){
+              // if (event.stopPropagation) { 
+              //   // 针对 Mozilla 和 Opera     
+              //   event.stopPropagation();    
+              // }     
+              // else if (window.event) {    
+              //   // 针对 IE    
+              //   window.event.cancelBubble = true; 
+              // }
+              !$(event.target).parents(".item-select02").first().is(_this) ? _hide():"";
           });
       })
   };
