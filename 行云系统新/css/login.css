@@ -1,0 +1,238 @@
+@charset "utf-8";
+/* CSS Document */
+/****************************
+ * version:1.0
+ * Date:2019-07-10
+ *
+ */
+
+ /*登录*/
+ html,body{
+    height: 100%;
+ }
+.login{
+    background: url(../images/login-bg.jpg) center center no-repeat;
+    height: 100%;
+    min-height: 600px;
+}
+.login .logo{
+    position: fixed;
+    left:4.2%;
+    top:7%;
+    background: url(../images/logo.png) center center no-repeat;
+    width: 238px;
+    height: 62px;
+    display: inline-block;
+}
+.login .table tr:nth-child(odd){
+    background: none;
+}
+.login .container{
+    height: 100%;
+}
+.login table{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    text-align: left;
+}
+.form{
+    position: relative;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 0 50px;
+}
+.form h2{
+    font-size: 16px;
+    line-height: 40px;
+}
+.login .left{
+    position: absolute;
+    left: 0;
+    top: 50%;
+    width: 550px;
+    color: #fff;
+    line-height: 26px;
+    font-size: 16px;
+    transform: translateY(-50%);
+}
+.login .left h2{
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 1;
+    padding: 0 0 40px;
+}
+.login .right{
+    background: #fff;
+    position: relative;
+    width: 400px;
+    min-height: 455px;
+    padding: 50px;
+}
+.login .right h2{
+    color: #515151;
+    line-height: 32px;
+    font-size: 20px;
+    font-weight: bold;
+}
+.form dl{
+    padding: 22px 0 0;
+}
+.form dd{
+    position: relative;
+}
+.form .text{
+    padding:0 4%;
+    width: calc(92% - 2px);
+    background: #F6F6F6;
+    line-height: 50px;
+    height: 50px;
+    font-size: 16px;
+    color: #515151;
+    outline: none;
+    border: 1px solid #F6F6F6;
+    -moz-border-radius: 6px;
+    -webkit-border-radius: 6px;
+    border-radius: 6px;
+}
+.form .text:focus{ 
+    color: #2A68FF;
+    border:1px solid #2A68FF;
+}
+.form .text-short{
+    padding:0 4%;
+    width: 50%;
+}
+.form .select-btn{    
+    background:url(../images/up.png) 96% center no-repeat;
+    cursor: pointer;
+}
+.form .text-select{
+    position: relative;
+    width: 100%;
+}
+.form .text-select.active .text{
+    border: 1px solid #a0cfff;
+}
+.form .text-select .item{
+    position: absolute;
+    top: 39px;
+    left: 0;
+    width: 100%;
+    background: #fff;
+    display: none;
+    z-index: 10;
+}
+.form .text-select .item-box{
+    max-height: 346px;
+    border: 1px solid #e8e9ef;
+    border-bottom: 0;
+}
+.form .text-select li{
+    padding: 0 18px;
+    line-height: 42px;
+    color:#2f2f2f;
+    border-bottom: 1px solid #e8e9ef;
+}
+.form .text-select li:hover{
+    color: #495763;
+}
+.form dd .button,
+.form dd .code{
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 148px;
+    height: 50px;
+    border-radius: 4px;
+    line-height: 50px;
+    font-size: 16px;
+    color: #fff;
+}
+.form dd .error{
+    line-height: 30px;
+    margin: 0 0 -16px;
+}
+.login .form dd .error{
+    margin: 0 0 -16px;
+}
+.login .form .point{
+    margin: 26px 0 14px;
+}
+.login .form .point a{
+    color: #515151;
+    vertical-align: middle;
+}
+.form label{
+    padding: 0 0 0 22px;
+    position: relative;
+    display: inline-block;
+    line-height: 16px;
+    height: 16px;
+    vertical-align: middle;
+}
+.login .form label em{
+    width: 14px;
+    height: 14px;
+    position: absolute;
+    top: 0px;
+    left: 0;
+    display: inline-block;
+    border: 1px solid #979797;
+    -moz-border-radius: 1px;
+    -webkit-border-radius: 1px;
+    border-radius: 1px;
+}
+.form label .active{
+    background: url(../images/checked.png) 0 center no-repeat;
+}
+.login .form .btn{
+    padding: 40px 0 0;
+}
+.login .form .btn .button{
+    line-height: 52px;
+    font-size: 20px;
+    letter-spacing: 3px;
+    width: 100%;
+}
+.form .way{
+    position: absolute;
+    bottom: 36px;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    color: #515151;
+    font-size: 14px;
+}
+.form .way a{
+    line-height: 36px;
+    color: #2A68FF;
+}
+.form .way .pipe{
+    background: #EDEDED;
+    width: 1px;
+    height: 14px;
+    margin: 0 14px;
+    display: inline-block;
+    vertical-align: middle;
+}
+.copyright{
+    padding: 46px 0 0;
+    position: absolute;
+    left: 0;
+    bottom: 4.62%;
+    line-height: 20px;
+    text-align: center;
+    width: 100%;
+    font-size: 14px;
+    color: #fff;
+}
+.article{
+    background: #fff;
+    margin: -50px auto 50px;
+    padding: 70px 60px 100px;
+    max-width: 1080px;
+    min-height: 400px;
+}
