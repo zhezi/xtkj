@@ -1,0 +1,59 @@
+@charset "utf-8";
+/* CSS Document */
+/****************************
+ * version:1.0
+ *
+ */
+html, body, div, span, h1, h2, h3, h4, h5, h6, p, abbr, address, cite, code, del, dfn, em, img, sub, sup, var, i, dl, dd, dt, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, figure, footer, header, hgroup, menu, nav, section, time, mark, audio, video{margin:0;padding:0; zoom:1;}
+article, aside, figure, footer, header, hgroup, nav, menu, section {display: block;}
+h1,h2,h3,h4,h5,h6{font-size:100%; font-weight: normal;}
+input, select {
+	vertical-align: middle;
+	/*font-family:'Arial','Microsoft YaHei';*/
+    font-family: PingFangSC-Light, 'helvetica neue', 'hiragino sans gb', arial, 'microsoft yahei ui', 'microsoft yahei', simsun, sans-serif;
+    -webkit-appearance : none ;
+}
+textarea{
+	resize:none;
+    font-family: PingFangSC-Light, 'helvetica neue', 'hiragino sans gb', arial, 'microsoft yahei ui', 'microsoft yahei', simsun, sans-serif;
+}
+a,button{
+	border: none;
+    font-family: PingFangSC-Light, 'helvetica neue', 'hiragino sans gb', arial, 'microsoft yahei ui', 'microsoft yahei', simsun, sans-serif;
+    outline: none;
+	cursor: pointer;
+	text-decoration:none;
+}
+a:hover{text-decoration:none;}
+img{vertical-align:top; outline: none; border: none;}
+ul,li{ list-style:none;}
+
+a{
+	text-decoration:none;
+	color: #4C505F;
+	outline: none;
+	border: none;
+}
+.a-block{
+	display: block;
+}
+
+body,html {
+	font-size: 14px;
+	font-family: PingFangSC-Light, 'helvetica neue', 'hiragino sans gb', arial, 'microsoft yahei ui', 'microsoft yahei', simsun, sans-serif;
+    position: relative;
+	width: 100%;
+	color: #4C505F;
+    word-break: break-all;
+    background: #fbfbfb;
+}
+.container {
+	position: relative;
+	margin: 0 auto;
+	width: 100%;
+	min-width: 1200px;
+	_width: expression((document.documentElement.clientWidth||document.body.clientWidth)<1200?"1200px":"");
+	overflow-x: hidden;
+	overflow-y: hidden;
+}
+
