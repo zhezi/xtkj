@@ -60,9 +60,21 @@ $(function($) {
   if($(".idea-box02").size()>0){
     Height()
   }
+  
+  function nano_height() {
+      var $height1=$('.layer-side .layer-title').height(),
+          $height2=$(window).height();
+      $(".layer-side .nano").height($height2-120);
+  }
+  nano_height();
+  $(window).resize(function() {
+    nano_height();
+  })
+  if($('.nano').size()>0){
+      $(".nano").nanoScroller();
+  }
 
   (function(){
-    
     // 菜单切换
     $('.idea-box').each(function(){
       var $this=$(this);
@@ -79,17 +91,9 @@ $(function($) {
         })
 
     })
-
-    
-    if ($('.m-login').size()>0) {
-        $('.m-login').bind('click',function(){
-            $(this).children('em').toggleClass('active');
-        });
-    };
-    
-    if ($('.m-check').size()>0) {
-        $('.m-check em').bind('click',function(){
-            $(this).toggleClass('active');
+    if($('.arrow-icon').size()>0) {
+        $('.arrow-icon').bind('click',function(){
+            $(this).toggleClass('arrow-up');
         });
     };
 
@@ -128,26 +132,7 @@ $(function($) {
             });
         })
     };
-    //下拉选择
-    if ($('.select').size()>0) {
-        $(".select").each(function(){
-            var _this=$(this);
-            var _text=$(this).children(".name");
-            var _item=$(this).children(".select-box");
-            var _show=function(){
-              _item.slideDown(200);
-            };
-            var _hide=function(){
-              _item.slideUp(200);
-            };
-            _text.click(function(){
-              _item.is(":hidden")?_show():_hide();
-            });
-            _item.find("a").click(function(){
-              _text.html($(this).html());_hide();
-            });
-        })
-    };
+    
 
 
     //下拉选择
@@ -186,44 +171,6 @@ $(function($) {
         })
     };
 
-    //下拉选择银行模板
-    if ($('.item-select02').size()>0) {
-      $(".item-select02").each(function(){
-          var _this=$(this);
-          var _text=$(this).children("input");
-          var _item=$(this).children("ul");
-          var _lookLink=$(this).children(".lookLink");
-          var _show=function(){
-            _item.slideDown(200);
-            _this.css("z-index",3);
-            _this.find('.arrow-bottom').addClass('arrow-top');
-          };
-          var _hide=function(){
-            _item.slideUp(200);
-            _this.css("z-index",1);
-            _this.find('.arrow-bottom').removeClass('arrow-top');
-          };
-          _text.click(function(){
-            _item.is(":hidden")?_show():_hide();
-          });
-          _item.find("li").click(function(){
-            var _url= $(this).find('a').attr('href');
-            _text.val($(this).find('.name').html());_hide();
-            _lookLink.html($(this).find('a').html()).attr("href",_url);_hide();
-          });
-          $("body").click(function(event){
-              // if (event.stopPropagation) { 
-              //   // 针对 Mozilla 和 Opera     
-              //   event.stopPropagation();    
-              // }     
-              // else if (window.event) {    
-              //   // 针对 IE    
-              //   window.event.cancelBubble = true; 
-              // }
-              !$(event.target).parents(".item-select02").first().is(_this) ? _hide():"";
-          });
-      })
-  };
     if($('.layer').size()>0){
       $('.remove-btn').bind('click',function () {
          $('#layer-remove').fadeIn();
@@ -235,31 +182,6 @@ $(function($) {
          //   $('#layer-remove').fadeOut();
          // })
       })
-      $('.report-btn').bind('click',function () {
-         $('#layer-report').fadeIn();
-      })
-      $('.exclude-btn').bind('click',function () {
-         $('#layer-exclude').fadeIn();
-         $('html').css('overflow','hidden');
-         $(".nano").nanoScroller();
-      })
-
-      $('#add_sus').bind('click',function () {
-        $('#layer-examine').fadeIn();
-        $('html').css('overflow','hidden');
-        $(".nano").nanoScroller();
-        $('.add-button').bind('click',function(){
-          $('.nano table').append('<tr><td width="41%">四川苍蓝印务有限公司</td><td width="41%">四川苍蓝印务有限公司5</td><td width="18%"><a href="javascript:void(0);" class="delete-tr">删除</a></td></tr>');
-          $(".nano").nanoScroller();
-        })
-      })
-
-      $('.merge-btn').bind('click',function () {
-         $('#layer-merge').fadeIn();
-      })
-      $('.match-btn').bind('click',function () {
-         $('#layer-match').fadeIn();
-      })
       $('.layer .cover,.layer .close,.layer .close-btn').click(function(){
           $(".layer ").fadeOut();
           $('html').css('overflow-y','scroll');
@@ -270,7 +192,37 @@ $(function($) {
 
       })
     }
-
+    if($('.layer-side').size()>0){
+      $('.layer-side .cover,.layer-side .close').click(function(){
+          $(".layer-side").fadeOut();
+          $('html').css('overflow-y','scroll');
+      })
+    }
+    // table展开收起
+    if($('.show-tr').size()>0){
+      $('.show-tr').each(function(){
+          var _this=$(this);
+          _this.attr('data-open','true');
+          _this.bind('click',function(){
+              var _this=$(this),_dataOpen=_this.attr('data-open');
+              if(_dataOpen=='false'){
+                  _this.next('.hide-tr').slideUp().removeClass('show');
+                  _this.attr('data-open','true');
+              }else{
+                  _this.next('.hide-tr').slideDown(500).addClass('show');
+                  _this.attr('data-open','false');
+              }
+          });
+      });
+      $('.hide-tr').each(function(){
+          var _this=$(this);
+          _this.bind('click',function(){
+            _this.slideUp().removeClass('show');
+            _this.prev('.show-tr').attr('data-open','true');
+            console.log(1)
+          })
+      });
+    }
 
     if($('.report-page').size()>0){
         $('.box .up').each(function(){

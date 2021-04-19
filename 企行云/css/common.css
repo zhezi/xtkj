@@ -91,8 +91,8 @@ a.blue:hover{
 .red{
     color: #ec5a5a;
 }
-.yellow{
-    color: #FF8400;
+.orange{
+    color: #FF6500;
 }
 .pink{
     color: #f87988;
@@ -101,7 +101,7 @@ a.blue:hover{
     color: #bc85f9;
 }
 .gray{
-    color:#8a8a8a;
+    color:#A1A2AC;
 }
 a.gray:hover{
     color: #0081e4;
@@ -226,7 +226,6 @@ a.gray:hover{
     transition: all 0.5s ease;
     -webkit-transition: all 0.5s ease;
     line-height: 0;
-    padding: 3px 0;
 }
 .special-header{
     background: none;
@@ -255,11 +254,11 @@ a.gray:hover{
     background: url(../images/logo.png) 0 center no-repeat;
     position: relative;
     display: inline-block;
-    margin: 5px 40px 5px 0;
+    margin: 12px 40px 12px 0;
     width: 0;
     height: 0;
-    padding: 52px 0 0 188px;
-    background-size: 100%;
+    padding: 36px 0 0 130px;
+    background-size: auto 100%;
     overflow: hidden;
 }
 .header .nav{
@@ -328,50 +327,6 @@ a.gray:hover{
     font-size: 0;
     position: relative;
 }
-.header .search{
-    position: relative;
-    width: 172px;
-    padding: 0 14px 0 32px;
-    border: 1px solid #94c3f5;
-    line-height: 28px;
-    display: inline-block;
-    *display: inline;
-    _display: inline;
-    -moz-border-radius: 14px;
-    -webkit-border-radius: 14px;
-    border-radius: 14px;
-    margin: 0 5% 0 0;
-}
-.header form{
-    display: inline-block;
-    vertical-align: middle;
-}
-.search .search-btn{
-    background: url(../images/icon07.png) no-repeat;
-    position: absolute;
-    top: 5px;
-    left: 7px;
-    width: 20px;
-    height: 18px;
-    display: inline-block;
-}
-.search .input-text{
-    width: 100%;
-    background: none;
-    line-height: 26px;
-    height: 26px;
-    border: 0;
-    padding: 0;
-    color: #fff;    
-    font-size: 14px;
-    vertical-align: middle;
-}
-.input-text::-webkit-input-placeholder{
-    color:#94c3f5;
-}
-.input-text:-moz-placeholder{
-    color:#94c3f5;
-}
 .header .consult{
     background: url(../images/icon08.png) 0 center no-repeat;
     line-height: 30px;
@@ -386,7 +341,7 @@ a.gray:hover{
 
 .header .user-name{
     position: relative;
-    width: 150px;
+    width: 80px;
     vertical-align: middle;
     display: inline-block;
     *display: inline;
@@ -394,7 +349,7 @@ a.gray:hover{
     font-size: 14px;
     line-height: 30px;
     color: #f8f8f8;
-    margin: 0 10px 0 0;
+    margin: 0 50px 0 0;
 }
 .header .user{
     position: relative;
@@ -600,6 +555,117 @@ a.gray:hover{
     width: 97px;
     margin: 0 0 5px;
 }
+/* 二级导航 */
+.subheader {
+    line-height: 54px;
+    height: 54px;
+    background: #FFFFFF;
+    box-shadow: 0px 2px 6px 0px rgba(183, 202, 222, 0.64);
+}
+.subheader .suheader-box{
+    max-width: 1360px;
+    padding: 0 10px;
+    margin: 0 auto;
+}
+.subheader .submenu-left a{
+    margin: 0 30px;
+    display: inline-block;
+    line-height: 52px;
+    border-top: 1px solid #fff;
+    border-bottom: 1px solid #fff;
+}
+.subheader .submenu-left a.active,
+.subheader .submenu-left a:hover{
+    color: #2A68FF;
+    border-bottom: 1px solid #2A68FF;
+}
+.subheader .submenu-right{
+    margin: 11px 0 0;
+    width: 30%;
+    line-height: 30px;
+    text-align: right;
+}
+.subheader .submenu-right .item-select,
+.subheader .submenu-right .search{
+    position: relative;
+    display: inline-block;
+    *display: inline;
+    _display: inline;
+    text-align: left;
+}
+.subheader .submenu-right .item-select{
+    margin: 0 14px 0 0;
+}
+.subheader .item-select .text{
+    background: url(../images/arrow-bottom2.png) right center no-repeat;
+    cursor: pointer;
+    border: 1px solid #DCDDE3;
+    line-height: 30px;
+    height: 30px;
+    padding: 0 10px;
+    width: 88px;
+    font-size: 12px;
+    outline: none;
+}
+.subheader .item-select ul{
+    position: absolute;
+    top: 30px;
+    left: 0;
+    width: 100%;
+    background: #fff;
+    display: none;
+    z-index: 4;
+    max-height: 90px;
+    overflow-x: hidden;
+    border-bottom: 1px solid #e7e9f1;
+    border-top: none;
+}
+.subheader .item-select li{
+    padding: 0 20px;
+    font-size: 14px;
+    line-height: 30px;
+    border-left: 1px solid #e7e9f1;
+    border-right: 1px solid #e7e9f1;
+}
+.subheader .search{
+    position: relative;
+    padding: 0 20px 0 10px;
+    width: 208px;
+    line-height: 30px;
+    border: 1px solid #DCDDE3;
+}
+.subheader .search-btn{
+    background: url(../images/search2.png) center center no-repeat;
+    position: absolute;
+    top: 0;
+    right: 0px;
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+}
+.subheader .input-text{
+    width: 100%;
+    background: none;
+    line-height: 26px;
+    height: 26px;
+    border: 0;
+    padding: 0;
+    font-size: 14px;
+    vertical-align: middle;
+    outline: none;
+}
+.subheader .input-text::-webkit-input-placeholder{
+    color: #A1A2AC;
+}
+.subheader .input-text::-moz-placeholder{   /* Mozilla Firefox 19+ */
+    color: #A1A2AC;
+}
+.subheader .input-text:-moz-placeholder{    /* Mozilla Firefox 4 to 18 */
+    color: #A1A2AC;
+}
+.subheader .input-text:-ms-input-placeholder{  /* Internet Explorer 10-11 */ 
+    color: #A1A2AC;
+}
 
 .footer{
     background: #2A68FF;
@@ -709,20 +775,20 @@ a.gray:hover{
 }
 .m-check em{
     position: relative;
-    width: 14px;
-    height: 14px;
+    width: 12px;
+    height: 12px;
     display: inline-block;
     vertical-align: middle;
-    border: 1px solid #8a8a8a;
-    -moz-border-radius: 2px;
-    -webkit-border-radius: 2px;
-    border-radius: 2px;
+    border: 1px solid #EFF0F5;
 }
 .m-check span{
     vertical-align: middle;
-    padding: 0 0 0 6px;
+    padding: 0 0 0 8px;
 }
 .m-check em.active{
+    border: 0;
+    width: 14px;
+    height: 14px;
     background: url(../images/checked2.png) center center no-repeat;
 }
 .upload{
@@ -752,24 +818,40 @@ a.gray:hover{
     cursor: pointer;
 }
 /*表格*/
-.table{
-    text-align: center;
-}
 .table th{
     font-weight: normal;
-    background: #f6f8fb;
-    line-height: 22px;
-    padding: 11px 4px;
+    line-height: 24px;
+    padding: 12px 20px 12px 4px;
     font-size: 14px;
-}
-.table tr:nth-child(odd){
-    background: #f6f8fb;
+    text-align: left;
+    border-bottom: 1px solid #EFF0F5;
+    font-weight: 600;
 }
 .table td{
-    line-height: 26px;
-    padding: 10px 4px;
+    line-height: 20px;
+    padding: 14px 20px 14px 4px;
     min-width: 40px;
-    font-size: 12px;
+    border-bottom: 1px solid #EFF0F5;
+}
+.table tr:hover td{
+    background: #F9FAFB;
+}
+.table th:first-child,
+.table td:first-child{
+    padding-left: 48px;
+}
+.table th:last-child,
+.table td:last-child{
+    padding-right: 36px;
+}
+.table .show-tr{
+    cursor: pointer;
+}
+.table .hide-tr{
+    display: none;
+}
+.table .hide-tr.show{
+    display: block;
 }
 .table a.away{
     margin: 0 10px 0 0;
@@ -780,68 +862,177 @@ a.gray:hover{
 .table span{
     vertical-align: middle;
 }
-/*选择下拉*/
-.select{
-    position:relative;
-    width: 120px;
-    height: 24px;
-    line-height: 24px;
-    border: 1px solid #cfe0f4;
+.table .arrow-icon{
+    vertical-align: middle;
+    margin: 0 0 0 7px;
+    width: 6px;
+    height: 11px;
+    display: inline-block;
+    cursor: pointer;
+    background: url(../images/arrow02.png) no-repeat;
 }
-.select p{    
-    background: url(../images/up03.png) 95% center no-repeat;
-    padding: 0 22px 0 10px;
-    font-size: 14px;
-    white-space: nowrap;
-    text-overflow: ellipsis;
-    -o-text-overflow: ellipsis;
-    overflow: hidden;
-    display: block;
+.table .search-icon{
+    background: url(../images/search.png) no-repeat;
+    width: 13px;
+    height: 12px;
+    margin: 0 0 0 4px;
 }
-.select .select-box,
-.input-box .name-box{
-    position: absolute;
-    top: 25px;
-    left: 0;
-    width: 100%;
-    background: #fff;
-    z-index: 4;
-    display: none;
-    border-left: 1px solid #cfe0f4;
-    border-right: 1px solid #cfe0f4;
-    margin: 0 -1px;
+.table .arrow-up{
+    background: url(../images/arrow01.png) no-repeat;
 }
-.select .select-box li,
-.input-box .name-box li{
+.table .tag{
+    padding: 0 3px;
+    border-width: 1px;
+    border-style: solid;
+    display: inline-block;
+    margin: 0 5px;
+    line-height: 20px;
+    font-size: 12px;
+}
+.table .tag-orange{
+    border-color: #FF6817;
+    color: #FF6817;
+}
+.table .tag-blue{
+    border-color: #2A68FF;
+    color: #2A68FF;
+}
+.table .tag-red{
+    border-color: #EF0000;
+    color: #EF0000;
+}
+.table .table-details{
+    padding: 20px 0;
+}
+.switch-btn {
+    display: flex;
+}
+
+.switch-bar {
     position: relative;
-    border-bottom: 1px solid #cfe0f4;
-    padding: 0 32px 0 10px;
+    width: 18px;
+    height: 10px;
+    background: #D7D7D7;
+    border-radius: 8px;
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0 6px 0 0;
+}
+
+.switch-bar .cricle {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 10px;
+    height: 10px;
+    background: #FFFFFF;
+    box-shadow: 0px 1px 4px 0px #D7D7D7;
+    border-radius: 50%;
     display: block;
 }
-.select .select-box li a{
-    color: #8a8a8a;
+
+.open-switch .switch-bar {
+    background: #D5E0FF;
 }
-.select .select-box li a:hover{
-    color: #2f2f2f;
+
+.open-switch .switch-bar .cricle {
+    left: 8px;
+    background: #2C5FFF;
+    box-shadow: 0px 1px 4px 0px rgba(44, 95, 254, 0.6);
 }
-.select .select-box em{
-    background: url(../images/close.png) center center no-repeat;
-    width: 32px;
-    height:24px;
-    position: absolute;
-    top: 0;
-    right: 0;
-    z-index: 3;
+
+/* Icon */
+.Icon{
+    width: 16px;
+    height: 16px;
+    display: inline-block;
+    vertical-align: middle;
 }
+.delete-icon{
+    background: url(../images/delete.png) center center no-repeat;
+}
+.add-icon{
+    background: url(../images/up.png) center center no-repeat;
+    margin: 0 0 0 6px;
+}
+.reduce-icon{
+    background: url(../images/down.png) center center no-repeat;
+    margin: 0 0 0 6px;
+}
+.save-icon{
+    background: url(../images/save.png) center center no-repeat;
+}
+.saved-icon{
+    background: url(../images/saved.png) center center no-repeat;
+}
+.share-icon{
+    background: url(../images/share.png) center center no-repeat;
+}
+.edit-icon{
+    background: url(../images/edit.png) center center no-repeat;
+}
+.search-icon{
+    background: url(../images/search2.png) center center no-repeat;
+}
+.look-icon{
+    background: url(../images/look.png) center center no-repeat;
+    margin: 0 6px 0 -20px;
+}
+.member-icon{
+    background: url(../images/member.png) no-repeat;
+    margin: 0 3px 0 0;
+}
+.delopy-icon{
+    width: 13px;
+    height: 12px;
+    background: url(../images/deploy-gray.png) no-repeat;
+    margin: 0 0 0 3px;
+}
+.change-icon{
+    display: inline-block;
+    background: url(../images/change.png) left center no-repeat;
+    padding: 0 0 0 16px;
+}
+.tag-box {
+    font-size: 0;
+}
+.tag-box .tag-item{
+    line-height: 24px;
+    padding: 0 14px;
+    display: inline-block;
+    margin: 0 12px 12px 0;
+    font-size: 14px;
+}
+.tag-orange .tag-item{
+    border: 1px solid #FF6817;
+    color: #FF6817;
+}
+.tag-orange .tag-item .tag-close{
+    width: 10px;
+    height: 10px;
+    background: url(../images/close2.png) center center no-repeat;
+    vertical-align: middle;
+    margin: 0 -4px 0 12px;
+
+}
+.tag-blue .tag-item{
+    border: 1px solid #2A68FF;
+    color: #2A68FF;
+}
+.tag-blue .tag-item.active{
+    background: #2A68FF;
+    color: #fff;
+}
+
 /*提示浮层*/
 .sign{
     position: relative;
-    margin: 0 0 0 5px;
+    margin: 0 0 0 3px;
     vertical-align: middle;
     display: inline-block;
-    line-height: 18px;
-    width: 26px;
-    height: 26px;
+    line-height: 12px;
+    width: 12px;
+    height: 12px;
     background: url(../images/sign.png) center center no-repeat;
 
 }
@@ -850,7 +1041,7 @@ a.gray:hover{
 }
 .sign .speak{
     position: absolute;
-    top: 44px;
+    top: 24px;
     left: 50%;
     border: 1px solid #f2f2f2;
     background: #fff;
@@ -896,14 +1087,39 @@ a.gray:hover{
 .sign:hover .arrow{
     display: block;
 }
+/* 侧边操作 */
+.share-box{
+    position: fixed;
+    right: 40px;
+    bottom: 33px;
+    width: 40px;
+}
+.share-box a{
+    width: 40px;
+    height: 40px;
+    box-shadow: 0px 2px 4px 0px #CEE5F6;
+    border-radius: 6px;
+    display: block;
+    margin: 15px 0 0;
+}
+.share-box .notice-icon{
+    background: #FFFFFF url(../images/notice.png) center center no-repeat;
+}
+.share-box .customer-icon{
+    background: #FFFFFF url(../images/customer.png) center center no-repeat;
+}
+.share-box .total-icon{
+    background: #FFFFFF url(../images/total.png) center center no-repeat;
+}
 
 
 /*无内容提示*/
 .none-box{
-    padding: 30px 0;
+    padding: 22px 0;
     text-align: center;
-    line-height: 20px;
-    font-size: 16px;
+    line-height: 1;
+    font-size: 12px;
+    color: #A3A4AE;
 }
 
 /** 滚动条 **/
