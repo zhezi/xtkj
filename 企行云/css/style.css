@@ -521,7 +521,7 @@
   background-position: center;
   -moz-background-size: cover;
   background-size: cover;
-  background-image: url(../images/error_img.png);
+  background-image: url(../images/error_img.jpg);
   transition: transform .5s linear;
 }
 .knowledge-page li a:hover .news-img .newsImgCon{transform: scale(1.05);}
@@ -538,6 +538,18 @@
   line-height: 30px;
   padding: 0 0 8px;
   font-weight: bold;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+.knowledge-page .section .item .point{
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
 }
 .knowledge-page .section .item .author{
   color: #A1A2AC;
@@ -558,6 +570,9 @@
 }
 .subpage .section .box{
   padding: 30px 36px 25px;
+}
+.subpage .section .box:hover{
+  background: #FAFAFA;
 }
 .subpage .section .title {
   padding: 0 0 20px;
@@ -610,6 +625,9 @@
 }
 .subpage .section .point-box .away{
   padding-right: 34px;
+}
+.subpage .section .box02 .title{
+  padding: 0;
 }
 .subpage .section .idea-box dl{
   float: left;
