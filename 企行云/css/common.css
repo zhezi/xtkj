@@ -833,7 +833,7 @@ a.gray:hover{
     min-width: 40px;
     border-bottom: 1px solid #EFF0F5;
 }
-.table tr:hover td{
+.section .table tr:hover td{
     background: #F9FAFB;
 }
 .table th:first-child,
@@ -951,11 +951,11 @@ a.gray:hover{
 .delete-icon{
     background: url(../images/delete.png) center center no-repeat;
 }
-.add-icon{
+.up-icon{
     background: url(../images/up.png) center center no-repeat;
     margin: 0 0 0 6px;
 }
-.reduce-icon{
+.down-icon{
     background: url(../images/down.png) center center no-repeat;
     margin: 0 0 0 6px;
 }
@@ -993,7 +993,7 @@ a.gray:hover{
     background: url(../images/change.png) left center no-repeat;
     padding: 0 0 0 16px;
 }
-.add-btn{
+.add-icon{
     display: inline-block;
     background: url(../images/add.png) left center no-repeat;
     padding: 0 0 0 16px;
