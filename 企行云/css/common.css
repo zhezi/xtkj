@@ -869,16 +869,19 @@ a.gray:hover{
     height: 11px;
     display: inline-block;
     cursor: pointer;
+    background: url(../images/arrow.png) no-repeat;
+}
+.table .arrow-down{
     background: url(../images/arrow02.png) no-repeat;
+}
+.table .arrow-up{
+    background: url(../images/arrow01.png) no-repeat;
 }
 .table .search-icon{
     background: url(../images/search.png) no-repeat;
     width: 13px;
     height: 12px;
     margin: 0 0 0 4px;
-}
-.table .arrow-up{
-    background: url(../images/arrow01.png) no-repeat;
 }
 .table .tag{
     padding: 0 3px;

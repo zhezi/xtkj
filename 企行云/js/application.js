@@ -91,11 +91,6 @@ $(function($) {
         })
 
     })
-    if($('.arrow-icon').size()>0) {
-        $('.arrow-icon').bind('click',function(){
-            $(this).toggleClass('arrow-up');
-        });
-    };
 
     // 注册下拉选择
     if ($('.text-select').size()>0) {
