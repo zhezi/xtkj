@@ -574,6 +574,9 @@
 .subpage .section .box:hover{
   background: #FAFAFA;
 }
+.subpage .section .none-background{
+  background: none;
+}
 .subpage .section .title {
   padding: 0 0 20px;
 }
@@ -587,7 +590,7 @@
   display: inline-block;
 }
 .subpage .section .title .report-icon{
-  background: url(../images/switch.png) left center no-repeat;
+  background: url(../images/switch.png) 5px center no-repeat;
 }
 .subpage .section .title .update-icon{
   background: url(../images/update.png) 10px center no-repeat;
@@ -599,12 +602,19 @@
 .subpage .section .title .search-icon{
   background: url(../images/more-blue.png) 5px center no-repeat;
 }
-.subpage .section .title .up-icon{
+.subpage .section .title .add-icon{
   background: url(../images/add.png) 5px center no-repeat;
+}
+.subpage .section .title .deploy-icon{
+  background: url(../images/deploy.png) 5px center no-repeat;
 }
 .subpage .section .title h2{
   font-size: 18px;
   font-weight: bold;
+  margin: 0 10px 0 0;
+}
+.subpage .section .title .img{
+  width: 22px;
   margin: 0 10px 0 0;
 }
 .subpage .section .title .tag{
@@ -622,6 +632,47 @@
 }
 .subpage .section .title .time{
   padding-left: 40px;
+}
+.subpage .section .title .away{
+  margin-right: 40px;
+}
+.subpage .section .progress-box dl{
+  padding: 0 0 12px;
+  line-height: 16px;
+  display: flex;
+}
+.subpage .section .progress-box dl:last-child{
+  padding: 0;
+}
+.subpage .section .progress-box dt{
+  width: 166px;
+}
+.subpage .section .progress-box .short{
+  width: 116px;
+}
+.subpage .section .progress-box dd{
+  position: relative;
+  flex: 1;
+}
+.subpage .section .progress-box .bar-box{
+  height: 16px;
+  background: #D5E1FF;
+}
+.subpage .section .progress-box dd .bar{
+  position: absolute;
+  height: 16px;
+  background: #2A68FF;
+  width: 200px;
+}
+.subpage .section .tag-box .tag-item{
+    line-height: 20px;
+    display: inline-block;
+    margin: 8px 12px 0 0;
+    font-size: 14px;
+    font-size: 12px;
+}
+.subpage .section .point-box p{
+  line-height: 28px;
 }
 .subpage .section .point-box .away{
   padding-right: 34px;
@@ -641,6 +692,15 @@
   padding: 20px 0 10px;
   font-size: 12px;
 }
+.subpage .section .idea-box .small{
+  font-size: 12px;
+  line-height: 16px;
+}
+.subpage .section .idea-box span,
+.subpage .section .idea-box .sign{
+  vertical-align: middle;
+}
+
 .subpage .section .idea-box .search-icon{
   width: 13px;
   height: 12px;
@@ -652,6 +712,63 @@
 }
 .subpage .section .col-6{
   width: 47.5%;
+}
+.subpage .section .col-7{
+  width: 53%;
+}
+.subpage .section .col-5{
+  width: 40%;
+  text-align: right;
+  padding: 30px 0 0;
+}
+.subpage .section .special-table{
+  margin: 0;
+}
+.subpage .section .none-box{
+  font-size: 14px;
+  color: #4C505F;
+}
+.subpage .section .none-box .small{
+  font-size: 12px;
+  padding: 10px 0 0;
+}
+
+.special-table th:last-child,
+.special-table td:last-child,
+.special-table th:first-child,
+.special-table td:first-child{
+  padding: 0;
+}
+.special-table th,
+.special-table td{
+  padding: 5px 2px;
+  font-size: 12px;
+  font-weight: normal;
+  border-bottom: 0;
+}
+.special-table .one{
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  width: 70%;
+}
+.echart-box h3{
+  font-size: 16px;
+  line-height: 30px;
+  padding: 0 0 20px;
+  font-weight: bold;
+}
+.echart-box .col-4{
+  width: 31%;
+  float: left;
+  padding: 0 0 30px;
+  margin: 0 3.5% 0 0;
+  height: 262px;
+}
+.echart-box .col-4:nth-child(3n){
+  margin: 0;
 }
 
 /* 关联关系 */
@@ -696,7 +813,7 @@
 
 /* 客户档案 */
 
-.file-page .submenu-left .button{
+.file-index .submenu-left .button{
   max-width: 130px;
   line-height: 30px;
   background: linear-gradient(209deg, #01A5E3 0%, #2A68FF 100%);
@@ -705,42 +822,212 @@
   border: 0;
   font-size: 14px;
 }
-.file-page .submenu-left .button span{
+.file-index .submenu-left .button:hover{
+  color: #fff;
+}
+.file-index .submenu-left .button span{
   padding: 0 6px 0 0;
   font-size: 16px;
 }
-.file-page .section .box{
+.file-index .section .box{
   padding: 0;
 }
-.file-page .section .table{
+.file-index .section .table{
   margin: 0;
 }
-.file-page .table .img{
+.file-index .table .img{
   margin: 0 10px 0 0;
 }
 
 
-/*银票组合*/
-.page-make-up .section .point-box p{
-  line-height: 28px;
+/* 银行对账单 */
+.blank-page .section .box02 .col-6{
+  width: 44.5%;
 }
-.page-make-up .section .idea-box .gray{
-  font-size: 12px;
-  line-height: 16px;
+.blank-page .section .box02 dl{
+  width: 42%;
 }
-.page-make-up .section .idea-box dt span,
-.page-make-up .section .idea-box .sign{
-  vertical-align: middle;
+.blank-page .section .box02 dl:last-child{
+  width: 16%;
 }
-
-/* 升级特权 */
-
-.upgrade .article {
-  margin: 0 auto 30px;
+.blank-page .section .stip{
+  margin: -8px 0 20px;
+  line-height: 22px;
+}
+.blank-page .img-echart .col-4{
+  width: 31%;
+}
+.blank-page .img-echart .col-8{
+  width: 69%;
+}
+.blank-page .section .img-echart dl{
+  width: 50%;
+}
+.blank-page .section .img-echart dt{
+  padding: 0;
+}
+.blank-page .section .img-echart dd{
+  padding: 10px 0 26px;
+}
+.blank-page .section .img-echart2 dl{
+  width: 100%;
 }
 
 /* 财务报表 */
+.table-model li {
+  position: relative;
+  min-height: 50px;
+  background: #EFF0F5;
+  margin: 0 0 10px;
+}
+.table-model li.first {
+  background: none;
+  margin: 20px 0 0;
+}
 
-.finance-page {
-  box-shadow: 0px 3px 41px 2px rgba(92, 92, 92, 0.05);
+.table-model .idea {
+  padding: 0 48px 0 20px;
+}
+
+.table-model .hide-box {
+  display: none;
+}
+
+.table-model .hide-box .idea {
+  background: #fff;
+  border: 1px solid #EFF0F5;
+  border-top: 0;
+}
+
+.table-model .sign {
+  width: auto;
+  height: auto;
+  background: none;
+  font-size: 12px;
+  margin: 0 0 -8px;
+}
+.table-model .sign:hover{
+  opacity: 1;
+}
+
+.table-model .idea p {
+  float: left;
+  line-height: 14px;
+  padding: 18px 4px;
+}
+
+.table-model .idea .one {
+  width: 15%;
+  /* white-space: nowrap;
+  text-overflow: ellipsis;
+  -o-text-overflow: ellipsis;
+  overflow: hidden; */
+}
+
+.table-model .idea .two {
+  width: 11%;
+}
+
+.table-model .idea .three {
+  width: 7%;
+  padding: 18px 1%;
+}
+
+.table-model .idea .four {
+  width: 16%;
+}
+
+.table-model .idea .five {
+  width: 13%;
+}
+.table-model .idea .look-btn{
+  position: relative;
+  cursor: pointer;
+}
+.table-model .idea .look-btn:hover{
+  background: #2A68FF;
+  color: #fff;
+}
+.table-model .idea .look-btn:hover .icon{
+  background: url(../images/search-white.png) no-repeat;
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  width: 13px;
+  height: 12px;
+  display: block;
+  margin: -6px 0 0;
+}
+
+.table-model .idea-up {
+  position: absolute;
+  right: 36px;
+  top: 19px;
+  width: 13px;
+  height: 13px;
+  background: url(../images/up2.png) no-repeat;
+}
+
+.table-model .idea-down{
+  background: url(../images/down2.png) no-repeat;
+}
+
+/* 客户档案全览 */
+.file-page .section .box01 .title{
+  padding: 0;
+}
+.file-page .section .box01 .point-box{
+  display: flex;
+  justify-content: space-between;
+  margin: 0 0 16px;
+}
+.file-page .section .box01 .col-8 dl{
+  display: block;
+}
+.file-page .section .box01 .col-8 p{
+  padding: 0 0 10px;
+  font-size: 13px;
+}
+.file-page .section .box01 .col-8 .time{
+  display: flex;
+  justify-content: space-between;
+  color: #000;
+  padding:5px 7px;
+  opacity: 0.7;
+}
+.file-page .section .caption h3{
+  padding: 24px 0 0;
+  font-size: 16px;
+  font-weight: 600;
+}
+.file-page .section .caption p{
+  padding: 18px 0 0;
+}
+.file-page .section .caption .big{
+  padding: 0;
+  font-size: 24px;
+  font-weight: 600;
+}
+.file-page .echart-box .col-4{
+  height: auto;
+  padding: 30px 0 0;
+}
+
+.file-page .section .row-12 .idea-box dl{
+  width: 20%;
+}
+.file-page .section .row-12 .idea-box .long{
+  width: 40%;
+}
+.file-page .row-12 .col-8{
+  width: 65%;
+}
+.file-page .row-12 .col-4{
+  width: 30%;
+}
+.file-page .row-12 .col-4 h3{
+  padding: 0 0 30px;
+  font-size: 16px;
+  font-weight: 600;
+  text-align: center;
 }

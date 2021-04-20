@@ -728,25 +728,21 @@ a.gray:hover{
 
 /*菜单切换*/
 .switch{
-    max-width: 1200px;
-    background: #f6f8fb;
-    height: 56px;
+    background: #EFF0F5;
     margin: 0;
 }
 .switch a{
     position: relative;
-    line-height: 54px;
+    line-height: 38px;
     display: inline-block;
-    font-size: 16px;
-    margin: 0 32px 0 0;
     color: #2f2f2f;
-    padding: 0 24px;
+    padding: 0 30px;
     border: 0;
+    margin: 0 15px 0 0;
 }
 .switch a:hover,
 .switch .active{
-    color: #2A68FF;
-    border-bottom: 2px solid #2A68FF;
+    background: #fff;
 }
 .switch em{
     position: absolute;
@@ -981,9 +977,22 @@ a.gray:hover{
     background: url(../images/look.png) center center no-repeat;
     margin: 0 6px 0 -20px;
 }
+.unlook-icon{
+    background: url(../images/unlook.png) center center no-repeat;
+    margin: 0 6px 0 -20px;
+}
+.set-icon{
+    background: url(../images/set.png) 5px center no-repeat;
+}
 .member-icon{
     background: url(../images/member.png) no-repeat;
     margin: 0 3px 0 0;
+}
+.search-icon-blue{
+    background: url(../images/more-blue.png) left center no-repeat;
+    width: auto;
+    height: auto;
+    padding: 0 0 0 16px;
 }
 .delopy-icon{
     width: 13px;
@@ -1014,6 +1023,10 @@ a.gray:hover{
 .tag-orange .tag-item{
     border: 1px solid #FF6817;
     color: #FF6817;
+}
+.tag-box .tag-black{
+    border: 1px solid #4C505F;
+    color: #4C505F;
 }
 .tag-orange .tag-item .tag-close{
     width: 10px;
@@ -1074,6 +1087,10 @@ a.gray:hover{
     -webkit-box-shadow: 2px 1px 12px #e2e8f1;
     -moz-box-shadow: 2px 1px 12px #e2e8f1;
     box-shadow: 0px 0px 12px #e2e8f1;
+}
+
+.sign .speak.blue{
+    color:#2A68FF;
 }
 .sign:hover .speak{
     opacity: 1;

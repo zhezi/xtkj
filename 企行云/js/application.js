@@ -76,21 +76,37 @@ $(function($) {
 
   (function(){
     // 菜单切换
-    $('.idea-box').each(function(){
-      var $this=$(this);
-      $this.find('.switch a').click(function(){
+    $('.switch').each(function(){
+      $('.switch a').click(function(){
           var _this=$(this),_index=$(this).index();
           _this.addClass('active').siblings('a').removeClass('active');
-          $this.find('.switch-box').eq(_index).fadeIn(1000).siblings('.switch-box').hide();
+          $('.switch-box').eq(_index).fadeIn(1000).siblings('.switch-box').hide();
           if($(".nano").size()>0){
-            $this.find('.switch-box').eq(_index).find(".nano").nanoScroller();
-          }
-          if($(".idea-box02").size()>0){
-            Height()
+            $('.switch-box').eq(_index).find(".nano").nanoScroller();
           }
         })
 
     })
+
+    if ($('.table-model').size()>0) {
+      $('.table-model li').each(function(){
+          var _this=$(this);
+          _this.attr('data-open','true');
+      });
+      $('.table-model .idea-up').bind('click',function(){
+          var _this=$(this),_dataOpen=_this.attr('data-open');
+          if(_dataOpen=='false'){
+              _this.prev('.hide-box').slideUp(500);
+              _this.removeClass('idea-down');
+              _this.attr('data-open','true');
+          }else{
+              _this.prev('.hide-box').slideDown(500);
+              _this.addClass('idea-down');
+              _this.attr('data-open','false');
+          }
+      });
+    }
+
 
     // 注册下拉选择
     if ($('.text-select').size()>0) {
