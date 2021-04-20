@@ -712,6 +712,9 @@
 .file-page .section .box{
   padding: 0;
 }
+.file-page .section .table{
+  margin: 0;
+}
 .file-page .table .img{
   margin: 0 10px 0 0;
 }
