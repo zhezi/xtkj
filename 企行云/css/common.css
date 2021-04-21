@@ -1140,11 +1140,19 @@ a.gray:hover{
 
 /*无内容提示*/
 .none-box{
-    padding: 22px 0;
+    padding: 30px 0;
     text-align: center;
     line-height: 1;
+}
+.none-box .small{
     font-size: 12px;
-    color: #A3A4AE;
+}
+.none-box .away{
+    margin: 10px 0 0;
+}
+.none-box .button{
+    max-width: 210px;
+    margin: 20px 0 0;
 }
 
 /** 滚动条 **/

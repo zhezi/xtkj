@@ -724,14 +724,6 @@
 .subpage .section .special-table{
   margin: 0;
 }
-.subpage .section .none-box{
-  font-size: 14px;
-  color: #4C505F;
-}
-.subpage .section .none-box .small{
-  font-size: 12px;
-  padding: 10px 0 0;
-}
 
 .special-table th:last-child,
 .special-table td:last-child,
@@ -1030,4 +1022,7 @@
   font-size: 16px;
   font-weight: 600;
   text-align: center;
+}
+.file-page .section .bank-box .idea-box dl{
+  min-height: 72px;
 }

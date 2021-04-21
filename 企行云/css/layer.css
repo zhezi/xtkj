@@ -673,14 +673,14 @@
 
 /* 新建客户档案 */
 
-#layer-case .layer-tip{
+#layer-file .layer-tip{
     margin: -251px 0 0 -300px;
 }
-#layer-case dt{
+#layer-file dt{
     line-height: 1;
     padding: 0 0 12px;
 }
-#layer-case .layer-box{
+#layer-file .layer-box{
     padding: 30px 0 50px;
 }
 

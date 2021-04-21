@@ -69,7 +69,7 @@
     <div class="subheader">
       <div class="suheader-box clearfix">
         <div class="submenu-left float_l">
-          <a href="javascript:void(0);" class="button button-blue"><span>+</span>新建客户档案</a>
+          <a href="javascript:void(0);" class="button button-blue add-file"><span>+</span>新建客户档案</a>
         </div>
         <div class="submenu-right float_r">
           <div class="item-select">
@@ -195,7 +195,7 @@
                   </tr>
                 </table>
             </div>
-            <div class="none-box">没有更多了</div>
+            <div class="none-box"><p class="gray">没有更多了</p></div>
           </div>
         </div>
       </article>
@@ -215,6 +215,81 @@
   <!-- container over -->
 
 
+<!-- 新建客户档案 -->
+<div class="layer" id="layer-file">
+  <div class="cover"></div>
+  <div class="layer-tip">
+      <a href="javascript:void(0);" class="close"></a>
+      <h2>新建客户档案</h2>
+      <div class="layer-box">
+          <form action="">
+            <div class="form">
+              <dl>
+                <dt>客户档案名称（如客户名称需要保密，可以输入别称或代号）</dt>
+                <dd>
+                  <div class="item-box">
+                      <input type="text"  value="" class="text" placeholder="必填内容">
+                  </div>
+                </dd>
+              </dl>
+              <dl>
+                <dt>客户类型</dt>
+                <dd>
+                  <div class="item-box item-select">
+                      <input type="text"  value="" class="text" placeholder="企业" readonly="">
+                      <span class="arrow-bottom"></span>
+                      <ul>
+                        <li>企业</li>
+                        <li>个人</li>
+                      </ul>
+                  </div>
+                </dd>
+              </dl>
+              <dl>
+                <dt>选择银行模板</dt>
+                <dd class="row-2">
+                  <div class="item-box item-select">
+                      <input type="text"  value="" class="text" placeholder="农林牧渔" readonly="">
+                      <span class="arrow-bottom"></span>
+                      <ul>
+                        <li>企业</li>
+                        <li>个人</li>
+                      </ul>
+                  </div>
+                  <div class="item-box item-select">
+                      <input type="text"  value="" class="text" placeholder="养殖业" readonly="">
+                      <span class="arrow-bottom"></span>
+                      <ul>
+                        <li>企业</li>
+                        <li>个人</li>
+                      </ul>
+                  </div>
+                  <div class="item-box item-select">
+                      <input type="text"  value="" class="text" placeholder="生猪养殖" readonly="">
+                      <span class="arrow-bottom"></span>
+                      <ul>
+                        <li>企业</li>
+                        <li>个人</li>
+                      </ul>
+                  </div>
+                  <div class="item-box item-select">
+                      <input type="text"  value="" class="text" placeholder="生猪养殖" readonly="">
+                      <span class="arrow-bottom"></span>
+                      <ul>
+                        <li>企业</li>
+                        <li>个人</li>
+                      </ul>
+                  </div>
+                </dd>
+              </dl>
+            </div>
+          </form>
+          <div class="btn">
+            <a href="javascript:void(0);" class="button button-blue">下一步</a>
+          </div>
+      </div>
+  </div>
+</div>
   <script language="javascript" type="text/javascript" src="js/jquery.js"></script>
   <script language="javascript" type="text/javascript" src="js/jquery.easing.js"></script>
   <script language="javascript" type="text/javascript" src="js/jquery.nanoscroller.min.js"></script>
