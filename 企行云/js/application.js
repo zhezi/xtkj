@@ -174,7 +174,7 @@ $(function($) {
       })
     }
     if($('.layer-side').size()>0){
-      $('.report-icon').bind('click',function () {
+      $('.report-change').bind('click',function () {
          $('#layer-report-file').fadeIn();
          nano_height2();
          $(window).resize(function() {
@@ -183,6 +183,12 @@ $(function($) {
          if($('.nano').size()>0){
              $(".nano").nanoScroller();
          }
+      })
+      $('.member-btn').bind('click',function () {
+         $('#layer-member').fadeIn();
+      })
+      $('.history-btn').bind('click',function () {
+         $('#layer-history').fadeIn();
       })
       $('.layer-side .cover,.layer-side .close').click(function(){
           $(".layer-side").fadeOut();
