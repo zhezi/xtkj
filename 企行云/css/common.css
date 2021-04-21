@@ -240,7 +240,7 @@ a.gray:hover{
 .header .head-box{
     position: relative;
     max-width: 1360px;
-    padding: 0 10px;
+    padding: 0 60px;
     margin: 0 auto;
     color: #fff;
 }
@@ -564,7 +564,7 @@ a.gray:hover{
 }
 .subheader .suheader-box{
     max-width: 1360px;
-    padding: 0 10px;
+    padding: 0 60px;
     margin: 0 auto;
 }
 .subheader .submenu-left a{

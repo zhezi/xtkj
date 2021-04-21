@@ -49,10 +49,8 @@ $(function($) {
       $(".layer-side .nano").height($height-200);
   }
   nano_height();
-  nano_height2()
   $(window).resize(function() {
     nano_height();
-    nano_height2()
   })
   if($('.nano').size()>0){
       $(".nano").nanoScroller();

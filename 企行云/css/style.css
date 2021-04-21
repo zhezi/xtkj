@@ -401,7 +401,7 @@
 /* 知识库 */
 .knowledge-page .article{
   max-width: 1360px;
-  padding: 0 10px;
+  padding: 0 60px;
 }
 .knowledge-page .banner{
   background: url(../images/konwledge-banner.jpg) center top no-repeat;
@@ -560,6 +560,9 @@
 .subpage {
   background: #EDF2F6;
   min-height: 100vh;
+}
+.subpage .section{
+  margin: 0 60px;
 }
 .subpage .section .article{
   max-width: 1360px;

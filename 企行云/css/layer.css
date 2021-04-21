@@ -690,3 +690,26 @@
     text-align: center;
     font-size: 16px;
 }
+/* 无权限 */
+.no-permission{
+    position: relative;
+}
+/* .no-permission .img{
+    -webkit-filter: blur(10px);
+   -moz-filter: blur(10px);
+    -ms-filter: blur(10px);
+        filter: blur(10px);
+
+} */
+.no-permission .none-box{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+}
+.no-permission .none-box h3{
+    font-size: 18px;
+    font-weight: normal!important;
+    padding: 22% 0 0!important;
+}
