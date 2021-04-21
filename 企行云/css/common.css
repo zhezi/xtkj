@@ -161,6 +161,7 @@ a.gray:hover{
 .button-gray{
     background: #B1B1B1;
     color: #fff;
+    width: 100%;
 }
 /*灰遮罩*/
 .unbind,
