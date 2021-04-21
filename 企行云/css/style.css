@@ -574,7 +574,7 @@
 .subpage .section .box:hover{
   background: #FAFAFA;
 }
-.subpage .section .none-background{
+.subpage .section .none-background:hover{
   background: none;
 }
 .subpage .section .title {
