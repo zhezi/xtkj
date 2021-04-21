@@ -189,6 +189,13 @@ $(function($) {
       })
       $('.history-btn').bind('click',function () {
          $('#layer-history').fadeIn();
+         nano_height();
+         $(window).resize(function() {
+           nano_height();
+         })
+         if($('.nano').size()>0){
+             $(".nano").nanoScroller();
+         }
       })
       $('.layer-side .cover,.layer-side .close').click(function(){
           $(".layer-side").fadeOut();
