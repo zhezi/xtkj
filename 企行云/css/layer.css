@@ -335,22 +335,6 @@
     width: 100%;
     max-width: 1172px;
 }
-#layer-report .report-page{
-    background: #f6f7fb;
-    padding: 20px;
-    text-align: left;
-    font-size: 12px;
-}
-#layer-report .report-page li,
-#layer-report .report-page h3{
-    font-size: 12px;
-}
-#layer-report .report-page h2{
-    background: none;
-    margin: 0;
-    text-align: left;
-    line-height: 16px;
-}
 #layer-report .table th,
 #layer-report .table td{
     padding: 8px 4px;

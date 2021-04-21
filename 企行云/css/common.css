@@ -286,6 +286,7 @@ a.gray:hover{
     display: block;
     text-align: center;
     z-index: 5;
+    font-weight: bold;
     transition: all 0.5s ease;
     -webkit-transition: all 0.5s ease;
     border-bottom: 1px solid transparent;
@@ -467,13 +468,61 @@ a.gray:hover{
     -webkit-box-shadow: 0 0 0;
     -moz-box-shadow: 0 0 0;
     box-shadow: 0 0 0;
+    height: 126px;
+}
+.header02 .header-bg{
+    position: absolute;
+    left: 0;
+    top: 0px;
+    width: 100%;
+    height: 0px;
+    background: #fff;
+    transition: all 0.2s ease;
+    -webkit-transition: all 0.2s ease;
+}
+.header-white .header-bg{
+    height: 60px;
 }
 .header02 .head-box{
-    padding: 32px 0;
+    position: relative;
+    padding: 32px 60px;
+    transition: all 0.5s ease;
+    -webkit-transition: all 0.5s ease;
+}
+.header-white .head-box{
+    padding: 0 60px;
 }
 .header02 .logo{
     padding: 62px 0 0 224px;
     margin: 0 40px 0 0;
+}
+.header-white .logo{
+    background: url(../images/logo-black.png) 0 center no-repeat;
+    margin: 10px 40px 10px 0;
+    padding: 40px 0 0 145px;
+}
+.header-white .nav a {
+    color: #4C505F;
+    font-size: 16px;
+}
+.header-white .nav .current,
+.header-white .nav .active,
+.header-white .nav .name:hover{
+    color: #2A68FF;
+    border-bottom: 1px solid #2A68FF;
+}
+.header-white .user-name,
+.header-white .user p,
+.header-white .item .login-btn,
+.header-white .item .register-btn{
+    color:#4C505F;
+}
+.header-white .user p{
+    background: url(../images/arrow-bottom-gray.png) 96% center no-repeat;
+    color:#4C505F;
+}
+.header-white .user.active p{
+    background: url(../images/arrow-top-gray.png) 96% center no-repeat;
 }
 .header02 .nav .name .new{
     background: url(../images/new.png) no-repeat;

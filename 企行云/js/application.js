@@ -7,7 +7,13 @@ $(function($) {
       }, function() {
               $(this).find('.name').removeClass('current');
               $('.subnav').hide();
-      });    
+      });
+      $('.header02').prepend("<p class='header-bg'></p>");
+      $('.header02').hover(function() {
+        $(this).addClass('header-white')
+      }, function() {
+        $(this).removeClass('header-white')
+      });
   }
 
   //登录后下拉条
@@ -40,10 +46,12 @@ $(function($) {
       })
   };
 
+  // 右侧弹层不带底部按钮
   function nano_height() {
       var $height=$(window).height();
       $(".layer-side .nano").height($height-120);
   }
+  // 右侧弹层带底部按钮
   function nano_height2() {
       var $height=$(window).height();
       $(".layer-side .nano").height($height-200);
@@ -70,6 +78,7 @@ $(function($) {
 
     })
 
+    // 财务报表table单行展开收起
     if ($('.table-model').size()>0) {
       $('.table-model li').each(function(){
           var _this=$(this);
@@ -88,7 +97,6 @@ $(function($) {
           }
       });
     }
-
 
     // 注册下拉选择
     if ($('.text-select').size()>0) {
@@ -161,7 +169,7 @@ $(function($) {
             });
         })
     };
-
+    // 弹层中间区域展示
     if($('.layer').size()>0){
       $('.add-file').bind('click',function () {
          $('#layer-file').fadeIn();
@@ -171,6 +179,7 @@ $(function($) {
           $('html').css('overflow-y','scroll');
       })
     }
+    // 弹层右侧展示
     if($('.layer-side').size()>0){
       $('.report-change').bind('click',function () {
          $('#layer-report-file').fadeIn();
@@ -200,7 +209,7 @@ $(function($) {
           $('html').css('overflow-y','scroll');
       })
     }
-    // table展开收起
+    // 普通table单行展开收起
     if($('.show-tr').size()>0){
       $('.show-tr').each(function(){
           var _this=$(this);
@@ -226,48 +235,7 @@ $(function($) {
       });
     }
 
-    if($('.report-page').size()>0){
-        $('.box .up').each(function(){
-            var _this=$(this);
-            _this.attr('data-open','true');
-        });
-        $('.box .up').bind('click',function(){
-            var _this=$(this),_dataOpen=_this.attr('data-open');
-            if(_dataOpen=='false'){
-                _this.prev('.hide-box').slideUp(500);
-                _this.removeClass('down');
-                _this.html('');
-                _this.attr('data-open','true');
-            }else{
-                _this.prev('.hide-box').slideDown(500);
-                _this.addClass('down');
-                _this.html('收起');
-                _this.attr('data-open','false');
-            }
-        });
-
-        $('.table-model li').each(function(){
-            var _this=$(this);
-            _this.attr('data-open','true');
-        });
-        $('.table-model .idea-up').bind('click',function(){
-            var _this=$(this),_dataOpen=_this.attr('data-open');
-            if(_dataOpen=='false'){
-                _this.prev('.hide-box').slideUp(500);
-                _this.removeClass('.idea-down');
-                _this.html('展开');
-                _this.attr('data-open','true');
-            }else{
-                _this.prev('.hide-box').slideDown(500);
-                _this.addClass('.idea-down');
-                _this.html('收起');
-                _this.attr('data-open','false');
-            }
-        });
-
-    }
     createImageBg();
-
     function createImageBg() {
         $('.newsImgCon').each(function () {
             var $this = $(this);
@@ -278,6 +246,11 @@ $(function($) {
         });
 
     }
+    if ($('.m-check').size()>0) {
+        $('.m-check em').bind('click',function(){
+            $(this).toggleClass('active');
+        });
+    };
 
     // back-top
     if($('.back-top').size()>0){
