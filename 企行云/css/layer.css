@@ -224,15 +224,16 @@
     z-index: 4;
     max-height: 90px;
     overflow-x: hidden;
-    border-bottom: 1px solid #e7e9f1;
+    border-bottom: 1px solid #DCDDE3;
     border-top: none;
 }
 .layer .item-box li{
     padding: 0 20px;
     font-size: 14px;
     line-height: 30px;
-    border-left: 1px solid #e7e9f1;
-    border-right: 1px solid #e7e9f1;
+    border-left: 1px solid #DCDDE3;
+    border-right: 1px solid #DCDDE3;
+    cursor: pointer;
 }
 .layer .layer-box .cont{
     line-height: 30px;
@@ -710,12 +711,12 @@
 /* 银行流水分析 */
 #layer-bank-analysis .layer-tip{
     width: 700px;
-    margin: -212px 0 0 -370px;
+    margin: -226px 0 0 -370px;
 }
 #layer-bank-analysis .layer-box {
     max-width: 600px;
     margin: 0 auto;
-    padding: 30px 56px 0;
+    padding: 30px 56px;
     line-height: 1;
     text-align: left;
 }
@@ -725,8 +726,8 @@
 #layer-bank-analysis .col-9{
     width: 68%;
     position: relative;
-    padding: 0 0 60px;
-    min-height: 212px;
+    padding: 0 0 40px;
+    min-height: 260px;
 }
 #layer-bank-analysis .col-9 .btn{
     bottom: 0;
@@ -743,21 +744,30 @@
     width: 50%;
 }
 #layer-bank-analysis .form .text{
-    width: 80%;
-    padding: 0 10%;
+    width: 158px;
+}
+#layer-bank-analysis .form ul{
+    top: 37px;
 }
 #layer-bank-analysis .form .item-box{
     margin: 0;
 }
 
-#layer-bank-analysis .point p{
-    padding: 0 0 12px;
+#layer-bank-analysis .point{
     line-height: 20px;
+    padding: 10px 0 0;
+}
+#layer-bank-analysis .point .away{
+    padding: 0 0 10px;
 }
 #layer-bank-analysis .item dl{
     justify-content: space-between;
+    margin: 0;
 }
 #layer-bank-analysis .item a{
     border-bottom: 1px solid #2A68FF;
     line-height: 30px;
+}
+#layer-bank-analysis .special-table th,#layer-bank-analysis .special-table td{
+    padding: 3px 2px;
 }
