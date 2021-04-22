@@ -838,20 +838,21 @@ a.gray:hover{
     background: url(../images/checked2.png) center center no-repeat;
 }
 .upload{
-    width: 116px;
-    height: 30px;
-    line-height: 30px;
+    width: 94px;
+    height: 28px;
+    line-height: 28px;
     text-align: center;
     position: relative;
     cursor: pointer;
-    border: 1px solid #cfe0f4;
+    border: 1px solid #AEB0B6;
 }
 .upload-text{
     position: absolute;
-    left: 126px;
+    left: 102px;
     top:0;
-    line-height: 30px;
+    line-height: 28px;
     width: 50%;
+    color: #A1A2AC;
 }
 .upload-input{    
     opacity: 0;
