@@ -758,7 +758,9 @@
 #layer-bank-analysis .form .item-box{
     margin: 0;
 }
-
+#layer-bank-analysis .file-name{
+    height: 74px;
+}
 #layer-bank-analysis .point{
     line-height: 20px;
     padding: 10px 0 0;
