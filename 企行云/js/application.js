@@ -9,11 +9,16 @@ $(function($) {
               $('.subnav').hide();
       });
       $('.header02').prepend("<p class='header-bg'></p>");
-      $('.header02').hover(function() {
-        $(this).addClass('header-white')
-      }, function() {
-        $(this).removeClass('header-white')
-      });
+  }
+  if($('.header02').size()>0){
+    $(window).scroll(function () {
+        var $scrollTop = $(window).scrollTop();
+        if($scrollTop > 60){
+          $('.header02').stop().addClass('header-white');
+        } else{
+          $('.header02').removeClass('header-white')
+        }
+    })
   }
 
   //登录后下拉条

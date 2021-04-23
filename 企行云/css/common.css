@@ -228,16 +228,6 @@ a.gray:hover{
     -webkit-transition: all 0.5s ease;
     line-height: 0;
 }
-.special-header{
-    background: none;
-}
-.header-fixed{
-    position: fixed;
-    top: 0;
-    left: 0;
-    transition: all 0.5s ease;
-    -webkit-transition: all 0.5s ease;
-}
 .header .head-box{
     position: relative;
     max-width: 1360px;
@@ -265,7 +255,7 @@ a.gray:hover{
 .header .nav{
     float: left;
     width: auto;
-    padding: 10px 0 0 100px;
+    padding: 10px 0 0 7.35%;
 }
 .header .nav li{
     margin: 0 1px;
@@ -322,7 +312,7 @@ a.gray:hover{
     background: #2A68FF;;
 }
 .header .item{
-    width: 320px;
+    width: 250px;
     text-align: right;
     right: 0;
     top: 16px;
@@ -480,6 +470,14 @@ a.gray:hover{
     background: #fff;
     transition: all 0.2s ease;
     -webkit-transition: all 0.2s ease;
+    box-shadow: 0px 2px 20px 0px rgba(215, 234, 254, 0.5);
+}
+.header-white{
+    position: fixed;
+    top: 0;
+    left: 0;
+    transition: all 0.5s ease;
+    -webkit-transition: all 0.5s ease;
 }
 .header-white .header-bg{
     height: 60px;
@@ -491,7 +489,7 @@ a.gray:hover{
     -webkit-transition: all 0.5s ease;
 }
 .header-white .head-box{
-    padding: 0 60px;
+    padding: 0 20px;
 }
 .header02 .logo{
     padding: 62px 0 0 224px;
