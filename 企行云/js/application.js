@@ -174,6 +174,9 @@ $(function($) {
       $('.add-file').bind('click',function () {
          $('#layer-file').fadeIn();
       })
+      if($('.nano').size()>0){
+          $(".nano").nanoScroller();
+      }
       $('.layer .cover,.layer .close,.layer .close-btn').click(function(){
           $(".layer ").fadeOut();
           $('html').css('overflow-y','scroll');

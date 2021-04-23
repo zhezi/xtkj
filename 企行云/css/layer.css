@@ -779,3 +779,6 @@
 #layer-bank-analysis .special-table th,#layer-bank-analysis .special-table td{
     padding: 3px 2px;
 }
+#layer-bank-analysis .nano{
+    height: 240px;
+}
