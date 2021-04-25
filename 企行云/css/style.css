@@ -714,7 +714,8 @@
   margin: 0 -36px 28px;
 }
 .subpage .section .col-6{
-  width: 49.2%;
+  width: 49.5%;
+  width: calc(50% - 5px);
 }
 .subpage .section .col-7{
   width: 53%;
