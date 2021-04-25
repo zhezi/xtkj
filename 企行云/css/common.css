@@ -1064,10 +1064,14 @@ a.gray:hover{
 }
 .tag-box .tag-item{
     line-height: 24px;
-    padding: 0 14px;
+    padding: 0 10px;
     display: inline-block;
     margin: 0 12px 12px 0;
     font-size: 14px;
+}
+.tag-box .tag-item .loading-img{
+    vertical-align: top;
+    margin: 3px 0 0 10px;
 }
 .tag-orange .tag-item{
     border: 1px solid #FF6817;
