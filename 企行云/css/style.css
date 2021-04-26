@@ -868,7 +868,16 @@
 .blank-page .section .img-echart2 dl{
   width: 100%;
 }
-
+.blank-page .box08 .col-4{
+  width: 25%;
+  float: left;
+}
+.blank-page .box08 th{
+  padding: 0 0 10px;
+}
+.blank-page .box08 .search-icon-blue{
+  margin: 14px 0 0;
+}
 /* 财务报表 */
 .table-model li {
   position: relative;
