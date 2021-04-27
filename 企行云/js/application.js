@@ -212,10 +212,13 @@ $(function($) {
              $(".nano").nanoScroller();
          }
       })
-      $('.layer-side .cover,.layer-side .close').click(function(){
-          $(".layer-side").fadeOut();
-          $('html').css('overflow-y','scroll');
-      })
+      $('.layer-side').each(function(){
+          var _this=$(this);
+          _this.find('.cover,.close').bind('click',function(){
+            // $('html').css('overflow-y','scroll');
+            _this.fadeOut();
+          });
+      });
     }
     // 普通table单行展开收起
     if($('.show-tr').size()>0){
