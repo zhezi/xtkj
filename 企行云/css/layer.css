@@ -265,6 +265,19 @@
 .layer .btn-2 .button-away{
     margin: 0 0 0 6%;
 }
+.time-box.layui-input-inline{
+    display: block;
+}
+.time-box .layui-input {
+    background:url(../images/time.png) 95% center no-repeat;
+    padding: 0 30px 0 10px;
+    width: 210px;
+    display: inline-block;
+    margin: 0 10px 20px 0;
+}
+.time-box2 .layui-input{
+    width: 120px;
+}
 
 .step{
     margin: 10px 0;
