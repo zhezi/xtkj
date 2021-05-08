@@ -411,6 +411,7 @@ a.gray:hover{
 }
 .header .user li a:hover{
     background: #2A68FF;
+    color: #fff;
 }
 .header .user li span{
     display: inline-block;
@@ -433,6 +434,18 @@ a.gray:hover{
 }
 .header .user .icon04{
     background:url(../images/icon12.png) no-repeat;
+}
+.header .user a:hover .icon01{
+    background: url(../images/icon09-hover.png) no-repeat;   
+}
+.header .user a:hover .icon02{
+    background:url(../images/icon10-hover.png) no-repeat;
+}
+.header .user a:hover .icon03{
+    background:url(../images/icon11-hover.png) no-repeat;
+}
+.header .user a:hover .icon04{
+    background:url(../images/icon12-hover.png) no-repeat;
 }
 .header .user li a:hover span{
     opacity: 1;
@@ -1157,12 +1170,23 @@ a.gray:hover{
     width: 40px;
 }
 .share-box a{
+    position: relative;
     width: 40px;
     height: 40px;
     box-shadow: 0px 2px 4px 0px #CEE5F6;
     border-radius: 6px;
     display: block;
     margin: 15px 0 0;
+}
+.share-box a em{
+    position: absolute;
+    right: -1px;
+    top: -1px;
+    background:#ec5a5a;
+    width: 7px;
+    height: 7px;
+    display: block;
+    border-radius: 50%;
 }
 .share-box .notice-icon{
     background: #FFFFFF url(../images/notice.png) center center no-repeat;

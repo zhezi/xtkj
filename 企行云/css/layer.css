@@ -228,6 +228,26 @@
     border-bottom: 1px solid #DCDDE3;
     border-top: none;
 }
+
+.layer .item-box ul::-webkit-scrollbar
+{
+	width: 8px;
+	height: 16px;
+	background-color: #F5F5F5;
+}
+ 
+/*定义滚动条轨道 内阴影+圆角*/
+.layer .item-box ul::-webkit-scrollbar-track
+{
+    cursor: pointer;
+}
+ 
+/*定义滑块 内阴影+圆角*/
+.layer .item-box ul::-webkit-scrollbar-thumb
+{
+    background: #bcbcbc;
+    cursor: pointer;
+}
 .layer .item-box li{
     padding: 7px 16px;
     font-size: 12px;

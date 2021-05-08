@@ -823,7 +823,7 @@
   max-width: 130px;
   line-height: 30px;
   background: linear-gradient(209deg, #01A5E3 0%, #2A68FF 100%);
-  box-shadow: 0px -4px 10px 0px rgba(2, 119, 229, 0.4);
+  box-shadow: 0px 4px 10px 0px rgba(2, 119, 229, 0.4);
   border-radius: 4px;
   border: 0;
   font-size: 14px;
