@@ -533,8 +533,8 @@
 }
 .layer-line{
     background: #EFF0F5;
-    position: fixed;
-    right: 330px;
+    position: absolute;
+    right: 335px;
     top: 88px;
     width: 1px;
     height: calc(100% - 88px);
@@ -778,7 +778,7 @@
 }
 #layer-bank-analysis dl{
     display: flex;
-    align-items: top;
+    align-items: center;
     margin: 0 0 20px;
 }
 #layer-bank-analysis .form dt{
