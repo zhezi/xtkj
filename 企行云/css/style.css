@@ -994,7 +994,24 @@
 .file-page .section .box01 .point-box{
   display: flex;
   justify-content: space-between;
-  margin: 0 0 16px;
+  margin: 3px 0 16px;
+}
+.file-page .section .box01 .point-box p{
+  width: 49%;
+}
+.file-page .section .box01 .point-box .name{
+  text-align: left;
+  display: inline-block;
+  vertical-align: top;
+  max-width: 80%;
+}
+.file-page .section .box01 .point-box p:last-child{
+  text-align: right;
+}
+.file-page .section .box01 .point-box a{
+  white-space: nowrap;
+  display: inline-block;
+  vertical-align: top;
 }
 .file-page .section .box01 .col-8 dl{
   display: block;

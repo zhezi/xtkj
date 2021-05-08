@@ -463,13 +463,8 @@ a.gray:hover{
     position: fixed;
     top: 0;
     left: 0;
-    transition: all 0.5s ease;
-    -webkit-transition: all 0.5s ease;
     background: #fff;
     box-shadow: 0px 2px 20px 0px rgba(215, 234, 254, 0.5);
-}
-.header-white .header-bg{
-    height: 60px;
 }
 .header02 .head-box{
     position: relative;
@@ -876,7 +871,7 @@ a.gray:hover{
 }
 .table th:last-child,
 .table td:last-child{
-    padding-right: 36px;
+    padding-right: 30px;
 }
 .table .show-tr{
     cursor: pointer;
