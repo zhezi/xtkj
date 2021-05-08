@@ -8,7 +8,6 @@ $(function($) {
               $(this).find('.name').removeClass('current');
               $('.subnav').hide();
       });
-      $('.header02').prepend("<p class='header-bg'></p>");
   }
   if($('.header02').size()>0){
     $(window).scroll(function () {
