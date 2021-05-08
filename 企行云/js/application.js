@@ -19,6 +19,16 @@ $(function($) {
         }
     })
   }
+  if($('.subheader').size()>0){
+    $(window).scroll(function () {
+        var $scrollTop = $(window).scrollTop();
+        if($scrollTop > 60){
+          $('.subheader').stop().addClass('subheader-fixed');
+        } else{
+          $('.subheader').removeClass('subheader-fixed')
+        }
+    })
+  }
 
   //登录后下拉条
   if ($('.user').size()>0) {
@@ -189,7 +199,7 @@ $(function($) {
     // 弹层右侧展示
     if($('.layer-side').size()>0){
       $('.report-change').bind('click',function () {
-         $('#layer-report-file').fadeIn();
+         $('#layer-report-file').animate({right:"0"});
          nano_height2();
          $(window).resize(function() {
            nano_height2();
@@ -199,10 +209,10 @@ $(function($) {
          }
       })
       $('.member-btn').bind('click',function () {
-         $('#layer-member').fadeIn();
+         $('#layer-member').animate({right:"0"});
       })
       $('.history-btn').bind('click',function () {
-         $('#layer-history').fadeIn();
+         $('#layer-history').animate({right:"0"});
          nano_height();
          $(window).resize(function() {
            nano_height();
@@ -215,7 +225,7 @@ $(function($) {
           var _this=$(this);
           _this.find('.cover,.close').bind('click',function(){
             // $('html').css('overflow-y','scroll');
-            _this.fadeOut();
+            _this.animate({right:"-100%"});
           });
       });
     }

@@ -602,10 +602,18 @@ a.gray:hover{
 }
 /* 二级导航 */
 .subheader {
+    position: relative;
+    width: 100%;
     line-height: 54px;
     height: 54px;
     background: #FFFFFF;
     box-shadow: 0px 2px 6px 0px rgba(183, 202, 222, 0.64);
+    z-index: 11;
+}
+.subheader-fixed{
+    position: fixed;
+    top: 0;
+    left: 0;
 }
 .subheader .suheader-box{
     max-width: 1360px;
@@ -626,7 +634,6 @@ a.gray:hover{
 }
 .subheader .submenu-right{
     margin: 11px 0 0;
-    width: 30%;
     line-height: 30px;
     text-align: right;
 }
@@ -1360,3 +1367,14 @@ a.gray:hover{
         position: fixed;
     }
 }
+
+
+@media screen and (max-width: 1480px) {
+    .subheader .submenu-left a{
+        margin: 0 26px;
+    }
+    .subheader .search{
+      width: 148px;
+    }
+  }
+  

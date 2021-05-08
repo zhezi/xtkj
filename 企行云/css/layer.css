@@ -14,6 +14,11 @@
     z-index: 20;
     display: none;
 }
+.layer-side{
+    display: block;
+    left: auto;
+    right: -100%;
+}
 .layer .close,
 .layer-side .close{
     background: url(../images/layer-close.png) center center no-repeat;
