@@ -187,6 +187,7 @@ $(function($) {
     if($('.layer').size()>0){
       $('.add-file').bind('click',function () {
          $('#layer-file').fadeIn();
+         $('html').css('overflow-y','hidden');
       })
       if($('.nano').size()>0){
           $(".nano").nanoScroller();
@@ -200,6 +201,7 @@ $(function($) {
     if($('.layer-side').size()>0){
       $('.report-change').bind('click',function () {
          $('#layer-report-file').animate({right:"0"});
+         $('html').css('overflow-y','hidden');
          nano_height2();
          $(window).resize(function() {
            nano_height2();
@@ -210,9 +212,11 @@ $(function($) {
       })
       $('.member-btn').bind('click',function () {
          $('#layer-member').animate({right:"0"});
+         $('html').css('overflow-y','hidden');
       })
       $('.history-btn').bind('click',function () {
          $('#layer-history').animate({right:"0"});
+         $('html').css('overflow-y','hidden');
          nano_height();
          $(window).resize(function() {
            nano_height();
@@ -224,7 +228,7 @@ $(function($) {
       $('.layer-side').each(function(){
           var _this=$(this);
           _this.find('.cover,.close').bind('click',function(){
-            // $('html').css('overflow-y','scroll');
+            $('html').css('overflow-y','scroll');
             _this.animate({right:"-100%"});
           });
       });
