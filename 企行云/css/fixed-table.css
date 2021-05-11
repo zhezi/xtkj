@@ -138,7 +138,6 @@
     overflow: auto;
     cursor: pointer;
 }
-}
 .fixed-table-box.row-col-fixed>.fixed-table_body-wraper::-webkit-scrollbar {
     width: 4px;     
     height: 7px;

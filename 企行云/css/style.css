@@ -643,6 +643,11 @@
   font-size: 16px;
   font-weight: bold;
 }
+.loading-gif{
+  margin: 0 0 0 3px;
+  width: 14px;
+  height: 14px;
+}
 .subpage .section .title .time{
   padding-left: 40px;
 }
@@ -686,6 +691,15 @@
 }
 .subpage .section .point-box p{
   line-height: 28px;
+}
+.subpage .section .point-box .site-left{
+  position: relative;
+  display: flex;
+  align-items: flex-start;
+  line-height: 28px;
+}
+.subpage .section .point-box .name{
+  white-space: nowrap;
 }
 .subpage .section .point-box .away{
   padding-right: 34px;
@@ -866,6 +880,12 @@
 .blank-page .img-echart .col-8{
   width: 69%;
 }
+.blank-page .img-echart img{
+  width: 100%;
+}
+.subpage .img-box img{
+  width: 100%;
+}
 .blank-page .section .img-echart dl{
   width: 50%;
 }
@@ -1017,7 +1037,7 @@
   display: block;
 }
 .file-page .section .box01 .col-8 p{
-  padding: 0 0 10px;
+  padding: 7px 0 10px;
   font-size: 13px;
 }
 .file-page .section .box01 .col-8 .time{

@@ -1057,11 +1057,13 @@ a.gray:hover{
     display: inline-block;
     background: url(../images/change.png) left center no-repeat;
     padding: 0 0 0 16px;
+    white-space: nowrap;
 }
 .add-icon{
     display: inline-block;
     background: url(../images/add.png) left center no-repeat;
     padding: 0 0 0 16px;
+    white-space: nowrap;
 }
 .tag-box {
     font-size: 0;

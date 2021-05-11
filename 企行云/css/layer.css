@@ -101,6 +101,7 @@
     border-bottom: 1px solid #EFF0F5;
     margin: 0 0 8px;
     display: flex;
+    align-items: center;
 }
 .layer-title h1{
     font-size: 18px;
