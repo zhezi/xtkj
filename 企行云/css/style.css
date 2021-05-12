@@ -95,12 +95,15 @@
 }
 
 .xingyun-page .section01 ul{
-  padding: 0 20px;
+  padding: 0 60px;
 }
 .xingyun-page .section01 li {
-  width: 25%;
+  width: 26.5%;
   float: left;
   padding: 46px 0 56px;
+}
+.xingyun-page .section01 li:last-child{
+  width: 20%;
 }
 .xingyun-page .section01 .item{
   position: relative;
@@ -117,6 +120,7 @@
 .xingyun-page .section01 h3 {
   line-height: 1;
   font-size: 18px;
+  font-weight: 600;
 }
 
 .xingyun-page .section01 p {
@@ -133,9 +137,10 @@
   text-align: center;
 }
 .analysis .section .title h3{
-  font-size: 38px;
+  font-size: 32px;
   line-height: 1;
   padding: 0 0 18px;
+  font-weight: 600;
 }
 .analysis .section02 .box {
   padding: 35px 0;
@@ -353,6 +358,7 @@
   line-height: 1;
   font-size: 24px;
   color: #0B0E1B;
+  font-weight: bold;
 }
 
 .contact-us .section .img {
