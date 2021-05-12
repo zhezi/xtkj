@@ -19,6 +19,10 @@
     left: auto;
     right: -100%;
 }
+.layer-side .cover{
+    position: fixed;
+    display: none;
+}
 .layer .close,
 .layer-side .close{
     background: url(../images/layer-close.png) center center no-repeat;
