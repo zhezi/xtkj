@@ -489,8 +489,9 @@ a.gray:hover{
     padding: 0 20px;
 }
 .header02 .logo{
-    padding: 62px 0 0 224px;
-    margin: 0 40px 0 0;
+    background: url(../images/logo2.png) 0 center no-repeat;
+    padding: 52px 0 0 188px;
+    margin: 5px 40px 0 0;
 }
 .header-white .logo{
     background: url(../images/logo-black.png) 0 center no-repeat;
