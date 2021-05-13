@@ -865,7 +865,15 @@
 .file-index .table .img{
   margin: 0 10px 0 0;
 }
-
+.file-index .table .Icon{
+  width: 30px;
+  height: 30px;
+  margin: 0;
+}
+.file-index .table th:last-child,
+.file-index .table td:last-child{
+  padding-right:0;
+}
 
 /* 银行对账单 */
 .blank-page .section .box02 .col-6{
@@ -1023,22 +1031,14 @@
   justify-content: space-between;
   margin: 3px 0 16px;
 }
-.file-page .section .box01 .point-box p{
-  width: 49%;
-}
-.file-page .section .box01 .point-box .name{
-  text-align: left;
-  display: inline-block;
-  vertical-align: top;
-  max-width: 80%;
-}
-.file-page .section .box01 .point-box p:last-child{
-  text-align: right;
+.file-page .section .box01 .point-box .site-left{
+  max-width: 49%;
 }
 .file-page .section .box01 .point-box a{
   white-space: nowrap;
   display: inline-block;
   vertical-align: top;
+  margin: 0 0 0 34px;
 }
 .file-page .section .box01 .col-8 dl{
   display: block;

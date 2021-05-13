@@ -928,7 +928,7 @@ a.gray:hover{
     background: url(../images/arrow01.png) no-repeat;
 }
 .table .search-icon{
-    background: url(../images/search.png) no-repeat;
+    background: url(../images/search.png) center center no-repeat;
     width: 13px;
     height: 12px;
     margin: 0 0 0 4px;
