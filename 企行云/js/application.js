@@ -77,7 +77,7 @@ $(function($) {
    if($('.nano').size()>0){
        $(".nano").nanoScroller();
    }
- 
+
    (function(){
      // 菜单切换
      $('.switch').each(function(){
@@ -199,9 +199,11 @@ $(function($) {
      }
      // 弹层右侧展示
      if($('.layer-side').size()>0){
+       var width = $(document.body).width();
+       console.log(width)
        $('.report-change').bind('click',function () {
           $('#layer-report-file').animate({right:"0"}).find('.cover').fadeIn();
-          $('html').css('overflow-y','hidden');
+          $('html').css({'overflow-y':'hidden','max-width':width});
           nano_height2();
           $(window).resize(function() {
             nano_height2();
@@ -212,11 +214,11 @@ $(function($) {
        })
        $('.member-btn').bind('click',function () {
           $('#layer-member').animate({right:"0"}).find('.cover').fadeIn();
-          $('html').css('overflow-y','hidden');
+          $('html').css({'overflow-y':'hidden','max-width':width});
        })
        $('.history-btn').bind('click',function () {
           $('#layer-history').animate({right:"0"}).find('.cover').fadeIn();
-          $('html').css('overflow-y','hidden');
+          $('html').css({'overflow-y':'hidden','max-width':width});
           nano_height();
           $(window).resize(function() {
             nano_height();
@@ -228,7 +230,7 @@ $(function($) {
        $('.layer-side').each(function(){
            var _this=$(this);
            _this.find('.cover,.close').bind('click',function(){
-             $('html').css('overflow-y','scroll');
+             $('html').css({'overflow-y':'scroll','max-width':'100%'});
              _this.animate({right:"-100%"}).find('.cover').fadeOut();
            });
        });
