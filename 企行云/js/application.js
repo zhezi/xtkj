@@ -183,24 +183,28 @@ $(function($) {
              });
          })
      };
+     // 二级页面增加默认滚动条
+     if($('.subpage').size()>0){
+      $('html').css({'overflow-y':'scroll'});
+     }
      // 弹层中间区域展示
      if($('.layer').size()>0){
+      var width = $(document.body).width();
        $('.add-file').bind('click',function () {
           $('#layer-file').fadeIn();
-          $('html').css('overflow-y','hidden');
+          $('html').css({'overflow-y':'hidden','max-width':width});
        })
        if($('.nano').size()>0){
            $(".nano").nanoScroller();
        }
        $('.layer .cover,.layer .close,.layer .close-btn').click(function(){
-           $(".layer ").fadeOut();
-           $('html').css('overflow-y','scroll');
+           $(".layer ").hide();
+           $('html').css({'overflow-y':'scroll','max-width':'100%'});
        })
      }
      // 弹层右侧展示
      if($('.layer-side').size()>0){
        var width = $(document.body).width();
-       console.log(width)
        $('.report-change').bind('click',function () {
           $('#layer-report-file').animate({right:"0"}).find('.cover').fadeIn();
           $('html').css({'overflow-y':'hidden','max-width':width});
