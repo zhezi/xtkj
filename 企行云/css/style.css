@@ -799,7 +799,7 @@
 }
 
 /* 关联关系 */
-.page-relation .section .box01 p{
+.page-relation .section .box01 .point-box p{
   float: left;
   width: 25%;
   line-height: 30px;
