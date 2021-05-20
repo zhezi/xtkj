@@ -1220,6 +1220,7 @@ a.gray:hover{
 }
 .none-box .away{
     margin: 16px 0 0;
+    padding: 0!important;
 }
 .none-box .button{
     max-width: 210px;
