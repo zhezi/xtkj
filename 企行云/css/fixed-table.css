@@ -72,9 +72,14 @@
 .fixed-table-box .fixed-table_body td{
     border-top: 0;
     border-left: 0;
+    position: relative;
 }
-.fixed-table-box .fixed-table_body tr.rowHover{
+/* .fixed-table-box .fixed-table_body tr.rowHover{
     background-color: #eef1f6;
+} */
+.fixed-table_body-wraper .hide-tr:hover td,
+.fixed-table_body-wraper .hide-tr{
+    background-color: #EFF0F5!important;
 }
 /*表格内容 end*/
 
@@ -165,12 +170,12 @@
 
 
 .fixed-table-box>.fixed-table_body-wraper{/*内容了表格主体内容有纵向滚动条*/
-    max-height: 600px;
+    max-height: 650px;
     margin: 0!important;
 }
 
 .fixed-table_fixed>.fixed-table_body-wraper{/*为了让两侧固定列能够同步表格主体内容滚动*/
-    max-height: 600px;
+    max-height: 650px;
     margin: 0!important;
 }
 .w-200{

@@ -900,8 +900,15 @@ a.gray:hover{
 .table .hide-tr{
     display: none;
 }
+.table .hide-td-away{
+    padding: 0!important;
+}
+.table .hide-td-away tr:last-child td{
+    border-bottom: 0;
+}
+.table .left-tr + .hide-tr,
 .table .hide-tr.show{
-    display: block;
+    display: table-row;
 }
 .table a.away{
     margin: 0 10px 0 0;

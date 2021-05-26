@@ -1018,7 +1018,7 @@
   margin: -6px 0 0;
 }
 
-.table-model .idea-up {
+.idea-up {
   position: absolute;
   right: 36px;
   top: 19px;
@@ -1026,8 +1026,7 @@
   height: 13px;
   background: url(../images/up2.png) no-repeat;
 }
-
-.table-model .idea-down{
+.idea-down{
   background: url(../images/down2.png) no-repeat;
 }
 
