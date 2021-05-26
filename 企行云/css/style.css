@@ -744,6 +744,15 @@
 .subpage .section .table{
   margin: 0 -36px 28px;
 }
+.subpage .section .table-style{
+  margin: 0;
+}
+.subpage .section .text {
+  border: 1px solid #eee;
+  padding: 0 5px;
+  line-height: 28px;
+  outline: none;
+}
 .subpage .section .col-6{
   width: 49.5%;
   width: calc(50% - 5px);

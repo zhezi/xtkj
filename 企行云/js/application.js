@@ -29,7 +29,6 @@ $(function($) {
          }
      })
    }
- 
    //登录后下拉条
    if ($('.user').size()>0) {
        $(".user").each(function(){
@@ -46,20 +45,19 @@ $(function($) {
            _this.click(function(){
              _item.is(":hidden")?_show():_hide();
              $("body").click(function(event){
-                   // if (event.stopPropagation) { 
-                   //   // 针对 Mozilla 和 Opera     
-                   //   event.stopPropagation();    
-                   // }     
-                   // else if (window.event) {    
-                   //   // 针对 IE    
-                   //   window.event.cancelBubble = true; 
+                   // if (event.stopPropagation) {
+                   //   // 针对 Mozilla 和 Opera
+                   //   event.stopPropagation();
+                   // }
+                   // else if (window.event) {
+                   //   // 针对 IE
+                   //   window.event.cancelBubble = true;
                    // }
                    !$(event.target).parents(".user").first().is(_this) ? _hide():"";
              });
            });
        })
    };
- 
    // 右侧弹层不带底部按钮
    function nano_height() {
        var $height=$(window).height();

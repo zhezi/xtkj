@@ -40,8 +40,9 @@
 }
 .fixed-table-box .speak{
     top: 28px;
-    left: -5px;
-    width: 140px;
+    left: 5px;
+    width: 99px;
+    margin: 0 0 0 -73px;
 }
 .fixed-table-box .sign .arrow{
     top: 23px;
@@ -165,16 +166,18 @@
 
 .fixed-table-box>.fixed-table_body-wraper{/*内容了表格主体内容有纵向滚动条*/
     max-height: 600px;
+    margin: 0!important;
 }
 
 .fixed-table_fixed>.fixed-table_body-wraper{/*为了让两侧固定列能够同步表格主体内容滚动*/
     max-height: 600px;
+    margin: 0!important;
 }
 .w-200{
     width: 200px;
 }
-.w-155{
-    width: 155px;
+.w-272{
+    width: 272px;
 }
 .w-300{
     width: 300px;
