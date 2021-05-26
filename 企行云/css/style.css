@@ -999,15 +999,18 @@
 .table-model .idea .five {
   width: 13%;
 }
-.table-model .idea .look-btn{
+.look-btn{
   position: relative;
   cursor: pointer;
 }
-.table-model .idea .look-btn:hover{
-  background: #2A68FF;
+.look-btn .icon{
+  display: none;
+}
+.look-btn:hover{
+  background: #2A68FF!important;
   color: #fff;
 }
-.table-model .idea .look-btn:hover .icon{
+.look-btn:hover .icon{
   background: url(../images/search-white.png) no-repeat;
   position: absolute;
   right: 10px;

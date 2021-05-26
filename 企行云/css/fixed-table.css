@@ -81,6 +81,10 @@
 .fixed-table_body-wraper .hide-tr{
     background-color: #EFF0F5!important;
 }
+.fixed-table_body-wraper .hide-tr:hover .look-btn{
+    background: #2A68FF!important;
+    color: #fff;
+  }
 /*表格内容 end*/
 
 /* 行固定表格 start*/
