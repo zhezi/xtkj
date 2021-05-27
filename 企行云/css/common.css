@@ -616,6 +616,9 @@ a.gray:hover{
     top: 0;
     left: 0;
 }
+.subheader-fixed + section{
+    margin-top: 54px!important;
+}
 .subheader .suheader-box{
     max-width: 1360px;
     padding: 0 60px;
@@ -898,6 +901,7 @@ a.gray:hover{
     cursor: pointer;
 }
 .table .hide-tr{
+    transition: all .8s;
     display: none;
 }
 .table .hide-td-away{
