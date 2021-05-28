@@ -39,7 +39,7 @@
 }
 .fixed-table-box .sign{
     position: absolute;
-    bottom: 10px;
+    bottom: 6px;
     white-space: normal;
     width: auto;
     height: auto;
@@ -62,7 +62,7 @@
     opacity: 1!important;
 }
 .fixed-table-box .tip-height{
-    margin: 10px 0;
+    margin: 5px 0;
 }
 .fixed-table-box .fixed-table_header,
 .fixed-table-box .fixed-table_body{
