@@ -6,7 +6,7 @@
     /* border: 1px solid #dfe6ec; */
     border-bottom: 0;
     border-right: 0;
-    overflow: hidden;
+    /* overflow: hidden; */
 }
 .fixed-table-box:before{
     display: none;
@@ -38,12 +38,14 @@
     padding-left: 28px;
 }
 .fixed-table-box .sign{
+    position: absolute;
+    bottom: 10px;
     white-space: normal;
     width: auto;
     height: auto;
     background: none;
     font-size: 12px;
-    margin: -8px 0 0;
+    margin: 0;
 }
 .fixed-table-box .speak{
     top: 20px;
@@ -60,7 +62,7 @@
     opacity: 1!important;
 }
 .fixed-table-box .tip-height{
-    margin: 0 0 20px;
+    margin: 10px 0;
 }
 .fixed-table-box .fixed-table_header,
 .fixed-table-box .fixed-table_body{
@@ -135,7 +137,7 @@
     top: 0;
     z-index: 5;
     background-color: #fff;
-    overflow: hidden;
+    /* overflow: hidden; */
 }
 .fixed-table_fixed-left{
     left: 0;
@@ -149,7 +151,7 @@
 }
 .fixed-table_fixed .fixed-table_header-wraper,
 .fixed-table_fixed .fixed-table_body-wraper{
-    overflow-y: hidden;
+    /* overflow-y: hidden; */
 }
 .fixed-table_fixed.fixed-table_fixed-right td{
     border-right: none;
@@ -163,7 +165,7 @@
     cursor: pointer;
 }
 .fixed-table-box.row-col-fixed>.fixed-table_body-wraper::-webkit-scrollbar {
-    width: 4px;     
+    width: 4px;
     height: 7px;
     z-index: 2;
     cursor: pointer;
