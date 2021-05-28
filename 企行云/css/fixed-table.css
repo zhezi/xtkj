@@ -33,21 +33,34 @@
     box-sizing: border-box;
     white-space: nowrap;
 }
+.fixed-table-box .table th:first-child,
+.fixed-table-box .table td:first-child{
+    padding-left: 28px;
+}
 .fixed-table-box .sign{
     white-space: normal;
-    width: 16px;
-    height: 16px;
+    width: auto;
+    height: auto;
+    background: none;
+    font-size: 12px;
+    margin: -8px 0 0;
 }
 .fixed-table-box .speak{
-    top: 28px;
+    top: 20px;
     left: 5px;
-    width: 99px;
-    margin: 0 0 0 -73px;
+    width: 165px;
+    margin: 0 0 0 -20px;
 }
 .fixed-table-box .sign .arrow{
-    top: 23px;
-    z-index: 2;
+    top: -8px;
+    z-index: 28;
     margin: 0 0 0 -6px
+}
+.fixed-table-box .sign:hover{
+    opacity: 1!important;
+}
+.fixed-table-box .tip-height{
+    margin: 0 0 20px;
 }
 .fixed-table-box .fixed-table_header,
 .fixed-table-box .fixed-table_body{
@@ -74,14 +87,15 @@
     border-left: 0;
     position: relative;
 }
-/* .fixed-table-box .fixed-table_body tr.rowHover{
-    background-color: #eef1f6;
-} */
+.fixed-table-box .fixed-table_body tr.rowHover{
+    /* background-color: #eef1f6; */
+    z-index: 44;
+}
 .fixed-table_body-wraper .hide-tr:hover td,
 .fixed-table_body-wraper .hide-tr{
     background-color: #EFF0F5!important;
 }
-.fixed-table_body-wraper .hide-tr:hover .look-btn{
+.fixed-table_body-wraper .hide-tr:hover .look-btn:hover{
     background: #2A68FF!important;
     color: #fff;
   }
@@ -174,12 +188,12 @@
 
 
 .fixed-table-box>.fixed-table_body-wraper{/*内容了表格主体内容有纵向滚动条*/
-    max-height: 650px;
+    /* max-height: 650px; */
     margin: 0!important;
 }
 
 .fixed-table_fixed>.fixed-table_body-wraper{/*为了让两侧固定列能够同步表格主体内容滚动*/
-    max-height: 650px;
+    /* max-height: 650px; */
     margin: 0!important;
 }
 .w-200{

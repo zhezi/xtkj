@@ -1143,8 +1143,6 @@ a.gray:hover{
     width: 186px;
     margin: 0 0 0 -104px;
     padding: 10px;
-    transition: all 0.5s ease;
-    -webkit-transition: all 0.5s ease;
     opacity: 0; 
     filter: alpha(opacity=0);
     transform: scale(0);
