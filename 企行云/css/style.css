@@ -1100,6 +1100,10 @@
   font-size: 16px;
   font-weight: 600;
 }
+.file-page .section .caption .loading-gif {
+  margin: 2px 0 0 10px;
+  vertical-align: top;
+}
 .file-page .section .caption p{
   padding: 18px 0 0;
 }
