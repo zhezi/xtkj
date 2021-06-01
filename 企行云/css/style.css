@@ -679,6 +679,26 @@
   position: relative;
   flex: 1;
 }
+.subpage .section .progress-box dd:hover{
+  z-index: 4;
+}
+.subpage .section .progress-box .tips-box{
+  cursor: pointer;
+}
+.subpage .section .progress-box .tips-box:hover .speak{
+    opacity: 1;
+    filter: alpha(opacity=100);
+    transform: scale(1);
+}
+.subpage .section .progress-box .tips-box:hover .arrow{
+    display: block;
+}
+.subpage .section .progress-box .tips-box .sign{
+  width: auto;
+  height: auto;
+  background: none;
+  display: block;
+}
 .subpage .section .progress-box .bar-box{
   height: 16px;
   background: #D5E1FF;
