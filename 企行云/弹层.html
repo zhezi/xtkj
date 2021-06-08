@@ -904,7 +904,7 @@
 </div>
 
   <!-- 自定义风险2 -->
-  <div class="layer-side" style="right:-100% ;">
+  <div class="layer-side" style="right:0% ;">
     <div class="cover"></div>
     <div class="layer-box">
         <div class="layer-title">
@@ -921,6 +921,22 @@
                 <span class="type">天</span>
               </div>
               <span class="small">填写范围（1-365）</span>
+            </div>
+            <div class="custom-risk" style="padding: 30px 0 0;">
+              <span>时间筛选：</span>
+              <div class="input-box">
+                <input type="text" class="input-text" id="test9" placeholder="">
+              </div>
+            </div>
+            <div class="custom-risk" style="padding: 30px 0 0;">
+              <span>时间筛选：</span>
+              <div class="input-box">
+                <input type="text" id="startTime" class="input-text" pxplaceholder="">
+              </div>
+              <span style="margin-right: 22px;">~</span>
+              <div class="input-box">
+                <input type="text" id="endTime" class="input-text" placeholder="">
+              </div>
             </div>
           </div>
         </div>
@@ -1132,7 +1148,7 @@
   </div>
 
   <!-- 销售月份排行2 -->
-<div class="layer-side" style="right:0 ;">
+<div class="layer-side" style="right:-100%;">
   <div class="cover"></div>
   <div class="layer-box">
       <div class="layer-title">
@@ -2184,6 +2200,40 @@
     var laydate = layui.laydate;
     var myDate = new Date();
     // console.log(myDate.toLocaleDateString())
+    laydate.render({
+      elem: '#test9',
+      type: 'time',
+      range: '~',
+      format: 'HH:mm',
+    });
+    laydate.render({
+        elem: '#startTime',
+        type: 'time',
+        format: 'HH:mm',
+        // showBottom: false,
+        done: function (value, date, endDate) {
+            var startDate = new Date(value).getTime();
+            var endTime = new Date($('#endTime').val()).getTime();
+            if (endTime < startDate) {
+                layer.msg('结束时间不能小于开始时间');
+                $('#startTime').val('');
+            }
+        }
+    })
+    laydate.render({ //结束时间
+        elem: '#endTime',
+        type: 'time',
+        format: 'HH:mm',
+        // showBottom: false,
+        done: function (value, date, endDate) {
+            var startDate = new Date($('#startTime').val()).getTime();
+            var endTime = new Date(value).getTime();
+            if (endTime < startDate) {
+                layer.msg('结束时间不能小于开始时间');
+                $('#endTime').val('');
+            }
+        }
+    })
     laydate.render({
         elem: '.startTime',
         format: 'yyyy-MM-dd',
