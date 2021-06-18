@@ -608,6 +608,7 @@
 .subpage .section .title .icon{
   padding: 0 0 0 24px;
   display: inline-block;
+  vertical-align: middle;
 }
 .subpage .section .title .report-icon{
   background: url(../images/switch.png) 5px center no-repeat;
@@ -632,10 +633,12 @@
   font-size: 18px;
   font-weight: bold;
   margin: 0 10px 0 0;
+  vertical-align: middle;
 }
 .subpage .section .title .img{
   width: 22px;
   margin: 0 10px 0 0;
+  vertical-align: middle;
 }
 .subpage .section .title .tag{
   width: 22px;
@@ -657,6 +660,7 @@
 }
 .subpage .section .title .time{
   padding-left: 40px;
+  vertical-align: middle;
 }
 .subpage .section .title .away{
   margin-right: 40px;
