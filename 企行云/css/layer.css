@@ -819,10 +819,32 @@
     line-height: 30px;
     vertical-align: middle;
 }
+#layer-bank-analysis .item .sign{
+    width: auto;
+    height: auto;
+    background: none;
+}
+#layer-bank-analysis .item .sign:hover{
+    opacity: 1;
+    filter: alpha(opacity=100);
+}
 #layer-bank-analysis .item .sign .speak{
     left: auto;
     right: -30px;
     margin: 0;
+    top: 34px;
+}
+#layer-bank-analysis .item .sign .speak::before{
+    position: absolute;
+    left: 50%;
+    top: -9px;
+    content: '';
+    width: 0;
+    height: 0;
+    border-right: 7px solid transparent;
+    border-left: 7px solid transparent;
+    border-bottom: 10px solid #fff;
+    display:block;
 }
 #layer-bank-analysis .special-table th,#layer-bank-analysis .special-table td{
     padding: 3px 2px;
