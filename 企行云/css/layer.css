@@ -815,8 +815,14 @@
     margin: 0;
 }
 #layer-bank-analysis .item a{
-    border-bottom: 1px solid #2A68FF;
+    /* border-bottom: 1px solid #2A68FF; */
     line-height: 30px;
+    vertical-align: middle;
+}
+#layer-bank-analysis .item .sign .speak{
+    left: auto;
+    right: -30px;
+    margin: 0;
 }
 #layer-bank-analysis .special-table th,#layer-bank-analysis .special-table td{
     padding: 3px 2px;
