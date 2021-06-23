@@ -238,8 +238,35 @@ $(function($) {
        });
      }
      // 普通table单行展开收起
-     if($('.show-tr').size()>0){
-       $('.show-tr').each(function(){
+     if($('.layer-side').size()>0){
+       $('.layer-side .show-tr').each(function(){
+           var _this=$(this);
+           _this.attr('data-open','true');
+           _this.bind('click',function(){
+               var _this=$(this),_index=_this.index(),_dataOpen=_this.attr('data-open');
+              //  console.log(_index)
+               if(_dataOpen=='false'){
+                   _this.next('.hide-tr').hide().removeClass('show');
+                   _this.attr('data-open','true')
+                   _this.find('.idea-up').removeClass('idea-down');
+               }else{
+                   _this.next('.hide-tr').slideDown(500).addClass('show');
+                   _this.find('.idea-up').addClass('idea-down');
+                   _this.attr('data-open','false');
+               }
+           });
+       });
+       $('.layer-side .hide-tr').each(function(){
+           var _this=$(this);
+           _this.bind('click',function(){
+             _this.slideUp().removeClass('show');
+             _this.prev('.show-tr').attr('data-open','true');
+           })
+       });
+     }
+     // 特殊table单行展开收起
+     if($('.fixed-table-box').size()>0){
+       $('.fixed-table-box .show-tr').each(function(){
            var _this=$(this);
            _this.attr('data-open','true');
            _this.bind('click',function(){
@@ -259,13 +286,6 @@ $(function($) {
                   //  _this.attr('data-open','false');
                }
            });
-       });
-       $('.layer-side .hide-tr').each(function(){
-           var _this=$(this);
-           _this.bind('click',function(){
-             _this.slideUp().removeClass('show');
-             _this.prev('.show-tr').attr('data-open','true');
-           })
        });
      }
      createImageBg();
