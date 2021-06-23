@@ -957,6 +957,23 @@
   margin: 14px 0 0;
 }
 /* 财务报表 */
+.report-box .fixed-table-box .idea-up{
+  right: 10px;
+  margin-top: -3px;
+}
+.report-box .fixed-table-box .fixed-table_fixed-left .w-250{
+  padding-top: 8px;
+  padding-bottom: 14px;
+}
+.report-box .fixed-table-box .fixed-table_fixed-left .tip-height{
+  height: 40px;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  white-space: normal;
+  line-height: 16px;
+  margin: 0;
+}
 .table-model li {
   position: relative;
   min-height: 50px;
@@ -1048,10 +1065,11 @@
 .idea-up {
   position: absolute;
   right: 36px;
-  top: 19px;
+  top: 50%;
   width: 13px;
   height: 13px;
   background: url(../images/up2.png) no-repeat;
+  transform: translateY(-50%);
 }
 .idea-down{
   background: url(../images/down2.png) no-repeat;

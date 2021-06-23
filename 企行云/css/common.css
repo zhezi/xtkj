@@ -882,7 +882,7 @@ a.gray:hover{
 }
 .table td{
     line-height: 20px;
-    padding: 14px 20px 14px 4px;
+    padding: 16px 20px 16px 4px;
     min-width: 40px;
     border-bottom: 1px solid #EFF0F5;
 }
@@ -974,8 +974,8 @@ a.gray:hover{
 
 .switch-bar {
     position: relative;
-    width: 18px;
-    height: 10px;
+    width: 24px;
+    height: 14px;
     background: #D7D7D7;
     border-radius: 8px;
     display: inline-block;
@@ -987,8 +987,8 @@ a.gray:hover{
     position: absolute;
     left: 0;
     top: 0;
-    width: 10px;
-    height: 10px;
+    width: 14px;
+    height: 14px;
     background: #FFFFFF;
     box-shadow: 0px 1px 4px 0px #D7D7D7;
     border-radius: 50%;

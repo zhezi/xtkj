@@ -39,7 +39,7 @@
 }
 .fixed-table-box .sign{
     position: absolute;
-    bottom: 6px;
+    bottom: 3px;
     white-space: normal;
     width: auto;
     height: auto;
@@ -198,8 +198,8 @@
     /* max-height: 650px; */
     margin: 0!important;
 }
-.w-200{
-    width: 200px;
+.w-250{
+    width: 250px;
 }
 .w-272{
     width: 272px;
