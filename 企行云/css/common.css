@@ -478,15 +478,14 @@ a.gray:hover{
     left: 0;
     background: #fff;
     box-shadow: 0px 2px 20px 0px rgba(215, 234, 254, 0.5);
+    transition: all 0.8s ease;
+    -webkit-transition: all 0.8s ease;
 }
 .header02 .head-box{
     position: relative;
     padding: 32px 60px;
-    transition: all 0.5s ease;
-    -webkit-transition: all 0.5s ease;
-}
-.header-white .head-box{
-    padding: 0 20px;
+    transition: all 0.8s ease;
+    -webkit-transition: all 0.8s ease;
 }
 .header02 .logo{
     background: url(../images/logo2.png) 0 center no-repeat;
@@ -495,8 +494,6 @@ a.gray:hover{
 }
 .header-white .logo{
     background: url(../images/logo-black.png) 0 center no-repeat;
-    margin: 10px 119px 10px 0;
-    padding: 40px 0 0 145px;
 }
 .header-white .nav a {
     color: #4C505F;
