@@ -191,6 +191,7 @@ $(function($) {
        $('.add-file').bind('click',function () {
           $('#layer-file').fadeIn();
           $('html').css({'overflow-y':'hidden','max-width':width});
+          // $('.subheader-fixed').css({'max-width':width});
        })
        if($('.nano').size()>0){
            $(".nano").nanoScroller();
@@ -198,6 +199,7 @@ $(function($) {
        $('.layer .cover,.layer .close,.layer .close-btn').click(function(){
            $(".layer ").hide();
            $('html').css({'overflow-y':'scroll','max-width':'100%'});
+           $('.subheader-fixed').css({'max-width':'100%'});
        })
      }
      // 弹层右侧展示
