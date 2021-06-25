@@ -208,6 +208,7 @@ $(function($) {
        $('.report-change').bind('click',function () {
           $('#layer-report-file').animate({right:"0"}).find('.cover').fadeIn();
           $('html').css({'overflow-y':'hidden','max-width':width});
+          // $('.subheader-fixed').css({'max-width':width});
           nano_height2();
           $(window).resize(function() {
             nano_height2();
@@ -236,6 +237,7 @@ $(function($) {
            _this.find('.cover,.close').bind('click',function(){
              $('html').css({'overflow-y':'scroll','max-width':'100%'});
              _this.animate({right:"-100%"}).find('.cover').fadeOut();
+             $('.subheader-fixed').css({'max-width':'100%'});
            });
        });
      }
