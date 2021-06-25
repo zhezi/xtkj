@@ -428,6 +428,7 @@
 }
 .form label .active{
     background: url(../images/checked.png) 0 center no-repeat;
+    border: 1px solid #2A68FF;
 }
 
 /* 右侧弹层 */
