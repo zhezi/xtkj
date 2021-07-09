@@ -742,6 +742,9 @@ a.gray:hover{
     font-size: 14px;
 }
 
+.footer .unlink{
+    cursor: text;
+}
 /*分页*/
 .pagination{
     padding: 30px 0;
