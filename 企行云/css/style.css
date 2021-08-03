@@ -1242,3 +1242,31 @@
 .file-page .section .bank-box .idea-box dl{
   min-height: 72px;
 }
+
+
+.input-page .box .title {
+  border-bottom: 2px solid #f1f1f1;
+  margin: 0 0 20px;
+  padding: 0 0 6px;
+}
+.input-page .box .title h2{
+  font-weight: 600;
+}
+.input-page .form{
+  max-width: 500px;
+  margin: 0 auto;
+  line-height: 40px;
+  padding: 30px 0;
+}
+.input-page .form dl{
+  margin: 0 0 40px;
+}
+.input-page .form .text{
+  width: calc(100% - 42px);
+  border: 1px solid #dde7f0;
+  line-height: 40px;
+  height: 40px;
+  padding: 0 20px;
+  font-size: 12px;
+  outline: none;
+}
